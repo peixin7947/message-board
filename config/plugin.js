@@ -9,3 +9,7 @@ exports.mongoose = {
   package: 'egg-mongoose',
 };
 
+// exports.joi = {
+//   enable: true,
+//   package: 'egg-joi',
+// };

@@ -20,7 +20,7 @@
         "enable": true,
         "type": "ctoken",
         "ignoreJSON": false,
-        "useSession": false,
+        "useSession": true,
         "cookieName": "csrfToken",
         "sessionName": "csrfToken",
         "headerName": "x-csrf-token",
@@ -72,7 +72,6 @@
         "ipBlackList": null,
         "checkAddress": null
       },
-      "useSession": true,
       "_protocolWhiteListSet": "<Set>"
     },
     "helper": {
@@ -229,7 +228,8 @@
         "egg-view-nunjucks": "^2.2.0",
         "joi": "^14.3.1",
         "js-md5": "^0.7.3",
-        "nunjucks": "^3.2.1"
+        "nunjucks": "^3.2.1",
+        "xlsx": "^0.16.1"
       },
       "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^3.0.2",
@@ -351,6 +351,9 @@
     },
     "onClientError": null,
     "middleware": [],
+    "Login": {
+      "LOGIN_FIELD": "userInfo"
+    },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
     "appMiddleware": "~config~middleware",

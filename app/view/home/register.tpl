@@ -25,15 +25,16 @@
                         <img src="/img/img-01.png" alt="IMG">
                     </div>
 
-                    <form method="POST" action="/register?_csrf={{ ctx.csrf | safe }}" class="login100-form validate-form">
+                    <form method="POST" action="/register" class="login100-form validate-form">
+                        <input type="hidden" name="_csrf" value="{{ ctx.csrf }}" />
                         <span class="login100-form-title">
                             注册留言板账号
                         </span>
                         <div>
-                            <h4 style="text-align: center; color: red">{{message}}</h4>
+                            <h5 style="text-align: center; color: #ff0000">{{message}}</h5>
                         </div>
                         <div class="wrap-input100 validate-input">
-                            <input name="username" class="input100" type="text" name="email" placeholder="用户名(长度最少3位)">
+                            <input name="username" class="input100" type="text" placeholder="用户名(长度最少3位)">
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -41,7 +42,7 @@
                         </div>
 
                         <div class="wrap-input100 validate-input">
-                            <input name="password" class="input100" type="password" name="pass" placeholder="密码(长度最少6位)">
+                            <input name="password" class="input100" type="password" placeholder="密码(长度最少6位)">
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-lock" aria-hidden="true"></i>
@@ -49,7 +50,7 @@
                         </div>
 
                         <div class="wrap-input100 validate-input">
-                            <input name="repassword" class="input100" type="password" name="pass" placeholder="确认密码">
+                            <input name="rePassword" class="input100" type="password" placeholder="确认密码">
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-lock" aria-hidden="true"></i>
@@ -61,7 +62,6 @@
                                 注册
                             </button>
                         </div>
-
                     </form>
                 </div>
             </div>

@@ -196,3 +196,280 @@ hostname: xin
 pid: 6404
 hostname: ��Ϣƽ̨-������
 
+2020-06-08 17:38:07,170 WARN 8388 [-/::1/-/19ms POST /register] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-06-08 17:38:07,172 WARN 8388 [-/::1/-/21ms POST /register] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\message-board\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\message-board\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\message-board\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\message-board\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\message-board\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+message: "invalid csrf token"
+pid: 8388
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:39:48,658 WARN 8388 [-/::1/-/4ms POST /register] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-06-08 17:39:48,659 WARN 8388 [-/::1/-/5ms POST /register] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\message-board\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\message-board\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\message-board\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\message-board\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\message-board\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+message: "invalid csrf token"
+pid: 8388
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:41:00,712 WARN 8388 [-/::1/-/2ms POST /register] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-06-08 17:41:00,713 WARN 8388 [-/::1/-/3ms POST /register] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\message-board\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\message-board\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\message-board\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\message-board\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\message-board\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+message: "invalid csrf token"
+pid: 8388
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:42:32,064 WARN 8388 [-/::1/-/2ms POST /register] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-06-08 17:42:32,066 WARN 8388 [-/::1/-/4ms POST /register] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\message-board\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\message-board\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\message-board\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\message-board\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\message-board\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+message: "invalid csrf token"
+pid: 8388
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:46:42,566 WARN 8004 [-/::1/-/18ms POST /register] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-06-08 17:46:42,568 WARN 8004 [-/::1/-/20ms POST /register] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\message-board\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\message-board\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\message-board\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\message-board\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\message-board\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+message: "invalid csrf token"
+pid: 8004
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:47:07,024 WARN 13572 [-/::1/-/23ms POST /register] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-06-08 17:47:07,026 WARN 13572 [-/::1/-/25ms POST /register] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\message-board\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\message-board\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\message-board\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\message-board\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\message-board\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+message: "invalid csrf token"
+pid: 13572
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:48:37,276 WARN 13572 [-/::1/-/4ms POST /register] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-06-08 17:48:37,277 WARN 13572 [-/::1/-/5ms POST /register] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\message-board\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\message-board\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\message-board\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\message-board\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\message-board\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+message: "invalid csrf token"
+pid: 13572
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:48:57,328 WARN 13572 [-/::1/-/2ms POST /register] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-06-08 17:48:57,329 WARN 13572 [-/::1/-/3ms POST /register] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\message-board\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\message-board\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\message-board\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\message-board\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\message-board\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+message: "invalid csrf token"
+pid: 13572
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:50:02,748 WARN 13572 [-/::1/-/2ms POST /register] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-06-08 17:50:02,749 WARN 13572 [-/::1/-/3ms POST /register] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (C:\message-board\node_modules\koa\lib\context.js:97:11)
+    at Object.assertCsrf (C:\message-board\node_modules\egg-security\app\extend\context.js:162:32)
+    at csrf (C:\message-board\node_modules\egg-security\lib\middlewares\csrf.js:33:9)
+    at dispatch (C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at C:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (C:\message-board\node_modules\koa-session\index.js:41:13)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (C:\message-board\node_modules\koa-override\index.js:38:12)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+message: "invalid csrf token"
+pid: 13572
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:53:05,734 ERROR 4512 [-/::1/-/4ms GET /login?username=admin&pass=123123&_csrf=JRVQTj75-SG2Aok5YlhQpg9F07ptSqSBWvQw] nodejs.AssertionError: Can't find /login from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:18:5)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 4512
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:55:32,598 ERROR 13624 [-/::1/-/21ms POST /login] nodejs.AssertionError: Can't find /login from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:18:5)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 13624
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:57:11,901 ERROR 13624 [-/::1/-/16779ms POST /login] nodejs.AssertionError: Can't find /login from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:18:5)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 13624
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:58:18,857 ERROR 13860 [-/::1/-/4089ms POST /login] nodejs.AssertionError: Can't find /login/view from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:18:5)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 13860
+hostname: ��Ϣƽ̨-������
+

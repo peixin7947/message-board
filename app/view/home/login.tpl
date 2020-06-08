@@ -25,13 +25,13 @@
                         <img src="/img/img-01.png" alt="IMG">
                     </div>
 
-                    <form class="login100-form validate-form">
+                    <form class="login100-form validate-form" method="POST" action="/login">
                         <span class="login100-form-title">
                             登陆留言板
                         </span>
 
                         <div class="wrap-input100 validate-input">
-                            <input class="input100" type="text" name="email" placeholder="用户名">
+                            <input class="input100" type="text" name="username" placeholder="用户名">
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -39,7 +39,7 @@
                         </div>
 
                         <div class="wrap-input100 validate-input">
-                            <input class="input100" type="password" name="pass" placeholder="密码">
+                            <input class="input100" type="password" name="password" placeholder="密码">
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-lock" aria-hidden="true"></i>

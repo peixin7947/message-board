@@ -33,15 +33,14 @@
   },
   "middleware": "C:\\message-board\\config\\config.default.js",
   "security": {
-    "useSession": "C:\\message-board\\config\\config.default.js",
     "csrf": {
       "enable": "C:\\message-board\\config\\config.default.js",
+      "useSession": "C:\\message-board\\config\\config.default.js",
+      "sessionName": "C:\\message-board\\config\\config.default.js",
+      "headerName": "C:\\message-board\\config\\config.default.js",
       "type": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "ignoreJSON": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "useSession": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "cookieName": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "sessionName": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "headerName": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "bodyName": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "queryName": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "refererWhiteList": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
@@ -86,6 +85,9 @@
       "ipBlackList": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "checkAddress": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     }
+  },
+  "Login": {
+    "LOGIN_FIELD": "C:\\message-board\\config\\config.default.js"
   },
   "session": {
     "maxAge": "C:\\message-board\\node_modules\\egg-session\\config\\config.default.js",
@@ -190,7 +192,8 @@
       "egg-view-nunjucks": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "joi": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "js-md5": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "nunjucks": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+      "nunjucks": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "xlsx": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
       "@typescript-eslint/eslint-plugin": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",

@@ -1,47 +1,56 @@
 'use strict';
-const Joi = require('joi');
 const Controller = require('egg').Controller;
 
 class AuthController extends Controller {
   async login() {
-    return;
+    const { ctx } = this;
+    const { username, password } = ctx.request.body;
+    if (username && password) {
+      const user = await ctx.model.User.findOne({ username, password });
+      if (user) {
+        ctx.session[this.config.Login.LOGIN_FIELD] = user;
+        await ctx.render('/index.html');
+        // 调用 rotateCsrfSecret 刷新用户的 CSRF token
+        ctx.rotateCsrfSecret();
+        return;
+      }
+    }
+    await ctx.render('/login/view', { message: '输入用户名密码错误' });
   }
 
   async register() {
     const { ctx } = this;
+    // 参数校验
     const user = ctx.request.body;
-    if (!user.password || !user.repassword) {
+    if (!user.password || !user.rePassword) {
       await ctx.render('/home/register.tpl', { message: '密码不能为空' });
       return;
-    } else if (user.password !== user.repassword) {
+    } else if (user.password !== user.rePassword) {
       await ctx.render('/home/register.tpl', { message: '2次输入的密码不一致' });
       return;
     }
-    const schema = Joi.object({
-      username: Joi.string().min(3).max(30)
+    const value = ctx.validate({
+      username: ctx.Joi.string().min(3).max(30)
         .required(),
-      password: Joi.string().min(6).max(30)
+      password: ctx.Joi.string().min(6).max(30)
         .required(),
-    });
-    const check = Joi.validate({
-      username: user.username,
-      password: user.password,
-    }, schema);
+      rePassword: ctx.Joi.string().min(6).max(30)
+        .required(),
+    }, Object.assign(ctx.params, ctx.query, ctx.request.body));
     let message = '';
-    if (check.error !== null) {
-      ctx.response.body = '<script language=javascript>alert("注册失败!!请检查输入的数据是否正确。' + check.error + '");window.window.location.href="/register/view";</script>';
+    if (value.errors) {
+      await ctx.render('/home/register.tpl', { message: '注册失败!!请检查输入的数据格式是否正确。' });
       return;
     }
-    const userObj = await ctx.service.user.findOne({ username: user.username });
+
+    const userObj = await ctx.model.User.findOne({ username: user.username });
     if (userObj) {
       message = '用户名已存在';
       await ctx.render('/home/register.tpl', { message });
       return;
     }
     await ctx.service.user.addUser(user);
-    message = '<script language=javascript>alert("注册成功!!!");window.window.location.href="/";</script>';
-
-
+    message = '<script language=javascript>alert("注册成功!!!");window.location.href="/";</script>';
     ctx.response.body = message;
   }
 
