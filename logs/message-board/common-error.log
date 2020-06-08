@@ -376,3 +376,144 @@ name: "unhandledExceptionError"
 pid: 14396
 hostname: ��Ϣƽ̨-������
 
+2020-06-08 20:19:29,728 ERROR 11188 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 11188
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 20:20:15,424 ERROR 11520 [-/::1/-/13160ms POST /login] nodejs.AssertionError: Can't find /login/view from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:18:5)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 11520
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 20:22:59,248 ERROR 12472 [-/::1/-/33615ms POST /login] nodejs.AssertionError: Can't find /index.html from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:12:9)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 12472
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 20:23:43,167 ERROR 12472 [-/::1/-/34944ms POST /login] nodejs.AssertionError: Can't find /index.html from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:12:9)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 12472
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 20:29:59,708 ERROR 8460 [-/::1/-/12617ms POST /login] nodejs.AssertionError: Can't find /index.html from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:12:9)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 8460
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 20:56:01,983 ERROR 11188 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 11188
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 21:06:53,289 ERROR 14516 [-/::1/-/6071ms POST /login] nodejs.TypeError: Cannot read property 'LOGIN_FIELD' of undefined
+    at AuthController.login (C:\message-board\app\controller\auth.js:11:39)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async login (C:\message-board\app\middleware\login.js:6:14)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 14516
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 21:18:24,165 ERROR 3340 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 3340
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 21:20:25,196 ERROR 3340 nodejs.ClusterClientNoResponseError: client no response in 79991ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (C:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 3340
+hostname: ��Ϣƽ̨-������
+

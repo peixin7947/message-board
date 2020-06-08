@@ -6,10 +6,10 @@ class AuthController extends Controller {
     const { ctx } = this;
     const { username, password } = ctx.request.body;
     if (username && password) {
-      const user = await ctx.model.User.findOne({ username, password });
+      const user = await ctx.service.user.login(username, password);
       if (user) {
-        ctx.session[this.config.Login.LOGIN_FIELD] = user;
-        await ctx.render('/index.html');
+        ctx.session[this.config.login.LOGIN_FIELD] = user;
+        await ctx.redirect('/index.html');
         // 调用 rotateCsrfSecret 刷新用户的 CSRF token
         ctx.rotateCsrfSecret();
         return;

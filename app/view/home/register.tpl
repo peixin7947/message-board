@@ -15,6 +15,7 @@
         <!--主要样式-->
         <link rel="stylesheet" type="text/css" href="/css/main.css">
     </head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 
     <body>
 
@@ -25,8 +26,8 @@
                         <img src="/img/img-01.png" alt="IMG">
                     </div>
 
-                    <form method="POST" action="/register" class="login100-form validate-form">
-                        <input type="hidden" name="_csrf" value="{{ ctx.csrf }}" />
+                    <input type="hidden" id="_csrf" value="{{ ctx.csrf }}" />
+                    <form id="registerForm" method="POST" action="/register" class="login100-form validate-form">
                         <span class="login100-form-title">
                             注册留言板账号
                         </span>
@@ -58,7 +59,7 @@
                         </div>
 
                         <div class="container-login100-form-btn">
-                            <button class="login100-form-btn" type="submit">
+                            <button id="registerBtn" class="login100-form-btn" type="submit">
                                 注册
                             </button>
                         </div>
@@ -68,5 +69,19 @@
         </div>
 
     </body>
+<!--    <script>-->
+<!--      $('#registerBtn').on('click', function() {-->
+<!--        $.ajax({-->
+<!--          type: 'post',-->
+<!--          url: '/register',-->
+<!--          data: $('#registerForm').serialize(),-->
+<!--          headers:{-->
+<!--            'Content-Type': 'application/x-www-form-urlencoded',-->
+<!--            "x-csrf-token": $('#_csrf').val(),-->
+<!--          },-->
+<!--        })-->
+<!--      })-->
+
+<!--    </script>-->
 
 </html>

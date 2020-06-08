@@ -1,14 +1,16 @@
 const path = require('path');
-module.exports = appinfo => {
+module.exports = appInfo => {
   const config = exports = {};
 
-  config.keys = `${appinfo.name}<此处改为你自己的 Cookie 安全字符串>`;
+  config.keys = `${appInfo.name}<此处改为你自己的 Cookie 安全字符串>`;
 
   config.view = {
     defaultViewEngine: 'nunjucks',
-    mapping: {
-      '.tpl': 'nunjucks',
-    },
+    root: [
+      path.join(appInfo.baseDir, 'app/public/static'),
+      path.join(appInfo.baseDir, 'app/public'),
+      path.join(appInfo.baseDir, 'app/view'),
+    ].join(','),
   };
 
   config.mongoose = {
@@ -23,24 +25,27 @@ module.exports = appinfo => {
   config.static = {
     prefix: '/',
     dir: [
-      path.join(appinfo.baseDir, 'app/public'),
+      path.join(appInfo.baseDir, 'app/public/static'),
     ],
   };
 
 
-  config.middleware = [ ];
+  config.middleware = [ 'login' ];
 
   config.security = {
     csrf: {
-      enable: true,
+      enable: false,
       useSession: true, // 默认为 false，当设置为 true 时，将会把 csrf token 保存到 Session 中
       sessionName: 'csrfToken', // Session 中的字段名，默认为 csrfToken
       headerName: 'x-csrf-token', // 通过 header 传递 CSRF token 的默认字段为 x-csrf-token
     },
   };
 
-  config.Login = {
+  config.login = {
     LOGIN_FIELD: 'userInfo',
+    ignore(ctx) {
+      if ([ '/static' ].includes(ctx.request.path)) return true;
+    },
   };
 
   return config;

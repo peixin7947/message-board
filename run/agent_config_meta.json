@@ -2,12 +2,10 @@
   "keys": "C:\\message-board\\config\\config.default.js",
   "view": {
     "defaultViewEngine": "C:\\message-board\\config\\config.default.js",
-    "mapping": {
-      ".tpl": "C:\\message-board\\config\\config.default.js"
-    },
-    "root": "C:\\message-board\\node_modules\\egg-view\\config\\config.default.js",
+    "root": "C:\\message-board\\config\\config.default.js",
     "cache": "C:\\message-board\\node_modules\\egg-view\\config\\config.local.js",
-    "defaultExtension": "C:\\message-board\\node_modules\\egg-view\\config\\config.default.js"
+    "defaultExtension": "C:\\message-board\\node_modules\\egg-view\\config\\config.default.js",
+    "mapping": "C:\\message-board\\node_modules\\egg-view\\config\\config.default.js"
   },
   "mongoose": {
     "client": {
@@ -37,10 +35,10 @@
       "enable": "C:\\message-board\\config\\config.default.js",
       "useSession": "C:\\message-board\\config\\config.default.js",
       "sessionName": "C:\\message-board\\config\\config.default.js",
+      "headerName": "C:\\message-board\\config\\config.default.js",
       "type": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "ignoreJSON": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "cookieName": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "headerName": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "bodyName": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "queryName": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "refererWhiteList": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
@@ -86,7 +84,7 @@
       "checkAddress": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     }
   },
-  "Login": {
+  "login": {
     "LOGIN_FIELD": "C:\\message-board\\config\\config.default.js"
   },
   "session": {

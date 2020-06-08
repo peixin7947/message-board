@@ -11,7 +11,7 @@
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
       "csrf": {
-        "enable": true,
+        "enable": false,
         "type": "ctoken",
         "ignoreJSON": false,
         "useSession": true,
@@ -144,13 +144,11 @@
       "maxFiles": 1000
     },
     "view": {
-      "root": "C:\\message-board\\app\\view",
+      "root": "C:\\message-board\\app\\public,C:\\message-board\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
-      "mapping": {
-        ".tpl": "nunjucks"
-      }
+      "mapping": {}
     },
     "nunjucks": {
       "autoescape": true,
@@ -312,8 +310,10 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
-    "middleware": [],
-    "Login": {
+    "middleware": [
+      "login"
+    ],
+    "login": {
       "LOGIN_FIELD": "userInfo"
     },
     "coreMiddlewares": "~config~coreMiddleware",
