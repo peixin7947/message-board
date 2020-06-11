@@ -3290,3 +3290,568 @@ hostname: ��Ϣƽ̨-������
 2020-06-08 21:33:12,278 INFO 5652 [egg-mongoose] instance[0] start successfully
 2020-06-08 21:33:12,281 INFO 5652 [egg-watcher:application] watcher start success
 2020-06-08 21:33:12,289 INFO 5652 [egg:core] dump config after ready, 7ms
+2020-06-09 09:37:24,837 INFO 11924 [egg:logger] init all loggers with options: {"dir":"C:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-09 09:37:24,888 INFO 11924 [egg-multipart] stream mode enable
+2020-06-09 09:37:25,625 INFO 11924 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-09 09:37:25,779 INFO 11924 [egg-static] starting static serve / -> C:\message-board\app\public\static
+2020-06-09 09:37:25,781 INFO 11924 [egg-security] use methodnoallow middleware
+2020-06-09 09:37:25,783 INFO 11924 [egg-security] use noopen middleware
+2020-06-09 09:37:25,784 INFO 11924 [egg-security] use nosniff middleware
+2020-06-09 09:37:25,785 INFO 11924 [egg-security] use xssProtection middleware
+2020-06-09 09:37:25,787 INFO 11924 [egg-security] use xframe middleware
+2020-06-09 09:37:25,788 INFO 11924 [egg-security] use dta middleware
+2020-06-09 09:37:25,788 INFO 11924 [egg-security] compose 6 middlewares into one security middleware
+2020-06-09 09:37:25,850 INFO 11924 [egg:core] dump config after load, 4ms
+2020-06-09 09:37:25,856 INFO 11924 [egg-mongoose] starting...
+2020-06-09 09:37:25,882 INFO 11924 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-09 09:37:25,884 INFO 11924 [egg-mongoose] instance[0] start successfully
+2020-06-09 09:37:25,886 INFO 11924 [egg-watcher:application] watcher start success
+2020-06-09 09:37:25,894 INFO 11924 [egg:core] dump config after ready, 6ms
+2020-06-09 09:37:27,574 INFO 1732 [egg:logger] init all loggers with options: {"dir":"C:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-09 09:37:27,619 INFO 1732 [egg-multipart] stream mode enable
+2020-06-09 09:37:28,202 INFO 1732 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-09 09:37:28,324 INFO 1732 [egg-static] starting static serve / -> C:\message-board\app\public\static
+2020-06-09 09:37:28,327 INFO 1732 [egg-security] use methodnoallow middleware
+2020-06-09 09:37:28,328 INFO 1732 [egg-security] use noopen middleware
+2020-06-09 09:37:28,329 INFO 1732 [egg-security] use nosniff middleware
+2020-06-09 09:37:28,330 INFO 1732 [egg-security] use xssProtection middleware
+2020-06-09 09:37:28,331 INFO 1732 [egg-security] use xframe middleware
+2020-06-09 09:37:28,332 INFO 1732 [egg-security] use dta middleware
+2020-06-09 09:37:28,332 INFO 1732 [egg-security] compose 6 middlewares into one security middleware
+2020-06-09 09:37:28,372 INFO 1732 [egg:core] dump config after load, 5ms
+2020-06-09 09:37:28,377 INFO 1732 [egg-mongoose] starting...
+2020-06-09 09:37:28,414 INFO 1732 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-09 09:37:28,416 INFO 1732 [egg-mongoose] instance[0] start successfully
+2020-06-09 09:37:28,420 INFO 1732 [egg-watcher:application] watcher start success
+2020-06-09 09:37:28,434 INFO 1732 [egg:core] dump config after ready, 11ms
+2020-06-09 09:37:36,368 INFO 1732 [egg-view-nunjucks] loading templates from ["C:\\message-board\\app\\public\\static","C:\\message-board\\app\\public","C:\\message-board\\app\\view"]
+2020-06-09 09:39:11,544 INFO 13900 [egg:logger] init all loggers with options: {"dir":"C:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-09 09:39:11,590 INFO 13900 [egg-multipart] stream mode enable
+2020-06-09 09:39:12,102 INFO 13900 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-09 09:39:12,230 INFO 13900 [egg-static] starting static serve /public/ -> C:\message-board\app\public
+2020-06-09 09:39:12,233 INFO 13900 [egg-security] use methodnoallow middleware
+2020-06-09 09:39:12,234 INFO 13900 [egg-security] use noopen middleware
+2020-06-09 09:39:12,235 INFO 13900 [egg-security] use nosniff middleware
+2020-06-09 09:39:12,235 INFO 13900 [egg-security] use xssProtection middleware
+2020-06-09 09:39:12,236 INFO 13900 [egg-security] use xframe middleware
+2020-06-09 09:39:12,237 INFO 13900 [egg-security] use dta middleware
+2020-06-09 09:39:12,237 INFO 13900 [egg-security] compose 6 middlewares into one security middleware
+2020-06-09 09:39:12,272 INFO 13900 [egg:core] dump config after load, 5ms
+2020-06-09 09:39:12,280 INFO 13900 [egg-mongoose] starting...
+2020-06-09 09:39:12,309 INFO 13900 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-09 09:39:12,310 INFO 13900 [egg-mongoose] instance[0] start successfully
+2020-06-09 09:39:12,313 INFO 13900 [egg-watcher:application] watcher start success
+2020-06-09 09:39:12,321 INFO 13900 [egg:core] dump config after ready, 6ms
+2020-06-09 10:30:17,505 WARN 13900 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-06-09 10:30:18,538 WARN 13900 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-06-11 10:51:58,603 INFO 13440 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 10:51:58,646 INFO 13440 [egg-multipart] stream mode enable
+2020-06-11 10:51:59,464 INFO 13440 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 10:51:59,683 INFO 13440 [egg-static] starting static serve /public/ -> D:\message-board\app\public
+2020-06-11 10:51:59,686 INFO 13440 [egg-security] use methodnoallow middleware
+2020-06-11 10:51:59,687 INFO 13440 [egg-security] use noopen middleware
+2020-06-11 10:51:59,688 INFO 13440 [egg-security] use nosniff middleware
+2020-06-11 10:51:59,688 INFO 13440 [egg-security] use xssProtection middleware
+2020-06-11 10:51:59,689 INFO 13440 [egg-security] use xframe middleware
+2020-06-11 10:51:59,690 INFO 13440 [egg-security] use dta middleware
+2020-06-11 10:51:59,690 INFO 13440 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 10:51:59,706 INFO 13440 [egg:core] dump config after load, 4ms
+2020-06-11 10:51:59,711 INFO 13440 [egg-mongoose] starting...
+2020-06-11 10:51:59,741 INFO 13440 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 10:51:59,743 INFO 13440 [egg-mongoose] instance[0] start successfully
+2020-06-11 10:51:59,748 INFO 13440 [egg-watcher:application] watcher start success
+2020-06-11 10:51:59,758 INFO 13440 [egg:core] dump config after ready, 7ms
+2020-06-11 10:52:07,603 INFO 4032 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 10:52:07,658 INFO 4032 [egg-multipart] stream mode enable
+2020-06-11 10:52:08,229 INFO 4032 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 10:52:08,330 INFO 4032 [egg-static] starting static serve /public/ -> D:\message-board\app\public
+2020-06-11 10:52:08,333 INFO 4032 [egg-security] use methodnoallow middleware
+2020-06-11 10:52:08,333 INFO 4032 [egg-security] use noopen middleware
+2020-06-11 10:52:08,334 INFO 4032 [egg-security] use nosniff middleware
+2020-06-11 10:52:08,335 INFO 4032 [egg-security] use xssProtection middleware
+2020-06-11 10:52:08,336 INFO 4032 [egg-security] use xframe middleware
+2020-06-11 10:52:08,336 INFO 4032 [egg-security] use dta middleware
+2020-06-11 10:52:08,336 INFO 4032 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 10:52:08,350 INFO 4032 [egg:core] dump config after load, 4ms
+2020-06-11 10:52:08,356 INFO 4032 [egg-mongoose] starting...
+2020-06-11 10:52:08,385 INFO 4032 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 10:52:08,386 INFO 4032 [egg-mongoose] instance[0] start successfully
+2020-06-11 10:52:08,395 INFO 4032 [egg-watcher:application] watcher start success
+2020-06-11 10:52:08,402 INFO 4032 [egg:core] dump config after ready, 5ms
+2020-06-11 10:58:46,863 INFO 12756 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 10:58:46,906 INFO 12756 [egg-multipart] stream mode enable
+2020-06-11 10:58:47,426 INFO 12756 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 10:58:47,550 INFO 12756 [egg-static] starting static serve /public/ -> D:\message-board\app\public
+2020-06-11 10:58:47,553 INFO 12756 [egg-security] use methodnoallow middleware
+2020-06-11 10:58:47,554 INFO 12756 [egg-security] use noopen middleware
+2020-06-11 10:58:47,555 INFO 12756 [egg-security] use nosniff middleware
+2020-06-11 10:58:47,556 INFO 12756 [egg-security] use xssProtection middleware
+2020-06-11 10:58:47,557 INFO 12756 [egg-security] use xframe middleware
+2020-06-11 10:58:47,558 INFO 12756 [egg-security] use dta middleware
+2020-06-11 10:58:47,558 INFO 12756 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 10:58:47,687 INFO 12756 [egg:core] dump config after load, 4ms
+2020-06-11 10:58:47,694 INFO 12756 [egg-mongoose] starting...
+2020-06-11 10:58:47,725 INFO 12756 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 10:58:47,726 INFO 12756 [egg-mongoose] instance[0] start successfully
+2020-06-11 10:58:47,729 INFO 12756 [egg-watcher:application] watcher start success
+2020-06-11 10:58:47,736 INFO 12756 [egg:core] dump config after ready, 5ms
+2020-06-11 10:59:34,483 INFO 12756 [egg-view-nunjucks] loading templates from ["D:\\message-board\\app\\public\\static","D:\\message-board\\app\\public","D:\\message-board\\app\\view"]
+2020-06-11 11:01:42,615 INFO 11088 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:01:42,660 INFO 11088 [egg-multipart] stream mode enable
+2020-06-11 11:01:43,163 INFO 11088 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:01:43,353 INFO 11088 [egg-static] starting static serve / -> D:\message-board\app\public\static
+2020-06-11 11:01:43,356 INFO 11088 [egg-security] use methodnoallow middleware
+2020-06-11 11:01:43,357 INFO 11088 [egg-security] use noopen middleware
+2020-06-11 11:01:43,358 INFO 11088 [egg-security] use nosniff middleware
+2020-06-11 11:01:43,358 INFO 11088 [egg-security] use xssProtection middleware
+2020-06-11 11:01:43,359 INFO 11088 [egg-security] use xframe middleware
+2020-06-11 11:01:43,361 INFO 11088 [egg-security] use dta middleware
+2020-06-11 11:01:43,361 INFO 11088 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:01:43,405 INFO 11088 [egg:core] dump config after load, 5ms
+2020-06-11 11:01:43,414 INFO 11088 [egg-mongoose] starting...
+2020-06-11 11:01:43,459 INFO 11088 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:01:43,461 INFO 11088 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:01:43,464 INFO 11088 [egg-watcher:application] watcher start success
+2020-06-11 11:01:43,472 INFO 11088 [egg:core] dump config after ready, 6ms
+2020-06-11 11:01:49,198 INFO 6928 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:01:49,244 INFO 6928 [egg-multipart] stream mode enable
+2020-06-11 11:01:49,777 INFO 6928 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:01:49,895 INFO 6928 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:01:49,898 INFO 6928 [egg-security] use methodnoallow middleware
+2020-06-11 11:01:49,899 INFO 6928 [egg-security] use noopen middleware
+2020-06-11 11:01:49,900 INFO 6928 [egg-security] use nosniff middleware
+2020-06-11 11:01:49,901 INFO 6928 [egg-security] use xssProtection middleware
+2020-06-11 11:01:49,901 INFO 6928 [egg-security] use xframe middleware
+2020-06-11 11:01:49,902 INFO 6928 [egg-security] use dta middleware
+2020-06-11 11:01:49,903 INFO 6928 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:01:49,944 INFO 6928 [egg:core] dump config after load, 4ms
+2020-06-11 11:01:49,952 INFO 6928 [egg-mongoose] starting...
+2020-06-11 11:01:49,988 INFO 6928 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:01:49,990 INFO 6928 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:01:49,992 INFO 6928 [egg-watcher:application] watcher start success
+2020-06-11 11:01:49,999 INFO 6928 [egg:core] dump config after ready, 5ms
+2020-06-11 11:02:30,999 INFO 6928 [egg-view-nunjucks] loading templates from ["D:\\message-board\\app\\public\\static","D:\\message-board\\app\\public","D:\\message-board\\app\\view"]
+2020-06-11 11:06:39,913 INFO 7416 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:06:39,954 INFO 7416 [egg-multipart] stream mode enable
+2020-06-11 11:06:40,437 INFO 7416 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:06:40,552 INFO 7416 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:06:40,554 INFO 7416 [egg-security] use methodnoallow middleware
+2020-06-11 11:06:40,555 INFO 7416 [egg-security] use noopen middleware
+2020-06-11 11:06:40,556 INFO 7416 [egg-security] use nosniff middleware
+2020-06-11 11:06:40,557 INFO 7416 [egg-security] use xssProtection middleware
+2020-06-11 11:06:40,557 INFO 7416 [egg-security] use xframe middleware
+2020-06-11 11:06:40,558 INFO 7416 [egg-security] use dta middleware
+2020-06-11 11:06:40,558 INFO 7416 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:06:40,596 INFO 7416 [egg:core] dump config after load, 4ms
+2020-06-11 11:06:40,603 INFO 7416 [egg-mongoose] starting...
+2020-06-11 11:06:40,630 INFO 7416 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:06:40,632 INFO 7416 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:06:40,635 INFO 7416 [egg-watcher:application] watcher start success
+2020-06-11 11:06:40,642 INFO 7416 [egg:core] dump config after ready, 5ms
+2020-06-11 11:06:44,533 INFO 7416 [egg-view-nunjucks] loading templates from ["D:\\message-board\\app\\public\\static","D:\\message-board\\app\\public","D:\\message-board\\app\\view"]
+2020-06-11 11:08:25,408 INFO 9040 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:08:25,451 INFO 9040 [egg-multipart] stream mode enable
+2020-06-11 11:08:25,887 INFO 9040 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:08:25,989 INFO 9040 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:08:25,991 INFO 9040 [egg-security] use methodnoallow middleware
+2020-06-11 11:08:25,992 INFO 9040 [egg-security] use noopen middleware
+2020-06-11 11:08:25,993 INFO 9040 [egg-security] use nosniff middleware
+2020-06-11 11:08:25,994 INFO 9040 [egg-security] use xssProtection middleware
+2020-06-11 11:08:25,994 INFO 9040 [egg-security] use xframe middleware
+2020-06-11 11:08:25,995 INFO 9040 [egg-security] use dta middleware
+2020-06-11 11:08:25,995 INFO 9040 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:08:26,031 INFO 9040 [egg:core] dump config after load, 4ms
+2020-06-11 11:08:26,038 INFO 9040 [egg-mongoose] starting...
+2020-06-11 11:08:26,065 INFO 9040 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:08:26,066 INFO 9040 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:08:26,070 INFO 9040 [egg-watcher:application] watcher start success
+2020-06-11 11:08:26,077 INFO 9040 [egg:core] dump config after ready, 5ms
+2020-06-11 11:09:01,010 INFO 4540 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:09:01,052 INFO 4540 [egg-multipart] stream mode enable
+2020-06-11 11:09:01,481 INFO 4540 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:09:01,589 INFO 4540 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:09:01,592 INFO 4540 [egg-security] use methodnoallow middleware
+2020-06-11 11:09:01,592 INFO 4540 [egg-security] use noopen middleware
+2020-06-11 11:09:01,593 INFO 4540 [egg-security] use nosniff middleware
+2020-06-11 11:09:01,594 INFO 4540 [egg-security] use xssProtection middleware
+2020-06-11 11:09:01,596 INFO 4540 [egg-security] use xframe middleware
+2020-06-11 11:09:01,596 INFO 4540 [egg-security] use dta middleware
+2020-06-11 11:09:01,596 INFO 4540 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:09:01,630 INFO 4540 [egg:core] dump config after load, 4ms
+2020-06-11 11:09:01,637 INFO 4540 [egg-mongoose] starting...
+2020-06-11 11:09:01,665 INFO 4540 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:09:01,666 INFO 4540 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:09:01,669 INFO 4540 [egg-watcher:application] watcher start success
+2020-06-11 11:09:01,678 INFO 4540 [egg:core] dump config after ready, 7ms
+2020-06-11 11:10:20,366 INFO 3268 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:10:20,411 INFO 3268 [egg-multipart] stream mode enable
+2020-06-11 11:10:20,858 INFO 3268 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:10:20,963 INFO 3268 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:10:20,966 INFO 3268 [egg-security] use methodnoallow middleware
+2020-06-11 11:10:20,966 INFO 3268 [egg-security] use noopen middleware
+2020-06-11 11:10:20,967 INFO 3268 [egg-security] use nosniff middleware
+2020-06-11 11:10:20,968 INFO 3268 [egg-security] use xssProtection middleware
+2020-06-11 11:10:20,969 INFO 3268 [egg-security] use xframe middleware
+2020-06-11 11:10:20,970 INFO 3268 [egg-security] use dta middleware
+2020-06-11 11:10:20,970 INFO 3268 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:10:21,012 INFO 3268 [egg:core] dump config after load, 5ms
+2020-06-11 11:10:21,022 INFO 3268 [egg-mongoose] starting...
+2020-06-11 11:10:21,056 INFO 3268 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:10:21,057 INFO 3268 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:10:21,060 INFO 3268 [egg-watcher:application] watcher start success
+2020-06-11 11:10:21,069 INFO 3268 [egg:core] dump config after ready, 7ms
+2020-06-11 11:10:35,883 INFO 3268 [egg-view-nunjucks] loading templates from ["D:\\message-board\\app\\public","D:\\message-board\\app\\view"]
+2020-06-11 11:12:26,332 INFO 8256 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:12:26,376 INFO 8256 [egg-multipart] stream mode enable
+2020-06-11 11:12:26,830 INFO 8256 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:12:26,932 INFO 8256 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:12:26,934 INFO 8256 [egg-security] use methodnoallow middleware
+2020-06-11 11:12:26,935 INFO 8256 [egg-security] use noopen middleware
+2020-06-11 11:12:26,936 INFO 8256 [egg-security] use nosniff middleware
+2020-06-11 11:12:26,936 INFO 8256 [egg-security] use xssProtection middleware
+2020-06-11 11:12:26,937 INFO 8256 [egg-security] use xframe middleware
+2020-06-11 11:12:26,938 INFO 8256 [egg-security] use dta middleware
+2020-06-11 11:12:26,938 INFO 8256 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:12:26,972 INFO 8256 [egg:core] dump config after load, 4ms
+2020-06-11 11:12:26,979 INFO 8256 [egg-mongoose] starting...
+2020-06-11 11:12:27,005 INFO 8256 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:12:27,006 INFO 8256 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:12:27,009 INFO 8256 [egg-watcher:application] watcher start success
+2020-06-11 11:12:27,016 INFO 8256 [egg:core] dump config after ready, 4ms
+2020-06-11 11:12:37,040 INFO 15876 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:12:37,080 INFO 15876 [egg-multipart] stream mode enable
+2020-06-11 11:12:37,519 INFO 15876 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:12:37,619 INFO 15876 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:12:37,622 INFO 15876 [egg-security] use methodnoallow middleware
+2020-06-11 11:12:37,622 INFO 15876 [egg-security] use noopen middleware
+2020-06-11 11:12:37,623 INFO 15876 [egg-security] use nosniff middleware
+2020-06-11 11:12:37,624 INFO 15876 [egg-security] use xssProtection middleware
+2020-06-11 11:12:37,625 INFO 15876 [egg-security] use xframe middleware
+2020-06-11 11:12:37,625 INFO 15876 [egg-security] use dta middleware
+2020-06-11 11:12:37,625 INFO 15876 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:12:37,659 INFO 15876 [egg:core] dump config after load, 3ms
+2020-06-11 11:12:37,667 INFO 15876 [egg-mongoose] starting...
+2020-06-11 11:12:37,693 INFO 15876 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:12:37,695 INFO 15876 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:12:37,697 INFO 15876 [egg-watcher:application] watcher start success
+2020-06-11 11:12:37,704 INFO 15876 [egg:core] dump config after ready, 5ms
+2020-06-11 11:12:46,011 INFO 128 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:12:46,056 INFO 128 [egg-multipart] stream mode enable
+2020-06-11 11:12:46,573 INFO 128 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:12:46,680 INFO 128 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:12:46,683 INFO 128 [egg-security] use methodnoallow middleware
+2020-06-11 11:12:46,684 INFO 128 [egg-security] use noopen middleware
+2020-06-11 11:12:46,685 INFO 128 [egg-security] use nosniff middleware
+2020-06-11 11:12:46,685 INFO 128 [egg-security] use xssProtection middleware
+2020-06-11 11:12:46,686 INFO 128 [egg-security] use xframe middleware
+2020-06-11 11:12:46,687 INFO 128 [egg-security] use dta middleware
+2020-06-11 11:12:46,687 INFO 128 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:12:46,724 INFO 128 [egg:core] dump config after load, 4ms
+2020-06-11 11:12:46,730 INFO 128 [egg-mongoose] starting...
+2020-06-11 11:12:46,756 INFO 128 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:12:46,757 INFO 128 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:12:46,760 INFO 128 [egg-watcher:application] watcher start success
+2020-06-11 11:12:46,767 INFO 128 [egg:core] dump config after ready, 5ms
+2020-06-11 11:18:02,081 INFO 4000 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:18:02,121 INFO 4000 [egg-multipart] stream mode enable
+2020-06-11 11:18:02,563 INFO 4000 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:18:02,665 INFO 4000 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:18:02,665 INFO 4000 [egg-static] starting static serve / -> D:\message-board\app\public\static
+2020-06-11 11:18:02,667 INFO 4000 [egg-security] use methodnoallow middleware
+2020-06-11 11:18:02,668 INFO 4000 [egg-security] use noopen middleware
+2020-06-11 11:18:02,669 INFO 4000 [egg-security] use nosniff middleware
+2020-06-11 11:18:02,670 INFO 4000 [egg-security] use xssProtection middleware
+2020-06-11 11:18:02,671 INFO 4000 [egg-security] use xframe middleware
+2020-06-11 11:18:02,671 INFO 4000 [egg-security] use dta middleware
+2020-06-11 11:18:02,671 INFO 4000 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:18:02,705 INFO 4000 [egg:core] dump config after load, 4ms
+2020-06-11 11:18:02,711 INFO 4000 [egg-mongoose] starting...
+2020-06-11 11:18:02,740 INFO 4000 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:18:02,741 INFO 4000 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:18:02,744 INFO 4000 [egg-watcher:application] watcher start success
+2020-06-11 11:18:02,751 INFO 4000 [egg:core] dump config after ready, 5ms
+2020-06-11 11:18:57,577 INFO 4000 [egg-view-nunjucks] loading templates from ["D:\\message-board\\app\\public","D:\\message-board\\app\\view"]
+2020-06-11 11:19:19,684 INFO 3696 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:19:19,724 INFO 3696 [egg-multipart] stream mode enable
+2020-06-11 11:19:20,176 INFO 3696 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:19:20,276 INFO 3696 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:19:20,278 INFO 3696 [egg-security] use methodnoallow middleware
+2020-06-11 11:19:20,279 INFO 3696 [egg-security] use noopen middleware
+2020-06-11 11:19:20,280 INFO 3696 [egg-security] use nosniff middleware
+2020-06-11 11:19:20,280 INFO 3696 [egg-security] use xssProtection middleware
+2020-06-11 11:19:20,281 INFO 3696 [egg-security] use xframe middleware
+2020-06-11 11:19:20,282 INFO 3696 [egg-security] use dta middleware
+2020-06-11 11:19:20,282 INFO 3696 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:19:20,317 INFO 3696 [egg:core] dump config after load, 4ms
+2020-06-11 11:19:20,324 INFO 3696 [egg-mongoose] starting...
+2020-06-11 11:19:20,355 INFO 3696 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:19:20,356 INFO 3696 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:19:20,359 INFO 3696 [egg-watcher:application] watcher start success
+2020-06-11 11:19:20,371 INFO 3696 [egg:core] dump config after ready, 10ms
+2020-06-11 11:19:28,070 INFO 3696 [egg-view-nunjucks] loading templates from ["D:\\message-board\\app\\public","D:\\message-board\\app\\view"]
+2020-06-11 11:19:40,214 INFO 11468 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:19:40,257 INFO 11468 [egg-multipart] stream mode enable
+2020-06-11 11:19:40,700 INFO 11468 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:19:40,810 INFO 11468 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:19:40,810 INFO 11468 [egg-static] starting static serve / -> D:\message-board\app\public\static
+2020-06-11 11:19:40,812 INFO 11468 [egg-security] use methodnoallow middleware
+2020-06-11 11:19:40,813 INFO 11468 [egg-security] use noopen middleware
+2020-06-11 11:19:40,814 INFO 11468 [egg-security] use nosniff middleware
+2020-06-11 11:19:40,815 INFO 11468 [egg-security] use xssProtection middleware
+2020-06-11 11:19:40,816 INFO 11468 [egg-security] use xframe middleware
+2020-06-11 11:19:40,817 INFO 11468 [egg-security] use dta middleware
+2020-06-11 11:19:40,817 INFO 11468 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:19:40,853 INFO 11468 [egg:core] dump config after load, 4ms
+2020-06-11 11:19:40,859 INFO 11468 [egg-mongoose] starting...
+2020-06-11 11:19:40,887 INFO 11468 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:19:40,889 INFO 11468 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:19:40,891 INFO 11468 [egg-watcher:application] watcher start success
+2020-06-11 11:19:40,898 INFO 11468 [egg:core] dump config after ready, 5ms
+2020-06-11 11:19:45,416 INFO 11468 [egg-view-nunjucks] loading templates from ["D:\\message-board\\app\\public","D:\\message-board\\app\\view"]
+2020-06-11 11:20:35,242 INFO 13688 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:20:35,284 INFO 13688 [egg-multipart] stream mode enable
+2020-06-11 11:20:35,778 INFO 13688 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:20:35,895 INFO 13688 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:20:35,898 INFO 13688 [egg-security] use methodnoallow middleware
+2020-06-11 11:20:35,900 INFO 13688 [egg-security] use noopen middleware
+2020-06-11 11:20:35,901 INFO 13688 [egg-security] use nosniff middleware
+2020-06-11 11:20:35,902 INFO 13688 [egg-security] use xssProtection middleware
+2020-06-11 11:20:35,903 INFO 13688 [egg-security] use xframe middleware
+2020-06-11 11:20:35,904 INFO 13688 [egg-security] use dta middleware
+2020-06-11 11:20:35,904 INFO 13688 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:20:35,947 INFO 13688 [egg:core] dump config after load, 5ms
+2020-06-11 11:20:35,956 INFO 13688 [egg-mongoose] starting...
+2020-06-11 11:20:35,991 INFO 13688 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:20:35,993 INFO 13688 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:20:35,996 INFO 13688 [egg-watcher:application] watcher start success
+2020-06-11 11:20:36,006 INFO 13688 [egg:core] dump config after ready, 6ms
+2020-06-11 11:20:51,215 INFO 4244 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:20:51,259 INFO 4244 [egg-multipart] stream mode enable
+2020-06-11 11:20:51,714 INFO 4244 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:20:51,828 INFO 4244 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:20:51,830 INFO 4244 [egg-security] use methodnoallow middleware
+2020-06-11 11:20:51,831 INFO 4244 [egg-security] use noopen middleware
+2020-06-11 11:20:51,833 INFO 4244 [egg-security] use nosniff middleware
+2020-06-11 11:20:51,834 INFO 4244 [egg-security] use xssProtection middleware
+2020-06-11 11:20:51,836 INFO 4244 [egg-security] use xframe middleware
+2020-06-11 11:20:51,836 INFO 4244 [egg-security] use dta middleware
+2020-06-11 11:20:51,836 INFO 4244 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:20:51,874 INFO 4244 [egg:core] dump config after load, 4ms
+2020-06-11 11:20:51,882 INFO 4244 [egg-mongoose] starting...
+2020-06-11 11:20:51,909 INFO 4244 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:20:51,910 INFO 4244 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:20:51,913 INFO 4244 [egg-watcher:application] watcher start success
+2020-06-11 11:20:51,920 INFO 4244 [egg:core] dump config after ready, 5ms
+2020-06-11 11:20:58,171 INFO 6328 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:20:58,215 INFO 6328 [egg-multipart] stream mode enable
+2020-06-11 11:20:58,652 INFO 6328 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:20:58,754 INFO 6328 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:20:58,757 INFO 6328 [egg-security] use methodnoallow middleware
+2020-06-11 11:20:58,757 INFO 6328 [egg-security] use noopen middleware
+2020-06-11 11:20:58,758 INFO 6328 [egg-security] use nosniff middleware
+2020-06-11 11:20:58,759 INFO 6328 [egg-security] use xssProtection middleware
+2020-06-11 11:20:58,759 INFO 6328 [egg-security] use xframe middleware
+2020-06-11 11:20:58,760 INFO 6328 [egg-security] use dta middleware
+2020-06-11 11:20:58,760 INFO 6328 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:20:58,795 INFO 6328 [egg:core] dump config after load, 4ms
+2020-06-11 11:20:58,801 INFO 6328 [egg-mongoose] starting...
+2020-06-11 11:20:58,827 INFO 6328 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:20:58,828 INFO 6328 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:20:58,831 INFO 6328 [egg-watcher:application] watcher start success
+2020-06-11 11:20:58,839 INFO 6328 [egg:core] dump config after ready, 5ms
+2020-06-11 11:21:55,147 INFO 14452 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:21:55,190 INFO 14452 [egg-multipart] stream mode enable
+2020-06-11 11:21:55,630 INFO 14452 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:21:55,730 INFO 14452 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:21:55,733 INFO 14452 [egg-security] use methodnoallow middleware
+2020-06-11 11:21:55,733 INFO 14452 [egg-security] use noopen middleware
+2020-06-11 11:21:55,734 INFO 14452 [egg-security] use nosniff middleware
+2020-06-11 11:21:55,735 INFO 14452 [egg-security] use xssProtection middleware
+2020-06-11 11:21:55,735 INFO 14452 [egg-security] use xframe middleware
+2020-06-11 11:21:55,736 INFO 14452 [egg-security] use dta middleware
+2020-06-11 11:21:55,736 INFO 14452 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:21:55,772 INFO 14452 [egg:core] dump config after load, 4ms
+2020-06-11 11:21:55,779 INFO 14452 [egg-mongoose] starting...
+2020-06-11 11:21:55,806 INFO 14452 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:21:55,807 INFO 14452 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:21:55,809 INFO 14452 [egg-watcher:application] watcher start success
+2020-06-11 11:21:55,816 INFO 14452 [egg:core] dump config after ready, 5ms
+2020-06-11 11:22:37,623 INFO 14452 [egg-view-nunjucks] loading templates from ["D:\\message-board\\app\\public","D:\\message-board\\app\\view"]
+2020-06-11 11:24:35,529 INFO 15688 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:24:35,572 INFO 15688 [egg-multipart] stream mode enable
+2020-06-11 11:24:36,022 INFO 15688 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:24:36,126 INFO 15688 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:24:36,129 INFO 15688 [egg-security] use methodnoallow middleware
+2020-06-11 11:24:36,129 INFO 15688 [egg-security] use noopen middleware
+2020-06-11 11:24:36,130 INFO 15688 [egg-security] use nosniff middleware
+2020-06-11 11:24:36,131 INFO 15688 [egg-security] use xssProtection middleware
+2020-06-11 11:24:36,132 INFO 15688 [egg-security] use xframe middleware
+2020-06-11 11:24:36,133 INFO 15688 [egg-security] use dta middleware
+2020-06-11 11:24:36,133 INFO 15688 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:24:36,168 INFO 15688 [egg:core] dump config after load, 4ms
+2020-06-11 11:24:36,174 INFO 15688 [egg-mongoose] starting...
+2020-06-11 11:24:36,202 INFO 15688 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:24:36,203 INFO 15688 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:24:36,206 INFO 15688 [egg-watcher:application] watcher start success
+2020-06-11 11:24:36,215 INFO 15688 [egg:core] dump config after ready, 6ms
+2020-06-11 11:25:07,981 INFO 4832 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:25:08,023 INFO 4832 [egg-multipart] stream mode enable
+2020-06-11 11:25:08,483 INFO 4832 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:25:08,593 INFO 4832 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:25:08,595 INFO 4832 [egg-security] use methodnoallow middleware
+2020-06-11 11:25:08,596 INFO 4832 [egg-security] use noopen middleware
+2020-06-11 11:25:08,596 INFO 4832 [egg-security] use nosniff middleware
+2020-06-11 11:25:08,597 INFO 4832 [egg-security] use xssProtection middleware
+2020-06-11 11:25:08,598 INFO 4832 [egg-security] use xframe middleware
+2020-06-11 11:25:08,599 INFO 4832 [egg-security] use dta middleware
+2020-06-11 11:25:08,599 INFO 4832 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:25:08,635 INFO 4832 [egg:core] dump config after load, 4ms
+2020-06-11 11:25:08,641 INFO 4832 [egg-mongoose] starting...
+2020-06-11 11:25:08,669 INFO 4832 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:25:08,670 INFO 4832 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:25:08,672 INFO 4832 [egg-watcher:application] watcher start success
+2020-06-11 11:25:08,680 INFO 4832 [egg:core] dump config after ready, 6ms
+2020-06-11 11:25:14,383 INFO 4832 [egg-view-nunjucks] loading templates from ["D:\\message-board\\app\\public","D:\\message-board\\app\\view"]
+2020-06-11 11:26:52,311 INFO 12960 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 11:26:52,356 INFO 12960 [egg-multipart] stream mode enable
+2020-06-11 11:26:52,814 INFO 12960 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 11:26:52,919 INFO 12960 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 11:26:52,921 INFO 12960 [egg-security] use methodnoallow middleware
+2020-06-11 11:26:52,922 INFO 12960 [egg-security] use noopen middleware
+2020-06-11 11:26:52,923 INFO 12960 [egg-security] use nosniff middleware
+2020-06-11 11:26:52,924 INFO 12960 [egg-security] use xssProtection middleware
+2020-06-11 11:26:52,924 INFO 12960 [egg-security] use xframe middleware
+2020-06-11 11:26:52,925 INFO 12960 [egg-security] use dta middleware
+2020-06-11 11:26:52,925 INFO 12960 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 11:26:52,967 INFO 12960 [egg:core] dump config after load, 5ms
+2020-06-11 11:26:52,976 INFO 12960 [egg-mongoose] starting...
+2020-06-11 11:26:53,000 INFO 12960 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 11:26:53,002 INFO 12960 [egg-mongoose] instance[0] start successfully
+2020-06-11 11:26:53,005 INFO 12960 [egg-watcher:application] watcher start success
+2020-06-11 11:26:53,013 INFO 12960 [egg:core] dump config after ready, 6ms
+2020-06-11 11:26:59,309 INFO 12960 [egg-view-nunjucks] loading templates from ["D:\\message-board\\app\\public","D:\\message-board\\app\\view"]
+2020-06-11 13:35:43,507 WARN 12960 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2020-06-11 13:35:43,540 WARN 12960 [ClusterClient:Watcher] follower closed, and try to init it again
+2020-06-11 13:36:18,830 INFO 14244 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 13:36:18,872 INFO 14244 [egg-multipart] stream mode enable
+2020-06-11 13:36:19,329 INFO 14244 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 13:36:19,435 INFO 14244 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 13:36:19,438 INFO 14244 [egg-security] use methodnoallow middleware
+2020-06-11 13:36:19,439 INFO 14244 [egg-security] use noopen middleware
+2020-06-11 13:36:19,440 INFO 14244 [egg-security] use nosniff middleware
+2020-06-11 13:36:19,441 INFO 14244 [egg-security] use xssProtection middleware
+2020-06-11 13:36:19,442 INFO 14244 [egg-security] use xframe middleware
+2020-06-11 13:36:19,442 INFO 14244 [egg-security] use dta middleware
+2020-06-11 13:36:19,442 INFO 14244 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 13:36:19,476 INFO 14244 [egg:core] dump config after load, 4ms
+2020-06-11 13:36:19,483 INFO 14244 [egg-mongoose] starting...
+2020-06-11 13:36:19,512 INFO 14244 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 13:36:19,513 INFO 14244 [egg-mongoose] instance[0] start successfully
+2020-06-11 13:36:19,516 INFO 14244 [egg-watcher:application] watcher start success
+2020-06-11 13:36:19,523 INFO 14244 [egg:core] dump config after ready, 5ms
+2020-06-11 13:36:20,888 INFO 12732 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 13:36:20,933 INFO 12732 [egg-multipart] stream mode enable
+2020-06-11 13:36:21,395 INFO 12732 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 13:36:21,561 INFO 12732 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 13:36:21,563 INFO 12732 [egg-security] use methodnoallow middleware
+2020-06-11 13:36:21,565 INFO 12732 [egg-security] use noopen middleware
+2020-06-11 13:36:21,566 INFO 12732 [egg-security] use nosniff middleware
+2020-06-11 13:36:21,567 INFO 12732 [egg-security] use xssProtection middleware
+2020-06-11 13:36:21,567 INFO 12732 [egg-security] use xframe middleware
+2020-06-11 13:36:21,568 INFO 12732 [egg-security] use dta middleware
+2020-06-11 13:36:21,568 INFO 12732 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 13:36:21,602 INFO 12732 [egg:core] dump config after load, 4ms
+2020-06-11 13:36:21,611 INFO 12732 [egg-mongoose] starting...
+2020-06-11 13:36:21,634 INFO 12732 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 13:36:21,635 INFO 12732 [egg-mongoose] instance[0] start successfully
+2020-06-11 13:36:21,638 INFO 12732 [egg-watcher:application] watcher start success
+2020-06-11 13:36:21,645 INFO 12732 [egg:core] dump config after ready, 5ms
+2020-06-11 13:36:52,738 INFO 12732 [egg-view-nunjucks] loading templates from ["D:\\message-board\\app\\public","D:\\message-board\\app\\view"]
+2020-06-11 13:39:42,665 INFO 4032 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 13:39:42,710 INFO 4032 [egg-multipart] stream mode enable
+2020-06-11 13:39:43,160 INFO 4032 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 13:39:43,265 INFO 4032 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 13:39:43,267 INFO 4032 [egg-security] use methodnoallow middleware
+2020-06-11 13:39:43,268 INFO 4032 [egg-security] use noopen middleware
+2020-06-11 13:39:43,269 INFO 4032 [egg-security] use nosniff middleware
+2020-06-11 13:39:43,270 INFO 4032 [egg-security] use xssProtection middleware
+2020-06-11 13:39:43,270 INFO 4032 [egg-security] use xframe middleware
+2020-06-11 13:39:43,271 INFO 4032 [egg-security] use dta middleware
+2020-06-11 13:39:43,271 INFO 4032 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 13:39:43,305 INFO 4032 [egg:core] dump config after load, 4ms
+2020-06-11 13:39:43,317 INFO 4032 [egg-mongoose] starting...
+2020-06-11 13:39:43,342 INFO 4032 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 13:39:43,343 INFO 4032 [egg-mongoose] instance[0] start successfully
+2020-06-11 13:39:43,346 INFO 4032 [egg-watcher:application] watcher start success
+2020-06-11 13:39:43,354 INFO 4032 [egg:core] dump config after ready, 6ms
+2020-06-11 13:42:39,369 INFO 14800 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 13:42:39,412 INFO 14800 [egg-multipart] stream mode enable
+2020-06-11 13:42:39,920 INFO 14800 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 13:42:40,022 INFO 14800 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 13:42:40,024 INFO 14800 [egg-security] use methodnoallow middleware
+2020-06-11 13:42:40,025 INFO 14800 [egg-security] use noopen middleware
+2020-06-11 13:42:40,025 INFO 14800 [egg-security] use nosniff middleware
+2020-06-11 13:42:40,026 INFO 14800 [egg-security] use xssProtection middleware
+2020-06-11 13:42:40,027 INFO 14800 [egg-security] use xframe middleware
+2020-06-11 13:42:40,028 INFO 14800 [egg-security] use dta middleware
+2020-06-11 13:42:40,028 INFO 14800 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 13:42:40,064 INFO 14800 [egg:core] dump config after load, 4ms
+2020-06-11 13:42:40,071 INFO 14800 [egg-mongoose] starting...
+2020-06-11 13:42:40,094 INFO 14800 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 13:42:40,096 INFO 14800 [egg-mongoose] instance[0] start successfully
+2020-06-11 13:42:40,099 INFO 14800 [egg-watcher:application] watcher start success
+2020-06-11 13:42:40,105 INFO 14800 [egg:core] dump config after ready, 4ms
+2020-06-11 13:43:46,853 INFO 14800 [egg-view-nunjucks] loading templates from ["D:\\message-board\\app\\public","D:\\message-board\\app\\view"]
+2020-06-11 13:44:07,875 INFO 9952 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 13:44:07,918 INFO 9952 [egg-multipart] stream mode enable
+2020-06-11 13:44:08,353 INFO 9952 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 13:44:08,465 INFO 9952 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 13:44:08,467 INFO 9952 [egg-security] use methodnoallow middleware
+2020-06-11 13:44:08,468 INFO 9952 [egg-security] use noopen middleware
+2020-06-11 13:44:08,469 INFO 9952 [egg-security] use nosniff middleware
+2020-06-11 13:44:08,469 INFO 9952 [egg-security] use xssProtection middleware
+2020-06-11 13:44:08,470 INFO 9952 [egg-security] use xframe middleware
+2020-06-11 13:44:08,471 INFO 9952 [egg-security] use dta middleware
+2020-06-11 13:44:08,471 INFO 9952 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 13:44:08,507 INFO 9952 [egg:core] dump config after load, 5ms
+2020-06-11 13:44:08,516 INFO 9952 [egg-mongoose] starting...
+2020-06-11 13:44:08,544 INFO 9952 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 13:44:08,546 INFO 9952 [egg-mongoose] instance[0] start successfully
+2020-06-11 13:44:08,548 INFO 9952 [egg-watcher:application] watcher start success
+2020-06-11 13:44:08,558 INFO 9952 [egg:core] dump config after ready, 8ms
+2020-06-11 13:48:32,111 INFO 9952 [egg-view-nunjucks] loading templates from ["D:\\message-board\\app\\public","D:\\message-board\\app\\view"]
+2020-06-11 13:48:54,501 INFO 11876 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 13:48:54,545 INFO 11876 [egg-multipart] stream mode enable
+2020-06-11 13:48:55,003 INFO 11876 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 13:48:55,106 INFO 11876 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 13:48:55,108 INFO 11876 [egg-security] use methodnoallow middleware
+2020-06-11 13:48:55,109 INFO 11876 [egg-security] use noopen middleware
+2020-06-11 13:48:55,110 INFO 11876 [egg-security] use nosniff middleware
+2020-06-11 13:48:55,110 INFO 11876 [egg-security] use xssProtection middleware
+2020-06-11 13:48:55,111 INFO 11876 [egg-security] use xframe middleware
+2020-06-11 13:48:55,112 INFO 11876 [egg-security] use dta middleware
+2020-06-11 13:48:55,112 INFO 11876 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 13:48:55,146 INFO 11876 [egg:core] dump config after load, 4ms
+2020-06-11 13:48:55,153 INFO 11876 [egg-mongoose] starting...
+2020-06-11 13:48:55,180 INFO 11876 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 13:48:55,182 INFO 11876 [egg-mongoose] instance[0] start successfully
+2020-06-11 13:48:55,184 INFO 11876 [egg-watcher:application] watcher start success
+2020-06-11 13:48:55,192 INFO 11876 [egg:core] dump config after ready, 6ms
+2020-06-11 13:49:04,155 INFO 11876 [egg-view-nunjucks] loading templates from ["D:\\message-board\\app\\public","D:\\message-board\\app\\view"]
+2020-06-11 13:52:49,741 INFO 10632 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-11 13:52:49,784 INFO 10632 [egg-multipart] stream mode enable
+2020-06-11 13:52:50,274 INFO 10632 [egg-mongoose] connecting mongodb://127.0.0.1/messageboard
+2020-06-11 13:52:50,394 INFO 10632 [egg-static] starting static serve / -> D:\message-board\app\public
+2020-06-11 13:52:50,397 INFO 10632 [egg-security] use methodnoallow middleware
+2020-06-11 13:52:50,398 INFO 10632 [egg-security] use noopen middleware
+2020-06-11 13:52:50,398 INFO 10632 [egg-security] use nosniff middleware
+2020-06-11 13:52:50,399 INFO 10632 [egg-security] use xssProtection middleware
+2020-06-11 13:52:50,400 INFO 10632 [egg-security] use xframe middleware
+2020-06-11 13:52:50,401 INFO 10632 [egg-security] use dta middleware
+2020-06-11 13:52:50,401 INFO 10632 [egg-security] compose 6 middlewares into one security middleware
+2020-06-11 13:52:50,437 INFO 10632 [egg:core] dump config after load, 4ms
+2020-06-11 13:52:50,444 INFO 10632 [egg-mongoose] starting...
+2020-06-11 13:52:50,470 INFO 10632 [egg-mongoose] mongodb://127.0.0.1/messageboard connected successfully
+2020-06-11 13:52:50,471 INFO 10632 [egg-mongoose] instance[0] start successfully
+2020-06-11 13:52:50,474 INFO 10632 [egg-watcher:application] watcher start success
+2020-06-11 13:52:50,481 INFO 10632 [egg:core] dump config after ready, 5ms

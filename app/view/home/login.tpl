@@ -7,29 +7,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!--图标-->
-        <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
 
         <!--布局框架-->
-        <link rel="stylesheet" type="text/css" href="/css/util.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/util.css">
 
         <!--主要样式-->
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     </head>
 
     <body>
-
         <div class="login">
             <div class="container-login100">
                 <div class="wrap-login100">
                     <div class="login100-pic js-tilt" data-tilt>
-                        <img src="/img/img-01.png" alt="IMG">
+                        <img src="/static/img/img-01.png" alt="IMG">
                     </div>
 
                     <form class="login100-form validate-form" method="POST" action="/login">
                         <span class="login100-form-title">
                             登陆留言板
                         </span>
-
+                        <h5 style="text-align: center; color: #ff0000">{{message}}</h5>
                         <div class="wrap-input100 validate-input">
                             <input class="input100" type="text" name="username" placeholder="用户名">
                             <span class="focus-input100"></span>
@@ -70,5 +69,4 @@
         </div>
 
     </body>
-
 </html>

@@ -1,303 +1,305 @@
 {
-  "keys": "C:\\message-board\\config\\config.default.js",
+  "keys": "D:\\message-board\\config\\config.default.js",
   "view": {
-    "defaultViewEngine": "C:\\message-board\\config\\config.default.js",
-    "root": "C:\\message-board\\config\\config.default.js",
-    "cache": "C:\\message-board\\node_modules\\egg-view\\config\\config.local.js",
-    "defaultExtension": "C:\\message-board\\node_modules\\egg-view\\config\\config.default.js",
-    "mapping": "C:\\message-board\\node_modules\\egg-view\\config\\config.default.js"
+    "defaultViewEngine": "D:\\message-board\\config\\config.default.js",
+    "root": "D:\\message-board\\config\\config.default.js",
+    "cache": "D:\\message-board\\node_modules\\egg-view\\config\\config.local.js",
+    "defaultExtension": "D:\\message-board\\node_modules\\egg-view\\config\\config.default.js",
+    "mapping": "D:\\message-board\\node_modules\\egg-view\\config\\config.default.js"
   },
   "mongoose": {
     "client": {
-      "url": "C:\\message-board\\config\\config.default.js",
+      "url": "D:\\message-board\\config\\config.default.js",
       "options": {
-        "useNewUrlParser": "C:\\message-board\\config\\config.default.js"
+        "useNewUrlParser": "D:\\message-board\\config\\config.default.js"
       }
     },
-    "url": "C:\\message-board\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "options": "C:\\message-board\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "plugins": "C:\\message-board\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "loadModel": "C:\\message-board\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "app": "C:\\message-board\\node_modules\\egg-mongoose\\config\\config.default.js",
-    "agent": "C:\\message-board\\node_modules\\egg-mongoose\\config\\config.default.js"
+    "url": "D:\\message-board\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "options": "D:\\message-board\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "plugins": "D:\\message-board\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "loadModel": "D:\\message-board\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "app": "D:\\message-board\\node_modules\\egg-mongoose\\config\\config.default.js",
+    "agent": "D:\\message-board\\node_modules\\egg-mongoose\\config\\config.default.js"
   },
   "static": {
-    "prefix": "C:\\message-board\\config\\config.default.js",
-    "dir": "C:\\message-board\\config\\config.default.js",
-    "dynamic": "C:\\message-board\\node_modules\\egg-static\\config\\config.default.js",
-    "preload": "C:\\message-board\\node_modules\\egg-static\\config\\config.default.js",
-    "buffer": "C:\\message-board\\node_modules\\egg-static\\config\\config.default.js",
-    "maxFiles": "C:\\message-board\\node_modules\\egg-static\\config\\config.default.js"
+    "prefix": "D:\\message-board\\config\\config.default.js",
+    "dir": "D:\\message-board\\config\\config.default.js",
+    "maxAge": "D:\\message-board\\config\\config.default.js",
+    "dynamic": "D:\\message-board\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "D:\\message-board\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "D:\\message-board\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "D:\\message-board\\node_modules\\egg-static\\config\\config.default.js"
   },
-  "middleware": "C:\\message-board\\config\\config.default.js",
+  "middleware": "D:\\message-board\\config\\config.default.js",
   "security": {
     "csrf": {
-      "enable": "C:\\message-board\\config\\config.default.js",
-      "useSession": "C:\\message-board\\config\\config.default.js",
-      "sessionName": "C:\\message-board\\config\\config.default.js",
-      "headerName": "C:\\message-board\\config\\config.default.js",
-      "type": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "ignoreJSON": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "cookieName": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "bodyName": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "queryName": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "refererWhiteList": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\message-board\\config\\config.default.js",
+      "useSession": "D:\\message-board\\config\\config.default.js",
+      "sessionName": "D:\\message-board\\config\\config.default.js",
+      "headerName": "D:\\message-board\\config\\config.default.js",
+      "type": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+      "refererWhiteList": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     },
-    "domainWhiteList": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-    "protocolWhiteList": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+    "domainWhiteList": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
     "xframe": {
-      "enable": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     },
     "hsts": {
-      "enable": "C:\\message-board\\node_modules\\egg-security\\config\\config.local.js",
-      "maxAge": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "includeSubdomains": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\message-board\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     },
     "dta": {
-      "enable": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     },
     "methodnoallow": {
-      "enable": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     },
     "noopen": {
-      "enable": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     },
     "nosniff": {
-      "enable": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     },
     "referrerPolicy": {
-      "enable": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     },
     "xssProtection": {
-      "enable": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     },
     "csp": {
-      "enable": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "policy": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "checkAddress": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
+      "ipBlackList": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     }
   },
   "login": {
-    "LOGIN_FIELD": "C:\\message-board\\config\\config.default.js"
+    "LOGIN_FIELD": "D:\\message-board\\config\\config.default.js",
+    "ignore": "D:\\message-board\\config\\config.default.js"
   },
   "session": {
-    "maxAge": "C:\\message-board\\node_modules\\egg-session\\config\\config.default.js",
-    "key": "C:\\message-board\\node_modules\\egg-session\\config\\config.default.js",
-    "httpOnly": "C:\\message-board\\node_modules\\egg-session\\config\\config.default.js",
-    "encrypt": "C:\\message-board\\node_modules\\egg-session\\config\\config.default.js"
+    "maxAge": "D:\\message-board\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "D:\\message-board\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "D:\\message-board\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "D:\\message-board\\node_modules\\egg-session\\config\\config.default.js"
   },
   "helper": {
-    "shtml": "C:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
+    "shtml": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
   },
   "jsonp": {
-    "limit": "C:\\message-board\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "callback": "C:\\message-board\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "csrf": "C:\\message-board\\node_modules\\egg-jsonp\\config\\config.default.js"
+    "limit": "D:\\message-board\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "D:\\message-board\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "D:\\message-board\\node_modules\\egg-jsonp\\config\\config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "C:\\message-board\\node_modules\\egg-onerror\\config\\config.default.js",
-    "appErrorFilter": "C:\\message-board\\node_modules\\egg-onerror\\config\\config.default.js",
-    "templatePath": "C:\\message-board\\node_modules\\egg-onerror\\config\\config.default.js"
+    "errorPageUrl": "D:\\message-board\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "D:\\message-board\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "D:\\message-board\\node_modules\\egg-onerror\\config\\config.default.js"
   },
   "i18n": {
-    "defaultLocale": "C:\\message-board\\node_modules\\egg-i18n\\config\\config.default.js",
-    "dirs": "C:\\message-board\\node_modules\\egg-i18n\\config\\config.default.js",
-    "queryField": "C:\\message-board\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieField": "C:\\message-board\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieDomain": "C:\\message-board\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieMaxAge": "C:\\message-board\\node_modules\\egg-i18n\\config\\config.default.js"
+    "defaultLocale": "D:\\message-board\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "D:\\message-board\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "D:\\message-board\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "D:\\message-board\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "D:\\message-board\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "D:\\message-board\\node_modules\\egg-i18n\\config\\config.default.js"
   },
   "watcher": {
-    "type": "C:\\message-board\\node_modules\\egg-watcher\\config\\config.local.js",
+    "type": "D:\\message-board\\node_modules\\egg-watcher\\config\\config.local.js",
     "eventSources": {
-      "default": "C:\\message-board\\node_modules\\egg-watcher\\config\\config.default.js",
-      "development": "C:\\message-board\\node_modules\\egg-watcher\\config\\config.default.js"
+      "default": "D:\\message-board\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "D:\\message-board\\node_modules\\egg-watcher\\config\\config.default.js"
     }
   },
   "customLogger": {
     "scheduleLogger": {
-      "consoleLevel": "C:\\message-board\\node_modules\\egg-schedule\\config\\config.default.js",
-      "file": "C:\\message-board\\node_modules\\egg-schedule\\config\\config.default.js"
+      "consoleLevel": "D:\\message-board\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "D:\\message-board\\node_modules\\egg-schedule\\config\\config.default.js"
     }
   },
   "schedule": {
-    "directory": "C:\\message-board\\node_modules\\egg-schedule\\config\\config.default.js"
+    "directory": "D:\\message-board\\node_modules\\egg-schedule\\config\\config.default.js"
   },
   "multipart": {
-    "mode": "C:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "autoFields": "C:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "defaultCharset": "C:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldNameSize": "C:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldSize": "C:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fields": "C:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileSize": "C:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "files": "C:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileExtensions": "C:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "whitelist": "C:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "tmpdir": "C:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "mode": "D:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "autoFields": "D:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "D:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "D:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "D:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "D:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "D:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "D:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "D:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "D:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "D:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
     "cleanSchedule": {
-      "cron": "C:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js"
+      "cron": "D:\\message-board\\node_modules\\egg-multipart\\config\\config.default.js"
     }
   },
   "development": {
-    "watchDirs": "C:\\message-board\\node_modules\\egg-development\\config\\config.default.js",
-    "ignoreDirs": "C:\\message-board\\node_modules\\egg-development\\config\\config.default.js",
-    "fastReady": "C:\\message-board\\node_modules\\egg-development\\config\\config.default.js",
-    "reloadOnDebug": "C:\\message-board\\node_modules\\egg-development\\config\\config.default.js",
-    "overrideDefault": "C:\\message-board\\node_modules\\egg-development\\config\\config.default.js"
+    "watchDirs": "D:\\message-board\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "D:\\message-board\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "D:\\message-board\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "D:\\message-board\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "D:\\message-board\\node_modules\\egg-development\\config\\config.default.js"
   },
   "logrotator": {
-    "filesRotateByHour": "C:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "hourDelimiter": "C:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "filesRotateBySize": "C:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFileSize": "C:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFiles": "C:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "rotateDuration": "C:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxDays": "C:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js"
+    "filesRotateByHour": "D:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "D:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "D:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "D:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "D:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "D:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "D:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js"
   },
   "nunjucks": {
-    "autoescape": "C:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
-    "throwOnUndefined": "C:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
-    "trimBlocks": "C:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
-    "lstripBlocks": "C:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
-    "cache": "C:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.local.js"
+    "autoescape": "D:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "throwOnUndefined": "D:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "trimBlocks": "D:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "lstripBlocks": "D:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "cache": "D:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.local.js"
   },
-  "env": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-  "name": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-  "cookies": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-  "proxy": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-  "maxIpsCount": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-  "maxProxyCount": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-  "protocolHeaders": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-  "ipHeaders": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-  "hostHeaders": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "env": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "name": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "cookies": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "maxIpsCount": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
   "pkg": {
-    "name": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "version": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "description": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "main": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "name": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "version": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "description": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "main": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "dependencies": {
-      "egg": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "egg-bin": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "egg-mongoose": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "egg-view-nunjucks": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "joi": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "js-md5": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "nunjucks": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "xlsx": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+      "egg": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "egg-bin": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "egg-mongoose": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "egg-view-nunjucks": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "joi": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "js-md5": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "nunjucks": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "xlsx": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
-      "@typescript-eslint/eslint-plugin": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "@typescript-eslint/parser": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "eslint": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "eslint-config-airbnb-base": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "eslint-config-egg": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "eslint-plugin-import": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "eslint-plugin-vue": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+      "@typescript-eslint/eslint-plugin": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "@typescript-eslint/parser": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "eslint": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "eslint-config-airbnb-base": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "eslint-config-egg": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "eslint-plugin-import": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "eslint-plugin-vue": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
     },
     "scripts": {
-      "test": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "dev": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "debug": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+      "test": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "dev": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "debug": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
     },
-    "author": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "license": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+    "author": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "license": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
   },
-  "baseDir": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-  "HOME": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-  "rundir": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "baseDir": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
   "dump": {
-    "ignore": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+    "ignore": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
   },
   "confusedConfigurations": {
-    "bodyparser": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "notFound": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "sitefile": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "middlewares": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "httpClient": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+    "bodyparser": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
   },
   "notfound": {
-    "pageUrl": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+    "pageUrl": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+    "/favicon.ico": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
   },
   "bodyParser": {
-    "enable": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "formLimit": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "jsonLimit": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "textLimit": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "strict": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "enable": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "textLimit": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "strict": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "queryString": {
-      "arrayLimit": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "depth": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "parameterLimit": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+      "arrayLimit": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "depth": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
     },
-    "onerror": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+    "onerror": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
   },
   "logger": {
-    "dir": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "env": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "level": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "consoleLevel": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "disableConsoleAfterReady": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "outputJSON": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "buffer": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "appLogName": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "coreLogName": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "agentLogName": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "errorLogName": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "dir": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "env": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "level": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "coreLogger": {
-      "consoleLevel": "C:\\message-board\\node_modules\\egg\\config\\config.local.js"
+      "consoleLevel": "D:\\message-board\\node_modules\\egg\\config\\config.local.js"
     },
-    "allowDebugAtProd": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+    "allowDebugAtProd": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheLookupInterval": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheMaxLength": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "enableDNSCache": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "request": {
-      "timeout": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+      "timeout": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
     }
   },
   "meta": {
-    "enable": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "logging": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+    "enable": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "logging": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
   },
-  "coreMiddleware": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-  "workerStartTimeout": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-  "serverTimeout": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "coreMiddleware": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
   "cluster": {
     "listen": {
-      "path": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "port": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "hostname": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+      "path": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "port": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "C:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "responseTimeout": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+    "maxWaitTime": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
   },
-  "onClientError": "C:\\message-board\\node_modules\\egg\\config\\config.default.js"
+  "onClientError": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
 }

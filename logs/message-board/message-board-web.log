@@ -2142,3 +2142,1235 @@ msg: "未登录"
 pid: 5652
 hostname: ��Ϣƽ̨-������
 
+2020-06-11 10:59:34,516 WARN 12756 [-/::1/-/1ms GET /css/font-awesome.min.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 12756
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 10:59:34,592 WARN 12756 [-/::1/-/1ms GET /css/util.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 12756
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 10:59:34,601 WARN 12756 [-/::1/-/0ms GET /css/main.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 12756
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 10:59:34,613 WARN 12756 [-/::1/-/3ms GET /img/img-01.png] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 12756
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 10:59:34,688 WARN 12756 [-/::1/-/1ms GET /css/font-awesome.min.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 12756
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 10:59:34,699 WARN 12756 [-/::1/-/1ms GET /css/util.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 12756
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 10:59:34,708 WARN 12756 [-/::1/-/1ms GET /css/main.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 12756
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 10:59:34,717 WARN 12756 [-/::1/-/1ms GET /img/img-01.png] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 12756
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:02:31,031 WARN 6928 [-/::1/-/3ms GET /css/font-awesome.min.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:02:31,083 WARN 6928 [-/::1/-/56ms GET /css/util.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:02:31,095 WARN 6928 [-/::1/-/2ms GET /css/main.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:02:31,107 WARN 6928 [-/::1/-/12ms GET /img/img-01.png] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:02:34,284 WARN 6928 [-/::1/-/2ms GET /css/font-awesome.min.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:02:34,292 WARN 6928 [-/::1/-/10ms GET /css/util.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:02:34,299 WARN 6928 [-/::1/-/17ms GET /css/main.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:02:34,312 WARN 6928 [-/::1/-/4ms GET /img/img-01.png] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:02:35,619 WARN 6928 [-/::1/-/2ms GET /css/font-awesome.min.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:02:35,629 WARN 6928 [-/::1/-/12ms GET /css/util.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:02:35,639 WARN 6928 [-/::1/-/2ms GET /css/main.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:03:14,783 WARN 6928 [-/::1/-/2ms GET /css/font-awesome.min.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:03:14,797 WARN 6928 [-/::1/-/3ms GET /css/util.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:03:14,812 WARN 6928 [-/::1/-/17ms GET /css/main.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:03:14,828 WARN 6928 [-/::1/-/4ms GET /img/img-01.png] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 6928
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:06:44,570 WARN 7416 [-/::1/-/3ms GET /css/font-awesome.min.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 7416
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:06:44,615 WARN 7416 [-/::1/-/3ms GET /css/util.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 7416
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:06:44,624 WARN 7416 [-/::1/-/11ms GET /css/main.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 7416
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:06:44,635 WARN 7416 [-/::1/-/3ms GET /img/img-01.png] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 7416
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:10:35,920 WARN 3268 [-/::1/-/5ms GET /css/font-awesome.min.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:10:35,989 WARN 3268 [-/::1/-/73ms GET /css/util.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:10:35,998 WARN 3268 [-/::1/-/2ms GET /css/main.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:10:36,011 WARN 3268 [-/::1/-/3ms GET /img/img-01.png] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:18,475 WARN 3268 [-/::1/-/2ms GET /css/font-awesome.min.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:18,485 WARN 3268 [-/::1/-/10ms GET /css/util.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:18,496 WARN 3268 [-/::1/-/1ms GET /css/main.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:18,507 WARN 3268 [-/::1/-/1ms GET /img/img-01.png] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:23,858 WARN 3268 [-/::1/-/2ms GET /css/font-awesome.min.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:23,867 WARN 3268 [-/::1/-/2ms GET /css/util.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:23,876 WARN 3268 [-/::1/-/3ms GET /css/main.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:23,884 WARN 3268 [-/::1/-/9ms GET /img/img-01.png] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:23,897 WARN 3268 [-/::1/-/22ms GET /css/util.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:23,909 WARN 3268 [-/::1/-/4ms GET /css/font-awesome.min.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:23,923 WARN 3268 [-/::1/-/17ms GET /css/main.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:23,931 WARN 3268 [-/::1/-/23ms GET /img/img-01.png] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:25,377 WARN 3268 [-/::1/-/4ms GET /css/font-awesome.min.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:25,390 WARN 3268 [-/::1/-/14ms GET /css/util.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:25,398 WARN 3268 [-/::1/-/21ms GET /css/main.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:27,585 WARN 3268 [-/::1/-/3ms GET /css/font-awesome.min.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:27,593 WARN 3268 [-/::1/-/9ms GET /css/util.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:27,599 WARN 3268 [-/::1/-/8ms GET /css/main.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:11:27,610 WARN 3268 [-/::1/-/2ms GET /img/img-01.png] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3268
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:19:33,709 WARN 3696 [-/::1/-/4ms GET /css/font-awesome.min.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3696
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:19:33,765 WARN 3696 [-/::1/-/3ms GET /css/util.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3696
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:19:33,779 WARN 3696 [-/::1/-/2ms GET /css/main.css] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3696
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:19:33,787 WARN 3696 [-/::1/-/9ms GET /img/img-01.png] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 3696
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:22:44,752 WARN 14452 [-/::1/-/38ms POST /login] nodejs.UnauthorizedError: Unauthorized
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:9:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+message: "Unauthorized"
+msg: "未登录"
+pid: 14452
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:25:42,724 ERROR 4832 [-/::1/-/24225ms POST /login] nodejs.AssertionError: Can't find /login/view from D:\message-board\app\public,D:\message-board\app\view
+    at Map.resolve (D:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (D:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (D:\message-board\app\controller\auth.js:18:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 4832
+hostname: ��Ϣƽ̨-������
+

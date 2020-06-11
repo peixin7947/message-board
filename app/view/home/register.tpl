@@ -7,13 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!--图标-->
-        <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
 
         <!--布局框架-->
-        <link rel="stylesheet" type="text/css" href="/css/util.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/util.css">
 
         <!--主要样式-->
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     </head>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 
@@ -23,7 +23,7 @@
             <div class="container-login100">
                 <div class="wrap-register100">
                     <div class="login100-pic js-tilt" data-tilt>
-                        <img src="/img/img-01.png" alt="IMG">
+                        <img src="/static/img/img-01.png" alt="IMG">
                     </div>
 
                     <input type="hidden" id="_csrf" value="{{ ctx.csrf }}" />

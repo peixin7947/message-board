@@ -9,13 +9,13 @@ class AuthController extends Controller {
       const user = await ctx.service.user.login(username, password);
       if (user) {
         ctx.session[this.config.login.LOGIN_FIELD] = user;
-        await ctx.redirect('/index.html');
         // 调用 rotateCsrfSecret 刷新用户的 CSRF token
         ctx.rotateCsrfSecret();
+        ctx.response.body = await ctx.renderView('index.html');
         return;
       }
     }
-    await ctx.render('/login/view', { message: '输入用户名密码错误' });
+    await ctx.render('/home/login.tpl', { message: '输入用户名密码错误' });
   }
 
   async register() {

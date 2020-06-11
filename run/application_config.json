@@ -87,27 +87,27 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "C:\\message-board\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "D:\\message-board\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
       "dirs": [
-        "C:\\message-board\\node_modules\\egg-session\\config\\locales",
-        "C:\\message-board\\node_modules\\egg-security\\config\\locales",
-        "C:\\message-board\\node_modules\\egg-jsonp\\config\\locales",
-        "C:\\message-board\\node_modules\\egg-onerror\\config\\locales",
-        "C:\\message-board\\node_modules\\egg-i18n\\config\\locales",
-        "C:\\message-board\\node_modules\\egg-watcher\\config\\locales",
-        "C:\\message-board\\node_modules\\egg-schedule\\config\\locales",
-        "C:\\message-board\\node_modules\\egg-multipart\\config\\locales",
-        "C:\\message-board\\node_modules\\egg-development\\config\\locales",
-        "C:\\message-board\\node_modules\\egg-logrotator\\config\\locales",
-        "C:\\message-board\\node_modules\\egg-static\\config\\locales",
-        "C:\\message-board\\node_modules\\egg-view\\config\\locales",
-        "C:\\message-board\\node_modules\\egg-view-nunjucks\\config\\locales",
-        "C:\\message-board\\node_modules\\egg-mongoose\\config\\locales",
-        "C:\\message-board\\node_modules\\egg\\config\\locales",
-        "C:\\message-board\\config\\locales"
+        "D:\\message-board\\node_modules\\egg-session\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-security\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-jsonp\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-onerror\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-i18n\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-watcher\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-schedule\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-multipart\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-development\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-logrotator\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-static\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-view\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-view-nunjucks\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-mongoose\\config\\locales",
+        "D:\\message-board\\node_modules\\egg\\config\\locales",
+        "D:\\message-board\\config\\locales"
       ],
       "queryField": "locale",
       "cookieField": "locale",
@@ -118,8 +118,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "C:\\message-board\\node_modules\\egg-watcher\\lib\\event-sources\\default",
-        "development": "C:\\message-board\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+        "default": "D:\\message-board\\node_modules\\egg-watcher\\lib\\event-sources\\default",
+        "development": "D:\\message-board\\node_modules\\egg-watcher\\lib\\event-sources\\development"
       }
     },
     "customLogger": {
@@ -166,18 +166,18 @@
     "static": {
       "prefix": "/",
       "dir": [
-        "C:\\message-board\\app\\public\\static"
+        "D:\\message-board\\app\\public"
       ],
       "dynamic": true,
       "preload": false,
       "buffer": false,
-      "maxFiles": 1000
+      "maxFiles": 1000,
+      "maxAge": 0
     },
     "view": {
       "root": [
-        "C:\\message-board\\app\\public\\static",
-        "C:\\message-board\\app\\public",
-        "C:\\message-board\\app\\view"
+        "D:\\message-board\\app\\public",
+        "D:\\message-board\\app\\view"
       ],
       "cache": false,
       "defaultExtension": ".html",
@@ -207,7 +207,7 @@
     },
     "env": "local",
     "name": "message-board",
-    "keys": "<String len: 36>",
+    "keys": "<String len: 34>",
     "cookies": {},
     "proxy": false,
     "maxIpsCount": 0,
@@ -247,9 +247,9 @@
       "author": "chenpeixin",
       "license": "ISC"
     },
-    "baseDir": "C:\\message-board",
+    "baseDir": "D:\\message-board",
     "HOME": "C:\\Users\\duoyi",
-    "rundir": "C:\\message-board\\run",
+    "rundir": "D:\\message-board\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -281,7 +281,7 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "C:\\message-board\\logs\\message-board",
+      "dir": "D:\\message-board\\logs\\message-board",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -380,8 +380,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\message-board\\node_modules\\egg-session",
+      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-session",
       "version": "3.2.0"
     },
     "security": {
@@ -393,8 +393,8 @@
         "session"
       ],
       "env": [],
-      "from": "C:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\message-board\\node_modules\\egg-security",
+      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-security",
       "version": "2.8.0"
     },
     "jsonp": {
@@ -406,8 +406,8 @@
         "security"
       ],
       "env": [],
-      "from": "C:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\message-board\\node_modules\\egg-jsonp",
+      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -419,8 +419,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "C:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\message-board\\node_modules\\egg-onerror",
+      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -430,8 +430,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\message-board\\node_modules\\egg-i18n",
+      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -441,8 +441,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\message-board\\node_modules\\egg-watcher",
+      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-watcher",
       "version": "3.1.1"
     },
     "schedule": {
@@ -452,8 +452,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\message-board\\node_modules\\egg-schedule",
+      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -465,8 +465,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "C:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\message-board\\node_modules\\egg-multipart",
+      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-multipart",
       "version": "2.10.3"
     },
     "development": {
@@ -480,8 +480,8 @@
       "env": [
         "local"
       ],
-      "from": "C:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\message-board\\node_modules\\egg-development",
+      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-development",
       "version": "2.5.0"
     },
     "logrotator": {
@@ -493,8 +493,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\message-board\\node_modules\\egg-logrotator",
+      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -504,8 +504,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\message-board\\node_modules\\egg-static",
+      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -515,8 +515,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "C:\\message-board\\node_modules\\egg-view",
+      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-view",
       "version": "2.1.2"
     },
     "nunjucks": {
@@ -529,8 +529,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\message-board\\config\\plugin.js",
-      "path": "C:\\message-board\\node_modules\\egg-view-nunjucks",
+      "from": "D:\\message-board\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-view-nunjucks",
       "version": "2.2.0"
     },
     "mongoose": {
@@ -540,8 +540,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "C:\\message-board\\config\\plugin.js",
-      "path": "C:\\message-board\\node_modules\\egg-mongoose",
+      "from": "D:\\message-board\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-mongoose",
       "version": "3.2.0"
     }
   }
