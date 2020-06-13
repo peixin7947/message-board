@@ -12,11 +12,11 @@ class AuthController extends Controller {
         ctx.session[this.config.login.LOGIN_FIELD] = user;
         // 调用 rotateCsrfSecret 刷新用户的 CSRF token
         ctx.rotateCsrfSecret();
-        ctx.response.body = await ctx.renderView('index.html');
+        ctx.response.body = await ctx.render('/home/messageBoard.tpl');
         return;
       }
     }
-    await ctx.render('/home/login.tpl', { message: '输入用户名密码错误' });
+    await ctx.render('/auth/login.tpl', { message: '输入用户名密码错误' });
   }
 
   async register() {
@@ -24,10 +24,10 @@ class AuthController extends Controller {
     // 参数校验
     const user = ctx.request.body;
     if (!user.password || !user.rePassword) {
-      await ctx.render('/home/register.tpl', { message: '密码不能为空' });
+      await ctx.render('/auth/register.tpl', { message: '密码不能为空' });
       return;
     } else if (user.password !== user.rePassword) {
-      await ctx.render('/home/register.tpl', { message: '2次输入的密码不一致' });
+      await ctx.render('/auth/register.tpl', { message: '2次输入的密码不一致' });
       return;
     }
     const value = ctx.validate({
@@ -40,14 +40,14 @@ class AuthController extends Controller {
     }, Object.assign(ctx.params, ctx.query, ctx.request.body));
     let message = '';
     if (value.errors) {
-      await ctx.render('/home/register.tpl', { message: '注册失败!!请检查输入的数据格式是否正确。' });
+      await ctx.render('/auth/register.tpl', { message: '注册失败!!请检查输入的数据格式是否正确。' });
       return;
     }
 
     const userObj = await ctx.model.User.findOne({ username: user.username });
     if (userObj) {
       message = '用户名已存在';
-      await ctx.render('/home/register.tpl', { message });
+      await ctx.render('/auth/register.tpl', { message });
       return;
     }
     await ctx.service.user.addUser(user);

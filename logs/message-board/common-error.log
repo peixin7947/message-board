@@ -564,3 +564,78 @@ name: "unhandledExceptionError"
 pid: 10948
 hostname: ��Ϣƽ̨-������
 
+2020-06-13 11:52:47,968 ERROR 7872 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 7872
+hostname: ��Ϣƽ̨-������
+
+2020-06-13 13:37:37,566 ERROR 7872 nodejs.ClusterClientNoResponseError: client no response in 4226888ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 7872
+hostname: ��Ϣƽ̨-������
+
+2020-06-13 14:54:04,541 ERROR 12124 nodejs.ClusterClientNoResponseError: client no response in 77772ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12124
+hostname: ��Ϣƽ̨-������
+
+2020-06-13 15:33:52,151 ERROR 1248 [-/::1/-/7ms GET /login/view] nodejs.TypeError: The "path" argument must be of type string. Received an instance of Object
+    at validateString (internal/validators.js:121:11)
+    at Object.join (path.js:375:7)
+    at resolvePath (D:\message-board\node_modules\egg-view\lib\view_manager.js:87:29)
+    at Map.resolve (D:\message-board\node_modules\egg-view\lib\view_manager.js:73:22)
+    at ContextView.[contextView#render] (D:\message-board\node_modules\egg-view\lib\context_view.js:50:45)
+    at ContextView.render (D:\message-board\node_modules\egg-view\lib\context_view.js:33:24)
+    at Object.renderView (D:\message-board\node_modules\egg-view\app\extend\context.js:24:22)
+    at Object.render (D:\message-board\node_modules\egg-view\app\extend\context.js:14:17)
+    at HomeController.login (D:\message-board\app\controller\home.js:7:20)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+code: "ERR_INVALID_ARG_TYPE"
+pid: 1248
+hostname: ��Ϣƽ̨-������
+
+2020-06-13 15:34:32,292 ERROR 9684 [-/::1/-/9ms GET /login/view] nodejs.TypeError: The "path" argument must be of type string. Received an instance of Object
+    at validateString (internal/validators.js:121:11)
+    at Object.join (path.js:375:7)
+    at resolvePath (D:\message-board\node_modules\egg-view\lib\view_manager.js:87:29)
+    at Map.resolve (D:\message-board\node_modules\egg-view\lib\view_manager.js:73:22)
+    at ContextView.[contextView#render] (D:\message-board\node_modules\egg-view\lib\context_view.js:50:45)
+    at ContextView.render (D:\message-board\node_modules\egg-view\lib\context_view.js:33:24)
+    at Object.renderView (D:\message-board\node_modules\egg-view\app\extend\context.js:24:22)
+    at Object.render (D:\message-board\node_modules\egg-view\app\extend\context.js:14:17)
+    at HomeController.login (D:\message-board\app\controller\home.js:7:20)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+code: "ERR_INVALID_ARG_TYPE"
+pid: 9684
+hostname: ��Ϣƽ̨-������
+
+2020-06-13 18:41:31,503 ERROR 12540 nodejs.ClusterClientNoResponseError: client no response in 8411381ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12540
+hostname: ��Ϣƽ̨-������
+

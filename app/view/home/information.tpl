@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -56,60 +59,41 @@
     </button>    <!--/.for-sticky-->
 
 </div>
-
-<!--EMPLOYEMENT-->
-<section class="grey-bg" id="employement">
+<!--CONTACT-->
+<section id="contact" class="white-bg">
     <div class="container">
         <div class="row">
-            <h3 class="title-small">
-                <span>留言板</span>
-            </h3>
             <div class="col-md-3">
+                <h3 class="title-small">
+                    <span>Contact</span>
+                </h3>
                 <p class="content-detail">
-                    个人介绍
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat.
                 </p>
+
             </div>
             <div class="col-md-9 content-right">
-                <div class="row">
-                    <ul class="listing-item">
-                        <li>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="wrap-card">
-                                    <div class="card">
-                                        <h2 class="year">
-                                            2007 - 2009
-                                        </h2>
-                                        <p class="job">
-                                            web designer
-                                        </p>
-                                        <p class="company">
-                                            Corp Project
-                                        </p>
-                                        <hr>
-                                        <div class="text-detail">
-                                            <p>
-                                                Claritas est etiam processus dynamicus, qui sequitur
-                                                mutationem consuetudium lectorum. Mirum est notare quam
-                                                littera gothica, quam nunc putamus parum claram,
-                                                anteposuerit litterarum formas humanita per seacula quarta
-                                                decima et quinta decima. Eodem modo typi, qui nunc nobis
-                                                videntur parum clari, fiant sollemnes.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-
-
-                </div>
+                <form>
+                    <div class="group">
+                        <input required="" type="text"><span class="highlight"></span><span
+                            class="bar"></span><label>Name</label>
+                    </div>
+                    <div class="group">
+                        <input required="" type="email"><span class="highlight"></span><span
+                            class="bar"></span><label>Email</label>
+                    </div>
+                    <div class="group">
+                        <textarea required=""></textarea><span class="highlight"></span><span
+                            class="bar"></span><label>Message</label>
+                    </div>
+                    <input id="sendMessage" name="sendMessage" type="submit" value="Send Message">
+                </form>
             </div>
         </div>
     </div>
 </section>
-<!--/.EMPLOYEMENT END-->
+<!--/.CONTACT END-->
 
 <script src="/static/js/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="/static/js/jquery.appear.js" type="text/javascript"></script>

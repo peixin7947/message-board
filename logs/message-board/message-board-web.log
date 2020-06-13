@@ -3374,3 +3374,45 @@ operator: "=="
 pid: 4832
 hostname: ��Ϣƽ̨-������
 
+2020-06-13 15:33:52,152 ERROR 1248 [-/::1/-/7ms GET /login/view] nodejs.TypeError: The "path" argument must be of type string. Received an instance of Object
+    at validateString (internal/validators.js:121:11)
+    at Object.join (path.js:375:7)
+    at resolvePath (D:\message-board\node_modules\egg-view\lib\view_manager.js:87:29)
+    at Map.resolve (D:\message-board\node_modules\egg-view\lib\view_manager.js:73:22)
+    at ContextView.[contextView#render] (D:\message-board\node_modules\egg-view\lib\context_view.js:50:45)
+    at ContextView.render (D:\message-board\node_modules\egg-view\lib\context_view.js:33:24)
+    at Object.renderView (D:\message-board\node_modules\egg-view\app\extend\context.js:24:22)
+    at Object.render (D:\message-board\node_modules\egg-view\app\extend\context.js:14:17)
+    at HomeController.login (D:\message-board\app\controller\home.js:7:20)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+code: "ERR_INVALID_ARG_TYPE"
+pid: 1248
+hostname: ��Ϣƽ̨-������
+
+2020-06-13 15:34:32,294 ERROR 9684 [-/::1/-/9ms GET /login/view] nodejs.TypeError: The "path" argument must be of type string. Received an instance of Object
+    at validateString (internal/validators.js:121:11)
+    at Object.join (path.js:375:7)
+    at resolvePath (D:\message-board\node_modules\egg-view\lib\view_manager.js:87:29)
+    at Map.resolve (D:\message-board\node_modules\egg-view\lib\view_manager.js:73:22)
+    at ContextView.[contextView#render] (D:\message-board\node_modules\egg-view\lib\context_view.js:50:45)
+    at ContextView.render (D:\message-board\node_modules\egg-view\lib\context_view.js:33:24)
+    at Object.renderView (D:\message-board\node_modules\egg-view\app\extend\context.js:24:22)
+    at Object.render (D:\message-board\node_modules\egg-view\app\extend\context.js:14:17)
+    at HomeController.login (D:\message-board\app\controller\home.js:7:20)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+code: "ERR_INVALID_ARG_TYPE"
+pid: 9684
+hostname: ��Ϣƽ̨-������
+

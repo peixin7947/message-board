@@ -186,6 +186,7 @@
     "description": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "main": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "dependencies": {
+      "amis": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "autod": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "autod-egg": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "egg": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
