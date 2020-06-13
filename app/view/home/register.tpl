@@ -15,7 +15,7 @@
         <!--主要样式-->
         <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     </head>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/static/js/jquery-1.9.1.min.js"></script>
 
     <body>
 
@@ -23,7 +23,7 @@
             <div class="container-login100">
                 <div class="wrap-register100">
                     <div class="login100-pic js-tilt" data-tilt>
-                        <img src="/static/img/img-01.png" alt="IMG">
+                        <img src="/static/images/login.png" alt="IMG">
                     </div>
 
                     <input type="hidden" id="_csrf" value="{{ ctx.csrf }}" />

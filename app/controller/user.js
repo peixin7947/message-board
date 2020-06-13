@@ -1,4 +1,5 @@
 'use strict';
+
 const Controller = require('egg').Controller;
 class UserController extends Controller {
   async create() {
@@ -12,9 +13,5 @@ class UserController extends Controller {
     ctx.body = res;
   }
 
-  async login() {
-    return;
-
-  }
 }
 module.exports = UserController;

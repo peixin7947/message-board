@@ -2,10 +2,6 @@
 const Service = require('egg').Service;
 const md5 = require('js-md5');
 class UserService extends Service {
-  async login(username, password) {
-    const result = await this.ctx.model.User.findOne({ username, password: md5(password) }).lean();
-    return result;
-  }
 
   async addUser(user) {
     new this.ctx.model.User({

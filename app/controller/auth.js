@@ -2,11 +2,12 @@
 const Controller = require('egg').Controller;
 
 class AuthController extends Controller {
+  // 登录验证
   async login() {
     const { ctx } = this;
     const { username, password } = ctx.request.body;
     if (username && password) {
-      const user = await ctx.service.user.login(username, password);
+      const user = await ctx.service.auth.login(username, password);
       if (user) {
         ctx.session[this.config.login.LOGIN_FIELD] = user;
         // 调用 rotateCsrfSecret 刷新用户的 CSRF token

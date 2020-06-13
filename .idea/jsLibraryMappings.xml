@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$" libraries="{HTML}" />
-    <file url="PROJECT" libraries="{HTML, Node.js Core Modules}" />
-    <includedPredefinedLibrary name="HTTP Response Handler" />
+    <file url="PROJECT" libraries="{@types/audiobuffer-to-wav, @types/egg.js, nodejs}" />
+    <excludedPredefinedLibrary name="HTML" />
+    <excludedPredefinedLibrary name="message-board/node_modules" />
   </component>
 </project>
