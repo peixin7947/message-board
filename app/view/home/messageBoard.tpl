@@ -1,127 +1,88 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>留言板</title>
-
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <!--Fav-->
-    <link type="text/css" href="/static/images/favicon.ico" rel="shortcut icon">
-
-    <!--styles-->
-    <link type="text/css" href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <link type="text/css" href="/static/css/owl.carousel.css" rel="stylesheet">
-    <link type="text/css" href="/static/css/owl.theme.css" rel="stylesheet">
-    <link type="text/css" href="/static/css/magnific-popup.css" rel="stylesheet">
-    <link type="text/css" href="/static/css/style.css" rel="stylesheet">
-    <link type="text/css" href="/static/css/responsive.css" rel="stylesheet">
-
-    <!--fonts google-->
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8"/>
+    <title>AMIS Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <link rel="stylesheet" href="/static/amis/sdk.css"/>
+    <style>
+        html,
+        body,
+        .app-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
-
 <body>
-
-<!--HEADER -->
-<div class="header">
-    <div class="for-sticky">
-        <!--LOGO-->
-        <div class="col-md-2 col-xs-6 logo">
-            <a href="index.html"><img alt="logo" class="logo-nav" src="/static/images/logo.png"></a>
-        </div>
-        <!--/.LOGO END-->
-    </div>
-    <div class="menu-wrap">
-        <nav class="menu">
-            <div class="menu-list">
-                <a data-scroll="" href="/messageBoard.tpl">
-                    <span>我的留言板</span>
-                </a>
-                <a data-scroll="" href="/user/information">
-                    <span>个人信息</span>
-                </a>
-                <a data-scroll="" href="/setting">
-                    <span>设置</span>
-                </a>
-            </div>
-        </nav>
-        <button class="close-button" id="close-button">Close Menu</button>
-    </div>
-    <button class="menu-button" id="open-button">
-        <span></span>
-        <span></span>
-        <span>3333</span>
-    </button>    <!--/.for-sticky-->
-
-</div>
-
-<!--EMPLOYEMENT-->
-<section class="grey-bg" id="employement">
-    <div class="container">
-        <div class="row">
-            <h3 class="title-small">
-                <span>留言板</span>
-            </h3>
-            <div class="col-md-3">
-                <p class="content-detail">
-                    个人介绍
-                </p>
-            </div>
-            <div class="col-md-9 content-right">
-                <div class="row">
-                    <ul class="listing-item">
-                        <li>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="wrap-card">
-                                    <div class="card">
-                                        <h2 class="year">
-                                            2007 - 2009
-                                        </h2>
-                                        <p class="job">
-                                            web designer
-                                        </p>
-                                        <p class="company">
-                                            Corp Project
-                                        </p>
-                                        <hr>
-                                        <div class="text-detail">
-                                            <p>
-                                                Claritas est etiam processus dynamicus, qui sequitur
-                                                mutationem consuetudium lectorum. Mirum est notare quam
-                                                littera gothica, quam nunc putamus parum claram,
-                                                anteposuerit litterarum formas humanita per seacula quarta
-                                                decima et quinta decima. Eodem modo typi, qui nunc nobis
-                                                videntur parum clari, fiant sollemnes.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/.EMPLOYEMENT END-->
-
-<script src="/static/js/jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/static/js/jquery.appear.js" type="text/javascript"></script>
-<script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="/static/js/classie.js" type="text/javascript"></script>
-<script src="/static/js/owl.carousel.min.js" type="text/javascript"></script>
-<script src="/static/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
-<script src="/static/js/masonry.pkgd.min.js" type="text/javascript"></script>
-<script src="/static/js/masonry.js" type="text/javascript"></script>
-<script src="/static/js/smooth-scroll.min.js" type="text/javascript"></script>
-<script src="/static/js/typed.js" type="text/javascript"></script>
-<script src="/static/js/main.js" type="text/javascript"></script>
+<div id="root" class="app-wrapper"></div>
+<script src="/static/amis/sdk.js"></script>
+<script type="text/javascript">
+  (function() {
+    var amis = amisRequire('amis/embed');
+    amis.embed('#root', {
+      'type': 'page',
+      'initApi': '',
+      'title': '个人空间',
+      'body': [
+        {
+          'type': 'panel',
+          'title': '简介',
+          'body': [
+            {
+              'type': 'image',
+              'value': '/static/images/logo.png'
+            },
+            'Make you and your friends play games like in a LAN.',
+            'This needs Games with LAN Mode'
+          ]
+        },
+        {
+          'type': 'panel',
+          'title': 'Links',
+          'body': 'Online user: ${online}. More info refer to below links',
+          'actions': [
+            {
+              'type': 'button',
+              'label': 'Discord',
+              'level': 'info',
+              'actionType': 'link',
+              'link': 'https://discord.gg/zEMCu5n'
+            },
+            {
+              'type': 'button',
+              'label': 'LAN Play Client on Github',
+              'level': 'info',
+              'actionType': 'link',
+              'link': 'https://github.com/spacemeowx2/switch-lan-play'
+            },
+            {
+              'type': 'button',
+              'label': 'Status website',
+              'level': 'info',
+              'actionType': 'link',
+              'link': 'http://lan-play.com/'
+            },
+            {
+              'type': 'button',
+              'level': 'success',
+              'label': 'Login',
+              'actionType': 'link',
+              'link': 'login'
+            }
+          ]
+        }
+      ]
+    });
+  })();
+</script>
 </body>
-
 </html>

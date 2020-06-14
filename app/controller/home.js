@@ -4,7 +4,7 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
   async login() {
-    await this.ctx.render('auth/testlogin.tpl');
+    await this.ctx.render('auth/login.tpl');
   }
 
   async register() {

@@ -12,7 +12,7 @@ class AuthController extends Controller {
         ctx.session[this.config.login.LOGIN_FIELD] = user;
         // 调用 rotateCsrfSecret 刷新用户的 CSRF token
         ctx.rotateCsrfSecret();
-        ctx.response.body = await ctx.render('/home/messageBoard.tpl');
+        ctx.response.body = await ctx.renderView('/home/messageBoard.tpl');
         return;
       }
     }
