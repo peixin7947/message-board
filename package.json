@@ -31,7 +31,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "egg-bin dev",
-    "debug": "egg-bin debug"
+    "debug": "egg-bin debug",
+    "cov": "egg-bin cov"
   },
   "author": "chenpeixin",
   "license": "ISC"

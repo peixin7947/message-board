@@ -8,4 +8,6 @@ module.exports = app => {
   router.post('/register', controller.auth.register); // 注册用户
   router.post('/user', controller.user.create); // 添加一个用户
   router.post('/login', controller.auth.login); // 登录用户
+  router.get('/api/information', controller.user.getUserInformation); // 获取用户信息
+
 };

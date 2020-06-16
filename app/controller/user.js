@@ -13,5 +13,11 @@ class UserController extends Controller {
     ctx.body = res;
   }
 
+  // 获取当前用户的个人信息
+  async getUserInformation() {
+    const { ctx } = this;
+    ctx.response.body = await ctx.service.user.getUserInformation();
+  }
+
 }
 module.exports = UserController;

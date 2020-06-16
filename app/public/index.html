@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8"/>
-    <title>AMIS Demo</title>
+    <title>留言板</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta
             name="viewport"
@@ -30,7 +30,7 @@
     var amis = amisRequire('amis/embed');
     amis.embed('#root', {
       'type': 'page',
-      'initApi': 'localhost:7001?url=${url|default:message}',
+      'initApi': '/api/${url|default:information}',
       // 'title': '个人空间',
       'aside': [
         {
@@ -49,13 +49,13 @@
           'className': 'h-full ',
           'links': [
             {
+              'label': '个人信息',
+              'to': '?url=information',
+            },
+            {
               'label': '留言板',
               'to': '?url=message',
               // "icon": "fa fa-user",
-            },
-            {
-              'label': '个人信息',
-              'to': '?url=information',
             },
             {
               'label': '设置',
@@ -66,9 +66,77 @@
       'body': [
         {
           'type': 'tabs',
-          'tabs': '${infoId|default:[]}',
+          'tabs': [
+            {
+              'title': '个人信息',
+              'hash': 'tab2',
+              'body': {
+                'type': 'form',
+                'panelClassName': 'panel-primary',
+                'mode': 'horizontal',
+                'title': '',
+                'submitText':'',
+                'initApi':'/api/information',
+                'silentPolling':'true',
+                'controls': [
+                  {
+                    'type': 'static-tpl',
+                    'label': '用户名',
+                    'tpl': '${username| default: null}'
+                  },
+                  {
+                    'type': 'divider'
+                  },
+                  {
+                    'type': 'static-tpl',
+                    'label': '昵称',
+                    'tpl': '${nickname| default: null}'
+                  },
+                  {
+                    'type': 'divider'
+                  },
+                  {
+                    'type': 'static-tpl',
+                    'label': '头像',
+                    'tpl': '${avatar | default: null}'
+                  },
+                  {
+                    'type': 'divider'
+                  },
+                  {
+                    'type': 'static-tpl',
+                    'label': '邮箱',
+                    'tpl': '${email | default: null}',
+                  },
+                  {
+                    'type': 'divider'
+                  },
+                  {
+                    'type': 'static-tpl',
+                    'label': '年龄',
+                    'tpl': '${age | default: null}',
+                  },
+                  {
+                    'type': 'divider'
+                  },
+                  {
+                    'type': 'static-tpl',
+                    'label': '个人签名',
+                    'tpl': '${intro | default: null}',
+                  },
+                  {
+                    'type': 'divider'
+                  },
+                  {
+                    'type': 'static-date',
+                    'label': '创建日期',
+                    'value': 1592230977
+                  },
+                ]
+              }
+            },
 
-
+          ]
 
         },
       ]

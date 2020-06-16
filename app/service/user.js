@@ -2,7 +2,11 @@
 const Service = require('egg').Service;
 const md5 = require('js-md5');
 class UserService extends Service {
-
+  /**
+   * 增加一个用户
+   * @param user
+   * @return {Promise<void>}
+   */
   async addUser(user) {
     new this.ctx.model.User({
       username: user.username,
@@ -10,20 +14,14 @@ class UserService extends Service {
     }).save();
   }
 
-  async updateUser(user) {
-    const result = await this.ctx.model.User.updateOne(user);
-    return result;
+  async getUserInformation() {
+    const { ctx } = this;
+    // ctx.throw(422, 'test');
+    const userInfo = ctx.session.userInfo;
+    const user = await ctx.model.User.findOne({ _id: userInfo._id });
+    return { status: 0, data: user };
   }
 
-  async deleteUser(user) {
-    const result = await this.ctx.model.User.deleteOne(user);
-    return result;
-  }
-
-  async findOne(user) {
-    const result = await this.ctx.model.User.findOne(user).lean();
-    return result;
-  }
 
 }
 
