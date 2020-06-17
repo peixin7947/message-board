@@ -18,6 +18,16 @@ class UserController extends Controller {
     const { ctx } = this;
     ctx.response.body = await ctx.service.user.getUserInformation();
   }
+  // 更新当前用户的个人信息
+  async updateUserInformation() {
+    const { ctx } = this;
+    ctx.response.body = await ctx.service.user.updateUserInformation();
+  }
+
+  async uploadAvatar() {
+    const { ctx } = this;
+    ctx.response.body = await ctx.service.user.uploadAvatar();
+  }
 
 }
 module.exports = UserController;

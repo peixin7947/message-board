@@ -75,9 +75,126 @@
                 'panelClassName': 'panel-primary',
                 'mode': 'horizontal',
                 'title': '',
-                'submitText':'',
-                'initApi':'/api/information',
-                'silentPolling':'true',
+                'submitText': '',
+                'initApi': `get:/api/information`,
+                'silentPolling': 'true',
+                'actions': [
+                  {
+                    'type': 'button',
+                    'actionType': 'dialog',
+                    'label': '修改个人信息',
+                    'level': 'info',
+                    'dialog': {
+                      'title': '',
+                      'body': {
+                        'type': 'form',
+                        'mode': 'horizontal',
+                        // 'horizontal': {
+                        //   'leftFixed': 'xs'
+                        // },
+                        'api': {
+                          'url': '/api/information',
+                          'method': 'post',
+                          'data': {
+                            'all': '$$',
+                          },
+                        },
+                        'actions': [
+                          {
+                            'type': 'submit',
+                            'label': '提交',
+                            'primary': true
+                          }
+                        ],
+                        'controls': [
+                          {
+                            'type': 'divider'
+                          },
+                          {
+                            'type': 'text',
+                            'label': '昵称',
+                            'name': 'nickname',
+                            'required': true,
+                          },
+                          {
+                            'type': 'divider'
+                          },
+                          {
+                            'type': 'image',
+                            'label': '头像',
+                            'name': 'avatar',
+                            'reciever': '/api/avatar/upload',
+                            'autoUpload': false,
+                            'multiple': false,
+                            'maxSize ': '16MB',
+                          },
+                          {
+                            'type': 'divider'
+                          },
+                          {
+                            'type': 'select',
+                            'label': '性别',
+                            'name': 'sex',
+                            'options': [
+                              {
+                                'label': '男',
+                                'value': 1
+                              },
+                              {
+                                'label': '女',
+                                'value': 0
+                              }
+                            ]
+                          },
+                          {
+                            'type': 'divider'
+                          },
+                          {
+                            'type': 'email',
+                            'label': '邮箱',
+                            'name': 'email',
+                            'validateOnChange': true,
+                            'validationErrors': {
+                              'isEmail': true,
+                            },
+                            'validationErrors': {
+                              'isEmail': '请输入正确的邮箱地址'
+                            },
+                          },
+                          {
+                            'type': 'divider'
+                          },
+                          {
+                            'type': 'text',
+                            'label': '年龄',
+                            'name': 'age',
+                            'validations': {
+                              'isInt': true,
+                              'minimum': 0,
+                              'maximum': 120,
+                            },
+                            'validationErrors': {
+                              'isInt': '必须输入数字',
+                              'minimum': '小伙伴，年龄必须在0到120之间',
+                              'maximum': '小伙伴，年龄必须在0到120之间',
+                            }
+                          },
+                          {
+                            'type': 'divider'
+                          },
+                          {
+                            'type': 'text',
+                            'label': '个人签名',
+                            'name': 'intro',
+                          },
+                          {
+                            'type': 'divider'
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
                 'controls': [
                   {
                     'type': 'static-tpl',
@@ -96,9 +213,22 @@
                     'type': 'divider'
                   },
                   {
-                    'type': 'static-tpl',
+                    'type': 'static-image',
                     'label': '头像',
-                    'tpl': '${avatar | default: null}'
+                    'name': 'image',
+                    'src': '${avatar}',
+                    'popOver': {
+                      'title': '查看大图',
+                      'body': '<div class="w-xxl"><img class="w-full" src="${avatar}"/></div>'
+                    }
+                  },
+                  {
+                    'type': 'divider'
+                  },
+                  {
+                    'type': 'static-tpl',
+                    'label': '性别',
+                    'tpl': '${sex | default: null}',
                   },
                   {
                     'type': 'divider'

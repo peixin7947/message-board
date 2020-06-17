@@ -11,7 +11,6 @@ module.exports = app => {
     },
     nickname: {
       type: String,
-      // default: ,
     },
     createTime: { type: Date, default: Date.now },
     email: {
@@ -20,6 +19,7 @@ module.exports = app => {
     },
     avatar: {
       type: String,
+      default: '/static/images/avatar.png',
     },
     intro: {
       type: String,

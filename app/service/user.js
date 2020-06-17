@@ -11,6 +11,7 @@ class UserService extends Service {
     new this.ctx.model.User({
       username: user.username,
       password: md5(user.password),
+      nickname: user.username,
     }).save();
   }
 

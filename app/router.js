@@ -9,5 +9,8 @@ module.exports = app => {
   router.post('/user', controller.user.create); // 添加一个用户
   router.post('/login', controller.auth.login); // 登录用户
   router.get('/api/information', controller.user.getUserInformation); // 获取用户信息
+  router.post('/api/information', controller.user.updateUserInformation); // 更新用户信息
+  router.post('/api/avatar/upload', controller.user.uploadAvatar); // 获取用户信息
+
 
 };
