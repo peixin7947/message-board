@@ -89,6 +89,22 @@
     "LOGIN_FIELD": "E:\\Program Files\\program\\message-board\\config\\config.default.js",
     "ignore": "E:\\Program Files\\program\\message-board\\config\\config.default.js"
   },
+  "multipart": {
+    "mode": "E:\\Program Files\\program\\message-board\\config\\config.default.js",
+    "whitelist": "E:\\Program Files\\program\\message-board\\config\\config.default.js",
+    "fileSize": "E:\\Program Files\\program\\message-board\\config\\config.default.js",
+    "autoFields": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js"
+    }
+  },
   "session": {
     "maxAge": "E:\\Program Files\\program\\message-board\\node_modules\\egg-session\\config\\config.default.js",
     "key": "E:\\Program Files\\program\\message-board\\node_modules\\egg-session\\config\\config.default.js",
@@ -131,22 +147,6 @@
   },
   "schedule": {
     "directory": "E:\\Program Files\\program\\message-board\\node_modules\\egg-schedule\\config\\config.default.js"
-  },
-  "multipart": {
-    "mode": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "autoFields": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "defaultCharset": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldNameSize": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldSize": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fields": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileSize": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "files": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileExtensions": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "whitelist": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "tmpdir": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js",
-    "cleanSchedule": {
-      "cron": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart\\config\\config.default.js"
-    }
   },
   "development": {
     "watchDirs": "E:\\Program Files\\program\\message-board\\node_modules\\egg-development\\config\\config.default.js",
@@ -196,6 +196,7 @@
       "js-md5": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\config.default.js",
       "koa": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\config.default.js",
       "mongoose": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "multer": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\config.default.js",
       "node": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\config.default.js",
       "nunjucks": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\config.default.js",
       "xlsx": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\config.default.js"
@@ -213,7 +214,8 @@
     "scripts": {
       "test": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\config.default.js",
       "dev": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "debug": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\config.default.js"
+      "debug": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "cov": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\config.default.js"
     },
     "author": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\config.default.js",
     "license": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\config.default.js"

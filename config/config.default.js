@@ -53,6 +53,16 @@ module.exports = appInfo => {
     },
   };
 
+  config.multipart = {
+    mode: 'stream',
+    whitelist: [ // 允许上传的格式
+      '.png',
+      '.jpg',
+    ],
+    fileSize: '5mb', // 最大5mb
+  };
+
+
   return config;
 
 };

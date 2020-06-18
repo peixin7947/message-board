@@ -1,0 +1,66 @@
+2020-06-16 14:23:03,989 ERROR 11988 nodejs.ClusterClientNoResponseError: client no response in 10780776ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (E:\Program Files\program\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 11988
+hostname: xin
+
+2020-06-16 22:20:26,466 ERROR 11988 nodejs.ClusterClientNoResponseError: client no response in 22934810ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (E:\Program Files\program\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 11988
+hostname: xin
+
+2020-06-17 00:15:07,595 ERROR 8364 [-/::1/-/17ms GET /api/information] nodejs.AssertionError: invalid status code: 0
+    at Object.set status [as status] (E:\Program Files\program\message-board\node_modules\koa\lib\response.js:87:5)
+    at Object.status (E:\Program Files\program\message-board\node_modules\delegates\index.js:92:31)
+    at UserController.getUserInformation (E:\Program Files\program\message-board\app\controller\user.js:19:16)
+    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
+    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
+    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
+    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: false
+expected: true
+operator: "=="
+pid: 8364
+hostname: xin
+
+2020-06-17 00:16:21,567 ERROR 8364 [-/::1/-/6ms GET /api/information] nodejs.AssertionError: invalid status code: 0
+    at Object.set status [as status] (E:\Program Files\program\message-board\node_modules\koa\lib\response.js:87:5)
+    at Object.status (E:\Program Files\program\message-board\node_modules\delegates\index.js:92:31)
+    at UserController.getUserInformation (E:\Program Files\program\message-board\app\controller\user.js:19:16)
+    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
+    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
+    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
+    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: false
+expected: true
+operator: "=="
+pid: 8364
+hostname: xin
+

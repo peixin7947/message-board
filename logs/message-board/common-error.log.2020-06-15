@@ -1,0 +1,641 @@
+2020-05-30 18:44:18,076 ERROR 11832 [-/::1/-/3469ms POST /register?_csrf=fiC9WCox-LvzQVxIvyOjfD6pr2cFrv04Y36U] nodejs.ReferenceError: alert is not defined
+    at AuthController.register (C:\message-board\app\controller\auth.js:14:9)
+    at Object.callFn (C:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (C:\message-board\node_modules\koa-compose\index.js:45:18)
+    at C:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\message-board\node_modules\koa-compose\index.js:44:32)
+    at C:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 11832
+hostname: ��Ϣƽ̨-������
+
+2020-05-30 18:57:04,980 ERROR 12028 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 12028
+hostname: ��Ϣƽ̨-������
+
+2020-05-30 19:20:20,978 ERROR 12316 nodejs.Template render error: (C:\message-board\app\view\message\message.tpl) [Line 6, Column 25]
+  unexpected token: %
+  unexpected token: %
+    at Object._prettifyError (C:\message-board\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\message-board\node_modules\nunjucks\src\environment.js:536:21)
+    at C:\message-board\node_modules\nunjucks\src\environment.js:364:27
+    at createTemplate (C:\message-board\node_modules\nunjucks\src\environment.js:313:9)
+    at handle (C:\message-board\node_modules\nunjucks\src\environment.js:325:11)
+    at C:\message-board\node_modules\nunjucks\src\environment.js:337:9
+    at next (C:\message-board\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (C:\message-board\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (C:\message-board\node_modules\nunjucks\src\environment.js:319:9)
+    at NunjucksEnvironment.render (C:\message-board\node_modules\nunjucks\src\environment.js:358:10)
+    at C:\message-board\node_modules\egg-view-nunjucks\lib\view.js:13:25
+    at new Promise (<anonymous>)
+    at NunjucksView.render (C:\message-board\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:70:23)
+name: "Template render error"
+pid: 12316
+hostname: ��Ϣƽ̨-������
+
+2020-05-30 19:20:56,260 ERROR 13236 [-/::1/-/33ms POST /register?_csrf=x00mgrFq-Ln_MDA_hbeNWKUMQOv1HqZpeLZY] nodejs.Template render error: (C:\message-board\app\view\message\message.tpl) [Line 6, Column 25]
+  unexpected token: %
+  unexpected token: %
+    at Object._prettifyError (C:\message-board\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\message-board\node_modules\nunjucks\src\environment.js:536:21)
+    at C:\message-board\node_modules\nunjucks\src\environment.js:364:27
+    at createTemplate (C:\message-board\node_modules\nunjucks\src\environment.js:313:9)
+    at handle (C:\message-board\node_modules\nunjucks\src\environment.js:325:11)
+    at C:\message-board\node_modules\nunjucks\src\environment.js:337:9
+    at next (C:\message-board\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (C:\message-board\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (C:\message-board\node_modules\nunjucks\src\environment.js:319:9)
+    at NunjucksEnvironment.render (C:\message-board\node_modules\nunjucks\src\environment.js:358:10)
+    at C:\message-board\node_modules\egg-view-nunjucks\lib\view.js:13:25
+    at new Promise (<anonymous>)
+    at NunjucksView.render (C:\message-board\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:70:23)
+    at async AuthController.register (C:\message-board\app\controller\auth.js:21:7)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "Template render error"
+pid: 13236
+hostname: ��Ϣƽ̨-������
+
+2020-05-30 19:27:36,583 ERROR 12780 [-/::1/-/5ms POST /register?_csrf=OyVvTNRA-QRIigGVDe9E-hvyf85Rq1L1brdQ] nodejs.Template render error: (C:\message-board\app\view\home\register.tpl) [Line 33, Column 64]
+  unknown block tag: message
+  unknown block tag: message
+    at Object._prettifyError (C:\message-board\node_modules\nunjucks\src\lib.js:36:11)
+    at Template.render (C:\message-board\node_modules\nunjucks\src\environment.js:536:21)
+    at C:\message-board\node_modules\nunjucks\src\environment.js:364:27
+    at createTemplate (C:\message-board\node_modules\nunjucks\src\environment.js:313:9)
+    at handle (C:\message-board\node_modules\nunjucks\src\environment.js:325:11)
+    at C:\message-board\node_modules\nunjucks\src\environment.js:337:9
+    at next (C:\message-board\node_modules\nunjucks\src\lib.js:280:7)
+    at Object.asyncIter (C:\message-board\node_modules\nunjucks\src\lib.js:286:3)
+    at NunjucksEnvironment.getTemplate (C:\message-board\node_modules\nunjucks\src\environment.js:319:9)
+    at NunjucksEnvironment.render (C:\message-board\node_modules\nunjucks\src\environment.js:358:10)
+    at C:\message-board\node_modules\egg-view-nunjucks\lib\view.js:13:25
+    at new Promise (<anonymous>)
+    at NunjucksView.render (C:\message-board\node_modules\egg-view-nunjucks\lib\view.js:12:12)
+    at ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:70:23)
+    at async AuthController.register (C:\message-board\app\controller\auth.js:18:7)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+name: "Template render error"
+pid: 12780
+hostname: ��Ϣƽ̨-������
+
+2020-06-01 20:15:11,329 ERROR 9200 [-/::1/-/4ms GET /] nodejs.AssertionError: status code must be a number
+    at Object.set status [as status] (E:\Program Files\program\message-board\node_modules\koa\lib\response.js:86:5)
+    at Object.status (E:\Program Files\program\message-board\node_modules\delegates\index.js:92:31)
+    at Object.<anonymous> (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:364:18)
+    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
+    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
+    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\Program Files\program\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: false
+expected: true
+operator: "=="
+pid: 9200
+hostname: xin
+
+2020-06-01 23:09:16,020 ERROR 14856 [-/::1/-/10ms GET /index] nodejs.AssertionError: Can't find home/index.tpl from E:\Program Files\program\message-board\app\view
+    at Map.resolve (E:\Program Files\program\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (E:\Program Files\program\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async HomeController.index (E:\Program Files\program\message-board\app\controller\home.js:8:5)
+    at async E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (E:\Program Files\program\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (E:\Program Files\program\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async E:\Program Files\program\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (E:\Program Files\program\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (E:\Program Files\program\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 14856
+hostname: xin
+
+2020-06-01 23:14:09,463 ERROR 5752 [-/::1/-/273ms POST /register?_csrf=iwpKytt3-AcaxCK4h96EshlsvfnZKpkWEkV0] nodejs.TypeError: Cannot read property 'addUser' of undefined
+    at AuthController.register (E:\Program Files\program\message-board\app\controller\auth.js:33:30)
+    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
+    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
+    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\Program Files\program\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 5752
+hostname: xin
+
+2020-06-01 23:16:54,523 ERROR 5752 [-/::1/-/5ms POST /register?_csrf=iwpKytt3-AcaxCK4h96EshlsvfnZKpkWEkV0] nodejs.TypeError: Cannot read property 'addUser' of undefined
+    at AuthController.register (E:\Program Files\program\message-board\app\controller\auth.js:33:30)
+    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
+    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
+    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\Program Files\program\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 5752
+hostname: xin
+
+2020-06-01 23:18:24,098 ERROR 13000 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 13000
+hostname: xin
+
+2020-06-01 23:21:23,592 ERROR 13896 [-/::1/-/53ms POST /register?_csrf=iwpKytt3-AcaxCK4h96EshlsvfnZKpkWEkV0] nodejs.TypeError: user.save is not a function
+    at UserService.addUser (E:\Program Files\program\message-board\app\service\user.js:11:10)
+    at AuthController.register (E:\Program Files\program\message-board\app\controller\auth.js:33:30)
+    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
+    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
+    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (E:\Program Files\program\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+
+pid: 13896
+hostname: xin
+
+2020-06-02 11:28:49,099 ERROR 6404 [-/::1/-/22ms POST /register?_csrf=RpojvCiu-cSlm1IErhYhkZoj8dI6sylRQoek] nodejs.TypeError: ctx.service.user.findOne is not a function
+    at AuthController.register (C:\message-board\app\controller\auth.js:35:38)
+    at Object.callFn (C:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (C:\message-board\node_modules\koa-compose\index.js:45:18)
+    at C:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\message-board\node_modules\koa-compose\index.js:44:32)
+    at C:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 6404
+hostname: ��Ϣƽ̨-������
+
+2020-06-02 11:32:22,760 ERROR 1164 nodejs.ClusterClientNoResponseError: client no response in 67747ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (C:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 1164
+hostname: ��Ϣƽ̨-������
+
+2020-06-02 14:35:46,684 ERROR 10644 nodejs.ClusterClientNoResponseError: client no response in 7238824ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (C:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 10644
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:52:39,888 ERROR 11980 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "C:\\message-board\\app\\view\\html"
+name: "EPERMError"
+pid: 11980
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:53:05,732 ERROR 4512 [-/::1/-/4ms GET /login?username=admin&pass=123123&_csrf=JRVQTj75-SG2Aok5YlhQpg9F07ptSqSBWvQw] nodejs.AssertionError: Can't find /login from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:18:5)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 4512
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:55:32,597 ERROR 13624 [-/::1/-/21ms POST /login] nodejs.AssertionError: Can't find /login from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:18:5)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 13624
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:57:11,898 ERROR 13624 [-/::1/-/16779ms POST /login] nodejs.AssertionError: Can't find /login from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:18:5)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 13624
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 17:58:18,853 ERROR 13860 [-/::1/-/4089ms POST /login] nodejs.AssertionError: Can't find /login/view from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:18:5)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 13860
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 18:36:06,542 ERROR 14396 nodejs.ClusterClientNoResponseError: client no response in 159557ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (C:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 14396
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 18:37:19,044 ERROR 14396 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 14396
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 19:02:00,599 ERROR 14396 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 14396
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 20:19:29,728 ERROR 11188 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 11188
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 20:20:15,424 ERROR 11520 [-/::1/-/13160ms POST /login] nodejs.AssertionError: Can't find /login/view from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:18:5)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 11520
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 20:22:59,248 ERROR 12472 [-/::1/-/33615ms POST /login] nodejs.AssertionError: Can't find /index.html from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:12:9)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 12472
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 20:23:43,167 ERROR 12472 [-/::1/-/34944ms POST /login] nodejs.AssertionError: Can't find /index.html from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:12:9)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 12472
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 20:29:59,708 ERROR 8460 [-/::1/-/12617ms POST /login] nodejs.AssertionError: Can't find /index.html from C:\message-board\app\view
+    at Map.resolve (C:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (C:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (C:\message-board\app\controller\auth.js:12:9)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 8460
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 20:56:01,983 ERROR 11188 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 11188
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 21:06:53,289 ERROR 14516 [-/::1/-/6071ms POST /login] nodejs.TypeError: Cannot read property 'LOGIN_FIELD' of undefined
+    at AuthController.login (C:\message-board\app\controller\auth.js:11:39)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async login (C:\message-board\app\middleware\login.js:6:14)
+    at async C:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (C:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (C:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (C:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (C:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (C:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (C:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async C:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (C:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (C:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 14516
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 21:18:24,165 ERROR 3340 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 3340
+hostname: ��Ϣƽ̨-������
+
+2020-06-08 21:20:25,196 ERROR 3340 nodejs.ClusterClientNoResponseError: client no response in 79991ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (C:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 3340
+hostname: ��Ϣƽ̨-������
+
+2020-06-09 10:30:17,503 ERROR 7560 nodejs.ClusterClientNoResponseError: client no response in 885117ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (C:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 7560
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 11:25:42,721 ERROR 4832 [-/::1/-/24225ms POST /login] nodejs.AssertionError: Can't find /login/view from D:\message-board\app\public,D:\message-board\app\view
+    at Map.resolve (D:\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (D:\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (D:\message-board\app\controller\auth.js:18:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 4832
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 13:35:43,502 ERROR 10948 nodejs.ClusterClientNoResponseError: client no response in 5810422ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 10948
+hostname: ��Ϣƽ̨-������
+
+2020-06-11 13:36:21,465 ERROR 10948 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 10948
+hostname: ��Ϣƽ̨-������
+
+2020-06-13 11:52:47,968 ERROR 7872 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 7872
+hostname: ��Ϣƽ̨-������
+
+2020-06-13 13:37:37,566 ERROR 7872 nodejs.ClusterClientNoResponseError: client no response in 4226888ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 7872
+hostname: ��Ϣƽ̨-������
+
+2020-06-13 14:54:04,541 ERROR 12124 nodejs.ClusterClientNoResponseError: client no response in 77772ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12124
+hostname: ��Ϣƽ̨-������
+
+2020-06-13 15:33:52,151 ERROR 1248 [-/::1/-/7ms GET /login/view] nodejs.TypeError: The "path" argument must be of type string. Received an instance of Object
+    at validateString (internal/validators.js:121:11)
+    at Object.join (path.js:375:7)
+    at resolvePath (D:\message-board\node_modules\egg-view\lib\view_manager.js:87:29)
+    at Map.resolve (D:\message-board\node_modules\egg-view\lib\view_manager.js:73:22)
+    at ContextView.[contextView#render] (D:\message-board\node_modules\egg-view\lib\context_view.js:50:45)
+    at ContextView.render (D:\message-board\node_modules\egg-view\lib\context_view.js:33:24)
+    at Object.renderView (D:\message-board\node_modules\egg-view\app\extend\context.js:24:22)
+    at Object.render (D:\message-board\node_modules\egg-view\app\extend\context.js:14:17)
+    at HomeController.login (D:\message-board\app\controller\home.js:7:20)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+code: "ERR_INVALID_ARG_TYPE"
+pid: 1248
+hostname: ��Ϣƽ̨-������
+
+2020-06-13 15:34:32,292 ERROR 9684 [-/::1/-/9ms GET /login/view] nodejs.TypeError: The "path" argument must be of type string. Received an instance of Object
+    at validateString (internal/validators.js:121:11)
+    at Object.join (path.js:375:7)
+    at resolvePath (D:\message-board\node_modules\egg-view\lib\view_manager.js:87:29)
+    at Map.resolve (D:\message-board\node_modules\egg-view\lib\view_manager.js:73:22)
+    at ContextView.[contextView#render] (D:\message-board\node_modules\egg-view\lib\context_view.js:50:45)
+    at ContextView.render (D:\message-board\node_modules\egg-view\lib\context_view.js:33:24)
+    at Object.renderView (D:\message-board\node_modules\egg-view\app\extend\context.js:24:22)
+    at Object.render (D:\message-board\node_modules\egg-view\app\extend\context.js:14:17)
+    at HomeController.login (D:\message-board\app\controller\home.js:7:20)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+code: "ERR_INVALID_ARG_TYPE"
+pid: 9684
+hostname: ��Ϣƽ̨-������
+
+2020-06-13 18:41:31,503 ERROR 12540 nodejs.ClusterClientNoResponseError: client no response in 8411381ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12540
+hostname: ��Ϣƽ̨-������
+

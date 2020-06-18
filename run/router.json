@@ -119,5 +119,42 @@
     "stack": [
       "wrappedController"
     ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/information",
+    "regexp": "/^\\/api\\/information(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/avatar/upload",
+    "regexp": "/^\\/api\\/avatar\\/upload(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/indexView",
+    "regexp": "/^\\/indexView(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
   }
 ]

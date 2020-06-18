@@ -138,10 +138,13 @@
       "fieldNameSize": 100,
       "fieldSize": 102400,
       "fields": 10,
-      "fileSize": 10485760,
+      "fileSize": 5242880,
       "files": 10,
       "fileExtensions": [],
-      "whitelist": null,
+      "whitelist": [
+        ".png",
+        ".jpg"
+      ],
       "tmpdir": "C:\\Users\\xin\\AppData\\Local\\Temp\\egg-multipart-tmp\\message-board",
       "cleanSchedule": {
         "cron": "0 30 4 * * *"
@@ -248,7 +251,8 @@
       "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "egg-bin dev",
-        "debug": "egg-bin debug"
+        "debug": "egg-bin debug",
+        "cov": "egg-bin cov"
       },
       "author": "chenpeixin",
       "license": "ISC"
@@ -372,7 +376,7 @@
         "fieldNameSize": 100,
         "fieldSize": 102400,
         "fields": 10,
-        "fileSize": 10485760,
+        "fileSize": 5242880,
         "files": 10
       },
       "checkFile": "<Function checkFile>"

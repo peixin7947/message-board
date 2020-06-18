@@ -17,6 +17,9 @@ module.exports = app => {
       type: String,
       default: '无',
     },
+    sex: {
+      type: Number,
+    },
     avatar: {
       type: String,
       default: '/static/images/avatar.png',

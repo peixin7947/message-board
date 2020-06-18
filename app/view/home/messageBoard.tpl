@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8"/>
-    <title>AMIS Demo</title>
+    <title>留言板</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta
             name="viewport"
@@ -30,56 +30,41 @@
     var amis = amisRequire('amis/embed');
     amis.embed('#root', {
       'type': 'page',
-      'initApi': '',
-      'title': '个人空间',
-      'body': [
+      'initApi': '/indexView?url=${url}',
+      // 'title': '个人空间',
+      'aside': [
         {
-          'type': 'panel',
-          'title': '简介',
-          'body': [
-            {
-              'type': 'image',
-              'value': '/static/images/logo.png'
-            },
-            'Make you and your friends play games like in a LAN.',
-            'This needs Games with LAN Mode'
-          ]
+          'type': 'icon',
+          'className': 'm-l-xxl padder-v-sm',
+          'icon': 'space-shuttle',
         },
         {
-          'type': 'panel',
-          'title': 'Links',
-          'body': 'Online user: ${online}. More info refer to below links',
-          'actions': [
+          'type': 'plain',
+          'className': 'text-lg',
+          'text': '导航栏',
+        },
+        {
+          'type': 'nav',
+          'stacked': true,
+          'className': 'h-full ',
+          'links': [
             {
-              'type': 'button',
-              'label': 'Discord',
-              'level': 'info',
-              'actionType': 'link',
-              'link': 'https://discord.gg/zEMCu5n'
+              'label': '个人信息',
+              'to': '?url=information',
             },
             {
-              'type': 'button',
-              'label': 'LAN Play Client on Github',
-              'level': 'info',
-              'actionType': 'link',
-              'link': 'https://github.com/spacemeowx2/switch-lan-play'
+              'label': '留言板',
+              'to': '?url=message',
+              // "icon": "fa fa-user",
             },
             {
-              'type': 'button',
-              'label': 'Status website',
-              'level': 'info',
-              'actionType': 'link',
-              'link': 'http://lan-play.com/'
-            },
-            {
-              'type': 'button',
-              'level': 'success',
-              'label': 'Login',
-              'actionType': 'link',
-              'link': 'login'
+              'label': '设置',
+              'to': '/',
             }
           ]
-        }
+        } ],
+      'body': [
+        '${data}'
       ]
     });
   })();
