@@ -1,446 +1,246 @@
-2020-06-18 11:28:06,128 ERROR 10136 [-/::1/-/16ms POST /api/avatar/upload?] nodejs.TypeError: Cannot read property 'replace' of undefined
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:32:30)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 10136
+2020-06-19 10:03:20,572 ERROR 15864 [-/::1/-/87ms POST /login] nodejs.AssertionError: Can't find /home/messageBoard.html from E:\Program Files\program\message-board\app\public,E:\Program Files\program\message-board\app\view
+    at Map.resolve (E:\Program Files\program\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (E:\Program Files\program\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (E:\Program Files\program\message-board\app\controller\auth.js:15:29)
+    at async E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (E:\Program Files\program\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (E:\Program Files\program\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async E:\Program Files\program\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (E:\Program Files\program\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (E:\Program Files\program\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 15864
 hostname: xin
 
-2020-06-18 11:28:50,329 ERROR 10136 [-/::1/-/17896ms POST /api/avatar/upload?] nodejs.TypeError: Cannot read property 'replace' of undefined
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:32:30)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 10136
+2020-06-19 10:03:31,040 ERROR 15864 [-/::1/-/16ms POST /login] nodejs.AssertionError: Can't find /home/messageBoard.html from E:\Program Files\program\message-board\app\public,E:\Program Files\program\message-board\app\view
+    at Map.resolve (E:\Program Files\program\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (E:\Program Files\program\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (E:\Program Files\program\message-board\app\controller\auth.js:15:29)
+    at async E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (E:\Program Files\program\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (E:\Program Files\program\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async E:\Program Files\program\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (E:\Program Files\program\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (E:\Program Files\program\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 15864
 hostname: xin
 
-2020-06-18 11:31:24,978 ERROR 14756 [-/::1/-/58019ms POST /api/avatar/upload?] nodejs.TypeError: Cannot read property 'replace' of undefined
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:32:30)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 14756
+2020-06-19 10:03:45,358 ERROR 15864 [-/::1/-/17ms POST /login] nodejs.AssertionError: Can't find /home/messageBoard.html from E:\Program Files\program\message-board\app\public,E:\Program Files\program\message-board\app\view
+    at Map.resolve (E:\Program Files\program\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (E:\Program Files\program\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (E:\Program Files\program\message-board\app\controller\auth.js:15:29)
+    at async E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (E:\Program Files\program\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (E:\Program Files\program\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async E:\Program Files\program\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (E:\Program Files\program\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (E:\Program Files\program\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 15864
 hostname: xin
 
-2020-06-18 17:19:28,498 ERROR 7040 [-/::1/-/4583ms POST /api/avatar/upload?] nodejs.TypeError: Cannot read property 'replace' of undefined
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:32:30)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 7040
+2020-06-19 10:09:54,127 ERROR 8024 [-/::1/-/18ms POST /login] nodejs.AssertionError: Can't find /home/messageBoard.tpl from E:\Program Files\program\message-board\app\public,E:\Program Files\program\message-board\app\view
+    at Map.resolve (E:\Program Files\program\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (E:\Program Files\program\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (E:\Program Files\program\message-board\app\controller\auth.js:15:29)
+    at async E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (E:\Program Files\program\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (E:\Program Files\program\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async E:\Program Files\program\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (E:\Program Files\program\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (E:\Program Files\program\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 8024
 hostname: xin
 
-2020-06-18 17:25:30,697 ERROR 7040 [-/::1/-/33ms POST /api/information] nodejs.TypeError: ctx.service.user.updateUserInformation is not a function
-    at UserController.updateUserInformation (E:\Program Files\program\message-board\app\controller\user.js:24:48)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 7040
+2020-06-19 10:10:03,785 ERROR 8024 [-/::1/-/17ms POST /login] nodejs.AssertionError: Can't find /home/messageBoard.tpl from E:\Program Files\program\message-board\app\public,E:\Program Files\program\message-board\app\view
+    at Map.resolve (E:\Program Files\program\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (E:\Program Files\program\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (E:\Program Files\program\message-board\app\controller\auth.js:15:29)
+    at async E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (E:\Program Files\program\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (E:\Program Files\program\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async E:\Program Files\program\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (E:\Program Files\program\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (E:\Program Files\program\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 8024
 hostname: xin
 
-2020-06-18 17:47:08,472 ERROR 5432 [-/::1/-/38ms POST /api/information] nodejs.CastError: Cast to Number failed for value "女" at path "sex"
-    at model.Query.exec (E:\Program Files\program\message-board\node_modules\mongoose\lib\query.js:4351:21)
-    at model.Query.Query.then (E:\Program Files\program\message-board\node_modules\mongoose\lib\query.js:4443:15)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-messageFormat: undefined
-stringValue: "\"女\""
-kind: "Number"
-value: "女"
-path: "sex"
-reason: {"generatedMessage":true,"code":"ERR_ASSERTION","actual":false,"expected":true,"operator":"=="}
-pid: 5432
+2020-06-19 10:10:08,333 ERROR 11248 [-/::1/-/33ms GET /indexView?url=] nodejs.AssertionError: Can't find home/messageBoard.tpl from E:\Program Files\program\message-board\app\public,E:\Program Files\program\message-board\app\view
+    at Map.resolve (E:\Program Files\program\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (E:\Program Files\program\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async HomeController.urlToView (E:\Program Files\program\message-board\app\controller\home.js:22:7)
+    at async login (E:\Program Files\program\message-board\app\middleware\login.js:6:14)
+    at async E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (E:\Program Files\program\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (E:\Program Files\program\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async E:\Program Files\program\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (E:\Program Files\program\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (E:\Program Files\program\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 11248
 hostname: xin
 
-2020-06-18 17:53:37,027 ERROR 5432 [-/::1/-/9ms POST /api/information] nodejs.CastError: Cast to Number failed for value "女" at path "sex"
-    at model.Query.exec (E:\Program Files\program\message-board\node_modules\mongoose\lib\query.js:4351:21)
-    at model.Query.Query.then (E:\Program Files\program\message-board\node_modules\mongoose\lib\query.js:4443:15)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-messageFormat: undefined
-stringValue: "\"女\""
-kind: "Number"
-value: "女"
-path: "sex"
-reason: {"generatedMessage":true,"code":"ERR_ASSERTION","actual":false,"expected":true,"operator":"=="}
-pid: 5432
+2020-06-19 10:11:13,997 ERROR 10540 [-/::1/-/30ms GET /indexView?url=information] nodejs.AssertionError: Can't find home/information.html from E:\Program Files\program\message-board\app\public,E:\Program Files\program\message-board\app\view
+    at Map.resolve (E:\Program Files\program\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (E:\Program Files\program\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async HomeController.urlToView (E:\Program Files\program\message-board\app\controller\home.js:20:7)
+    at async login (E:\Program Files\program\message-board\app\middleware\login.js:6:14)
+    at async E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (E:\Program Files\program\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (E:\Program Files\program\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async E:\Program Files\program\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (E:\Program Files\program\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (E:\Program Files\program\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 10540
 hostname: xin
 
-2020-06-18 17:53:44,429 ERROR 5432 [-/::1/-/10ms POST /api/information] nodejs.CastError: Cast to Number failed for value "女" at path "sex"
-    at model.Query.exec (E:\Program Files\program\message-board\node_modules\mongoose\lib\query.js:4351:21)
-    at model.Query.Query.then (E:\Program Files\program\message-board\node_modules\mongoose\lib\query.js:4443:15)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-messageFormat: undefined
-stringValue: "\"女\""
-kind: "Number"
-value: "女"
-path: "sex"
-reason: {"generatedMessage":true,"code":"ERR_ASSERTION","actual":false,"expected":true,"operator":"=="}
-pid: 5432
+2020-06-19 10:21:46,484 ERROR 10776 [-/::1/-/12ms GET /indexView?url=information] nodejs.AssertionError: Can't find home/information.html from E:\Program Files\program\message-board\app\public,E:\Program Files\program\message-board\app\view
+    at Map.resolve (E:\Program Files\program\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (E:\Program Files\program\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async HomeController.urlToView (E:\Program Files\program\message-board\app\controller\home.js:20:7)
+    at async login (E:\Program Files\program\message-board\app\middleware\login.js:6:14)
+    at async E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (E:\Program Files\program\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (E:\Program Files\program\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async E:\Program Files\program\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (E:\Program Files\program\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (E:\Program Files\program\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 10776
 hostname: xin
 
-2020-06-18 19:00:34,825 ERROR 17320 [-/::1/-/4576ms POST /api/avatar/upload?] nodejs.TypeError: Cannot read property 'replace' of undefined
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:33:30)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 17320
+2020-06-19 10:22:11,583 ERROR 10776 [-/::1/-/18ms GET /indexView?url=information] nodejs.AssertionError: Can't find home/information.html from E:\Program Files\program\message-board\app\public,E:\Program Files\program\message-board\app\view
+    at Map.resolve (E:\Program Files\program\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (E:\Program Files\program\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async HomeController.urlToView (E:\Program Files\program\message-board\app\controller\home.js:20:7)
+    at async login (E:\Program Files\program\message-board\app\middleware\login.js:6:14)
+    at async E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (E:\Program Files\program\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (E:\Program Files\program\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async E:\Program Files\program\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (E:\Program Files\program\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (E:\Program Files\program\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 10776
 hostname: xin
 
-2020-06-18 19:00:53,849 ERROR 17320 [-/::1/-/9288ms POST /api/avatar/upload?] nodejs.TypeError: Cannot read property 'replace' of undefined
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:33:30)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 17320
+2020-06-19 12:04:48,667 ERROR 11260 [-/::1/-/14ms POST /login] nodejs.AssertionError: Can't find /home/messageBoard.tpl from E:\Program Files\program\message-board\app\public,E:\Program Files\program\message-board\app\view
+    at Map.resolve (E:\Program Files\program\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (E:\Program Files\program\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (E:\Program Files\program\message-board\app\controller\auth.js:15:29)
+    at async E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (E:\Program Files\program\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (E:\Program Files\program\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async E:\Program Files\program\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (E:\Program Files\program\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (E:\Program Files\program\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 11260
 hostname: xin
 
-2020-06-18 19:01:05,177 ERROR 17320 [-/::1/-/6874ms POST /api/avatar/upload?] nodejs.TypeError: Cannot read property 'replace' of undefined
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:33:30)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 17320
-hostname: xin
-
-2020-06-18 19:01:40,889 ERROR 17320 [-/::1/-/33383ms POST /api/avatar/upload?] nodejs.TypeError: Cannot read property 'replace' of undefined
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:33:30)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 17320
-hostname: xin
-
-2020-06-18 19:47:13,648 ERROR 17320 [-/::1/-/40ms POST /api/avatar/upload?] nodejs.TypeError: Cannot read property 'replace' of undefined
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:33:30)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 17320
-hostname: xin
-
-2020-06-18 19:47:18,703 ERROR 17320 [-/::1/-/33ms POST /api/avatar/upload?] nodejs.TypeError: Cannot read property 'replace' of undefined
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:33:30)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 17320
-hostname: xin
-
-2020-06-18 19:47:23,400 ERROR 17320 [-/::1/-/37ms POST /api/avatar/upload?] nodejs.TypeError: Cannot read property 'replace' of undefined
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:33:30)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 17320
-hostname: xin
-
-2020-06-18 19:47:59,727 ERROR 17320 [-/::1/-/39ms POST /api/avatar/upload?] nodejs.TypeError: Cannot read property 'replace' of undefined
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:33:30)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 17320
-hostname: xin
-
-2020-06-18 19:48:46,629 ERROR 12516 [-/::1/-/16158ms POST /api/avatar/upload?] nodejs.ReferenceError: buffer is not defined
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:41:24)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 12516
-hostname: xin
-
-2020-06-18 19:50:42,902 ERROR 13480 [-/::1/-/3205ms POST /api/avatar/upload?] nodejs.TypeError: Cannot read property 'transfer-encoding' of undefined
-    at hasbody (E:\Program Files\program\message-board\node_modules\type-is\index.js:93:21)
-    at typeofrequest (E:\Program Files\program\message-board\node_modules\type-is\index.js:127:8)
-    at multerMiddleware (E:\Program Files\program\message-board\node_modules\multer\lib\make-middleware.js:18:10)
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:38:17)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-
-pid: 13480
-hostname: xin
-
-2020-06-18 19:52:45,397 ERROR 13480 [-/::1/-/26675ms POST /api/avatar/upload?] nodejs.TypeError: Cannot read property 'transfer-encoding' of undefined
-    at hasbody (E:\Program Files\program\message-board\node_modules\type-is\index.js:93:21)
-    at typeofrequest (E:\Program Files\program\message-board\node_modules\type-is\index.js:127:8)
-    at multerMiddleware (E:\Program Files\program\message-board\node_modules\multer\lib\make-middleware.js:18:10)
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:38:17)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-
-pid: 13480
-hostname: xin
-
-2020-06-18 20:31:57,931 ERROR 6972 [-/::1/-/6256ms POST /api/avatar/upload?] nodejs.ENOENTError: ENOENT: no such file or directory, open 'uploadfile\test.png'
-    at Object.openSync (fs.js:461:3)
-    at Object.writeFileSync (fs.js:1387:35)
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:38:8)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-errno: -4058
-syscall: "open"
-code: "ENOENT"
-path: "uploadfile\\test.png"
-name: "ENOENTError"
-pid: 6972
-hostname: xin
-
-2020-06-18 20:32:47,798 ERROR 6972 [-/::1/-/30635ms POST /api/avatar/upload?] nodejs.ENOENTError: ENOENT: no such file or directory, open 'uploadfile\test.png'
-    at Object.openSync (fs.js:461:3)
-    at Object.writeFileSync (fs.js:1387:35)
-    at UserController.uploadAvatar (E:\Program Files\program\message-board\app\controller\user.js:38:8)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-errno: -4058
-syscall: "open"
-code: "ENOENT"
-path: "uploadfile\\test.png"
-name: "ENOENTError"
-pid: 6972
-hostname: xin
-
-2020-06-18 21:14:08,296 ERROR 16304 [-/::1/-/15718ms GET /indexView?url=information] nodejs.ReferenceError: ctx is not defined
-    at HomeController.urlToView (E:\Program Files\program\message-board\app\controller\home.js:15:17)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:45:18)
-    at E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa-compose\index.js:44:32)
-    at E:\Program Files\program\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (E:\Program Files\program\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at login (E:\Program Files\program\message-board\app\middleware\login.js:6:20)
-    at fn (E:\Program Files\program\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
-    at dispatch (E:\Program Files\program\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
-
-pid: 16304
+2020-06-19 12:09:08,829 ERROR 9120 [-/::1/-/93ms POST /login] nodejs.AssertionError: Can't find /messageBoard.html from E:\Program Files\program\message-board\app\public,E:\Program Files\program\message-board\app\view
+    at Map.resolve (E:\Program Files\program\message-board\node_modules\egg-view\lib\view_manager.js:74:5)
+    at async ContextView.[contextView#render] (E:\Program Files\program\message-board\node_modules\egg-view\lib\context_view.js:50:22)
+    at async AuthController.login (E:\Program Files\program\message-board\app\controller\auth.js:15:29)
+    at async E:\Program Files\program\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (E:\Program Files\program\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (E:\Program Files\program\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (E:\Program Files\program\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async E:\Program Files\program\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (E:\Program Files\program\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (E:\Program Files\program\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 9120
 hostname: xin
 

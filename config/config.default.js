@@ -9,6 +9,7 @@ module.exports = appInfo => {
     defaultViewEngine: 'nunjucks',
     root: [
       path.join(appInfo.baseDir, 'app/public'),
+      path.join(appInfo.baseDir, 'app/public/html'),
       path.join(appInfo.baseDir, 'app/view'),
     ].join(','),
   };

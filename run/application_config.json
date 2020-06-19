@@ -180,6 +180,7 @@
     "view": {
       "root": [
         "E:\\Program Files\\program\\message-board\\app\\public",
+        "E:\\Program Files\\program\\message-board\\app\\public\\html",
         "E:\\Program Files\\program\\message-board\\app\\view"
       ],
       "cache": false,
