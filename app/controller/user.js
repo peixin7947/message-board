@@ -8,10 +8,11 @@ class UserController extends Controller {
   // 注册用户
   async create() {
     const { ctx } = this;
-    const user = {
-      userName: ctx.request.body.userName,
-      password: ctx.request.body.password,
-    };
+    // 参数校验
+    const user = ctx.validate({
+      userName: ctx.Joi.string().min(3).max(18),
+      password: ctx.Joi.string().min(6).max(18),
+    }, Object.assign(ctx.request.body, ctx.query, ctx.params));
     const res = await ctx.service.user.addUser(user);
     ctx.body = res;
   }
@@ -25,7 +26,13 @@ class UserController extends Controller {
   // 更新当前用户的个人信息
   async updateUserInformation() {
     const { ctx } = this;
-    const data = Object.assign({}, ctx.request.body, ctx.params, ctx.query);
+    const data = ctx.validate({
+      nickname: ctx.Joi.string().min(3).max(18),
+      email: ctx.Joi.string().email(),
+      sex: ctx.Joi.number().min(0).max(1),
+      intro: ctx.Joi.string().max(256),
+      age: ctx.Joi.number().min(0).max(120),
+    }, Object.assign(ctx.request.body, ctx.query, ctx.params));
     ctx.response.body = await ctx.service.user.updateUserInformation(data);
   }
 
@@ -58,6 +65,16 @@ class UserController extends Controller {
     ctx.body = { status: 0, data: { url: filename } };
   }
 
+  // 修改用户密码
+  async updateUserPassword() {
+    const { ctx } = this;
+    const data = ctx.validate({
+      id: ctx.helper.validataObj('_id').require(),
+      password: ctx.Joi.string().min(6).max(18),
+      newPassword: ctx.Joi.string().min(6).max(18),
+    }, Object.assign(ctx.request.body, ctx.query, ctx.params));
+    ctx.body = await ctx.service.user.updateUserPassword(data);
+  }
 }
 
 module.exports = UserController;

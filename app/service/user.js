@@ -42,6 +42,12 @@ class UserService extends Service {
     ctx.model.User.updateOne({ _id: userInfo._id }, { avatar: imgBuffer });
   }
 
+  async updateUserPassword(data) {
+    const { ctx } = this;
+    const { id, password, newPassword } = data;
+    const res = await ctx.model.User.findOneAndUpdate({ _id: id, password: md5(password) }, { password: newPassword });
+    return res;
+  }
 }
 
 module.exports = UserService;
