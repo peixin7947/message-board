@@ -12,5 +12,7 @@ module.exports = app => {
   router.post('/api/information', controller.user.updateUserInformation); // 更新用户信息
   router.post('/api/avatar/upload', controller.user.uploadAvatar); // 上传用户头像
   router.get('/indexView', controller.home.urlToView); // 上传用户头像
+  router.get('/api/:id/password', controller.user.updateUserPassword); // 修改用户密码
+
 
 };
