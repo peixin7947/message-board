@@ -31,8 +31,7 @@ class UserService extends Service {
   async updateUserInformation(data) {
     const { ctx } = this;
     const userInfo = ctx.session.userInfo;
-    const user = data.all;
-    await ctx.model.User.updateOne({ _id: userInfo._id }, user);
+    await ctx.model.User.updateOne({ _id: userInfo._id }, data);
     return { status: 0, msg: '修改成功' };
   }
 

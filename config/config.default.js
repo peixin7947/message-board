@@ -59,6 +59,8 @@ module.exports = appInfo => {
     whitelist: [ // 允许上传的格式
       '.png',
       '.jpg',
+      '.jpeg',
+      '.gif',
     ],
     fileSize: '5mb', // 最大5mb
   };

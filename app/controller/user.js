@@ -29,10 +29,11 @@ class UserController extends Controller {
     const data = ctx.validate({
       nickname: ctx.Joi.string().min(3).max(18),
       email: ctx.Joi.string().email(),
-      sex: ctx.Joi.number().min(0).max(1),
+      avatar: ctx.Joi.string(),
+      sex: [ 1, 0 ],
       intro: ctx.Joi.string().max(256),
       age: ctx.Joi.number().min(0).max(120),
-    }, Object.assign(ctx.request.body, ctx.query, ctx.params));
+    }, Object.assign(ctx.request.body, ctx.query, ctx.params).all);
     ctx.response.body = await ctx.service.user.updateUserInformation(data);
   }
 

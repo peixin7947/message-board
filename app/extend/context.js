@@ -7,8 +7,7 @@ module.exports = {
     const { error, value } = Joi.validate(valueObj, schema);
     if (!error) return value;
     error.errors = error.message;
-    return error;
-    // this.throw(422, error);
+    this.throw(422, error);
   },
   get Joi() {
     if (!this[JOI]) this[JOI] = Joi;
