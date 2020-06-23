@@ -113,7 +113,9 @@
       "fileExtensions": [],
       "whitelist": [
         ".png",
-        ".jpg"
+        ".jpg",
+        ".jpeg",
+        ".gif"
       ],
       "tmpdir": "C:\\Users\\duoyi\\AppData\\Local\\Temp\\egg-multipart-tmp\\message-board",
       "cleanSchedule": {
@@ -322,6 +324,7 @@
     },
     "onClientError": null,
     "middleware": [
+      "responseHandler",
       "login"
     ],
     "login": {

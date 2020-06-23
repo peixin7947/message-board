@@ -5,6 +5,7 @@ class AuthController extends Controller {
   // 登录验证
   async login() {
     const { ctx } = this;
+    ctx.response._prue = true;
     const { username, password } = ctx.request.body;
     if (username && password) {
       const user = await ctx.service.auth.login(username, password);
@@ -12,7 +13,7 @@ class AuthController extends Controller {
         ctx.session[this.config.login.LOGIN_FIELD] = user;
         // 调用 rotateCsrfSecret 刷新用户的 CSRF token
         ctx.rotateCsrfSecret();
-        ctx.body = await ctx.renderView('/html/messageBoard.html');
+        await ctx.render('/html/messageBoard.html');
         return;
       }
     }
@@ -21,6 +22,7 @@ class AuthController extends Controller {
 
   async register() {
     const { ctx } = this;
+    ctx.response._prue = true;
     // 参数校验
     const user = ctx.request.body;
     if (!user.password || !user.rePassword) {
@@ -39,10 +41,10 @@ class AuthController extends Controller {
         .required(),
     }, Object.assign(ctx.params, ctx.query, ctx.request.body));
     let message = '';
-    if (value.errors) {
-      await ctx.render('/auth/register.tpl', { message: '注册失败!!请检查输入的数据格式是否正确。' });
-      return;
-    }
+    // if (value.errors) {
+    //   await ctx.render('/auth/register.tpl', { message: '注册失败!!请检查输入的数据格式是否正确。' });
+    //   return;
+    // }
 
     const userObj = await ctx.model.User.findOne({ username: user.username });
     if (userObj) {

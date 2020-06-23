@@ -35,7 +35,7 @@ module.exports = appInfo => {
   };
 
 
-  config.middleware = [ 'login' ];
+  config.middleware = [ 'responseHandler', 'login' ];
 
   config.security = {
     csrf: {

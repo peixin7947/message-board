@@ -32,7 +32,7 @@ class UserService extends Service {
     const { ctx } = this;
     const userInfo = ctx.session.userInfo;
     await ctx.model.User.updateOne({ _id: userInfo._id }, data);
-    return { status: 0, msg: '修改成功' };
+    return 'json';
   }
 
   async uploadAvatar(imgBuffer) {

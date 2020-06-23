@@ -363,6 +363,7 @@
     },
     "onClientError": null,
     "middleware": [
+      "responseHandler",
       "login"
     ],
     "login": {
