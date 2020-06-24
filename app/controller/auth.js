@@ -20,6 +20,7 @@ class AuthController extends Controller {
     await ctx.render('/auth/login.tpl', { message: '输入用户名密码错误' });
   }
 
+  // 用户注册
   async register() {
     const { ctx } = this;
     ctx.response._prue = true;
@@ -56,6 +57,15 @@ class AuthController extends Controller {
     message = '<script language=javascript>alert("注册成功!!!");window.location.href="/";</script>';
     ctx.response.body = message;
   }
+
+  // 用户退出登录
+  async logout() {
+    const { ctx } = this;
+    ctx.rotateCsrfSecret();
+    ctx.session.userInfo = null;
+    ctx.body = { msg: '已退出登录' };
+  }
+
 
 }
 

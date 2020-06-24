@@ -28,7 +28,7 @@
 <script type="text/javascript">
   (function() {
     const amis = amisRequire('amis/embed');
-    const json = {
+    const updateInformationBtn = {
       'type': 'button',
       'actionType': 'dialog',
       'label': '修改个人信息',
@@ -148,47 +148,50 @@
     amis.embed('#root', {
       'type': 'page',
       'title': '个人信息',
-      'aside': [
-        {
-          'type': 'icon',
-          'className': 'm-l-xxl padder-v-sm',
-          'icon': 'fa fa-slideshare',
-        },
-        {
-          'type': 'plain',
-          'className': 'text-lg',
-          'text': '导航栏',
-        },
-        {
-          'type': 'nav',
-          'stacked': true,
-          'className': 'h-full ',
-          'links': [
-            {
-              'label': '个人信息',
-              'to': '/html/information.html',
-            },
-            {
-              'label': '留言板',
-              'to': '/html/messageBoard.html',
-              // "icon": "fa fa-user",
-            },
-            {
-              'label': '设置',
-              'to': '/',
-            }
-          ]
-        } ],
+      'initApi': `get:/api/information`,
+      // 'aside': [
+      //   {
+      //     'type': 'icon',
+      //     'className': 'm-l-xxl padder-v-sm',
+      //     'icon': 'fa fa-slideshare',
+      //   },
+      //   {
+      //     'type': 'plain',
+      //     'className': 'text-lg',
+      //     'text': '导航栏',
+      //   },
+      //   {
+      //     'type': 'nav',
+      //     'stacked': true,
+      //     'className': 'h-full ',
+      //     'links': [
+      //       {
+      //         'label': '个人信息',
+      //         'to': '/html/information.html',
+      //       },
+      //       {
+      //         'label': '留言板',
+      //         'to': '/html/messageBoard.html',
+      //         // "icon": "fa fa-user",
+      //       },
+      //       {
+      //         'label': '设置',
+      //         'to': '/',
+      //       }
+      //     ]
+      //   } ],
       'toolbar': [
         {
           'label': '导航栏',
           'type': 'button',
           'level': 'primary',
+
           'actionType': 'drawer',
           'actions': null,
           'closeOnEsc': true,
           'drawer': {
             'title': '导航栏',
+            'closeOnOutside': true,
             'body': [
               {
                 'type': 'form',
@@ -197,26 +200,36 @@
               },
               {
                 'type': 'card',
+                'intiApi': `get:/api/information`,
                 'header': {
                   'title': '${nickname}',
-                  'subTitle': 'Sub Title',
+                  'subTitle': '${intro | default: 暂无}',
                   'description': 'description',
                   'avatarClassName': 'pull-left thumb-md avatar b-3x m-r',
-                  'avatar': '/static/images/avatar.png'
+                  'avatar': '${avatar}'
                 },
-                // 'body': 'Body',
                 'actions': [
-                  json,
-                  // {
-                  //   'type': 'button',
-                  //   'label': 'Action 2',
-                  //   'actionType': 'dialog',
-                  //   'dialog': {
-                  //     'confirmMode': false,
-                  //     'title': '提示',
-                  //     'body': '对，你刚点击了！'
-                  //   }
-                  // }
+                  {
+                    'type': 'button',
+                    'label': '个人信息',
+                    'level': 'info',
+                    'actionType': 'url',
+                    'blank': false,
+                    'url': '/html/information.html',
+                  },
+                  {
+                    'level': 'info',
+                    'blank': false,
+                    'label': '退出登录',
+                    'type': 'button',
+                    'actionType': 'ajax',
+                    'confirmText': '确定退出登录？',
+                    'api': '/api/logout',
+                    'redirect': '/',
+                    'messages': {
+                      'success': '已退出登录'
+                    }
+                  }
                 ]
               },
             ]
@@ -231,126 +244,9 @@
           'name': 'informationForm',
           'title': '',
           'submitText': '',
-          'initApi': `get:/api/information`,
           'silentPolling': 'true',
           'actions': [
-            {
-              'type': 'button',
-              'actionType': 'dialog',
-              'label': '修改个人信息',
-              'level': 'info',
-              'reload': 'informationForm', // 刷新个人信息的内容
-              'dialog': {
-                'title': '',
-                'body': {
-                  'type': 'form',
-                  'mode': 'horizontal',
-                  // 'horizontal': {
-                  //   'leftFixed': 'xs'
-                  // },
-                  'api': {
-                    'url': '/api/information',
-                    'method': 'post',
-                    'data': {
-                      'all': '$$',
-                    },
-                  },
-                  'actions': [
-                    {
-                      'type': 'submit',
-                      'label': '提交',
-                      'primary': true
-                    }
-                  ],
-                  'controls': [
-                    // {
-                    //   'type': 'divider'
-                    // },
-                    {
-                      'type': 'text',
-                      'label': '昵称',
-                      'name': 'nickname',
-                      'required': true,
-                    },
-                    {
-                      'type': 'divider'
-                    },
-                    {
-                      'type': 'image',
-                      'label': '头像',
-                      'name': 'avatar',
-                      'autoUpload': false,
-                      'reciever': 'post:/api/avatar/upload',
-                      'multiple': false,
-                      // 'maxSize ': '16MB',
-                    },
-                    {
-                      'type': 'divider'
-                    },
-                    {
-                      'type': 'select',
-                      'label': '性别',
-                      'name': 'sex',
-                      'options': [
-                        {
-                          'label': '男',
-                          'value': 1
-                        },
-                        {
-                          'label': '女',
-                          'value': 0
-                        }
-                      ],
-                      'value': '${sex}'
-                    },
-                    {
-                      'type': 'divider'
-                    },
-                    {
-                      'type': 'email',
-                      'label': '邮箱',
-                      'name': 'email',
-                      'validateOnChange': true,
-                      'validations': {
-                        'isEmail': true,
-                      },
-                      'validationErrors': {
-                        'isEmail': '请输入正确的邮箱地址'
-                      },
-                    },
-                    {
-                      'type': 'divider'
-                    },
-                    {
-                      'type': 'text',
-                      'label': '年龄',
-                      'name': 'age',
-                      'validations': {
-                        'isInt': true,
-                        'minimum': 0,
-                        'maximum': 120,
-                      },
-                      'validationErrors': {
-                        'isInt': '必须输入数字',
-                        'minimum': '小伙伴，年龄必须在0到120之间',
-                        'maximum': '小伙伴，年龄必须在0到120之间',
-                      }
-                    },
-                    {
-                      'type': 'divider'
-                    },
-                    {
-                      'type': 'text',
-                      'label': '个人签名',
-                      'name': 'intro',
-                    },
-                    {
-                      'type': 'divider'
-                    }
-                  ]
-                }
-              }
-            }
+            updateInformationBtn,
           ],
           'controls': [
             {

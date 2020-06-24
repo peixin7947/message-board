@@ -3,14 +3,14 @@
 module.exports = () => {
   return async function responseHandler(ctx, next) {
     // 登录注册相关的放行
-    if ([ '/', '/login/view', '/register/view', '/login', '/register' ].includes(ctx.request.originalUrl)) {
+    if ([ '/login/view', '/register/view', '/login', '/register' ].includes(ctx.request.originalUrl)) {
       return await next();
     }
     try {
       await next();
     } catch (err) {
       const res = {
-        code: err.code || 1, // 0为正常业务逻辑，1为业务错误, 2为服务端出错
+        status: err.code || 1, // 0为正常业务逻辑，1为业务错误, 2为服务端出错
         msg: err.msg || err.message || '该错误无错误说明',
         data: err.data,
       };
@@ -36,13 +36,12 @@ module.exports = () => {
       return ctx.response.body;
     }
 
-
     if ([ 200, 204 ].includes(ctx.status)) {
       if (ctx.status === 204) ctx.status = 200;
       // 如果_pure字段为true，则不是渲染的数据，不需要添加字段
       ctx.response.body = {
-        code: 0,
-        msg: 'success',
+        status: 0,
+        msg: ctx.response.body.msg || 'success',
         data: ctx.response.body,
       };
     }

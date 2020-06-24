@@ -23,8 +23,7 @@ class UserService extends Service {
     const { ctx } = this;
     const userInfo = ctx.session.userInfo;
     const user = await ctx.model.User.findOne({ _id: userInfo._id }).lean();
-    // user.sex = (user.sex === 1 ? '男' : '女');
-    return { status: 0, data: user };
+    return user;
   }
 
 
@@ -32,7 +31,7 @@ class UserService extends Service {
     const { ctx } = this;
     const userInfo = ctx.session.userInfo;
     await ctx.model.User.updateOne({ _id: userInfo._id }, data);
-    return 'json';
+    return 'success';
   }
 
   async uploadAvatar(imgBuffer) {
@@ -44,8 +43,8 @@ class UserService extends Service {
   async updateUserPassword(data) {
     const { ctx } = this;
     const { id, password, newPassword } = data;
-    const res = await ctx.model.User.findOneAndUpdate({ _id: id, password: md5(password) }, { password: newPassword });
-    return res;
+    await ctx.model.User.findOneAndUpdate({ _id: id, password: md5(password) }, { password: newPassword });
+    return 'success';
   }
 }
 

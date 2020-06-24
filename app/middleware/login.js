@@ -7,7 +7,7 @@ module.exports = options => {
       return await next();
     }
     // 若未登录，则进行拦截
-    ctx.throw(401, '未登录');
+    ctx.throw(200, '未登录');
 
   };
 };

@@ -15,15 +15,15 @@ class HomeController extends Controller {
     await this.ctx.render('auth/register.tpl');
   }
 
-  async urlToView() {
+  // 首页跳转
+  async index() {
     const { ctx } = this;
-    const { url } = ctx.query;
-    if (url === 'information') {
-      await ctx.renderView('home/information.tpl');
-      return;
+    const userInfo = ctx.session.userInfo;
+    // 已经登录
+    if (userInfo) {
+      return ctx.redirect('/html/information.html');
     }
-    // ctx.body = await ctx.render('home/messageBoard.tpl', data);
-    // ctx.body = { status: 0 };
+    return ctx.redirect('/login/view');
   }
 
 }

@@ -150,7 +150,7 @@
       "maxAge": 0
     },
     "view": {
-      "root": "D:\\message-board\\app\\public,D:\\message-board\\app\\public\\html,D:\\message-board\\app\\view",
+      "root": "D:\\message-board\\app\\public,D:\\message-board\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
