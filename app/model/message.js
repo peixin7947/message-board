@@ -71,10 +71,6 @@ module.exports = app => {
    * @type {module:mongoose.Schema<any>}
    */
   const MessageSchema = new Schema({
-    userId: {
-      type: Schema.ObjectId,
-      index: true,
-    },
     creator: {
       type: Schema.ObjectId,
       ref: 'User',

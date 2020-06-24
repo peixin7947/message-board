@@ -58,7 +58,6 @@
             }
           ],
           'controls': [
-            // todo 完善前端字段校验
             {
               'type': 'divider'
             },
@@ -138,6 +137,12 @@
               'type': 'text',
               'label': '个人签名',
               'name': 'intro',
+              'validations': {
+                'maxLength': 256,
+              },
+              'validationErrors': {
+                'maxLength': '小伙伴，个人签名只能256个字符哦',
+              }
             },
           ]
         }
@@ -211,10 +216,12 @@
           'mode': 'horizontal',
           'name': 'informationForm',
           'title': '',
+          'initApi': `get:/api/information`,
+          'initFetch': false,
           'submitText': '',
           'silentPolling': 'true',
           'actions': [
-            updateInformationBtn,
+            updateInformationBtn
           ],
           'controls': [
             {

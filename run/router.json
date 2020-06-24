@@ -124,6 +124,19 @@
   {
     "name": null,
     "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/message",
+    "regexp": "/^\\/api\\/message(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
       "POST"
     ],
     "paramNames": [
@@ -138,8 +151,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/:id/message",
-    "regexp": "/^\\/api\\/((?:[^\\/]+?))\\/message(?:\\/(?=$))?$/",
+    "path": "/api/message/:id",
+    "regexp": "/^\\/api\\/message\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

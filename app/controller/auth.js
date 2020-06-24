@@ -5,17 +5,20 @@ class AuthController extends Controller {
   // 登录验证
   async login() {
     const { ctx } = this;
-    ctx.response._prue = true;
-    const { username, password } = ctx.request.body;
-    if (username && password) {
-      const user = await ctx.service.auth.login(username, password);
-      if (user) {
-        ctx.session[this.config.login.LOGIN_FIELD] = user;
-        // 调用 rotateCsrfSecret 刷新用户的 CSRF token
-        ctx.rotateCsrfSecret();
-        ctx.body = { msg: '登录成功' };
-        return;
-      }
+    // 参数校验
+    const data = ctx.validate({
+      username: ctx.Joi.string().min(3).max(24)
+        .required(),
+      password: ctx.Joi.string().min(6).max(24)
+        .required(),
+    }, Object.assign({}, ctx.params, ctx.query, ctx.request.body));
+    const user = await ctx.service.auth.login(data);
+    if (user) {
+      ctx.session[this.config.login.LOGIN_FIELD] = user;
+      // 调用 rotateCsrfSecret 刷新用户的 CSRF token
+      ctx.rotateCsrfSecret();
+      ctx.body = { msg: '登录成功' };
+      return;
     }
     ctx.code = 1;
     ctx.body = { msg: '输入用户名密码错误' };

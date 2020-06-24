@@ -1,12 +1,12 @@
 'use strict';
 
 module.exports = {
-  validataObj(type) {
-    const { ctx, app } = this;
+  validateObj(type) {
+    const { ctx } = this;
     let obj = {};
     switch (type) {
       case '_id': {
-        obj = ctx.Joi.string().regex(/^[a-e\d]{24}$/i);
+        obj = ctx.Joi.string().regex(/^[a-f\d]{24}$/i);
         break;
       }
       case 'user': {
