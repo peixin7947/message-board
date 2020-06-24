@@ -12,6 +12,7 @@ module.exports = {
       case 'user': {
         break;
       }
+      default: break;
     }
     return obj;
   },

@@ -26,25 +26,28 @@ class UserService extends Service {
     return user;
   }
 
-
+  /**
+   * 修改用户信息
+   * @param data
+   * @return {Promise<{msg: string}>}
+   */
   async updateUserInformation(data) {
     const { ctx } = this;
     const userInfo = ctx.session.userInfo;
     await ctx.model.User.updateOne({ _id: userInfo._id }, data);
-    return 'success';
+    return { msg: '修改成功' };
   }
 
-  async uploadAvatar(imgBuffer) {
-    const { ctx } = this;
-    const userInfo = ctx.session.userInfo;
-    ctx.model.User.updateOne({ _id: userInfo._id }, { avatar: imgBuffer });
-  }
-
+  /**
+   * 修改用户密码
+   * @param data
+   * @return {Promise<{msg: string}>}
+   */
   async updateUserPassword(data) {
     const { ctx } = this;
     const { id, password, newPassword } = data;
     await ctx.model.User.findOneAndUpdate({ _id: id, password: md5(password) }, { password: newPassword });
-    return 'success';
+    return { msg: '修改密码成功' };
   }
 }
 

@@ -28,6 +28,7 @@
 <script type="text/javascript">
   (function() {
     const amis = amisRequire('amis/embed');
+    // 个人信息修改弹框
     const updateInformationBtn = {
       'type': 'button',
       'actionType': 'dialog',
@@ -39,9 +40,9 @@
         'body': {
           'type': 'form',
           'mode': 'horizontal',
-          // 'horizontal': {
-          //   'leftFixed': 'xs'
-          // },
+          'horizontal': {
+            'leftFixed': 'xs'
+          },
           'api': {
             'url': '/api/information',
             'method': 'post',
@@ -57,9 +58,10 @@
             }
           ],
           'controls': [
-            // {
-            //   'type': 'divider'
-            // },
+            // todo 完善前端字段校验
+            {
+              'type': 'divider'
+            },
             {
               'type': 'text',
               'label': '昵称',
@@ -76,7 +78,6 @@
               'autoUpload': false,
               'reciever': 'post:/api/avatar/upload',
               'multiple': false,
-              // 'maxSize ': '16MB',
             },
             {
               'type': 'divider'
@@ -138,9 +139,6 @@
               'label': '个人签名',
               'name': 'intro',
             },
-            {
-              'type': 'divider'
-            }
           ]
         }
       }
@@ -149,49 +147,19 @@
       'type': 'page',
       'title': '个人信息',
       'initApi': `get:/api/information`,
-      // 'aside': [
-      //   {
-      //     'type': 'icon',
-      //     'className': 'm-l-xxl padder-v-sm',
-      //     'icon': 'fa fa-slideshare',
-      //   },
-      //   {
-      //     'type': 'plain',
-      //     'className': 'text-lg',
-      //     'text': '导航栏',
-      //   },
-      //   {
-      //     'type': 'nav',
-      //     'stacked': true,
-      //     'className': 'h-full ',
-      //     'links': [
-      //       {
-      //         'label': '个人信息',
-      //         'to': '/html/information.html',
-      //       },
-      //       {
-      //         'label': '留言板',
-      //         'to': '/html/messageBoard.html',
-      //         // "icon": "fa fa-user",
-      //       },
-      //       {
-      //         'label': '设置',
-      //         'to': '/',
-      //       }
-      //     ]
-      //   } ],
       'toolbar': [
         {
           'label': '导航栏',
           'type': 'button',
-          'level': 'primary',
-
+          'level': 'info',
+          'className': 'w',
           'actionType': 'drawer',
           'actions': null,
           'closeOnEsc': true,
           'drawer': {
             'title': '导航栏',
             'closeOnOutside': true,
+            // 'action': null,
             'body': [
               {
                 'type': 'form',
@@ -200,7 +168,7 @@
               },
               {
                 'type': 'card',
-                'intiApi': `get:/api/information`,
+                'intiApi': ``,
                 'header': {
                   'title': '${nickname}',
                   'subTitle': '${intro | default: 暂无}',

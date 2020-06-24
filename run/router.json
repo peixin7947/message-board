@@ -15,32 +15,6 @@
   {
     "name": null,
     "methods": [
-      "HEAD",
-      "GET"
-    ],
-    "paramNames": [],
-    "path": "/register/view",
-    "regexp": "/^\\/register\\/view(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
-  },
-  {
-    "name": null,
-    "methods": [
-      "HEAD",
-      "GET"
-    ],
-    "paramNames": [],
-    "path": "/login/view",
-    "regexp": "/^\\/login\\/view(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
-  },
-  {
-    "name": null,
-    "methods": [
       "POST"
     ],
     "paramNames": [],
@@ -138,8 +112,7 @@
   {
     "name": null,
     "methods": [
-      "HEAD",
-      "GET"
+      "POST"
     ],
     "paramNames": [],
     "path": "/api/logout",
@@ -153,9 +126,20 @@
     "methods": [
       "POST"
     ],
-    "paramNames": [],
-    "path": "/api/logout",
-    "regexp": "/^\\/api\\/logout(?:\\/(?=$))?$/",
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/:id/message",
+    "regexp": "/^\\/api\\/((?:[^\\/]+?))\\/message(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

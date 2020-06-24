@@ -3,7 +3,7 @@
 module.exports = () => {
   return async function responseHandler(ctx, next) {
     // 登录注册相关的放行
-    if ([ '/login/view', '/register/view', '/login', '/register' ].includes(ctx.request.originalUrl)) {
+    if ([ '/login/view', '/register/view' ].includes(ctx.request.originalUrl)) {
       return await next();
     }
     try {
@@ -28,10 +28,10 @@ module.exports = () => {
 
       // 参数校验错误
       if (status === 422) {
-        res.msg = err.errors;
+        res.msg = '输入数据有误，请重新确认';
       }
 
-      ctx.status = status;
+      // ctx.status = status;
       ctx.response.body = res;
       return ctx.response.body;
     }
@@ -40,7 +40,7 @@ module.exports = () => {
       if (ctx.status === 204) ctx.status = 200;
       // 如果_pure字段为true，则不是渲染的数据，不需要添加字段
       ctx.response.body = {
-        status: 0,
+        status: ctx.code || 0,
         msg: ctx.response.body.msg || 'success',
         data: ctx.response.body,
       };

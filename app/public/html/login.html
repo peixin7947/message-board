@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8"/>
+    <title>留言板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <link rel="stylesheet" href="/static/amis/sdk.css"/>
+    <style>
+        html,
+        body,
+        .app-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="root" class="app-wrapper"></div>
+<script src="/static/amis/sdk.js"></script>
+<script type="text/javascript">
+  (function() {
+    const amis = amisRequire('amis/embed');
+    // 登录页面s
+    amis.embed('#root', {
+      'type': 'page',
+      'title': '留言板',
+      'initApi': '',
+      'body': {
+        'type': 'form',
+        'api': '/login',
+        // todo 测试用，之后改为留言板页面
+        'redirect': '/html/information.html',
+        'submitText': '',
+        'title': '登录用户',
+        'className': 'm-xl',
+        'mode': 'horizontal',
+        'horizontal': {
+          'left': 'col-sm-4',
+          'right': 'col-sm-5',
+        },
+        'controls': [
+          {
+            'type': 'text',
+            'name': 'username',
+            'required': true,
+            'placeholder': '请输入用户名',
+            'label': '用户名',
+            'size': 'full'
+          },
+          {
+            'type': 'password',
+            'name': 'password',
+            'label': '密码',
+            'required': true,
+            'placeholder': '请输入密码',
+            'size': 'full'
+          },
+          // {
+          //   'type': 'checkbox',
+          //   'name': 'rememberMe',
+          //   'label': '记住登录'
+          // },
+          {
+            'type': 'button-toolbar',
+            'buttons': [
+              {
+                'type': 'submit',
+                'btnClassName': 'btn-default',
+                'label': '登录'
+              },
+              {
+                'label': '注册',
+                'type': 'button',
+                'level': 'info',
+                'actionType': 'link',
+                'link': '/html/register.html'
+              },
+              {
+                'label': '忘记密码',
+                'type': 'button',
+                'level': 'info',
+                'actionType': 'link',
+                'link': '/html/resetPassword.html'
+              }
+            ]
+          },
+
+        ]
+      }
+    });
+  })();
+</script>
+</body>
+</html>

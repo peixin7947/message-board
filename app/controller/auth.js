@@ -13,11 +13,12 @@ class AuthController extends Controller {
         ctx.session[this.config.login.LOGIN_FIELD] = user;
         // 调用 rotateCsrfSecret 刷新用户的 CSRF token
         ctx.rotateCsrfSecret();
-        await ctx.render('/html/messageBoard.html');
+        ctx.body = { msg: '登录成功' };
         return;
       }
     }
-    await ctx.render('/auth/login.tpl', { message: '输入用户名密码错误' });
+    ctx.code = 1;
+    ctx.body = { msg: '输入用户名密码错误' };
   }
 
   // 用户注册
@@ -25,37 +26,23 @@ class AuthController extends Controller {
     const { ctx } = this;
     ctx.response._prue = true;
     // 参数校验
-    const user = ctx.request.body;
-    if (!user.password || !user.rePassword) {
-      await ctx.render('/auth/register.tpl', { message: '密码不能为空' });
-      return;
-    } else if (user.password !== user.rePassword) {
-      await ctx.render('/auth/register.tpl', { message: '2次输入的密码不一致' });
-      return;
-    }
-    const value = ctx.validate({
-      username: ctx.Joi.string().min(3).max(30)
+    const data = ctx.validate({
+      username: ctx.Joi.string().min(3).max(24)
         .required(),
-      password: ctx.Joi.string().min(6).max(30)
+      password: ctx.Joi.string().min(6).max(24)
         .required(),
-      rePassword: ctx.Joi.string().min(6).max(30)
+      rePassword: ctx.Joi.string().min(6).max(24)
         .required(),
-    }, Object.assign(ctx.params, ctx.query, ctx.request.body));
-    let message = '';
-    // if (value.errors) {
-    //   await ctx.render('/auth/register.tpl', { message: '注册失败!!请检查输入的数据格式是否正确。' });
-    //   return;
-    // }
+    }, Object.assign({}, ctx.params, ctx.query, ctx.request.body));
 
-    const userObj = await ctx.model.User.findOne({ username: user.username });
+    const userObj = await ctx.model.User.findOne({ username: data.username });
     if (userObj) {
-      message = '用户名已存在';
-      await ctx.render('/auth/register.tpl', { message });
+      ctx.code = 1;
+      ctx.body = { msg: '用户名已存在' };
       return;
     }
-    await ctx.service.user.addUser(user);
-    message = '<script language=javascript>alert("注册成功!!!");window.location.href="/";</script>';
-    ctx.response.body = message;
+    await ctx.service.user.addUser(data);
+    ctx.response.body = { msg: '注册成功' };
   }
 
   // 用户退出登录

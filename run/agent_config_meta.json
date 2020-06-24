@@ -198,6 +198,7 @@
       "mongoose": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "node": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "nunjucks": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "stream-wormhole": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "xlsx": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {

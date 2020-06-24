@@ -5,14 +5,12 @@ const Controller = require('egg').Controller;
 class HomeController extends Controller {
   async login() {
     const { ctx } = this;
-    ctx.response._prue = true;
-    await this.ctx.render('auth/login.tpl');
+    await ctx.render('html/login.html');
   }
 
   async register() {
     const { ctx } = this;
-    ctx.response._prue = true;
-    await this.ctx.render('auth/register.tpl');
+    await ctx.render('html/register.tpl');
   }
 
   // 首页跳转
@@ -21,9 +19,9 @@ class HomeController extends Controller {
     const userInfo = ctx.session.userInfo;
     // 已经登录
     if (userInfo) {
-      return ctx.redirect('/html/information.html');
+      return ctx.redirect('/html/messageBoard.html');
     }
-    return ctx.redirect('/login/view');
+    return ctx.redirect('/html/login.html');
   }
 
 }
