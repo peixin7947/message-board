@@ -62,11 +62,13 @@
             'size': 'full',
             'validations': {
               'minLength': 3,
-              'maxLength': 24
+              'maxLength': 24,
+              'notEmptyString': true,
             },
             'validationErrors': {
               'minLength': '用户名最少为3个字符',
               'maxLength': '用户名最多为24个字符',
+              'notEmptyString': '请勿输入空字符',
             },
           },
           {
@@ -78,11 +80,13 @@
             'size': 'full',
             'validations': {
               'minLength': 4,
-              'maxLength': 24
+              'maxLength': 24,
+              'notEmptyString': true,
             },
             'validationErrors': {
               'minLength': '密码最少为6个字符',
               'maxLength': '密码最多为24个字符',
+              'notEmptyString': '请勿输入空字符',
             },
           },
           {

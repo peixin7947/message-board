@@ -10,7 +10,6 @@ class MessageController extends Controller {
    */
   async listMessage() {
     const { ctx } = this;
-    // const userInfo = ctx.session.userInfo;
     const data = ctx.validate({
       sort: ctx.Joi.string().default('{"createTime":-1}'),
       pageSize: ctx.Joi.number().default(10),
@@ -28,6 +27,7 @@ class MessageController extends Controller {
     const data = ctx.validate({
       id: ctx.helper.validateObj('_id').required(),
       content: ctx.Joi.string().required(),
+      title: ctx.Joi.string().required(),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.response.body = await ctx.service.message.createMessage(data);
   }

@@ -66,6 +66,12 @@
               'label': '昵称',
               'name': 'nickname',
               'required': true,
+              'validations': {
+                'notEmptyString':true,
+              },
+              'validationErrors': {
+                'notEmptyString':'请勿输入空字符',
+              },
             },
             {
               'type': 'divider'

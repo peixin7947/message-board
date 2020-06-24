@@ -11,8 +11,10 @@ class UserController extends Controller {
     const { ctx } = this;
     // 参数校验
     const user = ctx.validate({
-      username: ctx.Joi.string().min(3).max(18),
-      password: ctx.Joi.string().min(6).max(18),
+      username: ctx.Joi.string().trim().min(3)
+        .max(18),
+      password: ctx.Joi.string().trim().min(6)
+        .max(18),
       rePassword: ctx.Joi.string().min(6).max(18),
     }, Object.assign(ctx.request.body, ctx.query, ctx.params));
     await ctx.service.user.addUser(user);

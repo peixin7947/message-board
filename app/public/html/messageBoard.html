@@ -93,69 +93,117 @@
           },
         }
       ],
-      'body': [
-        {
-          'type': 'service',
-          'name': 'messageCards',
-          // 'initFetch':false,
-          // 'api': {
-          //   'method': 'get',
-          //   'url': '/api/message',
-          //   'data': null
-          // },
-          'initApi': '/api/message',
-          'body': [
+      'body': {
+        'type': 'crud',
+        'api': {
+          'method': 'get',
+          'url': '/api/message',
+          'data': {
+            'pageSize': 12,
+          }
+        },
+        'syncLocation': false,
+        'mode': 'list',
+        'orderField': 'weight',
+        'perPageField': 'pageSize',
+        'defaultParams': {
+          'pageSize': 12
+        },
+        'headerToolbar': [ 'bulk-actions', 'pagination' ],
+        'loadDataOnce': false,
+        // 'switchPerPage': false,
+        'placeholder': '当前没有留言',
+        'className': 'padder-lg',
+        'listItem': {
+          'title': '$nickname',
+          'subTitle': '$content',
+          'actions': [
             {
-              'type': 'panel',
-              'title': '大家的留言',
-              'body': {
-                'type': 'cards',
-                'source': '$list',
-                'card': {
-                  'body': [
+              'icon': 'fa fa-edit',
+              'tooltip': '编辑',
+              'actionType': 'dialog',
+              'dialog': {
+                'title': '编辑能力（权限）',
+                'body': {
+                  'type': 'form',
+                  'controls': [
                     {
-                      'name': 'creator.nickname'
+                      'type': 'hidden',
+                      'name': 'id'
                     },
                     {
-                      'name': 'creator.nickname'
+                      'name': 'name',
+                      'label': '权限名称',
+                      'type': 'text',
+                      'disabled': true
                     },
                     {
-                      'label': '内容',
-                      'name': 'content'
-                    }
-                  ],
-                  'actions': [
+                      'type': 'divider'
+                    },
                     {
-                      'type': 'button',
-                      'level': 'link',
-                      'icon': 'fa fa-eye',
-                      'actionType': 'dialog',
-                      'dialog': {
-                        'title': '查看详情',
-                        'body': {
-                          'type': 'form',
-                          'controls': [
-                            {
-                              'label': 'Engine',
-                              'name': 'engine',
-                              'type': 'static'
-                            },
-                            {
-                              'name': 'version',
-                              'label': 'Version',
-                              'type': 'static'
-                            }
-                          ]
-                        }
-                      }
+                      'name': 'description',
+                      'label': '描述',
+                      'type': 'textarea'
                     }
                   ]
                 }
               }
+            },
+            {
+              'tooltip': '删除',
+              'disabledOn': '~["admin:permission", "admin:user", "admin:role", "admin:acl", "admin:page", "page:readAll", "admin:settings"].indexOf(name)',
+              'icon': 'fa fa-times',
+              'confirmText': '您确定要移除该权限?',
+              'actionType': 'ajax',
+              'api': 'delete:https://houtai.baidu.com/api/mock2/notFound'
             }
           ]
-        }
-      ]
+        },
+
+        // 'card': {
+        //   'header': {
+        //     'className': 'bg-white',
+        //     'title': '留言人：$nickname',
+        //     'subTitle': '个人签名：$intro',
+        //     // 'description': '$content',
+        //     'avatar': '${avatar}',
+        //     "highlight": true,
+        //     'avatarClassName': 'pull-left thumb-md avatar b-3x m-r'
+        //   },
+        //   'bodyClassName': 'bg-info',
+        //   'body': [
+        //     {
+        //       'name': 'content'
+        //     }
+        //   ],
+        //   'actions': [
+        //     {
+        //       'type': 'button',
+        //       'level': 'link',
+        //       'label': '查看详情',
+        //       'actionType': 'dialog',
+        //       'dialog': {
+        //         'title': '查看详情',
+        //         'body': {
+        //           'type': 'form',
+        //           'controls': [
+        //             {
+        //               'label': 'Engine',
+        //               'name': 'engine',
+        //               'type': 'static'
+        //             },
+        //             {
+        //               'name': 'version',
+        //               'label': 'Version',
+        //               'type': 'static'
+        //             }
+        //           ]
+        //         }
+        //       }
+        //     }
+        //   ]
+        // }
+      }
     });
   })();
 </script>

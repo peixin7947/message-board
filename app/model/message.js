@@ -60,7 +60,6 @@ module.exports = app => {
 
   /**
    * description 留言集合
-   * @param {ObjectId} userId 接受留言的用户
    * @param {ObjectId} creator 发布留言的用户
    * @param {Boolean} idDel 留言是否被删除（逻辑删除）
    * @param {Date} createTime 留言时间
@@ -93,6 +92,10 @@ module.exports = app => {
     reply: {
       type: [ replySchema ],
       default: [],
+    },
+    title: {
+      type: String,
+      default: '',
     },
   }, {
     collection: 'Message',
