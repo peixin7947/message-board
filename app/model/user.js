@@ -30,5 +30,5 @@ module.exports = app => {
     },
     age: { type: Number, min: 0, max: 120 },
   });
-  return mongoose.model('User', UserSchema, 'user');
+  return mongoose.model('User', UserSchema, 'User');
 };

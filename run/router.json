@@ -137,7 +137,7 @@
   {
     "name": null,
     "methods": [
-      "POST"
+      "PUT"
     ],
     "paramNames": [
       {
@@ -153,6 +153,30 @@
     ],
     "path": "/api/message/:id",
     "regexp": "/^\\/api\\/message\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [],
+    "path": "/api/reply",
+    "regexp": "/^\\/api\\/reply(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "DELETE"
+    ],
+    "paramNames": [],
+    "path": "/api/message",
+    "regexp": "/^\\/api\\/message(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

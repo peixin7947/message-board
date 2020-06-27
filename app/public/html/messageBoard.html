@@ -28,181 +28,279 @@
 <script type="text/javascript">
   (function() {
     const amis = amisRequire('amis/embed');
+    // 发布留言按钮，用于工具栏
+    const putMessageBtn = {
+      'type': 'button',
+      'actionType': 'dialog',
+      'label': '发布留言',
+      'level': 'info',
+      'reload': 'messageList', // 刷新内容
+      'dialog': {
+        'title': '写留言',
+        'body': {
+          'type': 'form',
+          'mode': 'horizontal',
+          'horizontal': {
+            'leftFixed': 'xs'
+          },
+          'api': {
+            'url': '/api/message/${_id}',
+            'method': 'put',
+            'data': {
+              'title': '$title',
+              'content': '$content',
+            },
+          },
+          'actions': [
+            {
+              'type': 'submit',
+              'label': '提交',
+              'primary': true
+            }
+          ],
+          'controls': [
+            {
+              'type': 'text',
+              'label': '主题',
+              'name': 'title',
+              'required': true,
+              'validations': {
+                'notEmptyString': true,
+              },
+              'validationErrors': {
+                'notEmptyString': '请勿输入空白内容',
+              },
+            },
+            {
+              'type': 'textarea',
+              'label': '留言',
+              'name': 'content',
+              'required': true,
+              'validations': {
+                'notEmptyString': true,
+              },
+              'validationErrors': {
+                'notEmptyString': '请勿输入空白内容',
+              },
+            },
+          ]
+        }
+      }
+    };
+
+    // 导航栏
+    const nav = {
+      'label': '导航栏',
+      'type': 'button',
+      'level': 'info',
+      'className': 'w',
+      'actionType': 'drawer',
+      'actions': null,
+      'closeOnEsc': true,
+      'drawer': {
+        'title': '导航栏',
+        'closeOnOutside': true,
+        // 'action': null,
+        'body': [
+          // todo 跳转到留言板
+          {
+            'type': 'form',
+            'api': '',
+            'body': []
+          },
+          {
+            'type': 'card',
+            'intiApi': ``,
+            'header': {
+              'title': '${nickname}',
+              'subTitle': '${intro | default: 暂无}',
+              'description': 'description',
+              'avatarClassName': 'pull-left thumb-md avatar b-3x m-r',
+              'avatar': '${avatar}'
+            },
+            'actions': [
+              {
+                'type': 'button',
+                'label': '个人信息',
+                'level': 'info',
+                'actionType': 'url',
+                'blank': false,
+                'url': '/html/information.html',
+              },
+              {
+                'level': 'info',
+                'blank': false,
+                'label': '退出登录',
+                'type': 'button',
+                'actionType': 'ajax',
+                'confirmText': '确定退出登录？',
+                'api': '/api/logout',
+                'redirect': '/',
+                'messages': {
+                  'success': '已退出登录'
+                }
+              }
+            ]
+          },
+        ]
+      },
+    };
     // 留言板页面
     amis.embed('#root', {
       'type': 'page',
       'title': '留言板',
       'initApi': 'get:/api/information',
-      // 'reload': 'messageCards',
       // 工具栏区域， 存放了导航栏按钮
       'toolbar': [
-        {
-          'label': '导航栏',
-          'type': 'button',
-          'level': 'info',
-          'className': 'w',
-          'actionType': 'drawer',
-          'actions': null,
-          'closeOnEsc': true,
-          'drawer': {
-            'title': '导航栏',
-            'closeOnOutside': true,
-            // 'action': null,
-            'body': [
-              // todo 跳转到留言板
-              {
-                'type': 'form',
-                'api': '',
-                'body': []
-              },
-              {
-                'type': 'card',
-                'intiApi': ``,
-                'header': {
-                  'title': '${nickname}',
-                  'subTitle': '${intro | default: 暂无}',
-                  'description': 'description',
-                  'avatarClassName': 'pull-left thumb-md avatar b-3x m-r',
-                  'avatar': '${avatar}'
-                },
-                'actions': [
-                  {
-                    'type': 'button',
-                    'label': '个人信息',
-                    'level': 'info',
-                    'actionType': 'url',
-                    'blank': false,
-                    'url': '/html/information.html',
-                  },
-                  {
-                    'level': 'info',
-                    'blank': false,
-                    'label': '退出登录',
-                    'type': 'button',
-                    'actionType': 'ajax',
-                    'confirmText': '确定退出登录？',
-                    'api': '/api/logout',
-                    'redirect': '/',
-                    'messages': {
-                      'success': '已退出登录'
-                    }
-                  }
-                ]
-              },
-            ]
-          },
-        }
+        nav,
       ],
       'body': {
         'type': 'crud',
+        'name': 'messageList',
+        'affixHeader': false,
         'api': {
           'method': 'get',
           'url': '/api/message',
           'data': {
             'pageSize': 12,
+            'pageIndex': '$pageIndex',
           }
         },
         'syncLocation': false,
-        'mode': 'list',
         'orderField': 'weight',
         'perPageField': 'pageSize',
+        'pageField': 'pageIndex',
         'defaultParams': {
           'pageSize': 12
         },
-        'headerToolbar': [ 'bulk-actions', 'pagination' ],
+        'headerToolbar': [
+          'bulk-actions',
+          'pagination',
+          putMessageBtn,
+        ],
         'loadDataOnce': false,
-        // 'switchPerPage': false,
         'placeholder': '当前没有留言',
-        'className': 'padder-lg',
-        'listItem': {
-          'title': '$nickname',
-          'subTitle': '$content',
-          'actions': [
-            {
-              'icon': 'fa fa-edit',
-              'tooltip': '编辑',
-              'actionType': 'dialog',
-              'dialog': {
-                'title': '编辑能力（权限）',
-                'body': {
-                  'type': 'form',
-                  'controls': [
-                    {
-                      'type': 'hidden',
-                      'name': 'id'
-                    },
-                    {
-                      'name': 'name',
-                      'label': '权限名称',
-                      'type': 'text',
-                      'disabled': true
-                    },
-                    {
-                      'type': 'divider'
-                    },
-                    {
-                      'name': 'description',
-                      'label': '描述',
-                      'type': 'textarea'
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              'tooltip': '删除',
-              'disabledOn': '~["admin:permission", "admin:user", "admin:role", "admin:acl", "admin:page", "page:readAll", "admin:settings"].indexOf(name)',
-              'icon': 'fa fa-times',
-              'confirmText': '您确定要移除该权限?',
-              'actionType': 'ajax',
-              'api': 'delete:https://houtai.baidu.com/api/mock2/notFound'
-            }
-          ]
-        },
+        // 'className': 'padder-lg',
+        'columns': [
+          {
+            'type': 'form',
+            'mode': 'inline',
+            'className': 'w-full',
+            'title': '',
+            'submitText': '',
+            'intiApi': ``,
+            'controls': [
+              {
+                'type': 'hbox',
+                'columns': [
+                  {
+                    'columnClassName': 'w-sm no-border',
+                    'controls': [
+                      {
+                        'type': 'panel',
+                        'title': '',
+                        'controls': [
+                          {
+                            'type': 'card',
+                            'className': 'w-xs wrapper-xs h-auto no-border',
+                            'header': {
+                              'className': 'wrapper-md',
+                              'avatarClassName': 'pull-left thumb-xxs avatar b-3x m-r',
+                              'avatar': '${avatar}'
+                            },
+                            'body': '${nickname}',
+                          },
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    'columnClassName': 'w-full',
+                    'controls': [
+                      {
+                        'type': 'static-tpl',
+                        // 'className': 'w-full',
+                        'inline': true,
+                        'tpl': '${toUser|isTrue:"回复：":null}${toUser.nickname}',
+                      },
+                      {
+                        'type': 'static-tpl',
+                        'tpl': '${content}',
+                      },
+                    ],
+                  },
 
-        // 'card': {
-        //   'header': {
-        //     'className': 'bg-white',
-        //     'title': '留言人：$nickname',
-        //     'subTitle': '个人签名：$intro',
-        //     // 'description': '$content',
-        //     'avatar': '${avatar}',
-        //     "highlight": true,
-        //     'avatarClassName': 'pull-left thumb-md avatar b-3x m-r'
-        //   },
-        //   'bodyClassName': 'bg-info',
-        //   'body': [
-        //     {
-        //       'name': 'content'
-        //     }
-        //   ],
-        //   'actions': [
-        //     {
-        //       'type': 'button',
-        //       'level': 'link',
-        //       'label': '查看详情',
-        //       'actionType': 'dialog',
-        //       'dialog': {
-        //         'title': '查看详情',
-        //         'body': {
-        //           'type': 'form',
-        //           'controls': [
-        //             {
-        //               'label': 'Engine',
-        //               'name': 'engine',
-        //               'type': 'static'
-        //             },
-        //             {
-        //               'name': 'version',
-        //               'label': 'Version',
-        //               'type': 'static'
-        //             }
-        //           ]
-        //         }
-        //       }
-        //     }
-        //   ]
-        // }
+                ]
+              },
+
+            ]
+          },
+          {
+            'type': 'button-toolbar',
+            'label': '操作',
+            'buttons': [
+              {
+                'type': 'button',
+                'actionType': 'dialog',
+                'label': '评论',
+                'level': 'info',
+                'reload': 'messageList', // 刷新个人信息的内容
+                'dialog': {
+                  'title': '评论留言',
+                  'body': {
+                    'type': 'form',
+                    'mode': 'horizontal',
+                    'api': {
+                      'url': '/api/reply',
+                      'method': 'put',
+                      'data': {
+                        'content': '${replyContent}',
+                        'toUser': '${creator._id}',
+                        'messageId': '${_id}'
+                      },
+                    },
+                    'actions': [
+                      {
+                        'type': 'submit',
+                        'label': '提交',
+                        'primary': true
+                      }
+                    ],
+                    'controls': [
+                      {
+                        'type': 'textarea',
+                        'label': '输入评论：',
+                        'name': 'replyContent',
+                        'validations': {
+                          'maxLength': 256,
+                        },
+                        'validationErrors': {
+                          'maxLength': '评论不能超过256个字符哦',
+                        }
+                      },
+                    ]
+                  }
+                }
+              },
+              {
+                'level': 'info',
+                // 'blank': false,
+                'label': '删除',
+                'type': 'button',
+                'actionType': 'ajax',
+                'confirmText': '确定删除留言？',
+                'api': {
+                  'url': '/api/message',
+                  'method': 'delete',
+                  'data': {
+                    'replyId': '${reply._id}',
+                    'messageId': '${_id}',
+                  }
+                },
+              },
+            ]
+          },
+        ],
       }
     });
   })();

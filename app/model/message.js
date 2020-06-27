@@ -100,5 +100,5 @@ module.exports = app => {
   }, {
     collection: 'Message',
   });
-  return mongoose.model('Message', MessageSchema, 'message');
+  return mongoose.model('Message', MessageSchema, 'Message');
 };

@@ -49,7 +49,7 @@ module.exports = appInfo => {
   config.login = {
     LOGIN_FIELD: 'userInfo',
     ignore(ctx) {
-      if ([ '/login/view', '/register/view', '/register', '/login' ].includes(ctx.request.path)) return true;
+      if ([ '/register', '/login' ].includes(ctx.request.path)) return true;
       if (ctx.request.path.startsWith('/static/')) return true;
     },
   };
@@ -63,6 +63,14 @@ module.exports = appInfo => {
       '.gif',
     ],
     fileSize: '5mb', // 最大5mb
+  };
+
+  config.session = {
+    key: 'EGG_SESS',
+    maxAge: 24 * 3600 * 1000, // 1 天
+    httpOnly: true,
+    encrypt: true,
+    renew: true,
   };
 
   return config;

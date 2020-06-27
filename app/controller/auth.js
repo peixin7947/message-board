@@ -31,10 +31,13 @@ class AuthController extends Controller {
     // 参数校验
     const data = ctx.validate({
       username: ctx.Joi.string().min(3).max(24)
+        .trim()
         .required(),
       password: ctx.Joi.string().min(6).max(24)
+        .trim()
         .required(),
       rePassword: ctx.Joi.string().min(6).max(24)
+        .trim()
         .required(),
     }, Object.assign({}, ctx.params, ctx.query, ctx.request.body));
 

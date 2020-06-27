@@ -28,7 +28,23 @@ module.exports = () => {
 
       // 参数校验错误
       if (status === 422) {
-        res.msg = '输入数据有误，请重新确认';
+        console.log(err);
+        switch (err.details[0].context.key) {
+          case 'username':
+            res.msg = '应提供有效的用户名!';
+            break;
+          case 'email':
+            res.msg = '应提供有效的电子邮件！';
+            break;
+          case 'password':
+            res.msg = '密码长度应该是6-24！';
+            break;
+          case 'rePassword':
+            res.msg = '两次输入的密码应该相同!';
+            break;
+          default:
+            res.msg = '信息无效!';
+        }
       }
 
       // ctx.status = status;

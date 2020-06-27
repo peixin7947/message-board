@@ -12,7 +12,9 @@ module.exports = app => {
   router.get('/api/:id/password', controller.user.updateUserPassword); // 修改用户密码
   router.post('/api/logout', controller.auth.logout); // 用户退出登录
   router.get('/api/message', controller.message.listMessage); // 获取留言
-  router.post('/api/message/:id', controller.message.createMessage); // 创建留言
+  router.put('/api/message/:id', controller.message.createMessage); // 创建留言
+  router.put('/api/reply', controller.message.createReply); // 创建评论
+  router.delete('/api/message', controller.message.deleteMessage); // 删除消息
 
 
 };

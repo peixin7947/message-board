@@ -4,7 +4,8 @@
       "maxAge": 86400000,
       "key": "EGG_SESS",
       "httpOnly": true,
-      "encrypt": true
+      "encrypt": true,
+      "renew": true
     },
     "security": {
       "domainWhiteList": [],
@@ -75,7 +76,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "D:\\message-board\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "E:\\Program Files\\program\\message-board\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -88,8 +89,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "D:\\message-board\\node_modules\\egg-watcher\\lib\\event-sources\\default",
-        "development": "D:\\message-board\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+        "default": "E:\\Program Files\\program\\message-board\\node_modules\\egg-watcher\\lib\\event-sources\\default",
+        "development": "E:\\Program Files\\program\\message-board\\node_modules\\egg-watcher\\lib\\event-sources\\development"
       }
     },
     "customLogger": {
@@ -117,7 +118,7 @@
         ".jpeg",
         ".gif"
       ],
-      "tmpdir": "C:\\Users\\duoyi\\AppData\\Local\\Temp\\egg-multipart-tmp\\message-board",
+      "tmpdir": "C:\\Users\\xin\\AppData\\Local\\Temp\\egg-multipart-tmp\\message-board",
       "cleanSchedule": {
         "cron": "0 30 4 * * *"
       }
@@ -141,7 +142,7 @@
     "static": {
       "prefix": "/",
       "dir": [
-        "D:\\message-board\\app\\public"
+        "E:\\Program Files\\program\\message-board\\app\\public"
       ],
       "dynamic": true,
       "preload": false,
@@ -150,7 +151,7 @@
       "maxAge": 0
     },
     "view": {
-      "root": "D:\\message-board\\app\\public,D:\\message-board\\app\\view",
+      "root": "E:\\Program Files\\program\\message-board\\app\\public,E:\\Program Files\\program\\message-board\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
@@ -205,8 +206,7 @@
         "mongoose": "^5.9.18",
         "node": "^14.4.0",
         "nunjucks": "^3.2.1",
-        "stream-wormhole": "^1.1.0",
-        "xlsx": "^0.16.1"
+        "stream-wormhole": "^1.1.0"
       },
       "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^3.0.2",
@@ -227,9 +227,9 @@
       "author": "chenpeixin",
       "license": "ISC"
     },
-    "baseDir": "D:\\message-board",
-    "HOME": "C:\\Users\\duoyi",
-    "rundir": "D:\\message-board\\run",
+    "baseDir": "E:\\Program Files\\program\\message-board",
+    "HOME": "C:\\Users\\xin",
+    "rundir": "E:\\Program Files\\program\\message-board\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -261,7 +261,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "D:\\message-board\\logs\\message-board",
+      "dir": "E:\\Program Files\\program\\message-board\\logs\\message-board",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -344,8 +344,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-session",
+      "from": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Program Files\\program\\message-board\\node_modules\\egg-session",
       "version": "3.2.0"
     },
     "security": {
@@ -357,8 +357,8 @@
         "session"
       ],
       "env": [],
-      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-security",
+      "from": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Program Files\\program\\message-board\\node_modules\\egg-security",
       "version": "2.8.0"
     },
     "jsonp": {
@@ -370,8 +370,8 @@
         "security"
       ],
       "env": [],
-      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-jsonp",
+      "from": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Program Files\\program\\message-board\\node_modules\\egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -383,8 +383,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-onerror",
+      "from": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Program Files\\program\\message-board\\node_modules\\egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -394,8 +394,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-i18n",
+      "from": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Program Files\\program\\message-board\\node_modules\\egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -405,8 +405,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-watcher",
+      "from": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Program Files\\program\\message-board\\node_modules\\egg-watcher",
       "version": "3.1.1"
     },
     "schedule": {
@@ -416,8 +416,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-schedule",
+      "from": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Program Files\\program\\message-board\\node_modules\\egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -429,8 +429,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-multipart",
+      "from": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Program Files\\program\\message-board\\node_modules\\egg-multipart",
       "version": "2.10.3"
     },
     "development": {
@@ -444,8 +444,8 @@
       "env": [
         "local"
       ],
-      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-development",
+      "from": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Program Files\\program\\message-board\\node_modules\\egg-development",
       "version": "2.5.0"
     },
     "logrotator": {
@@ -457,8 +457,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-logrotator",
+      "from": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Program Files\\program\\message-board\\node_modules\\egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -468,8 +468,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-static",
+      "from": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Program Files\\program\\message-board\\node_modules\\egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -479,8 +479,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-view",
+      "from": "E:\\Program Files\\program\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\Program Files\\program\\message-board\\node_modules\\egg-view",
       "version": "2.1.2"
     },
     "nunjucks": {
@@ -493,8 +493,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\message-board\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-view-nunjucks",
+      "from": "E:\\Program Files\\program\\message-board\\config\\plugin.js",
+      "path": "E:\\Program Files\\program\\message-board\\node_modules\\egg-view-nunjucks",
       "version": "2.2.0"
     },
     "mongoose": {
@@ -504,8 +504,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "D:\\message-board\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-mongoose",
+      "from": "E:\\Program Files\\program\\message-board\\config\\plugin.js",
+      "path": "E:\\Program Files\\program\\message-board\\node_modules\\egg-mongoose",
       "version": "3.2.0"
     }
   }

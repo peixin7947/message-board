@@ -4,7 +4,7 @@ const Controller = require('egg').Controller;
 
 class MessageController extends Controller {
   /**
-   * 获取当前用户的留言
+   * 获取当前的留言
    * @param {string} 用户id
    * @return {Promise<void>}
    */
@@ -15,7 +15,7 @@ class MessageController extends Controller {
       pageSize: ctx.Joi.number().default(10),
       pageIndex: ctx.Joi.number().default(1),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
-    ctx.body = await ctx.service.message.getMessageById(data);
+    ctx.body = await ctx.service.message.listMessage(data);
   }
 
   /**
@@ -31,6 +31,30 @@ class MessageController extends Controller {
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.response.body = await ctx.service.message.createMessage(data);
   }
+
+  async createReply() {
+    const { ctx } = this;
+    const data = ctx.validate({
+      messageId: ctx.helper.validateObj('_id')
+        .required(),
+      toUser: ctx.helper.validateObj('_id')
+        .required(),
+      content: ctx.Joi.string()
+        .required(),
+    }, Object.assign(ctx.params, ctx.request.body, ctx.query));
+    ctx.response.body = await ctx.service.message.createReply(data);
+  }
+
+  async deleteMessage() {
+    const { ctx } = this;
+    const data = ctx.validate({
+      messageId: ctx.helper.validateObj('_id'),
+      // 评论为空时，删除留言
+      replyId: ctx.helper.validateObj('_id').allow(''),
+    }, Object.assign(ctx.params, ctx.request.body, ctx.query));
+    ctx.response.body = await ctx.service.message.deleteMessage(data);
+  }
+
 }
 
 module.exports = MessageController;
