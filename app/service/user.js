@@ -23,6 +23,7 @@ class UserService extends Service {
     const { ctx } = this;
     const userInfo = ctx.session.userInfo;
     const user = await ctx.model.User.findOne({ _id: userInfo._id }).lean();
+    user.userId = user._id;
     return user;
   }
 

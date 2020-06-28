@@ -64,7 +64,7 @@
   {
     "name": null,
     "methods": [
-      "POST"
+      "PUT"
     ],
     "paramNames": [],
     "path": "/api/information",
@@ -137,7 +137,8 @@
   {
     "name": null,
     "methods": [
-      "PUT"
+      "HEAD",
+      "GET"
     ],
     "paramNames": [
       {
@@ -160,7 +161,43 @@
   {
     "name": null,
     "methods": [
-      "PUT"
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/reply/:id",
+    "regexp": "/^\\/api\\/reply\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/message",
+    "regexp": "/^\\/api\\/message(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
     ],
     "paramNames": [],
     "path": "/api/reply",
@@ -173,6 +210,18 @@
     "name": null,
     "methods": [
       "DELETE"
+    ],
+    "paramNames": [],
+    "path": "/api/message",
+    "regexp": "/^\\/api\\/message(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
     ],
     "paramNames": [],
     "path": "/api/message",

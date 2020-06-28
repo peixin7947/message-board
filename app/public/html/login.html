@@ -35,7 +35,14 @@
       'initApi': '',
       'body': {
         'type': 'form',
-        'api': '/login',
+        'api': {
+          'url':'/login',
+          'method': 'post',
+          'data': {
+            'username': '$username',
+            'password': '$password',
+          }
+        },
         'redirect': '/html/messageBoard.html',
         'submitText': '',
         'title': '登录用户',
@@ -62,11 +69,6 @@
             'placeholder': '请输入密码',
             'size': 'full'
           },
-          // {
-          //   'type': 'checkbox',
-          //   'name': 'rememberMe',
-          //   'label': '记住登录'
-          // },
           {
             'type': 'button-toolbar',
             'buttons': [

@@ -11,9 +11,12 @@ class MessageController extends Controller {
   async listMessage() {
     const { ctx } = this;
     const data = ctx.validate({
-      sort: ctx.Joi.string().default('{"createTime":-1}'),
-      pageSize: ctx.Joi.number().default(10),
-      pageIndex: ctx.Joi.number().default(1),
+      sort: ctx.Joi.string()
+        .default('{"createTime":-1}'),
+      pageSize: ctx.Joi.number()
+        .default(10),
+      pageIndex: ctx.Joi.number()
+        .default(1),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.body = await ctx.service.message.listMessage(data);
   }
@@ -25,13 +28,18 @@ class MessageController extends Controller {
   async createMessage() {
     const { ctx } = this;
     const data = ctx.validate({
-      id: ctx.helper.validateObj('_id').required(),
-      content: ctx.Joi.string().required(),
-      title: ctx.Joi.string().required(),
+      content: ctx.Joi.string().max(1024)
+        .required(),
+      title: ctx.Joi.string().max(30)
+        .required(),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.response.body = await ctx.service.message.createMessage(data);
   }
 
+  /**
+   *  增加评论方法
+   * @return {Promise<void>}
+   */
   async createReply() {
     const { ctx } = this;
     const data = ctx.validate({
@@ -39,20 +47,62 @@ class MessageController extends Controller {
         .required(),
       toUser: ctx.helper.validateObj('_id')
         .required(),
-      content: ctx.Joi.string()
+      content: ctx.Joi.string().trim().max(1024)
         .required(),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.response.body = await ctx.service.message.createReply(data);
   }
 
+  // 删除留言或者评论
   async deleteMessage() {
     const { ctx } = this;
     const data = ctx.validate({
-      messageId: ctx.helper.validateObj('_id'),
-      // 评论为空时，删除留言
-      replyId: ctx.helper.validateObj('_id').allow(''),
+      id: ctx.helper.validateObj('_id'),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.response.body = await ctx.service.message.deleteMessage(data);
+  }
+
+  // 编辑留言或者评论
+  async updateMessage() {
+    const { ctx } = this;
+    const data = ctx.validate({
+      id: ctx.helper.validateObj('_id')
+        .required(),
+      content: ctx.Joi.string().max(1024)
+        .required(),
+      title: ctx.Joi.string().max(30),
+    }, Object.assign(ctx.params, ctx.request.body, ctx.query));
+    ctx.response.body = await ctx.service.message.updateMessage(data);
+  }
+
+  async getMessageListByUserId() {
+    const { ctx } = this;
+    const data = ctx.validate({
+      id: ctx.helper.validateObj('_id')
+        .required(),
+      sort: ctx.Joi.string()
+        .default('{"createTime":-1}'),
+      pageSize: ctx.Joi.number()
+        .default(10),
+      pageIndex: ctx.Joi.number()
+        .default(1),
+    }, Object.assign(ctx.params, ctx.request.body, ctx.query));
+    ctx.body = await ctx.service.message.getMessageListByUserId(data);
+  }
+
+  async getReplyListByUserId() {
+    const { ctx } = this;
+    const data = ctx.validate({
+      id: ctx.helper.validateObj('_id')
+        .required(),
+      sort: ctx.Joi.string()
+        .default('{"createTime":-1}'),
+      pageSize: ctx.Joi.number()
+        .default(10),
+      pageIndex: ctx.Joi.number()
+        .default(1),
+    }, Object.assign(ctx.params, ctx.request.body, ctx.query));
+    ctx.body = await ctx.service.message.getReplyListByUserId(data);
   }
 
 }

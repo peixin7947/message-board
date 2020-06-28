@@ -1,6 +1,7 @@
 'use strict';
 const Joi = require('joi');
 const JOI = Symbol('Context#Joi');
+const _ = require('lodash');
 
 module.exports = {
   validate(schema, valueObj = this.request.body) {
@@ -12,5 +13,9 @@ module.exports = {
   get Joi() {
     if (!this[JOI]) this[JOI] = Joi;
     return this[JOI];
+  },
+
+  get _() {
+    return _;
   },
 };
