@@ -52,6 +52,7 @@
                 'type': 'crud',
                 'title': '',
                 'initFetch': true,
+                'name':'messageList',
                 'affixHeader': false,
                 'api': {
                   'method': 'get',
@@ -206,7 +207,7 @@
                         'hiddenOn': 'userId != creator._id',
                         'label': '编辑',
                         'level': 'info',
-                        'reload': 'messageList', // 刷新crud内容
+                        'reload': 'replyList', // 刷新crud内容
                         'dialog': {
                           'title': '编辑',
                           'body': {
