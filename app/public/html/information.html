@@ -49,7 +49,8 @@
           'submitText': '',
           'silentPolling': 'true',
           'actions': [
-            updateInformationBtn
+            updateInformationBtn,
+            updatePasswordBtn,
           ],
           'controls': [
             {
@@ -82,7 +83,7 @@
               'type': 'divider'
             },
             {
-              'type': 'tpl',
+              'type': 'static-tpl',
               'label': '性别',
               'tpl': '${sex|isEquals:1:\'男\':\'女\' | default:暂无}',
             },

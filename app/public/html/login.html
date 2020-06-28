@@ -59,7 +59,17 @@
             'required': true,
             'placeholder': '请输入用户名',
             'label': '用户名',
-            'size': 'full'
+            'size': 'full',
+            'validations': {
+              'minLength': 3,
+              'maxLength': 24,
+              'notEmptyString': true,
+            },
+            'validationErrors': {
+              'minLength': '用户名最少为3个字符',
+              'maxLength': '用户名最多为24个字符',
+              'notEmptyString': '请勿输入空字符',
+            },
           },
           {
             'type': 'password',

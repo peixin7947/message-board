@@ -75,6 +75,10 @@ class MessageController extends Controller {
     ctx.response.body = await ctx.service.message.updateMessage(data);
   }
 
+  /**
+   * 获取用户的留言列表
+   * @return {Promise<void>}
+   */
   async getMessageListByUserId() {
     const { ctx } = this;
     const data = ctx.validate({
@@ -83,7 +87,7 @@ class MessageController extends Controller {
       sort: ctx.Joi.string()
         .default('{"createTime":-1}'),
       pageSize: ctx.Joi.number()
-        .default(10),
+        .default(6),
       pageIndex: ctx.Joi.number()
         .default(1),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));

@@ -269,7 +269,6 @@ const messageCrudFrom = {
   mode: '',
   title: '',
   submitText: '',
-  // 'initApi':'get:/api/information',
   controls: [
     {
       // 使用hbox，制作页面在列的分布  框架推荐使用group，但是实现起来效果不佳
@@ -332,118 +331,88 @@ const messageCrudFrom = {
   ],
 };
 
-const messageCrud = {
-  type: 'crud',
-  name: 'replyList',
-  initFetch: false,
-  title: '',
-  affixHeader: false,
-  api: {
-    method: 'get',
-    url: '/api/reply/${_id}',
-    data: {
-      pageSize: 6,
-      pageIndex: '$pageIndex',
-    },
-  },
-  syncLocation: false,
-  orderField: 'weight',
-  perPageField: 'pageSize',
-  pageField: 'pageIndex',
-  defaultParams: {
-    pageSize: 6,
-  },
-  headerToolbar: [
-    'bulk-actions',
-    'pagination',
-  ],
-  placeholder: '当前没有评论',
-  columns: [
-    messageCrudFrom,
-    {
-      type: 'button-toolbar',
-      label: '操作',
-      buttons: [
+const updatePasswordBtn = {
+  type: 'button',
+  actionType: 'dialog',
+  label: '修改密码',
+  level: 'info',
+  reload: 'informationForm', // 刷新个人信息的内容
+  dialog: {
+    title: '修改密码',
+    body: {
+      type: 'form',
+      mode: 'horizontal',
+      horizontal: {
+        leftFixed: 'xs',
+      },
+      api: {
+        url: '/api/information',
+        method: 'put',
+        data: {
+          oldPassword: '$oldPassword',
+          newPassword: '$newPassword',
+          rePassword: '$rePassword',
+        },
+      },
+      actions: [
         {
-          type: 'button',
-          actionType: 'dialog',
-          // 创建者可以编辑
-          hiddenOn: 'userId != creator._id',
-          label: '编辑',
-          level: 'info',
-          reload: 'messageList', // 刷新crud内容
-          dialog: {
-            title: '编辑',
-            body: {
-              type: 'form',
-              mode: 'horizontal',
-              api: {
-                url: '/api/message',
-                method: 'post',
-                data: {
-                  content: '${content}',
-                  title: '${title}',
-                  id: '${_id}',
-                },
-              },
-              actions: [
-                {
-                  type: 'submit',
-                  label: '提交',
-                  primary: true,
-                },
-              ],
-              controls: [
-                {
-                  type: 'text',
-                  label: '标题',
-                  name: 'title',
-                  // 如果是评论则没有标题
-                  // 'hiddenOn': 'data.title == undefined',
-                  required: true,
-                  validations: {
-                    maxLength: 30,
-                    notEmptyString: true,
-                  },
-                  validationErrors: {
-                    maxLength: '标题不能超过30个字符哦',
-                    notEmptyString: '请勿输入空白内容',
-                  },
-                },
-                {
-                  type: 'textarea',
-                  label: '内容：',
-                  name: 'content',
-                  validations: {
-                    maxLength: 1024,
-                    notEmptyString: true,
-                  },
-                  validationErrors: {
-                    maxLength: '不能超过1024个字符哦',
-                    notEmptyString: '请勿输入空白内容',
-                  },
-                },
-              ],
-            },
+          type: 'submit',
+          label: '提交',
+          primary: true,
+        },
+      ],
+      controls: [
+        {
+          type: 'password',
+          name: 'oldPassword',
+          label: '原密码',
+          required: true,
+          placeholder: '请输入一个6到24个字符的密码',
+          size: 'full',
+          validations: {
+            minLength: 6,
+            maxLength: 24,
+            notEmptyString: true,
+          },
+          validationErrors: {
+            minLength: '密码最少为6个字符',
+            maxLength: '密码最多为24个字符',
+            notEmptyString: '请勿输入空字符',
           },
         },
         {
-          level: 'info',
-          label: '删除',
-          // 创建者可以删除
-          hiddenOn: 'userId != creator._id',
-          type: 'button',
-          actionType: 'ajax',
-          confirmText: '确定删除留言？',
-          api: {
-            url: '/api/message',
-            method: 'delete',
-            data: {
-              id: '${_id}',
-            },
+          type: 'password',
+          name: 'newPassword',
+          label: '新密码',
+          required: true,
+          placeholder: '请输入一个6到24个字符的密码',
+          size: 'full',
+          validations: {
+            minLength: 6,
+            maxLength: 24,
+            notEmptyString: true,
+          },
+          validationErrors: {
+            minLength: '密码最少为6个字符',
+            maxLength: '密码最多为24个字符',
+            notEmptyString: '请勿输入空字符',
+          },
+        },
+        {
+          type: 'password',
+          name: 'rePassword',
+          label: '确认密码',
+          required: true,
+          placeholder: '请再次输入密码',
+          size: 'full',
+          validations: {
+            equalsField: 'password',
+          },
+          validationErrors: {
+            equals: '两次输入的密码不一致',
           },
         },
       ],
     },
-  ],
+  },
 };

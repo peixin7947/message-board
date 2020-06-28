@@ -29,28 +29,29 @@
 <script type="text/javascript">
   (function() {
     const amis = amisRequire('amis/embed');
-    // 留言板页面
+    // 管理留言页面
     amis.embed('#root', {
       'type': 'page',
       'title': '留言管理',
       'initApi': 'get:/api/information',
-      'reload':'test',
+      'reload': 'test',
       // 工具栏区域， 存放了导航栏按钮
       'toolbar': [
         nav,
       ],
       'body': [
         {
-          "type": "tabs",
-          "tabs": [
+          'type': 'tabs',
+          'activeKey': 'tab1',
+          'tabs': [
             {
-              "title": "你的留言",
-              "hash": "tab1",
-              "body": {
+              'title': '你的留言',
+              'hash': 'tab1',
+              'reload': true,
+              'body': {
                 'type': 'crud',
-                'name': 'messageList',
-                'title':'',
-                'initFetch': false,
+                'title': '',
+                'initFetch': true,
                 'affixHeader': false,
                 'api': {
                   'method': 'get',
@@ -163,13 +164,14 @@
               },
             },
             {
-              "title": "你的评论",
-              "hash": "tab2",
-              "body":  {
+              'title': '你的评论',
+              'hash': 'tab2',
+              'reload': true,
+              'body': {
                 'type': 'crud',
                 'name': 'replyList',
-                'initFetch': false,
-                'title':'',
+                'initFetch': true,
+                'title': '',
                 'affixHeader': false,
                 'api': {
                   'method': 'get',
@@ -266,8 +268,6 @@
             },
           ]
         },
-
-
       ]
     });
   })();

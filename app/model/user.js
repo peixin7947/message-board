@@ -15,7 +15,7 @@ module.exports = app => {
     createTime: { type: Date, default: Date.now },
     email: {
       type: String,
-      default: '无',
+      default: '',
     },
     sex: {
       type: Number,
@@ -26,7 +26,7 @@ module.exports = app => {
     },
     intro: {
       type: String,
-      default: '无',
+      default: '',
     },
     age: { type: Number, min: 0, max: 120 },
   });
