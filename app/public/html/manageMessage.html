@@ -166,7 +166,6 @@
               "title": "你的评论",
               "hash": "tab2",
               "body":  {
-
                 'type': 'crud',
                 'name': 'replyList',
                 'initFetch': false,
@@ -216,7 +215,6 @@
                               'method': 'put',
                               'data': {
                                 'content': '${content}',
-                                'title': '${title}',
                                 'id': '${_id}'
                               },
                             },
@@ -228,22 +226,6 @@
                               }
                             ],
                             'controls': [
-                              {
-                                'type': 'text',
-                                'label': '标题',
-                                'name': 'title',
-                                // 如果是评论则没有标题
-                                // 'hiddenOn': 'data.title == undefined',
-                                'required': true,
-                                'validations': {
-                                  'maxLength': 30,
-                                  'notEmptyString': true,
-                                },
-                                'validationErrors': {
-                                  'maxLength': '标题不能超过30个字符哦',
-                                  'notEmptyString': '请勿输入空白内容',
-                                }
-                              },
                               {
                                 'type': 'textarea',
                                 'label': '内容：',

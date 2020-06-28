@@ -139,6 +139,11 @@ class MessageService extends Service {
     return { msg: '修改成功' };
   }
 
+  /**
+   * 获取用户的留言列表
+   * @param data
+   * @return {Promise<{total, items}>}
+   */
   async getMessageListByUserId(data) {
     const { ctx, app } = this;
     let { id, sort, pageSize, pageIndex } = data;
@@ -165,6 +170,11 @@ class MessageService extends Service {
     return { items, total };
   }
 
+  /**
+   *  获取用户的评论
+   * @param data
+   * @return {Promise<{total: number, items: []}>}
+   */
   async getReplyListByUserId(data) {
     const { ctx, app } = this;
     let { id, sort, pageSize, pageIndex } = data;
@@ -179,9 +189,9 @@ class MessageService extends Service {
       .skip((pageIndex - 1) * pageSize)
       .limit(pageSize)
       .lean();
-    const items = [];
+    let items = [];
     message.forEach(item => {
-      ctx._.union(items, item.reply.filter(reply => String(reply.creator._id) === id));
+      items = ctx._.union(items, item.reply.filter(reply => String(reply.creator._id) === id));
     });
 
     return { items, total: items.length };
