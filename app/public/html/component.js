@@ -451,3 +451,89 @@ const updatePasswordBtn = {
   },
 };
 
+// 忘记密码弹框
+const resetPasswordBtn = {
+  type: 'button',
+  actionType: 'dialog',
+  label: '忘记密码',
+  level: 'info',
+  dialog: {
+    title: '忘记密码',
+    body: {
+      type: 'form',
+      mode: 'horizontal',
+      horizontal: {
+        leftFixed: 'xs',
+      },
+      api: {
+        url: '/api/resetPassword',
+        method: 'put',
+        data: {
+          username: '$username',
+          password: '$password',
+          email: '$email',
+        },
+        headers: {
+          'x-csrf-token': getCookie('csrfToken'),
+        },
+      },
+      actions: [
+        {
+          type: 'submit',
+          label: '提交',
+          primary: true,
+        },
+      ],
+      controls: [
+        {
+          type: 'text',
+          name: 'username',
+          required: true,
+          placeholder: '请输入用户名',
+          label: '用户名',
+          size: 'full',
+          validations: {
+            minLength: 3,
+            maxLength: 24,
+            notEmptyString: true,
+          },
+          validationErrors: {
+            minLength: '用户名最少为3个字符',
+            maxLength: '用户名最多为24个字符',
+            notEmptyString: '请勿输入空字符',
+          },
+        },
+        {
+          type: 'email',
+          label: '邮箱',
+          name: 'email',
+          validateOnChange: true,
+          validations: {
+            isEmail: true,
+          },
+          validationErrors: {
+            isEmail: '请输入正确的邮箱地址',
+          },
+        },
+        {
+          type: 'password',
+          name: 'password',
+          label: '重置密码',
+          required: true,
+          placeholder: '请输入一个6到24个字符的密码',
+          size: 'full',
+          validations: {
+            minLength: 6,
+            maxLength: 24,
+            notEmptyString: true,
+          },
+          validationErrors: {
+            minLength: '密码最少为6个字符',
+            maxLength: '密码最多为24个字符',
+            notEmptyString: '请勿输入空字符',
+          },
+        },
+      ],
+    },
+  },
+};

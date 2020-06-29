@@ -60,6 +60,31 @@ class UserService extends Service {
     await ctx.model.User.findOneAndUpdate({ _id: id, password: md5(password) }, { password: newPassword });
     return { msg: '修改密码成功' };
   }
+
+  /**
+   * 重置用户密码
+   * @param data
+   * @param{String} username 用户名
+   * @param{String} email 用户邮箱
+   * @param{String} password 用户密码
+   * @return {Promise<{msg: string}>}
+   */
+  async resetPassword(data) {
+    const { ctx } = this;
+    const { username, password, email } = data;
+    const user = await ctx.model.User.findOne({ username });
+    if (!user) {
+      ctx.code = 1;
+      return { msg: '用户不存在' };
+    }
+    if (user.email !== email) {
+      ctx.code = 1;
+      return { msg: '输入邮箱不正确' };
+    }
+    user.password = md5(password);
+    user.save();
+    return { msg: '修改密码成功' };
+  }
 }
 
 module.exports = UserService;

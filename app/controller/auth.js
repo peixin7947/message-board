@@ -12,22 +12,12 @@ class AuthController extends Controller {
       password: ctx.Joi.string().min(6).max(24)
         .required(),
     }, Object.assign({}, ctx.params, ctx.query, ctx.request.body));
-    const user = await ctx.service.auth.login(data);
-    if (user) {
-      ctx.session[this.config.login.LOGIN_FIELD] = user;
-      // 调用 rotateCsrfSecret 刷新用户的 CSRF token
-      ctx.rotateCsrfSecret();
-      ctx.body = { msg: '登录成功' };
-      return;
-    }
-    ctx.code = 1;
-    ctx.body = { msg: '输入用户名密码错误' };
+    ctx.body = await ctx.service.auth.login(data);
   }
 
   // 用户注册
   async register() {
     const { ctx } = this;
-    ctx.response._prue = true;
     // 参数校验
     const data = ctx.validate({
       username: ctx.Joi.string().min(3).max(24)
@@ -59,6 +49,21 @@ class AuthController extends Controller {
     ctx.body = { msg: '已退出登录' };
   }
 
+  // 重置密码
+  async resetPassword() {
+    const { ctx } = this;
+    // 参数校验
+    const data = ctx.validate({
+      username: ctx.Joi.string().min(3).max(24)
+        .trim()
+        .required(),
+      email: ctx.Joi.string().email().required(),
+      password: ctx.Joi.string().min(6).max(24)
+        .trim()
+        .required(),
+    }, Object.assign({}, ctx.params, ctx.query, ctx.request.body));
+    ctx.body = await ctx.service.user.resetPassword(data);
+  }
 
 }
 

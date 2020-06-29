@@ -64,6 +64,18 @@
   {
     "name": null,
     "methods": [
+      "PUT"
+    ],
+    "paramNames": [],
+    "path": "/api/resetPassword",
+    "regexp": "/^\\/api\\/resetPassword(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
       "HEAD",
       "GET"
     ],

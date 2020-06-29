@@ -8,7 +8,9 @@
       "renew": true
     },
     "security": {
-      "domainWhiteList": [],
+      "domainWhiteList": [
+        "127.0.0.1"
+      ],
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
       "csrf": {

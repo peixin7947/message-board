@@ -49,7 +49,7 @@
       "queryName": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "refererWhiteList": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     },
-    "domainWhiteList": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
+    "domainWhiteList": "D:\\message-board\\config\\config.default.js",
     "protocolWhiteList": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
     "defaultMiddleware": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
     "xframe": {
