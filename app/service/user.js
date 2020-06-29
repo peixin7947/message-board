@@ -35,6 +35,16 @@ class UserService extends Service {
   async updateUserInformation(data) {
     const { ctx } = this;
     const userInfo = ctx.session.userInfo;
+    // 如果是修改密码
+    const { oldPassword, password } = data;
+    if (password) {
+      const user = await ctx.model.User.findOne({ _id: userInfo._id, password: md5(oldPassword) }).lean();
+      if (!user) {
+        ctx.code = 2;
+        return { msg: '原密码输入错误' };
+      }
+      data.password = md5(password);
+    }
     await ctx.model.User.updateOne({ _id: userInfo._id }, data);
     return { msg: '修改成功' };
   }

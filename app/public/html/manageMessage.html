@@ -101,6 +101,9 @@
                                 'title': '${title}',
                                 'id': '${_id}'
                               },
+                              'headers': {
+                                'x-csrf-token': getCookie('csrfToken'),
+                              },
                             },
                             'actions': [
                               {
@@ -156,7 +159,10 @@
                           'method': 'delete',
                           'data': {
                             'id': '${_id}',
-                          }
+                          },
+                          'headers': {
+                            'x-csrf-token': getCookie('csrfToken'),
+                          },
                         },
                       },
                     ]
@@ -220,6 +226,9 @@
                                 'content': '${content}',
                                 'id': '${_id}'
                               },
+                            'headers': {
+                              'x-csrf-token': getCookie('csrfToken'),
+                            },
                             },
                             'actions': [
                               {
@@ -259,7 +268,10 @@
                           'method': 'delete',
                           'data': {
                             'id': '${_id}',
-                          }
+                          },
+                          'headers': {
+                            'x-csrf-token': getCookie('csrfToken'),
+                          },
                         },
                       },
                     ]

@@ -1,5 +1,18 @@
 'use strict';
 
+// 获取cookie中的值
+const getCookie = function(cname) {
+  const name = cname + '=';
+  const ca = document.cookie.split(';');
+  for (let i = 0; i < ca.length; i++) {
+    const c = ca[i].trim();
+    if (c.indexOf(name) === 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return '';
+};
+
 // 导航栏
 const nav = {
   label: '导航栏',
@@ -39,7 +52,13 @@ const nav = {
             type: 'button',
             actionType: 'ajax',
             confirmText: '确定退出登录？',
-            api: '/api/logout',
+            api: {
+              url: '/api/logout',
+              method: 'post',
+              headers: {
+                'x-csrf-token': getCookie('csrfToken'),
+              },
+            },
             redirect: '/',
             messages: {
               success: '已退出登录',
@@ -73,7 +92,7 @@ const nav = {
 };
 
 // 发布留言按钮，用于工具栏
-const putMessageBtn = {
+const createMessageBtn = {
   type: 'button',
   actionType: 'dialog',
   label: '发布留言',
@@ -93,6 +112,9 @@ const putMessageBtn = {
         data: {
           title: '$title',
           content: '$content',
+        },
+        headers: {
+          'x-csrf-token': getCookie('csrfToken'),
         },
       },
       actions: [
@@ -157,6 +179,9 @@ const updateInformationBtn = {
         data: {
           all: '$$',
         },
+        headers: {
+          'x-csrf-token': getCookie('csrfToken'),
+        },
       },
       actions: [
         {
@@ -189,7 +214,13 @@ const updateInformationBtn = {
           label: '头像',
           name: 'avatar',
           autoUpload: false,
-          reciever: 'post:/api/avatar/upload',
+          reciever: {
+            url: '/api/avatar/upload',
+            method: 'post',
+            headers: {
+              'x-csrf-token': getCookie('csrfToken'),
+            },
+          },
           multiple: false,
         },
         {
@@ -263,7 +294,7 @@ const updateInformationBtn = {
   },
 };
 
-// 留言CRUD的内容标哥
+// 留言CRUD的内容表格
 const messageCrudFrom = {
   type: 'form',
   mode: '',
@@ -320,7 +351,7 @@ const messageCrudFrom = {
                 {
                   type: 'static-tpl',
                   className: 'pull-right',
-                  tpl: '<%= formatDate(data.createTime, \'YYYY-MM-DD hh:mm:ss\') %>',
+                  tpl: '<%= formatDate(data.createTime, \'YYYY-MM-DD h:mm:ss a\') %>',
                 },
               ],
             },
@@ -331,6 +362,7 @@ const messageCrudFrom = {
   ],
 };
 
+// 修改密码弹框
 const updatePasswordBtn = {
   type: 'button',
   actionType: 'dialog',
@@ -350,8 +382,10 @@ const updatePasswordBtn = {
         method: 'put',
         data: {
           oldPassword: '$oldPassword',
-          newPassword: '$newPassword',
-          rePassword: '$rePassword',
+          password: '$newPassword',
+        },
+        headers: {
+          'x-csrf-token': getCookie('csrfToken'),
         },
       },
       actions: [
@@ -406,13 +440,14 @@ const updatePasswordBtn = {
           placeholder: '请再次输入密码',
           size: 'full',
           validations: {
-            equalsField: 'password',
+            equalsField: 'newPassword',
           },
           validationErrors: {
-            equals: '两次输入的密码不一致',
+            equalsField: '两次输入的密码不一致',
           },
         },
       ],
     },
   },
 };
+

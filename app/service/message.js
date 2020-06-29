@@ -25,11 +25,13 @@ class MessageService extends Service {
       .lean();
     // 除去已删除的评论
     items.forEach(item => {
+      // item.content = ctx.helper.escape(item.content);
       if (item.reply && item.reply.length) {
         ctx._.remove(item.reply, reply => reply.isDel !== false);
       }
       item.children = item.reply;
     });
+
     const total = await ctx.model.Message.count({ isDel: false, doDel: null });
     return { items, total };
   }

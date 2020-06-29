@@ -2,10 +2,10 @@
 
 module.exports = () => {
   return async function responseHandler(ctx, next) {
-    // 登录注册相关的放行
-    if ([ '/login/view', '/register/view' ].includes(ctx.request.originalUrl)) {
-      return await next();
-    }
+    // // 登录注册相关的放行
+    // if ([ '/api/time' ].includes(ctx.request.originalUrl)) {
+    //   return await next();
+    // }
     try {
       await next();
     } catch (err) {
@@ -54,7 +54,6 @@ module.exports = () => {
 
     if ([ 200, 204 ].includes(ctx.status)) {
       if (ctx.status === 204) ctx.status = 200;
-      // 如果_pure字段为true，则不是渲染的数据，不需要添加字段
       ctx.response.body = {
         status: ctx.code || 0,
         msg: ctx.response.body.msg || 'success',

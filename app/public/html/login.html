@@ -25,22 +25,26 @@
 <body>
 <div id="root" class="app-wrapper"></div>
 <script src="/static/amis/sdk.js"></script>
+<script src="component.js"></script>
 <script type="text/javascript">
   (function() {
     const amis = amisRequire('amis/embed');
-    // 登录页面s
+    // 登录页面
     amis.embed('#root', {
       'type': 'page',
       'title': '留言板',
-      'initApi': '',
+      'initApi': '/api/time',
       'body': {
         'type': 'form',
         'api': {
-          'url':'/login',
+          'url': '/login',
           'method': 'post',
           'data': {
             'username': '$username',
             'password': '$password',
+          },
+          'headers': {
+            'x-csrf-token': getCookie('csrfToken'),
           }
         },
         'redirect': '/html/messageBoard.html',

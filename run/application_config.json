@@ -14,20 +14,26 @@
       "genid": "<Function v4>"
     },
     "security": {
-      "domainWhiteList": [],
+      "domainWhiteList": [
+        "127.0.0.1"
+      ],
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
       "csrf": {
-        "enable": false,
+        "enable": true,
         "type": "ctoken",
         "ignoreJSON": false,
-        "useSession": true,
+        "useSession": false,
         "cookieName": "csrfToken",
         "sessionName": "csrfToken",
         "headerName": "x-csrf-token",
         "bodyName": "_csrf",
         "queryName": "_csrf",
-        "refererWhiteList": []
+        "refererWhiteList": [],
+        "ignore": [
+          "/api/time"
+        ],
+        "matching": "<Function pathMatch>"
       },
       "xframe": {
         "enable": true,
@@ -183,7 +189,7 @@
     "view": {
       "root": [
         "D:\\message-board\\app\\public",
-        "D:\\message-board\\app\\view"
+        "D:\\message-board\\app\\public\\html"
       ],
       "cache": false,
       "defaultExtension": ".html",
@@ -363,6 +369,10 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
+    "cors": {
+      "origin": "*",
+      "allowMethods": "GET,POST,PUT,DELETE"
+    },
     "middleware": [
       "responseHandler",
       "login"

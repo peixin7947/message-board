@@ -29,7 +29,6 @@
 <script type="text/javascript">
   (function() {
     const amis = amisRequire('amis/embed');
-
     // 留言板页面
     amis.embed('#root', {
       'type': 'page',
@@ -62,7 +61,7 @@
           'headerToolbar': [
             'bulk-actions',
             'pagination',
-            putMessageBtn,
+            createMessageBtn,
           ],
           'loadDataOnce': false,
           'placeholder': '当前没有留言',
@@ -90,7 +89,10 @@
                         'data': {
                           'content': '${replyContent}',
                           'toUser': '${creator._id}',
-                          'messageId': '${_id}'
+                          'messageId': '${_id}',
+                        },
+                        'headers': {
+                          'x-csrf-token': getCookie('csrfToken'),
                         },
                       },
                       'actions': [
@@ -138,6 +140,9 @@
                           'content': '${content}',
                           'title': '${title}',
                           'id': '${_id}'
+                        },
+                        'headers': {
+                          'x-csrf-token': getCookie('csrfToken'),
                         },
                       },
                       'actions': [
@@ -194,7 +199,10 @@
                     'method': 'delete',
                     'data': {
                       'id': '${_id}',
-                    }
+                    },
+                    'headers': {
+                      'x-csrf-token': getCookie('csrfToken'),
+                    },
                   },
                 },
               ]

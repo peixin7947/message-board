@@ -3,14 +3,9 @@
 const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
-  async login() {
-    const { ctx } = this;
-    await ctx.render('html/login.html');
-  }
-
-  async register() {
-    const { ctx } = this;
-    await ctx.render('html/register.tpl');
+  // 得到服务器时间，初始化csrf用
+  async time() {
+    this.ctx.body = Date();
   }
 
   // 首页跳转

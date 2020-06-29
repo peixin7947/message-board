@@ -3,6 +3,7 @@
 module.exports = app => {
   const { router, controller } = app;
   router.get('/', controller.home.index); // 首页跳转
+  router.get('/api/time', controller.home.time); // 首页跳转
   router.post('/register', controller.auth.register); // 注册用户
   router.post('/user', controller.user.create); // 添加一个用户
   router.post('/login', controller.auth.login); // 登录用户
@@ -18,6 +19,5 @@ module.exports = app => {
   router.post('/api/reply', controller.message.createReply); // 创建评论
   router.delete('/api/message', controller.message.deleteMessage); // 删除消息
   router.put('/api/message', controller.message.updateMessage); // 编辑消息
-
 
 };

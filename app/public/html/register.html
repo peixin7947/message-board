@@ -25,6 +25,7 @@
 <body>
 <div id="root" class="app-wrapper"></div>
 <script src="/static/amis/sdk.js"></script>
+<script src="component.js"></script>
 <script type="text/javascript">
   (function() {
     const amis = amisRequire('amis/embed');
@@ -44,6 +45,9 @@
             'password': '${password}',
             'rePassword': '${rePassword}'
           },
+          'headers': {
+            'x-csrf-token': getCookie('csrfToken'),
+          }
         },
         'submitText': '',
         'title': '注册用户',
@@ -101,7 +105,7 @@
               'equalsField': 'password',
             },
             'validationErrors': {
-              'equals': '两次输入的密码不一致',
+              'equalsField': '两次输入的密码不一致',
             },
           },
           {
@@ -121,7 +125,6 @@
               }
             ]
           },
-
         ]
       }
     });

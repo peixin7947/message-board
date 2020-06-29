@@ -37,9 +37,8 @@ class UserController extends Controller {
       sex: [ 1, 0 ],
       intro: ctx.Joi.string().max(256),
       age: ctx.Joi.number().min(0).max(120),
-      newPassword: ctx.Joi.string().min(6).max(24),
+      password: ctx.Joi.string().min(6).max(24),
       oldPassword: ctx.Joi.string().min(6).max(24),
-      rePassword: ctx.Joi.string().min(6).max(24),
     }, Object.assign(ctx.request.body, ctx.query, ctx.params).all);
     ctx.response.body = await ctx.service.user.updateUserInformation(data);
   }
@@ -76,7 +75,7 @@ class UserController extends Controller {
     const { ctx } = this;
     // 参数校验
     const data = ctx.validate({
-      id: ctx.helper.validataObj('_id').require(),
+      id: ctx.helper.validateObj('_id').require(),
       password: ctx.Joi.string().min(6).max(18),
       newPassword: ctx.Joi.string().min(6).max(18),
     }, Object.assign(ctx.request.body, ctx.query, ctx.params));
