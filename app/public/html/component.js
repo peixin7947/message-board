@@ -306,17 +306,18 @@ const messageCrudFrom = {
       type: 'hbox',
       columns: [
         {
-          columnClassName: 'w-xs',
+          columnClassName: 'w',
           controls: [
             {
               type: 'card',
-              className: ' wrapper-xs h-auto no-border',
+              className: 'v-middle w-sm text-center',
               header: {
                 className: 'wrapper-md',
-                avatarClassName: 'pull-left thumb-xs avatar b-5x m-r',
+                avatarClassName: 'pull-none avatar m-r',
                 avatar: '${creator.avatar}',
               },
               body: '${creator.nickname}',
+              bodyClassName: 'word-break',
             },
           ],
         },
