@@ -1,0 +1,1873 @@
+2020-06-22 11:02:25,981 ERROR 3344 [-/::1/-/3740ms POST /api/information] nodejs.ReferenceError: app is not defined
+    at UserService.updateUserInformation (D:\message-board\app\service\user.js:35:43)
+    at UserController.updateUserInformation (D:\message-board\app\controller\user.js:36:48)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:6:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 3344
+hostname: ��Ϣƽ̨-������
+
+2020-06-22 11:02:43,645 ERROR 6380 [-/::1/-/3335ms POST /api/information] nodejs.MongoError: Performing an update on the path '_id' would modify the immutable field '_id'
+    at Function.create (D:\message-board\node_modules\mongodb\lib\core\error.js:51:12)
+    at toError (D:\message-board\node_modules\mongodb\lib\utils.js:149:22)
+    at D:\message-board\node_modules\mongodb\lib\operations\common_functions.js:376:39
+    at D:\message-board\node_modules\mongodb\lib\core\connection\pool.js:404:18
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+driver: true
+name: "MongoError"
+index: 0
+code: 66
+pid: 6380
+hostname: ��Ϣƽ̨-������
+
+2020-06-22 11:03:11,054 ERROR 6380 [-/::1/-/16772ms POST /api/information] nodejs.MongoError: Performing an update on the path '_id' would modify the immutable field '_id'
+    at Function.create (D:\message-board\node_modules\mongodb\lib\core\error.js:51:12)
+    at toError (D:\message-board\node_modules\mongodb\lib\utils.js:149:22)
+    at D:\message-board\node_modules\mongodb\lib\operations\common_functions.js:376:39
+    at D:\message-board\node_modules\mongodb\lib\core\connection\pool.js:404:18
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+driver: true
+name: "MongoError"
+index: 0
+code: 66
+pid: 6380
+hostname: ��Ϣƽ̨-������
+
+2020-06-22 11:04:24,330 ERROR 3620 [-/::1/-/15943ms POST /api/information] nodejs.MongoError: Performing an update on the path '_id' would modify the immutable field '_id'
+    at Function.create (D:\message-board\node_modules\mongodb\lib\core\error.js:51:12)
+    at toError (D:\message-board\node_modules\mongodb\lib\utils.js:149:22)
+    at D:\message-board\node_modules\mongodb\lib\operations\common_functions.js:376:39
+    at D:\message-board\node_modules\mongodb\lib\core\connection\pool.js:404:18
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+driver: true
+name: "MongoError"
+index: 0
+code: 66
+pid: 3620
+hostname: ��Ϣƽ̨-������
+
+2020-06-22 11:04:53,402 ERROR 14500 [-/::1/-/7363ms POST /api/information] nodejs.MongoError: Performing an update on the path '_id' would modify the immutable field '_id'
+    at Function.create (D:\message-board\node_modules\mongodb\lib\core\error.js:51:12)
+    at toError (D:\message-board\node_modules\mongodb\lib\utils.js:149:22)
+    at D:\message-board\node_modules\mongodb\lib\operations\common_functions.js:376:39
+    at D:\message-board\node_modules\mongodb\lib\core\connection\pool.js:404:18
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+driver: true
+name: "MongoError"
+index: 0
+code: 66
+pid: 14500
+hostname: ��Ϣƽ̨-������
+
+2020-06-22 11:05:33,931 ERROR 14500 [-/::1/-/18838ms POST /api/information] nodejs.MongoError: Performing an update on the path '_id' would modify the immutable field '_id'
+    at Function.create (D:\message-board\node_modules\mongodb\lib\core\error.js:51:12)
+    at toError (D:\message-board\node_modules\mongodb\lib\utils.js:149:22)
+    at D:\message-board\node_modules\mongodb\lib\operations\common_functions.js:376:39
+    at D:\message-board\node_modules\mongodb\lib\core\connection\pool.js:404:18
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+driver: true
+name: "MongoError"
+index: 0
+code: 66
+pid: 14500
+hostname: ��Ϣƽ̨-������
+
+2020-06-22 11:12:23,450 ERROR 3060 [-/::1/-/30ms POST /api/information] nodejs.InternalServerError: Internal Server Error
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at Object.validate (D:\message-board\app\extend\context.js:10:15)
+    at UserController.updateUserInformation (D:\message-board\app\controller\user.js:29:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:6:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+message: "Internal Server Error"
+msg: {"isJoi":true,"name":"ValidationError","details":[{"message":"\"0\" is not allowed","path":["0"],"type":"object.allowUnknown","context":{"child":"0","value":"$","key":"0","label":"0"}},{"message":"\"1\" is not allowed","path":["1"],"type":"object.allowUnknown","context":{"child":"1","value":"$","key":"1","label":"1"}}],"_object":{"0":"$","1":"$"},"errors":"\"0\" is not allowed. \"1\" is not allowed"}
+pid: 3060
+hostname: ��Ϣƽ̨-������
+
+2020-06-22 11:12:26,295 ERROR 3060 [-/::1/-/12ms POST /api/information] nodejs.InternalServerError: Internal Server Error
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at Object.validate (D:\message-board\app\extend\context.js:10:15)
+    at UserController.updateUserInformation (D:\message-board\app\controller\user.js:29:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:6:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+message: "Internal Server Error"
+msg: {"isJoi":true,"name":"ValidationError","details":[{"message":"\"0\" is not allowed","path":["0"],"type":"object.allowUnknown","context":{"child":"0","value":"$","key":"0","label":"0"}},{"message":"\"1\" is not allowed","path":["1"],"type":"object.allowUnknown","context":{"child":"1","value":"$","key":"1","label":"1"}}],"_object":{"0":"$","1":"$"},"errors":"\"0\" is not allowed. \"1\" is not allowed"}
+pid: 3060
+hostname: ��Ϣƽ̨-������
+
+2020-06-22 11:18:02,758 ERROR 12228 [-/::1/-/7387ms POST /api/information] nodejs.TypeError: Cannot read property 'sex' of undefined
+    at UserController.updateUserInformation (D:\message-board\app\controller\user.js:30:26)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:6:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+
+pid: 12228
+hostname: ��Ϣƽ̨-������
+
+2020-06-22 13:30:19,508 ERROR 12260 nodejs.ClusterClientNoResponseError: client no response in 3028599ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12260
+hostname: ��Ϣƽ̨-������
+
+2020-06-22 19:02:38,507 ERROR 12260 nodejs.ClusterClientNoResponseError: client no response in 3718397ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 12260
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 11:18:47,869 ERROR 4400 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 4400
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 11:19:23,440 ERROR 4400 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 4400
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 13:27:27,543 ERROR 4400 nodejs.ClusterClientNoResponseError: client no response in 2992448ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 4400
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,564 ERROR 13056 [-/undefined/-/1750ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,572 ERROR 13056 [-/undefined/-/1636ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,576 ERROR 13056 [-/undefined/-/1865ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,577 ERROR 13056 [-/undefined/-/1862ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,579 ERROR 13056 [-/undefined/-/1820ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,580 ERROR 13056 [-/undefined/-/1768ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,581 ERROR 13056 [-/undefined/-/1828ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,582 ERROR 13056 [-/undefined/-/1872ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,583 ERROR 13056 [-/undefined/-/1834ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,586 ERROR 13056 [-/undefined/-/1776ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,588 ERROR 13056 [-/undefined/-/1900ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,589 ERROR 13056 [-/undefined/-/1780ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,590 ERROR 13056 [-/undefined/-/1882ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,591 ERROR 13056 [-/undefined/-/1876ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,592 ERROR 13056 [-/undefined/-/1838ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,598 ERROR 13056 [-/undefined/-/1908ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,604 ERROR 13056 [-/undefined/-/1850ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,608 ERROR 13056 [-/undefined/-/1862ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,612 ERROR 13056 [-/undefined/-/1911ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,613 ERROR 13056 [-/undefined/-/1914ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,615 ERROR 13056 [-/undefined/-/1914ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,617 ERROR 13056 [-/undefined/-/1872ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,619 ERROR 13056 [-/undefined/-/1907ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,621 ERROR 13056 [-/undefined/-/1874ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,622 ERROR 13056 [-/undefined/-/1856ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,623 ERROR 13056 [-/undefined/-/1876ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,625 ERROR 13056 [-/undefined/-/1874ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,627 ERROR 13056 [-/undefined/-/1931ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,632 ERROR 13056 [-/undefined/-/1946ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,635 ERROR 13056 [-/undefined/-/1846ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,637 ERROR 13056 [-/undefined/-/1944ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,639 ERROR 13056 [-/undefined/-/1931ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,640 ERROR 13056 [-/undefined/-/1946ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,643 ERROR 13056 [-/undefined/-/1940ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,645 ERROR 13056 [-/undefined/-/1888ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,647 ERROR 13056 [-/undefined/-/1950ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,649 ERROR 13056 [-/undefined/-/1959ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,651 ERROR 13056 [-/undefined/-/1889ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,657 ERROR 13056 [-/undefined/-/1950ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,659 ERROR 13056 [-/undefined/-/1911ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,661 ERROR 13056 [-/undefined/-/1845ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,665 ERROR 13056 [-/undefined/-/1900ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,667 ERROR 13056 [-/undefined/-/1954ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,672 ERROR 13056 [-/undefined/-/1969ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-23 19:37:33,699 ERROR 13056 [-/undefined/-/1886ms GET /api/information] nodejs.ECONNRESETError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+headerSent: true
+name: "ECONNRESETError"
+pid: 13056
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 11:54:33,288 ERROR 20128 [-/::1/-/2263ms POST /api/logout] nodejs.TypeError: Cannot set property 'msg' of undefined
+    at AuthController.logout (D:\message-board\app\controller\auth.js:67:18)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:10:13)
+
+pid: 20128
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 11:54:56,778 ERROR 20128 [-/::1/-/7800ms POST /api/logout] nodejs.TypeError: Cannot set property 'msg' of undefined
+    at AuthController.logout (D:\message-board\app\controller\auth.js:67:18)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:10:13)
+
+pid: 20128
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 12:05:39,243 ERROR 16012 [-/::1/-/1209ms POST /api/information] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 16012
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 13:32:57,503 ERROR 20080 nodejs.ClusterClientNoResponseError: client no response in 2952582ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 20080
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 13:33:57,744 ERROR 20080 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 20080
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 13:39:29,737 ERROR 19304 [-/::1/-/31ms POST /api/information] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 19304
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 13:39:41,845 ERROR 19304 [-/::1/-/15ms POST /api/information] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 19304
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 13:40:16,583 ERROR 19304 [-/::1/-/8124ms POST /api/information] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 19304
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 13:41:14,628 ERROR 19304 [-/::1/-/50886ms POST /api/information] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 19304
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 13:41:48,275 ERROR 19304 [-/::1/-/30914ms POST /api/information] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 19304
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 13:42:15,822 ERROR 20212 [-/::1/-/16869ms POST /api/information] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 20212
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 13:42:57,929 ERROR 20212 [-/::1/-/3034ms POST /api/information] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 20212
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 13:43:46,888 ERROR 20212 [-/::1/-/40172ms POST /api/information] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 20212
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 13:43:54,469 ERROR 20212 [-/::1/-/1360ms POST /api/information] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 20212
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 13:45:01,151 ERROR 20212 [-/::1/-/1898ms POST /api/information] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 20212
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 13:45:49,088 ERROR 20212 [-/::1/-/6281ms POST /api/information] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 20212
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 13:46:23,786 ERROR 20212 [-/::1/-/12855ms POST /api/information] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 20212
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 14:10:46,209 ERROR 16116 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 16116
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 14:20:14,670 ERROR 16116 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 16116
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 14:35:05,873 ERROR 16116 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 16116
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 14:43:57,240 ERROR 16116 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:178:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\view\\error"
+name: "EPERMError"
+pid: 16116
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 14:44:18,634 ERROR 16116 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:178:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\view\\message"
+name: "EPERMError"
+pid: 16116
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 15:39:50,945 ERROR 12384 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:178:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\view\\auth"
+name: "EPERMError"
+pid: 12384
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 15:40:07,860 ERROR 12384 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:178:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\static\\css"
+name: "EPERMError"
+pid: 12384
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 15:40:11,844 ERROR 12384 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:178:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\static\\fonts"
+name: "EPERMError"
+pid: 12384
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 16:51:11,800 ERROR 6804 [-/127.0.0.1/-/7ms POST /api/5ee1c310f702a631bc9269e5/message] nodejs.TypeError: ctx.helper.validataObj(...).require is not a function
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:28:41)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:10:13)
+
+pid: 6804
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 16:51:34,177 ERROR 6804 [-/127.0.0.1/-/20ms POST /api/5ee1c310f702a631bc9269e5/message] nodejs.TypeError: ctx.helper.validataObj(...).require is not a function
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:28:41)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:10:13)
+
+pid: 6804
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 16:51:51,147 ERROR 6804 [-/127.0.0.1/-/7884ms POST /api/5ee1c310f702a631bc9269e5/message] nodejs.TypeError: ctx.helper.validataObj(...).require is not a function
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:28:41)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:10:13)
+
+pid: 6804
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 16:52:47,927 ERROR 560 [-/127.0.0.1/-/2266ms POST /api/5ee1c310f702a631bc9269e5/message] nodejs.TypeError: ctx.helper.validataObj(...).require is not a function
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:28:41)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:10:13)
+
+pid: 560
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 16:53:54,991 ERROR 26960 [-/127.0.0.1/-/2099ms POST /api/5ee1c310f702a631bc9269e5/message] nodejs.TypeError: ctx.helper.validateObj(...).require is not a function
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:28:41)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:10:13)
+
+pid: 26960
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 16:54:11,880 ERROR 6364 [-/127.0.0.1/-/2839ms POST /api/5ee1c310f702a631bc9269e5/message] nodejs.TypeError: ctx.Joi.string(...).require is not a function
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:29:33)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:10:13)
+
+pid: 6364
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 17:02:24,660 ERROR 15576 [-/::1/-/10ms GET /api/:id/message?diff=&origin=] nodejs.TypeError: ctx.helper.validataObj is not a function
+    at MessageController.getMessageById (D:\message-board\app\controller\message.js:15:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:10:13)
+
+pid: 15576
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 17:02:44,213 ERROR 21140 [-/::1/-/15ms GET /api/:id/message?diff=&origin=] nodejs.TypeError: ctx.helper.validateObj(...).require is not a function
+    at MessageController.getMessageById (D:\message-board\app\controller\message.js:15:41)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:10:13)
+
+pid: 21140
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 17:14:45,981 ERROR 6520 [-/::1/-/1632ms GET /api/5ee1c310f702a631bc9269e5/message] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 6520
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 17:15:20,418 ERROR 6520 [-/::1/-/1269ms GET /api/5ee1c310f702a631bc9269e5/message?] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 6520
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 17:15:28,393 ERROR 6520 [-/::1/-/10ms GET /api/5ee1c310f702a631bc9269e5/message?] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 6520
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 17:15:43,761 ERROR 6520 [-/::1/-/7ms GET /api/5ee1c310f702a631bc9269e5/message] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 6520
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 17:15:53,135 ERROR 6520 [-/::1/-/6ms GET /api/5ee1c310f702a631bc9269e5/message] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 6520
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 17:16:33,972 ERROR 6520 [-/::1/-/19296ms GET /api/5ee1c310f702a631bc9269e5/message] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:44:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 6520
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 17:47:14,128 ERROR 20712 [-/::1/-/12ms GET /api/5ee1c310f702a631bc9269e5/message] nodejs.MongoError: Skip value must be non-negative, but received: -10
+    at Connection.<anonymous> (D:\message-board\node_modules\mongodb\lib\core\connection\pool.js:450:61)
+    at Connection.emit (events.js:315:20)
+    at processMessage (D:\message-board\node_modules\mongodb\lib\core\connection\connection.js:384:10)
+    at Socket.<anonymous> (D:\message-board\node_modules\mongodb\lib\core\connection\connection.js:553:15)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:302:12)
+    at readableAddChunk (_stream_readable.js:278:9)
+    at Socket.Readable.push (_stream_readable.js:217:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+ok: 0
+code: 2
+codeName: "BadValue"
+name: "MongoError"
+pid: 20712
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 17:51:45,886 ERROR 26704 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 26704
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 18:37:01,510 ERROR 26704 nodejs.ClusterClientNoResponseError: client no response in 668472ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 26704
+hostname: ��Ϣƽ̨-������
+
+2020-06-24 21:02:12,748 ERROR 2276 [-/::1/-/18ms GET /api/message?pageSize=12] nodejs.MongoError: missing 'from' option to $lookup stage specification: { form: "User", localField: "creator", foreignField: "_id", as: "doc" }
+    at Connection.<anonymous> (D:\message-board\node_modules\mongodb\lib\core\connection\pool.js:450:61)
+    at Connection.emit (events.js:315:20)
+    at processMessage (D:\message-board\node_modules\mongodb\lib\core\connection\connection.js:384:10)
+    at Socket.<anonymous> (D:\message-board\node_modules\mongodb\lib\core\connection\connection.js:553:15)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:302:12)
+    at readableAddChunk (_stream_readable.js:278:9)
+    at Socket.Readable.push (_stream_readable.js:217:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+ok: 0
+code: 9
+codeName: "FailedToParse"
+name: "MongoError"
+pid: 2276
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 10:28:22,596 ERROR 25108 nodejs.ClusterClientNoResponseError: client no response in 72807ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 25108
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 13:34:38,511 ERROR 25108 nodejs.ClusterClientNoResponseError: client no response in 3618049ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 25108
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 14:14:09,828 ERROR 25108 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 25108
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 14:55:19,555 ERROR 22292 [-/::1/-/6ms DELETE /api/message?id=5ef7f42e75db50181c301a39] nodejs.TypeError: Cannot read property 'creator' of undefined
+    at MessageService.deleteMessage (D:\message-board\app\service\message.js:83:17)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.deleteMessage (D:\message-board\app\controller\message.js:63:25)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:10:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 22292
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 14:55:38,080 ERROR 22292 [-/::1/-/1148ms DELETE /api/message?id=5ef7f42e75db50181c301a39] nodejs.TypeError: Cannot read property 'creator' of undefined
+    at MessageService.deleteMessage (D:\message-board\app\service\message.js:83:17)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.deleteMessage (D:\message-board\app\controller\message.js:63:25)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:10:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 22292
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 14:56:09,980 ERROR 22292 [-/::1/-/26310ms DELETE /api/message?id=5ef7f42e75db50181c301a39] nodejs.TypeError: Cannot read property 'creator' of undefined
+    at MessageService.deleteMessage (D:\message-board\app\service\message.js:83:17)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.deleteMessage (D:\message-board\app\controller\message.js:63:25)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:10:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 22292
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 14:56:59,467 ERROR 21260 [-/::1/-/12012ms DELETE /api/message?id=5ef7f42e75db50181c301a39] nodejs.TypeError: Cannot read property 'creator' of undefined
+    at MessageService.deleteMessage (D:\message-board\app\service\message.js:83:17)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.deleteMessage (D:\message-board\app\controller\message.js:63:25)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:10:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 21260
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 15:12:37,729 ERROR 25544 [-/::1/-/23ms DELETE /api/message?id=5ef80121865f6e4068520a3c] nodejs.TypeError: Cannot read property 'creator' of undefined
+    at MessageService.deleteMessage (D:\message-board\app\service\message.js:84:17)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.deleteMessage (D:\message-board\app\controller\message.js:63:25)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:10:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 25544
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 15:13:13,568 ERROR 25544 [-/::1/-/22274ms DELETE /api/message?id=5ef80121865f6e4068520a3c] nodejs.TypeError: Cannot read property 'creator' of undefined
+    at MessageService.deleteMessage (D:\message-board\app\service\message.js:84:17)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.deleteMessage (D:\message-board\app\controller\message.js:63:25)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:10:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 25544
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 15:14:17,631 ERROR 16488 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 16488
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 15:14:24,268 ERROR 17788 [-/::1/-/25ms DELETE /api/message?id=5ef83a69596a63444c3fc1a2] nodejs.TypeError: message.save is not a function
+    at MessageService.deleteMessage (D:\message-board\app\service\message.js:91:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.deleteMessage (D:\message-board\app\controller\message.js:63:25)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:10:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 17788
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 15:18:39,423 ERROR 5716 [-/::1/-/2324ms DELETE /api/message?id=5ef83a69596a63444c3fc1a2] nodejs.TypeError: message.save is not a function
+    at MessageService.deleteMessage (D:\message-board\app\service\message.js:91:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.deleteMessage (D:\message-board\app\controller\message.js:63:25)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:10:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 5716
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 16:42:48,426 ERROR 9708 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 9708
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 17:39:21,318 ERROR 26836 [-/::1/-/25ms POST /api/message] nodejs.ReferenceError: data is not defined
+    at MessageService.updateMessage (D:\message-board\app\service\message.js:109:36)
+    at MessageController.updateMessage (D:\message-board\app\controller\message.js:75:51)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 26836
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 18:02:36,366 ERROR 16568 [-/::1/-/3ms GET /api/message/5ef7f41175db50181c301a37?pageSize=12&pageIndex=1] nodejs.ReferenceError: data is not defined
+    at MessageService.getMessageListByUserId (D:\message-board\app\service\message.js:144:45)
+    at MessageController.getMessageListByUserId (D:\message-board\app\controller\message.js:90:42)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 16568
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 18:02:53,034 ERROR 16568 [-/::1/-/3ms GET /api/message/5ef7f41175db50181c301a37?pageSize=12&pageIndex=1] nodejs.ReferenceError: data is not defined
+    at MessageService.getMessageListByUserId (D:\message-board\app\service\message.js:144:45)
+    at MessageController.getMessageListByUserId (D:\message-board\app\controller\message.js:90:42)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 16568
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 19:05:00,519 ERROR 27108 nodejs.ClusterClientNoResponseError: client no response in 1899696ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 27108
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 19:05:36,197 ERROR 27108 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 27108
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 19:05:44,669 ERROR 12424 [-/::1/-/5ms GET /api/message/5ef7f41175db50181c301a37?pageSize=12&pageIndex=1] nodejs.ReferenceError: data is not defined
+    at MessageService.getMessageListByUserId (D:\message-board\app\service\message.js:144:45)
+    at MessageController.getMessageListByUserId (D:\message-board\app\controller\message.js:90:42)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 12424
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 19:11:58,706 ERROR 12424 [-/::1/-/3ms GET /api/message/5ef7f41175db50181c301a37?pageSize=12&pageIndex=1] nodejs.ReferenceError: data is not defined
+    at MessageService.getMessageListByUserId (D:\message-board\app\service\message.js:144:45)
+    at MessageController.getMessageListByUserId (D:\message-board\app\controller\message.js:90:42)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 12424
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 19:12:36,658 ERROR 12424 [-/::1/-/3ms GET /api/message/5ef7f41175db50181c301a37?pageSize=12&pageIndex=1] nodejs.ReferenceError: data is not defined
+    at MessageService.getMessageListByUserId (D:\message-board\app\service\message.js:144:45)
+    at MessageController.getMessageListByUserId (D:\message-board\app\controller\message.js:90:42)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 12424
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 19:12:39,293 ERROR 12424 [-/::1/-/3ms GET /api/message/5ef7f41175db50181c301a37?pageSize=12&pageIndex=1] nodejs.ReferenceError: data is not defined
+    at MessageService.getMessageListByUserId (D:\message-board\app\service\message.js:144:45)
+    at MessageController.getMessageListByUserId (D:\message-board\app\controller\message.js:90:42)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 12424
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 19:28:30,481 ERROR 19964 [-/::1/-/7ms GET /api/reply/5ef7f65575db50181c301a3c?pageSize=12&pageIndex=1] nodejs.TypeError: ctx.service.message.getReplyListByUserId is not a function
+    at MessageController.getReplyListByUserId (D:\message-board\app\controller\message.js:105:42)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:10:13)
+
+pid: 19964
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 20:15:15,163 ERROR 11412 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 11412
+hostname: ��Ϣƽ̨-������
+
+2020-06-28 21:21:22,087 ERROR 11412 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 11412
+hostname: ��Ϣƽ̨-������
+
+2020-06-29 15:59:50,596 ERROR 27000 [-/::1/-/62ms PUT /api/information] nodejs.TypeError: ctx.model.findOne is not a function
+    at UserService.updateUserInformation (D:\message-board\app\service\user.js:41:36)
+    at UserController.updateUserInformation (D:\message-board\app\controller\user.js:43:48)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 27000
+hostname: ��Ϣƽ̨-������
+
+2020-06-29 16:01:01,040 ERROR 3800 [-/::1/-/24ms PUT /api/information] nodejs.TypeError: Cannot read property 'findOne' of undefined
+    at UserService.updateUserInformation (D:\message-board\app\service\user.js:41:41)
+    at UserController.updateUserInformation (D:\message-board\app\controller\user.js:43:48)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 3800
+hostname: ��Ϣƽ̨-������
+
+2020-06-29 16:05:52,032 ERROR 17472 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:178:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\view"
+name: "EPERMError"
+pid: 17472
+hostname: ��Ϣƽ̨-������
+
+2020-06-29 16:14:37,761 ERROR 6232 [-/::1/-/49ms GET /api/message?pageSize=6&pageIndex=1] nodejs.ReferenceError: content is not defined
+    at D:\message-board\app\service\message.js:28:40
+    at Array.forEach (<anonymous>)
+    at MessageService.listMessage (D:\message-board\app\service\message.js:27:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.listMessage (D:\message-board\app\controller\message.js:21:16)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:10:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+
+pid: 6232
+hostname: ��Ϣƽ̨-������
+
+2020-06-29 16:15:02,897 ERROR 6232 [-/::1/-/15696ms GET /api/message?pageSize=6&pageIndex=1] nodejs.ReferenceError: content is not defined
+    at D:\message-board\app\service\message.js:28:40
+    at Array.forEach (<anonymous>)
+    at MessageService.listMessage (D:\message-board\app\service\message.js:27:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.listMessage (D:\message-board\app\controller\message.js:21:16)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:10:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+
+pid: 6232
+hostname: ��Ϣƽ̨-������
+
+2020-06-29 19:06:41,699 ERROR 4572 nodejs.ClusterClientNoResponseError: client no response in 1924152ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 4572
+hostname: ��Ϣƽ̨-������
+
+2020-06-29 20:27:09,299 ERROR 6380 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 6380
+hostname: ��Ϣƽ̨-������
+
+2020-06-29 20:45:22,712 ERROR 11212 [-/::1/-/5ms PUT /api/resetPassword] nodejs.ObjectParameterError: Parameter "filter" to findOne() must be an object, got admin
+    at model.Query.Query.findOne (D:\message-board\node_modules\mongoose\lib\query.js:2212:16)
+    at Function.findOne (D:\message-board\node_modules\mongoose\lib\model.js:2181:13)
+    at UserService.resetPassword (D:\message-board\app\service\user.js:75:39)
+    at AuthController.resetPassword (D:\message-board\app\controller\auth.js:65:28)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+
+pid: 11212
+hostname: ��Ϣƽ̨-������
+
+2020-06-29 21:26:46,686 ERROR 24816 nodejs.ClusterClientNoResponseError: client no response in 488478ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 24816
+hostname: ��Ϣƽ̨-������
+
