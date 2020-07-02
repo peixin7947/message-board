@@ -2,10 +2,6 @@
 
 module.exports = () => {
   return async function responseHandler(ctx, next) {
-    // // 登录注册相关的放行
-    // if ([ '/api/time' ].includes(ctx.request.originalUrl)) {
-    //   return await next();
-    // }
     try {
       await next();
     } catch (err) {

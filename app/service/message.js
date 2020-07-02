@@ -6,8 +6,8 @@ class MessageService extends Service {
 
   /**
    * 获取用户的留言
-   * @param data
-   * @return {Promise<{list}>}
+   * @param {Object} data 参数体
+   * @return {Promise<{list}>} 分页查询数据和总量
    */
   async listMessage(data) {
     const { ctx } = this;
@@ -38,10 +38,10 @@ class MessageService extends Service {
 
   /**
    *  发布一个留言
-   * @param data
-   * @param {String} title 留言标题
-   * @param {String} content 留言内容
-   * @return {Promise<{msg: string}>}
+   * @param {Object} data 参数体
+   * @param {String} data.title 留言标题
+   * @param {String} data.content 留言内容
+   * @return {Promise<{msg: string}>} 返回消息
    */
   async createMessage(data) {
     const { ctx } = this;
@@ -53,8 +53,8 @@ class MessageService extends Service {
 
   /**
    *  增加评论
-   * @param data
-   * @return {Promise<{msg: string}>}
+   * @param {Object} data 参数体
+   * @return {Promise<{msg: string}>} 返回消息
    */
   async createReply(data) {
     const { ctx } = this;
@@ -73,8 +73,8 @@ class MessageService extends Service {
 
   /**
    * 删除留言或评论
-   * @param data
-   * @return {Promise<{msg: string}>}
+   * @param {Object} data 参数体
+   * @return {Promise<{msg: string}>} 返回消息
    */
   async deleteMessage(data) {
     const { ctx } = this;
@@ -105,11 +105,11 @@ class MessageService extends Service {
 
   /**
    * 编辑留言评论
-   * @param data
-   * @param{String} id 留言评论id
-   * @param{String} content 留言评论的内容
-   * @param{String} title 留言的主题
-   * @return {Promise<{msg: string}>}
+   * @param {Object} data 参数体
+   * @param {String} data.id 留言评论id
+   * @param {String} data.content 留言评论的内容
+   * @param {String} data.title 留言的主题
+   * @return {Promise<{msg: string}>} 返回消息
    */
   async updateMessage(data) {
     const { ctx } = this;
@@ -143,8 +143,8 @@ class MessageService extends Service {
 
   /**
    * 获取用户的留言列表
-   * @param data
-   * @return {Promise<{total, items}>}
+   * @param {Object} data 参数体
+   * @return {Promise<{total, items}>} 留言的数据和总量
    */
   async getMessageListByUserId(data) {
     const { ctx, app } = this;
@@ -174,8 +174,8 @@ class MessageService extends Service {
 
   /**
    *  获取用户的评论
-   * @param data
-   * @return {Promise<{total: number, items: []}>}
+   * @param {Object} data 参数体
+   * @return {Promise<{total: number, items: []}>} 回复的数据和总量
    */
   async getReplyListByUserId(data) {
     const { ctx, app } = this;

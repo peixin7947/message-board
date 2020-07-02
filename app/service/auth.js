@@ -3,6 +3,12 @@
 const Service = require('egg').Service;
 const md5 = require('js-md5');
 class AuthService extends Service {
+
+  /**
+   * 登录认证
+   * @param {Object} data 参数体
+   * @return {Promise<{msg: string}>} 返回提示消息
+   */
   async login(data) {
     const { ctx } = this;
     const { username, password } = data;

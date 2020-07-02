@@ -193,14 +193,11 @@
     "main": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "dependencies": {
       "amis": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "autod": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "autod-egg": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "egg": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "egg-mongoose": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "egg-view-nunjucks": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "joi": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "js-md5": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "koa": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "lodash": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "mongoose": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "node": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
@@ -212,10 +209,7 @@
       "@typescript-eslint/parser": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "egg-bin": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "eslint": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "eslint-config-airbnb-base": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "eslint-config-egg": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "eslint-plugin-import": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "eslint-plugin-vue": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
+      "eslint-config-egg": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
     },
     "scripts": {
       "test": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",

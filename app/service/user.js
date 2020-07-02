@@ -4,8 +4,8 @@ const md5 = require('js-md5');
 class UserService extends Service {
   /**
    * 增加一个用户
-   * @param user
-   * @return {Promise<void>}
+   * @param {Object} user 用户
+   * @return {Promise<void>} 无需返回
    */
   async addUser(user) {
     await this.ctx.model.User({
@@ -17,7 +17,7 @@ class UserService extends Service {
 
   /**
    * 获取当前用户信息
-   * @return {Promise<{data, status: number}>}
+   * @return {Promise<void>} 用户实体
    */
   async getUserInformation() {
     const { ctx } = this;
@@ -29,8 +29,8 @@ class UserService extends Service {
 
   /**
    * 修改用户信息
-   * @param data
-   * @return {Promise<{msg: string}>}
+   * @param {Object} data 参数体
+   * @return {Promise<{msg: string}>} 返回消息
    */
   async updateUserInformation(data) {
     const { ctx } = this;
@@ -51,8 +51,8 @@ class UserService extends Service {
 
   /**
    * 修改用户密码
-   * @param data
-   * @return {Promise<{msg: string}>}
+   * @param {Object} data 参数体
+   * @return {Promise<{msg: string}>} 返回消息
    */
   async updateUserPassword(data) {
     const { ctx } = this;
@@ -61,13 +61,14 @@ class UserService extends Service {
     return { msg: '修改密码成功' };
   }
 
+
   /**
    * 重置用户密码
-   * @param data
-   * @param{String} username 用户名
-   * @param{String} email 用户邮箱
-   * @param{String} password 用户密码
-   * @return {Promise<{msg: string}>}
+   * @param {Object} data 参数体
+   * @param {String} data.username 用户名
+   * @param {String} data.email 用户邮箱
+   * @param {String} data.password 用户密码
+   * @return {Promise<{msg: string}>} 返回类型
    */
   async resetPassword(data) {
     const { ctx } = this;
