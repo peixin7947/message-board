@@ -7,13 +7,13 @@ class UserService extends Service {
    * @param {Object} user 用户
    * @return {Promise<void>} 无需返回
    */
-  async addUser(user) {
-    await this.ctx.model.User({
-      username: user.username,
-      password: md5(user.password),
-      nickname: user.username,
-    }).save();
-  }
+  // async addUser(user) {
+  //   await this.ctx.model.User({
+  //     username: user.username,
+  //     password: md5(user.password),
+  //     nickname: user.username,
+  //   }).save();
+  // }
 
   /**
    * 获取当前用户信息
@@ -54,12 +54,12 @@ class UserService extends Service {
    * @param {Object} data 参数体
    * @return {Promise<{msg: string}>} 返回消息
    */
-  async updateUserPassword(data) {
-    const { ctx } = this;
-    const { id, password, newPassword } = data;
-    await ctx.model.User.findOneAndUpdate({ _id: id, password: md5(password) }, { password: newPassword });
-    return { msg: '修改密码成功' };
-  }
+  // async updateUserPassword(data) {
+  //   const { ctx } = this;
+  //   const { id, password, newPassword } = data;
+  //   await ctx.model.User.findOneAndUpdate({ _id: id, password: md5(password) }, { password: newPassword });
+  //   return { msg: '修改密码成功' };
+  // }
 
 
   /**

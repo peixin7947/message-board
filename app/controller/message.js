@@ -5,8 +5,7 @@ const Controller = require('egg').Controller;
 class MessageController extends Controller {
   /**
    * 获取当前的留言
-   * @param {string} 用户id
-   * @return {Promise<void>}
+   * @return {Promise<void>} 返回留言列表
    */
   async listMessage() {
     const { ctx } = this;
@@ -23,7 +22,7 @@ class MessageController extends Controller {
 
   /**
    * 发布留言
-   * @return {Promise<void>}
+   * @return {Promise<void>} 消息
    */
   async createMessage() {
     const { ctx } = this;
@@ -38,7 +37,7 @@ class MessageController extends Controller {
 
   /**
    *  增加评论方法
-   * @return {Promise<void>}
+   * @return {Promise<void>} 消息
    */
   async createReply() {
     const { ctx } = this;
@@ -77,7 +76,7 @@ class MessageController extends Controller {
 
   /**
    * 获取用户的留言列表
-   * @return {Promise<void>}
+   * @return {Promise<void>} 留言列表
    */
   async getMessageListByUserId() {
     const { ctx } = this;

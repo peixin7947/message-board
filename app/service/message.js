@@ -115,14 +115,15 @@ class MessageService extends Service {
     const { ctx } = this;
     const { id, content, title } = data;
     const userInfo = ctx.session.userInfo;
-    const message = await ctx.model.Message.findOne({ $or: [{ _id: id }, { 'reply._id': id }], isDel: false, doDel: null });
+    const message = await ctx.model.Message.findOne(
+      { $or: [{ _id: id }, { 'reply._id': id }], isDel: false, doDel: null });
     // 如果留言或消息不存在
     if (!message) {
       ctx.code = 1;
       return { msg: '留言或评论不存在' };
     }
-    if (String(message._id) === id) {
-      if (String(message.creator) !== userInfo._id) {
+    if (String(message._id) === String(id)) {
+      if (String(message.creator) !== String(userInfo._id)) {
         ctx.code = 1;
         return { msg: '不可编辑非自己的留言' };
       }
@@ -130,8 +131,8 @@ class MessageService extends Service {
       message.title = title;
       message.updateTime = new Date();
     } else {
-      const reply = message.reply.find(item => String(item.creator._id) === userInfo._id);
-      if (String(reply.creator) !== userInfo._id) {
+      const reply = message.reply.find(item => String(item._id) === String(id));
+      if (String(reply.creator) !== String(userInfo._id)) {
         ctx.code = 1;
         return { msg: '不可编辑非自己的留言' };
       }

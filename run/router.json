@@ -43,18 +43,6 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/user",
-    "regexp": "/^\\/user(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
-  },
-  {
-    "name": null,
-    "methods": [
-      "POST"
-    ],
-    "paramNames": [],
     "path": "/login",
     "regexp": "/^\\/login(?:\\/(?=$))?$/",
     "stack": [
@@ -106,30 +94,6 @@
     "paramNames": [],
     "path": "/api/avatar/upload",
     "regexp": "/^\\/api\\/avatar\\/upload(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
-  },
-  {
-    "name": null,
-    "methods": [
-      "HEAD",
-      "GET"
-    ],
-    "paramNames": [
-      {
-        "name": "id",
-        "prefix": "/",
-        "delimiter": "/",
-        "optional": false,
-        "repeat": false,
-        "partial": false,
-        "asterisk": false,
-        "pattern": "[^\\/]+?"
-      }
-    ],
-    "path": "/api/:id/password",
-    "regexp": "/^\\/api\\/((?:[^\\/]+?))\\/password(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

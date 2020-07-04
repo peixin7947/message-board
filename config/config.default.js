@@ -19,6 +19,8 @@ module.exports = appInfo => {
       url: 'mongodb://127.0.0.1/messageboard',
       options: {
         useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
       },
     },
   };
@@ -43,7 +45,7 @@ module.exports = appInfo => {
 
   config.security = {
     csrf: {
-      enable: true,
+      enable: false,
       // useSession: true, // 默认为 false，当设置为 true 时，将会把 csrf token 保存到 Session 中
       sessionName: 'csrfToken', // Session 中的字段名，默认为 csrfToken
       headerName: 'x-csrf-token', // 通过 header 传递 CSRF token 的默认字段为 x-csrf-token
@@ -79,6 +81,18 @@ module.exports = appInfo => {
     renew: true,
   };
 
+  config.test = {
+    // 管理员id
+    adminId: '5ef7fc9d75db50181c301a3d',
+    // 消息id 管理员有权限
+    messageId: '5eff22e9b7bda22e5c386b24',
+    // 评论id 管理员有权限
+    replyId: '5eff2cb947bf0d317420b3b5',
+    // 消息id 管理员无权限
+    messageId1: '5eff1ecb154bad49982f4e64',
+    // 评论id 管理员无权限
+    replyId1: '5eff29f9b22c016b84c253b1',
+  };
   return config;
 
 };

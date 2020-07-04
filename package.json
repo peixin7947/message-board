@@ -12,7 +12,6 @@
     "js-md5": "^0.7.3",
     "lodash": "^4.17.15",
     "mongoose": "^5.9.18",
-    "node": "^14.4.0",
     "nunjucks": "^3.2.1",
     "stream-wormhole": "^1.1.0"
   },
@@ -20,11 +19,13 @@
     "@typescript-eslint/eslint-plugin": "^3.0.2",
     "@typescript-eslint/parser": "^3.0.2",
     "egg-bin": "^4.14.1",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^4.0.0",
     "eslint": "^6.8.0",
     "eslint-config-egg": "^7.5.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "egg-bin test",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "cov": "egg-bin cov"

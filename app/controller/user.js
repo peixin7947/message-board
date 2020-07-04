@@ -6,19 +6,6 @@ const path = require('path');
 const sendToWormhole = require('stream-wormhole');
 
 class UserController extends Controller {
-  // 注册用户
-  async create() {
-    const { ctx } = this;
-    // 参数校验
-    const user = ctx.validate({
-      username: ctx.Joi.string().trim().min(3)
-        .max(18),
-      password: ctx.Joi.string().trim().min(6)
-        .max(18),
-      rePassword: ctx.Joi.string().min(6).max(18),
-    }, Object.assign(ctx.request.body, ctx.query, ctx.params));
-    await ctx.service.user.addUser(user);
-  }
 
   // 获取当前用户的个人信息
   async getUserInformation() {
@@ -45,7 +32,7 @@ class UserController extends Controller {
 
   /**
    * 上传头像方法
-   * @return {Promise<void>}
+   * @return {Promise<void>} 返回消息
    */
   async uploadAvatar() {
     const { ctx } = this;
@@ -64,23 +51,23 @@ class UserController extends Controller {
     } catch (e) {
       // 必须将上传的文件流消费掉，要不然浏览器响应会卡死
       await sendToWormhole(stream);
+      ctx.code = 1;
       ctx.body = { msg: '上传头像失败' };
-      // ctx.throw(400, e);
     }
     ctx.body = { url: filename };
   }
 
   // 修改用户密码
-  async updateUserPassword() {
-    const { ctx } = this;
-    // 参数校验
-    const data = ctx.validate({
-      id: ctx.helper.validateObj('_id').require(),
-      password: ctx.Joi.string().min(6).max(18),
-      newPassword: ctx.Joi.string().min(6).max(18),
-    }, Object.assign(ctx.request.body, ctx.query, ctx.params));
-    ctx.body = await ctx.service.user.updateUserPassword(data);
-  }
+  // async updateUserPassword() {
+  //   const { ctx } = this;
+  //   // 参数校验
+  //   const data = ctx.validate({
+  //     id: ctx.helper.validateObj('_id').require(),
+  //     password: ctx.Joi.string().min(6).max(18),
+  //     newPassword: ctx.Joi.string().min(6).max(18),
+  //   }, Object.assign(ctx.request.body, ctx.query, ctx.params));
+  //   ctx.body = await ctx.service.user.updateUserPassword(data);
+  // }
 }
 
 module.exports = UserController;
