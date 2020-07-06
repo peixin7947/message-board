@@ -36,7 +36,6 @@ describe('测试/controller/message.test.js', () => {
       assert(result.body.msg = '发布留言成功');
     });
     it('未登录创建留言', async () => {
-      // 模拟 CSRF token
       app.mockCsrf();
       const result = await app.httpRequest()
         .post('/api/message')
@@ -51,7 +50,6 @@ describe('测试/controller/message.test.js', () => {
   // 创建评论
   describe('post 请求/api/reply', () => {
     it('创建评论', async () => {
-      // 模拟 CSRF token
       app.mockCsrf();
       const result = await app.httpRequest()
         .post('/api/reply')
@@ -108,36 +106,42 @@ describe('测试/controller/message.test.js', () => {
       assert(result.body.status === 1);
       assert(result.body.msg = '无权删除');
     });
-    // it('删除留言：删除自己的评论', async () => {
-    //   // 模拟 CSRF token
-    //   app.mockCsrf();
-    //   const ctx = app.mockContext();
-    //   const result = await app.httpRequest()
-    //     .delete('/api/message')
-    //     .set('Cookie', that.cookie)
-    //     .send({
-    //       id: replyId,
-    //     });
-    //   assert(result.status === 200);
-    //   assert(result.body.status === 0);
-    //   assert(result.body.msg = '删除成功');
-    //   await ctx.model.Message.updateOne({ 'reply._id': replyId }, { 'reply.isDel': false, 'reply.doDel': null });
-    // });
-    // it('删除留言：删除自己的留言', async () => {
-    //   // 模拟 CSRF token
-    //   app.mockCsrf();
-    //   const ctx = app.mockContext();
-    //   const result = await app.httpRequest()
-    //     .delete('/api/message')
-    //     .set('Cookie', that.cookie)
-    //     .send({
-    //       id: messageId,
-    //     });
-    //   assert(result.status === 200);
-    //   assert(result.body.status === 0);
-    //   assert(result.body.msg = '删除成功');
-    //   await ctx.model.Message.updateOne({ _id: messageId }, { isDel: false, doDel: null });
-    // });
+    it('删除留言：删除自己的评论', async () => {
+      app.mockCsrf();
+      const ctx = app.mockContext();
+      app.mockSession({
+        userInfo: {
+          _id: that.userId,
+        },
+      });
+      const result = await app.httpRequest()
+        .delete('/api/message')
+        .send({
+          id: that.replyId,
+        });
+      assert(result.status === 200);
+      assert(result.body.status === 0);
+      assert(result.body.msg = '删除成功');
+      await ctx.model.Message.updateOne({ 'reply._id': that.replyId }, { 'reply.$.isDel': false, 'reply.$.doDel': null });
+    });
+    it('删除留言：删除自己的留言', async () => {
+      app.mockCsrf();
+      const ctx = app.mockContext();
+      app.mockSession({
+        userInfo: {
+          _id: that.userId,
+        },
+      });
+      const result = await app.httpRequest()
+        .delete('/api/message')
+        .send({
+          id: that.messageId,
+        });
+      assert(result.status === 200);
+      assert(result.body.status === 0);
+      assert(result.body.msg = '删除成功');
+      await ctx.model.Message.updateOne({ _id: that.messageId }, { isDel: false, doDel: null });
+    });
   });
 
   // 编辑消息

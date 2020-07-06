@@ -15,6 +15,18 @@ class UserService extends Service {
   }
 
   /**
+   * 获取他人信息
+   * @param {Object} data 参数体
+   * @return {Promise<void>} 返回用户信息
+   */
+  async getInformationById(data) {
+    const { ctx } = this;
+    const { id } = data;
+    const user = await ctx.model.User.findOne({ _id: id }, 'nickname sex avatar intro age').lean();
+    return user;
+  }
+
+  /**
    * 修改用户信息
    * @param {Object} data 参数体
    * @return {Promise<{msg: string}>} 返回消息

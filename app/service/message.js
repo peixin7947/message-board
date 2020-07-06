@@ -11,9 +11,19 @@ class MessageService extends Service {
    */
   async listMessage(data) {
     const { ctx } = this;
-    let { sort, pageSize, pageIndex } = data;
+    let { sort, pageSize, pageIndex, keyword } = data;
     sort = JSON.parse(sort);
-    const items = await ctx.model.Message.find({ isDel: false, doDel: null })
+    let filter;
+    if (keyword) {
+      const regex = new RegExp(this.ctx._.escapeRegExp(keyword), 'i');
+      filter = {
+        $or: [
+          { content: { $regex: regex } },
+          { title: { $regex: regex } },
+        ],
+      };
+    }
+    const items = await ctx.model.Message.find(Object.assign({ isDel: false, doDel: null }, filter))
       .populate([
         { path: 'creator', select: 'nickname avatar' },
         { path: 'reply.creator', select: 'nickname avatar' },
@@ -183,7 +193,7 @@ class MessageService extends Service {
     const { ctx, app } = this;
     let { id, sort, pageSize, pageIndex } = data;
     sort = JSON.parse(sort);
-    const message = await ctx.model.Message.find({ 'reply.creator': app.mongoose.Types.ObjectId(id), isDel: false, doDel: null })
+    const message = await ctx.model.Message.find({ 'reply.creator': app.mongoose.Types.ObjectId(id), isDel: false })
       .populate([
         { path: 'creator', select: 'nickname avatar' },
         { path: 'reply.creator', select: 'nickname avatar' },

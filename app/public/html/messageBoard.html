@@ -42,6 +42,7 @@
         {
           'type': 'crud',
           'name': 'messageList',
+          'className': '',
           'affixHeader': false,
           'api': {
             'method': 'get',
@@ -49,8 +50,11 @@
             'data': {
               'pageSize': 6,
               'pageIndex': '$pageIndex',
+              'keyword': '$keyword',
             }
           },
+          // 设置过滤器
+          'filter': crudFilter,
           'syncLocation': false,
           'orderField': 'weight',
           'perPageField': 'pageSize',
@@ -68,6 +72,7 @@
           'columns': [
             messageCrudFrom,
             {
+              // 留言操作按钮组
               'type': 'button-toolbar',
               'label': '操作',
               'buttons': [
@@ -207,7 +212,6 @@
                 },
               ]
             },
-
           ],
         },
       ]

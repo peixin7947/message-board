@@ -97,6 +97,7 @@ const createMessageBtn = {
   actionType: 'dialog',
   label: '发布留言',
   level: 'info',
+  className: 'pull-left',
   reload: 'messageList', // 刷新内容
   dialog: {
     title: '写留言',
@@ -299,6 +300,7 @@ const messageCrudFrom = {
   type: 'form',
   mode: '',
   title: '',
+  className: '',
   submitText: '',
   controls: [
     {
@@ -306,6 +308,7 @@ const messageCrudFrom = {
       type: 'hbox',
       columns: [
         {
+          // 头像
           columnClassName: 'w',
           controls: [
             {
@@ -316,12 +319,81 @@ const messageCrudFrom = {
                 avatarClassName: 'pull-none avatar m-r',
                 avatar: '${creator.avatar}',
               },
-              body: '${creator.nickname}',
-              bodyClassName: 'word-break',
+              body: [
+                '${creator.nickname}',
+              ],
+              bodyClassName: 'word-break ',
+              actions: [
+                {
+                  label: '查看信息',
+                  type: 'action',
+                  level: 'danger',
+                  actionType: 'dialog',
+                  dialog: {
+                    title: '他人信息',
+                    body: {
+                      type: 'form',
+                      panelClassName: 'panel-primary',
+                      mode: 'horizontal',
+                      name: 'informationForm',
+                      title: '',
+                      initApi: 'get:/api/information/${creator._id}',
+                      // initFetch: false,
+                      submitText: '',
+                      silentPolling: 'true',
+                      controls: [
+                        {
+                          type: 'static-tpl',
+                          label: '昵称',
+                          tpl: '${nickname| default: 暂无}',
+                        },
+                        {
+                          type: 'divider',
+                        },
+                        {
+                          type: 'static-image',
+                          label: '头像',
+                          name: 'image',
+                          src: '${avatar}',
+                          popOver: {
+                            title: '查看大图',
+                            body: '<div class="w-xxl"><img class="w-full" src="${avatar}"/></div>',
+                          },
+                        },
+                        {
+                          type: 'divider',
+                        },
+                        {
+                          type: 'static-tpl',
+                          label: '性别',
+                          tpl: '${sex|isEquals:1:\'男\':\'女\' | default:暂无}',
+                        },
+                        {
+                          type: 'divider',
+                        },
+                        {
+                          type: 'static-tpl',
+                          label: '年龄',
+                          tpl: '${age | default: 暂无}',
+                        },
+                        {
+                          type: 'divider',
+                        },
+                        {
+                          type: 'static-tpl',
+                          label: '个人签名',
+                          tpl: '${intro | default: 暂无}',
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
             },
           ],
         },
         {
+          // 内容 操作按钮不放在这里
           columnClassName: 'w-auto',
           controls: [
             {
@@ -538,3 +610,21 @@ const resetPasswordBtn = {
     },
   },
 };
+
+// 留言板列表的过滤器
+const crudFilter = {
+  title: '条件搜索',
+  submitText: '',
+  controls: [
+    {
+      type: 'text',
+      name: 'keyword',
+      placeholder: '通过关键字搜索',
+      addOn: {
+        label: '搜索',
+        type: 'submit',
+      },
+    },
+  ],
+};
+

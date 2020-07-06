@@ -24,7 +24,6 @@ module.exports = () => {
 
       // 参数校验错误
       if (status === 422) {
-        console.log(err);
         switch (err.details[0].context.key) {
           case 'username':
             res.msg = '应提供有效的用户名!';
@@ -42,12 +41,11 @@ module.exports = () => {
             res.msg = '信息无效!';
         }
       }
-
-      // ctx.status = status;
       ctx.response.body = res;
       return ctx.response.body;
     }
 
+    // 正确返回
     if ([ 200, 204 ].includes(ctx.status)) {
       if (ctx.status === 204) ctx.status = 200;
       ctx.response.body = {

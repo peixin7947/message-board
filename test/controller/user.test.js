@@ -60,11 +60,18 @@ describe('测试/controller/user.test.js', () => {
       const result = await app.httpRequest()
         .post('/api/avatar/upload')
         .set('Cookie', cookie)
-        // .field('name', 'avatar')
         .attach('file', file, 'test.jpg');
       assert(result.status === 200);
       assert(result.body.status === 0);
       assert(result.body.data.url !== undefined);
+    });
+    it('未登录上传用户头像', async () => {
+      app.mockCsrf();
+      const file = fs.readFileSync('app/public/static/images/test.jpg');
+      const result = await app.httpRequest()
+        .post('/api/avatar/upload')
+        .attach('file', file, 'test.jpg');
+      assert(result.body.msg === '未登录,请先进行登录');
     });
   });
 });

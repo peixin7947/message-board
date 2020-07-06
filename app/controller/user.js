@@ -13,6 +13,15 @@ class UserController extends Controller {
     ctx.response.body = await ctx.service.user.getUserInformation();
   }
 
+  // 获取当前用户的个人信息
+  async getInformationById() {
+    const { ctx } = this;
+    const data = ctx.validate({
+      id: ctx.helper.validateObj('_id'),
+    }, Object.assign(ctx.params));
+    ctx.response.body = await ctx.service.user.getInformationById(data);
+  }
+
   // 更新当前用户的个人信息
   async updateUserInformation() {
     const { ctx } = this;

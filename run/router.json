@@ -116,6 +116,30 @@
       "HEAD",
       "GET"
     ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/information/:id",
+    "regexp": "/^\\/api\\/information\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
     "paramNames": [],
     "path": "/api/message",
     "regexp": "/^\\/api\\/message(?:\\/(?=$))?$/",

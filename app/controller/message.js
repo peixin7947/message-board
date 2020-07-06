@@ -10,12 +10,10 @@ class MessageController extends Controller {
   async listMessage() {
     const { ctx } = this;
     const data = ctx.validate({
-      sort: ctx.Joi.string()
-        .default('{"createTime":-1}'),
-      pageSize: ctx.Joi.number()
-        .default(10),
-      pageIndex: ctx.Joi.number()
-        .default(1),
+      sort: ctx.Joi.string().default('{"createTime":-1}'),
+      pageSize: ctx.Joi.number().default(10),
+      pageIndex: ctx.Joi.number().default(1),
+      keyword: ctx.Joi.string().allow(''),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.body = await ctx.service.message.listMessage(data);
   }
@@ -69,7 +67,7 @@ class MessageController extends Controller {
         .required(),
       content: ctx.Joi.string().max(1024)
         .required(),
-      title: ctx.Joi.string().max(30),
+      title: ctx.Joi.string().max(30).allow(''),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.response.body = await ctx.service.message.updateMessage(data);
   }
@@ -81,29 +79,25 @@ class MessageController extends Controller {
   async getMessageListByUserId() {
     const { ctx } = this;
     const data = ctx.validate({
-      id: ctx.helper.validateObj('_id')
-        .required(),
-      sort: ctx.Joi.string()
-        .default('{"createTime":-1}'),
-      pageSize: ctx.Joi.number()
-        .default(6),
-      pageIndex: ctx.Joi.number()
-        .default(1),
+      id: ctx.helper.validateObj('_id').required(),
+      sort: ctx.Joi.string().default('{"createTime":-1}'),
+      pageSize: ctx.Joi.number().default(6),
+      pageIndex: ctx.Joi.number().default(1),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.body = await ctx.service.message.getMessageListByUserId(data);
   }
 
+  /**
+   * 获取用户评论列表
+   * @return {Promise<void>}
+   */
   async getReplyListByUserId() {
     const { ctx } = this;
     const data = ctx.validate({
-      id: ctx.helper.validateObj('_id')
-        .required(),
-      sort: ctx.Joi.string()
-        .default('{"createTime":-1}'),
-      pageSize: ctx.Joi.number()
-        .default(10),
-      pageIndex: ctx.Joi.number()
-        .default(1),
+      id: ctx.helper.validateObj('_id').required(),
+      sort: ctx.Joi.string().default('{"createTime":-1}'),
+      pageSize: ctx.Joi.number().default(10),
+      pageIndex: ctx.Joi.number().default(1),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.body = await ctx.service.message.getReplyListByUserId(data);
   }

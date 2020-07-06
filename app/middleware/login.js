@@ -7,7 +7,6 @@ module.exports = options => {
       return await next();
     }
     // 若未登录，则进行拦截
-    ctx.throw(200, '未登录,请先进行登录');
-    // return ctx.redirect('/');
+    ctx.throw(400, '未登录,请先进行登录');
   };
 };
