@@ -1,4 +1,4 @@
-2020-07-04 15:51:52,617 INFO 22988 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"unittest","level":"INFO","consoleLevel":"WARN","disableConsoleAfterReady":false,"outputJSON":false,"buffer":false,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"agent"}
-2020-07-04 15:51:52,625 INFO 22988 [egg:core] dump config after load, 4ms
-2020-07-04 15:51:52,676 INFO 22988 [egg-watcher:agent] watcher start success
-2020-07-04 15:51:52,684 INFO 22988 [egg:core] dump config after ready, 6ms
+2020-07-06 19:25:56,603 INFO 1912 [egg:logger] init all loggers with options: {"dir":"D:\\message-board\\logs\\message-board","encoding":"utf8","env":"unittest","level":"INFO","consoleLevel":"WARN","disableConsoleAfterReady":false,"outputJSON":false,"buffer":false,"appLogName":"message-board-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{},"allowDebugAtProd":false,"type":"agent"}
+2020-07-06 19:25:56,610 INFO 1912 [egg:core] dump config after load, 5ms
+2020-07-06 19:25:56,652 INFO 1912 [egg-watcher:agent] watcher start success
+2020-07-06 19:25:56,676 INFO 1912 [egg:core] dump config after ready, 15ms

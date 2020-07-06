@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "amis": "^1.0.12",
+    "assert-extends": "^1.0.1",
     "egg": "^2.26.1",
     "egg-mongoose": "^3.2.0",
     "egg-view-nunjucks": "^2.2.0",
@@ -25,10 +26,10 @@
     "eslint-config-egg": "^7.5.1"
   },
   "scripts": {
-    "test": "egg-bin test",
+    "test": "egg-bin test --require intelli-espower-loader",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
-    "cov": "egg-bin cov"
+    "cov": "egg-bin cov --require intelli-espower-loader"
   },
   "author": "chenpeixin",
   "license": "ISC"

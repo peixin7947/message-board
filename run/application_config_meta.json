@@ -120,11 +120,7 @@
     "renew": "D:\\message-board\\config\\config.default.js"
   },
   "test": {
-    "adminId": "D:\\message-board\\config\\config.default.js",
-    "messageId": "D:\\message-board\\config\\config.default.js",
-    "replyId": "D:\\message-board\\config\\config.default.js",
-    "messageId1": "D:\\message-board\\config\\config.default.js",
-    "replyId1": "D:\\message-board\\config\\config.default.js"
+    "cookie": "D:\\message-board\\config\\config.default.js"
   },
   "helper": {
     "shtml": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
@@ -195,6 +191,7 @@
     "main": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "dependencies": {
       "amis": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "assert-extends": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "egg": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "egg-mongoose": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "egg-view-nunjucks": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",

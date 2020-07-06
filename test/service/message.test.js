@@ -1,19 +1,15 @@
 'use strict';
 const { app, mock, assert } = require('egg-mock/bootstrap');
-const that = this;
 
 describe('测试/service/message.test.js', () => {
-  before(async function() {
-    const { userId, userId1, messageId, messageId1, replyId, replyId1 } = await require('../testconfig');
-    that.userId = userId;
-    that.userId1 = userId1;
-    that.messageId = messageId;
-    that.messageId1 = messageId1;
-    that.replyId = replyId;
-    that.replyId1 = replyId1;
+  let that;
+  let ctx;
+  before(async () => {
+    ctx = app.mockContext();
+    that = await require('../testconfig')();
   });
+
   it('测试 listMessage 方法', async () => {
-    const ctx = app.mockContext();
     const data = {
       sort: '{"createTime":-1}',
       pageSize: 5,
@@ -24,7 +20,6 @@ describe('测试/service/message.test.js', () => {
   });
 
   it('测试 createMessage 方法', async () => {
-    const ctx = app.mockContext();
     ctx.session.userInfo = {
       _id: that.userId,
     };
@@ -38,7 +33,6 @@ describe('测试/service/message.test.js', () => {
 
   describe('测试 createReply 方法', () => {
     it('评论成功', async () => {
-      const ctx = app.mockContext();
       ctx.session.userInfo = {
         _id: that.userId,
       };
@@ -52,7 +46,6 @@ describe('测试/service/message.test.js', () => {
     });
 
     it('评论失败', async () => {
-      const ctx = app.mockContext();
       ctx.session.userInfo = {
         _id: that.userId,
       };
@@ -68,7 +61,6 @@ describe('测试/service/message.test.js', () => {
 
   describe('测试 deleteMessage 方法', () => {
     it('留言不存在', async () => {
-      const ctx = app.mockContext();
       ctx.session.userInfo = {
         _id: that.userId,
       };
@@ -79,8 +71,7 @@ describe('测试/service/message.test.js', () => {
       assert(result.msg === '留言不存在或已被删除');
     });
 
-    it('无权删除', async () => {
-      const ctx = app.mockContext();
+    it('无权删除评论和留言', async () => {
       ctx.session.userInfo = {
         _id: that.userId,
       };
@@ -94,8 +85,7 @@ describe('测试/service/message.test.js', () => {
       result = await ctx.service.message.deleteMessage(data);
       assert(result.msg === '无权删除');
     });
-    it('删除成功', async () => {
-      const ctx = app.mockContext();
+    it('删除成功评论和留言', async () => {
       ctx.session.userInfo = {
         _id: that.userId,
       };
@@ -109,12 +99,10 @@ describe('测试/service/message.test.js', () => {
       result = await ctx.service.message.deleteMessage(data);
       assert(result.msg === '删除成功');
     });
-
   });
 
   describe('测试 updateMessage 方法', () => {
     it('留言不存在', async () => {
-      const ctx = app.mockContext();
       ctx.session.userInfo = {
         _id: that.userId,
       };
@@ -126,7 +114,6 @@ describe('测试/service/message.test.js', () => {
     });
 
     it('不可编辑非自己的留言', async () => {
-      const ctx = app.mockContext();
       ctx.session.userInfo = {
         _id: that.userId,
       };
@@ -141,7 +128,6 @@ describe('测试/service/message.test.js', () => {
       assert(result.msg === '不可编辑非自己的留言');
     });
     it('修改成功', async () => {
-      const ctx = app.mockContext();
       ctx.session.userInfo = {
         _id: that.userId,
       };
@@ -157,11 +143,29 @@ describe('测试/service/message.test.js', () => {
     });
   });
 
-  after(async function() {
-    console.log('还原删除的数据');
-    const ctx = app.mockContext();
-    // 删除增加评论测试数据
-    // await ctx.model.Message.remove({ 'reply.content': '单元测试  测试 createReply 方法' });
+  describe('测试 getMessageListByUserId 方法', () => {
+    it('获取用户留言列表', async () => {
+      const data = {
+        sort: '{"createTime":-1}',
+        id: that.userId1,
+      };
+      const result = await ctx.service.message.getMessageListByUserId(data);
+      assert(result.total > 0);
+    });
+  });
+
+  describe('测试 getReplyListByUserId 方法', () => {
+    it('获取用户评论列表', async () => {
+      const data = {
+        sort: '{"createTime":-1}',
+        id: that.userId1,
+      };
+      const result = await ctx.service.message.getReplyListByUserId(data);
+      assert(result.total > 0);
+    });
+  });
+
+  after(async () => {
     // 删除增加留言的测试数据
     await ctx.model.Message.remove({
       title: '单元测试  测试 createMessage 方法',

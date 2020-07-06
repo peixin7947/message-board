@@ -56,18 +56,6 @@ class UserController extends Controller {
     }
     ctx.body = { url: filename };
   }
-
-  // 修改用户密码
-  // async updateUserPassword() {
-  //   const { ctx } = this;
-  //   // 参数校验
-  //   const data = ctx.validate({
-  //     id: ctx.helper.validateObj('_id').require(),
-  //     password: ctx.Joi.string().min(6).max(18),
-  //     newPassword: ctx.Joi.string().min(6).max(18),
-  //   }, Object.assign(ctx.request.body, ctx.query, ctx.params));
-  //   ctx.body = await ctx.service.user.updateUserPassword(data);
-  // }
 }
 
 module.exports = UserController;

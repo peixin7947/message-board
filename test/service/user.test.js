@@ -1,28 +1,19 @@
 'use strict';
 const { app, mock, assert } = require('egg-mock/bootstrap');
-const that = this;
-let ctx;
 describe('测试/service/user.test.js', () => {
+  let that;
+  let ctx;
   before(async function() {
-    const { userId, userId1, messageId, messageId1, replyId, replyId1 } = await require('../testconfig');
-    that.userId = userId;
-    that.userId1 = userId1;
-    that.messageId = messageId;
-    that.messageId1 = messageId1;
-    that.replyId = replyId;
-    that.replyId1 = replyId1;
+    that = await require('../testconfig')();
     ctx = app.mockContext();
   });
 
-
-  afterEach(() => {
-    it('获取用户信息', async () => {
-      ctx.session.userInfo = {
-        _id: that.userId,
-      };
-      const result = await ctx.service.user.getUserInformation();
-      assert(result);
-    });
+  it('获取用户信息', async () => {
+    ctx.session.userInfo = {
+      _id: that.userId,
+    };
+    const result = await ctx.service.user.getUserInformation();
+    assert(result);
   });
 
   describe('测试 updateUserInformation 方法', () => {
@@ -86,10 +77,10 @@ describe('测试/service/user.test.js', () => {
     });
   });
 
-  after(() => {
-    ctx.model.User.remove({ _id: that.userId });
-    ctx.model.Message.remove({ _id: that.messageId });
-    ctx.model.Message.remove({ _id: that.messageId1 });
-    ctx.model.User.remove({ _id: that.userId1 });
+  after(async () => {
+    await ctx.model.User.remove({ _id: that.userId });
+    await ctx.model.Message.remove({ _id: that.messageId });
+    await ctx.model.Message.remove({ _id: that.messageId1 });
+    await ctx.model.User.remove({ _id: that.userId1 });
   });
 });

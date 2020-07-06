@@ -1,0 +1,122 @@
+2020-07-06 19:25:57,644 WARN 1912 [-/127.0.0.1/-/2ms POST /api/message] nodejs.Error: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:3:32)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:1:5259)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at notAllow (D:\message-board\node_modules\egg-security\lib\middlewares\methodnoallow.js:21:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at clusterAppMock (D:\message-board\node_modules\egg-mock\app\middleware\cluster_app_mock.js:9:58)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (D:\message-board\node_modules\koa-session\index.js:41:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (D:\message-board\node_modules\koa-override\index.js:38:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+expose: true
+statusCode: 200
+status: 200
+pid: 1912
+hostname: ��Ϣƽ̨-������
+
+2020-07-06 19:25:57,710 WARN 1912 [-/127.0.0.1/-/1ms GET /api/information] nodejs.Error: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:3:32)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:1:5259)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at notAllow (D:\message-board\node_modules\egg-security\lib\middlewares\methodnoallow.js:21:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at clusterAppMock (D:\message-board\node_modules\egg-mock\app\middleware\cluster_app_mock.js:9:58)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (D:\message-board\node_modules\koa-session\index.js:41:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (D:\message-board\node_modules\koa-override\index.js:13:70)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:11)
+    at D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+expose: true
+statusCode: 200
+status: 200
+pid: 1912
+hostname: ��Ϣƽ̨-������
+
+2020-07-06 19:25:57,726 WARN 1912 [-/127.0.0.1/-/1ms PUT /api/information] nodejs.Error: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:3:32)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:1:5259)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at notAllow (D:\message-board\node_modules\egg-security\lib\middlewares\methodnoallow.js:21:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at clusterAppMock (D:\message-board\node_modules\egg-mock\app\middleware\cluster_app_mock.js:9:58)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (D:\message-board\node_modules\koa-session\index.js:41:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (D:\message-board\node_modules\koa-override\index.js:13:70)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+expose: true
+statusCode: 200
+status: 200
+pid: 1912
+hostname: ��Ϣƽ̨-������
+

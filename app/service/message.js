@@ -61,7 +61,7 @@ class MessageService extends Service {
     const { toUser, content, messageId } =
       data;
     const userInfo = ctx.session.userInfo;
-    const message = await ctx.model.Message.findOne({ $or: [{ _id: messageId }, { 'reply._id': messageId }], isDel: false, doDel: null });
+    const message = await ctx.model.Message.findOne({ $or: [{ _id: String(messageId) }, { 'reply._id': messageId }], isDel: false, doDel: null });
     if (!message) {
       ctx.code = 1;
       return { msg: '留言评论不存在' };
@@ -84,7 +84,7 @@ class MessageService extends Service {
     if (!message) return { msg: '留言不存在或已被删除' };
     // 如果是留言
     if (String(message._id) === String(id)) {
-      if (String(message.creator) !== userInfo._id) {
+      if (String(message.creator) !== String(userInfo._id)) {
         ctx.code = 1;
         return { msg: '无权删除' };
       }
@@ -92,7 +92,8 @@ class MessageService extends Service {
       message.doDel = { userId: userInfo._id };
     } else {
       const reply = message.reply.find(item => String(item._id) === String(id));
-      if (String(reply.creator) !== userInfo._id && String(message.creator) !== userInfo._id) {
+      if (String(reply.creator) !== String(userInfo._id)
+        && String(message.creator) !== String(userInfo._id)) {
         ctx.code = 1;
         return { msg: '无权删除' };
       }
@@ -194,7 +195,7 @@ class MessageService extends Service {
       .lean();
     let items = [];
     message.forEach(item => {
-      items = ctx._.union(items, item.reply.filter(reply => String(reply.creator._id) === id));
+      items = ctx._.union(items, item.reply.filter(reply => String(reply.creator._id) === String(id)));
     });
 
     return { items, total: items.length };

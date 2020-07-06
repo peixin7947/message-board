@@ -37,7 +37,7 @@ class AuthController extends Controller {
       ctx.body = { msg: '用户名已存在' };
       return;
     }
-    await this.ctx.model.User(data).save();
+    await this.ctx.model.User.save(data);
     ctx.response.body = { msg: '注册成功' };
   }
 

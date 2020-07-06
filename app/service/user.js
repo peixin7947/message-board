@@ -3,19 +3,6 @@ const Service = require('egg').Service;
 const md5 = require('js-md5');
 class UserService extends Service {
   /**
-   * 增加一个用户
-   * @param {Object} user 用户
-   * @return {Promise<void>} 无需返回
-   */
-  // async addUser(user) {
-  //   await this.ctx.model.User({
-  //     username: user.username,
-  //     password: md5(user.password),
-  //     nickname: user.username,
-  //   }).save();
-  // }
-
-  /**
    * 获取当前用户信息
    * @return {Promise<void>} 用户实体
    */
@@ -48,19 +35,6 @@ class UserService extends Service {
     await ctx.model.User.updateOne({ _id: userInfo._id }, data);
     return { msg: '修改成功' };
   }
-
-  /**
-   * 修改用户密码
-   * @param {Object} data 参数体
-   * @return {Promise<{msg: string}>} 返回消息
-   */
-  // async updateUserPassword(data) {
-  //   const { ctx } = this;
-  //   const { id, password, newPassword } = data;
-  //   await ctx.model.User.findOneAndUpdate({ _id: id, password: md5(password) }, { password: newPassword });
-  //   return { msg: '修改密码成功' };
-  // }
-
 
   /**
    * 重置用户密码

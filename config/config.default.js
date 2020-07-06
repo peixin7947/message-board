@@ -82,16 +82,7 @@ module.exports = appInfo => {
   };
 
   config.test = {
-    // 管理员id
-    adminId: '5ef7fc9d75db50181c301a3d',
-    // 消息id 管理员有权限
-    messageId: '5eff22e9b7bda22e5c386b24',
-    // 评论id 管理员有权限
-    replyId: '5eff2cb947bf0d317420b3b5',
-    // 消息id 管理员无权限
-    messageId1: '5eff1ecb154bad49982f4e64',
-    // 评论id 管理员无权限
-    replyId1: '5eff29f9b22c016b84c253b1',
+    cookie: [ 'EGG_SESS=XJpT4RG8dYqJNYFCqMTRsHrudjVxfs1iDJihtPITYTDuXAzuzwKIzQJo09T8XyE7iODfUhRrTDhAbHrMWvG4_-FAullMTh1axHvDldEAtKWECcfqohWSRYzZcUS5jqRZoNz6_fFYuma_NV1hu14HNJX8IUyJ8idmadMYIowntvgppOXh6_rCgY1oqLrRdcez0-dVizgbdc644Y8KmRsZI8x48xWm-RtKVVf4lv3QDQU6UZZ5yUhasJ22DpH2rQ1x99qe84M6TKnij2g64UgXv49zrGfe5JcwbnCUQvUwaHbsfVbCgehNCWHRbtlrGcVmiJYQMjpKaBRToNfYu0SSn29GK_Yl02QMDVacOLGiqYJdSid49vR1kHpW405uhybZRYZqkITb_1sd3dLu2m9HbmNA506pRKrZZHgB4RFdumMN3SgcEcUQWdEvM2duaGrRQ9x_jcjvw-AI8moP-Dty7mjjd8m1MNWPpfck5QZtogyfFN97HGimupIV6219WGp4YdgWuC3g8CYQodgTZIQjWHkVH2vdkt4COo4Drf_qpdbmUAwDs0c3mF675Ag-zvI_MM09aZC2HeG5g3VqC5JBthEAP6Yh6tE9eYmvVIRcLr--e_feDueUcS6QZVPDkpNWNOTxfk-brOSEbMheyRFG-PotA5WuQPwNzU8JPmNeOxE=' ],
   };
   return config;
 
