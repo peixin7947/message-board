@@ -12,7 +12,7 @@ module.exports = app => {
   router.put('/api/information', controller.user.updateUserInformation); // 更新用户信息
   router.post('/api/avatar/upload', controller.user.uploadAvatar); // 上传用户头像
   router.post('/api/logout', controller.auth.logout); // 用户退出登录
-  router.get('/api/information/:id', controller.user.getInformationById); // 用户退出登录
+  router.get('/api/information/:id', controller.user.getInformationById); // 获取其他用户的信息
 
 
   router.get('/api/message', controller.message.listMessage); // 获取留言

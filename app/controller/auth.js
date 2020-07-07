@@ -1,6 +1,6 @@
 'use strict';
 const Controller = require('egg').Controller;
-
+const md5 = require('js-md5');
 class AuthController extends Controller {
   // 登录验证
   async login() {
@@ -37,7 +37,7 @@ class AuthController extends Controller {
       ctx.body = { msg: '用户名已存在' };
       return;
     }
-    await this.ctx.model.User.save(data);
+    await this.ctx.model.User.save({ username: data.username, password: md5(data.password) });
     ctx.response.body = { msg: '注册成功' };
   }
 

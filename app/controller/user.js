@@ -13,7 +13,7 @@ class UserController extends Controller {
     ctx.response.body = await ctx.service.user.getUserInformation();
   }
 
-  // 获取当前用户的个人信息
+  // 获取其他用户的个人信息
   async getInformationById() {
     const { ctx } = this;
     const data = ctx.validate({

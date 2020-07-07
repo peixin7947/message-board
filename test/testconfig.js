@@ -1,11 +1,11 @@
 'use strict';
 const { app } = require('egg-mock/bootstrap');
-
+const md5 = require('js-md5');
 const ctx = app.mockContext();
 
 module.exports = async () => {
-  const user = await ctx.model.User.create({ username: 'test', password: 'test' });
-  const user1 = await ctx.model.User.create({ username: 'test', password: 'test' });
+  const user = await ctx.model.User.create({ username: 'test', password: (md5('password')) });
+  const user1 = await ctx.model.User.create({ username: 'test1', password: (md5('password')) });
   const userId = user._id;
   const userId1 = user1._id;
   // user有权限的留言

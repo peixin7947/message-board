@@ -1,7 +1,7 @@
 {
   "config": {
     "session": {
-      "maxAge": 86400000,
+      "maxAge": 864000000,
       "key": "EGG_SESS",
       "httpOnly": true,
       "encrypt": true,
@@ -106,13 +106,14 @@
         "D:\\message-board\\node_modules\\egg-watcher\\config\\locales",
         "D:\\message-board\\node_modules\\egg-schedule\\config\\locales",
         "D:\\message-board\\node_modules\\egg-multipart\\config\\locales",
-        "D:\\message-board\\node_modules\\egg-development\\config\\locales",
         "D:\\message-board\\node_modules\\egg-logrotator\\config\\locales",
         "D:\\message-board\\node_modules\\egg-static\\config\\locales",
         "D:\\message-board\\node_modules\\egg-view\\config\\locales",
         "D:\\message-board\\node_modules\\egg-view-nunjucks\\config\\locales",
         "D:\\message-board\\node_modules\\egg-mongoose\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-mock\\config\\locales",
         "D:\\message-board\\node_modules\\egg\\config\\locales",
+        "D:\\message-board\\node_modules\\egg-mock\\lib\\tmp\\config\\locales",
         "D:\\message-board\\config\\locales"
       ],
       "queryField": "locale",
@@ -158,13 +159,6 @@
         "cron": "0 30 4 * * *"
       }
     },
-    "development": {
-      "watchDirs": [],
-      "ignoreDirs": [],
-      "fastReady": false,
-      "reloadOnDebug": true,
-      "overrideDefault": false
-    },
     "logrotator": {
       "filesRotateByHour": null,
       "hourDelimiter": "-",
@@ -190,7 +184,7 @@
         "D:\\message-board\\app\\public",
         "D:\\message-board\\app\\public\\html"
       ],
-      "cache": false,
+      "cache": true,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
       "mapping": {}
@@ -200,7 +194,7 @@
       "throwOnUndefined": false,
       "trimBlocks": false,
       "lstripBlocks": false,
-      "cache": false
+      "cache": true
     },
     "mongoose": {
       "url": "",
@@ -218,7 +212,7 @@
         }
       }
     },
-    "env": "local",
+    "env": "unittest",
     "name": "message-board",
     "keys": "<String len: 34>",
     "cookies": {},
@@ -244,7 +238,8 @@
         "lodash": "^4.17.15",
         "mongoose": "^5.9.18",
         "nunjucks": "^3.2.1",
-        "stream-wormhole": "^1.1.0"
+        "stream-wormhole": "^1.1.0",
+        "supertest": "^4.0.2"
       },
       "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^3.0.2",
@@ -300,19 +295,17 @@
     "logger": {
       "dir": "D:\\message-board\\logs\\message-board",
       "encoding": "utf8",
-      "env": "local",
+      "env": "unittest",
       "level": "INFO",
-      "consoleLevel": "INFO",
+      "consoleLevel": "WARN",
       "disableConsoleAfterReady": false,
       "outputJSON": false,
-      "buffer": true,
+      "buffer": false,
       "appLogName": "message-board-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {
-        "consoleLevel": "WARN"
-      },
+      "coreLogger": {},
       "allowDebugAtProd": false,
       "type": "application"
     },
@@ -348,9 +341,9 @@
       "bodyParser",
       "overrideMethod",
       "session",
+      "clusterAppMock",
       "securities",
-      "i18n",
-      "eggLoaderTrace"
+      "i18n"
     ],
     "workerStartTimeout": 600000,
     "serverTimeout": null,
@@ -496,21 +489,6 @@
       "path": "D:\\message-board\\node_modules\\egg-multipart",
       "version": "2.10.3"
     },
-    "development": {
-      "enable": true,
-      "package": "egg-development",
-      "name": "development",
-      "dependencies": [
-        "watcher"
-      ],
-      "optionalDependencies": [],
-      "env": [
-        "local"
-      ],
-      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-development",
-      "version": "2.5.0"
-    },
     "logrotator": {
       "enable": true,
       "package": "egg-logrotator",
@@ -570,6 +548,15 @@
       "from": "D:\\message-board\\config\\plugin.js",
       "path": "D:\\message-board\\node_modules\\egg-mongoose",
       "version": "3.2.0"
+    },
+    "egg-mock": {
+      "enable": true,
+      "path": "D:\\message-board\\node_modules\\egg-mock",
+      "name": "egg-mock",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "version": "4.0.0"
     }
   }
 }

@@ -3,7 +3,7 @@
   "view": {
     "defaultViewEngine": "D:\\message-board\\config\\config.default.js",
     "root": "D:\\message-board\\config\\config.default.js",
-    "cache": "D:\\message-board\\node_modules\\egg-view\\config\\config.local.js",
+    "cache": "D:\\message-board\\node_modules\\egg-view\\config\\config.default.js",
     "defaultExtension": "D:\\message-board\\node_modules\\egg-view\\config\\config.default.js",
     "mapping": "D:\\message-board\\node_modules\\egg-view\\config\\config.default.js"
   },
@@ -59,7 +59,7 @@
       "value": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     },
     "hsts": {
-      "enable": "D:\\message-board\\node_modules\\egg-security\\config\\config.local.js",
+      "enable": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "maxAge": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "includeSubdomains": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"
     },
@@ -144,7 +144,7 @@
     "cookieMaxAge": "D:\\message-board\\node_modules\\egg-i18n\\config\\config.default.js"
   },
   "watcher": {
-    "type": "D:\\message-board\\node_modules\\egg-watcher\\config\\config.local.js",
+    "type": "D:\\message-board\\node_modules\\egg-watcher\\config\\config.unittest.js",
     "eventSources": {
       "default": "D:\\message-board\\node_modules\\egg-watcher\\config\\config.default.js",
       "development": "D:\\message-board\\node_modules\\egg-watcher\\config\\config.default.js"
@@ -158,13 +158,6 @@
   },
   "schedule": {
     "directory": "D:\\message-board\\node_modules\\egg-schedule\\config\\config.default.js"
-  },
-  "development": {
-    "watchDirs": "D:\\message-board\\node_modules\\egg-development\\config\\config.default.js",
-    "ignoreDirs": "D:\\message-board\\node_modules\\egg-development\\config\\config.default.js",
-    "fastReady": "D:\\message-board\\node_modules\\egg-development\\config\\config.default.js",
-    "reloadOnDebug": "D:\\message-board\\node_modules\\egg-development\\config\\config.default.js",
-    "overrideDefault": "D:\\message-board\\node_modules\\egg-development\\config\\config.default.js"
   },
   "logrotator": {
     "filesRotateByHour": "D:\\message-board\\node_modules\\egg-logrotator\\config\\config.default.js",
@@ -180,7 +173,7 @@
     "throwOnUndefined": "D:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
     "trimBlocks": "D:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
     "lstripBlocks": "D:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
-    "cache": "D:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.local.js"
+    "cache": "D:\\message-board\\node_modules\\egg-view-nunjucks\\config\\config.default.js"
   },
   "env": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
   "name": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
@@ -207,7 +200,8 @@
       "lodash": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "mongoose": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
       "nunjucks": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
-      "stream-wormhole": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
+      "stream-wormhole": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+      "supertest": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
       "@typescript-eslint/eslint-plugin": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
@@ -265,17 +259,15 @@
     "encoding": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "env": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "level": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "consoleLevel": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "D:\\message-board\\node_modules\\egg\\config\\config.unittest.js",
     "disableConsoleAfterReady": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "outputJSON": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "buffer": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "D:\\message-board\\node_modules\\egg\\config\\config.unittest.js",
     "appLogName": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "coreLogName": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "agentLogName": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "errorLogName": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
-    "coreLogger": {
-      "consoleLevel": "D:\\message-board\\node_modules\\egg\\config\\config.local.js"
-    },
+    "coreLogger": "D:\\message-board\\node_modules\\egg\\config\\config.default.js",
     "allowDebugAtProd": "D:\\message-board\\node_modules\\egg\\config\\config.default.js"
   },
   "httpclient": {
