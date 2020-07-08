@@ -4,7 +4,7 @@ const { app, assert } = require('egg-mock/bootstrap');
 describe('测试/controller/auth.test.js', () => {
   let that;
   beforeEach(async () => {
-    that = await require('../testconfig')();
+    that = await require('../testConfig')();
     app.mockCsrf();
   });
   afterEach(async () => {
@@ -26,7 +26,7 @@ describe('测试/controller/auth.test.js', () => {
       const result = await app.httpRequest()
         .post('/register')
         .send({
-          username: 'admin',
+          username: 'test',
           password: '123123',
           rePassword: '123123',
         });
@@ -63,8 +63,8 @@ describe('测试/controller/auth.test.js', () => {
       const result = await app.httpRequest()
         .post('/login')
         .send({
-          username: 'admin',
-          password: '123123',
+          username: 'test',
+          password: 'password',
         });
       assert(result.status === 200);
       assert(result.body.status === 0);
@@ -99,9 +99,9 @@ describe('测试/controller/auth.test.js', () => {
       const result = await app.httpRequest()
         .put('/api/resetPassword')
         .send({
-          username: 'admin',
+          username: 'test',
           password: '123123',
-          email: 'chaoguan@2980.com',
+          email: 'test@duoyi.com',
         });
       assert(result.status === 200);
       assert(result.body.msg === '修改密码成功');

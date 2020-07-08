@@ -128,13 +128,6 @@
         "cron": "0 30 4 * * *"
       }
     },
-    "development": {
-      "watchDirs": [],
-      "ignoreDirs": [],
-      "fastReady": false,
-      "reloadOnDebug": true,
-      "overrideDefault": false
-    },
     "logrotator": {
       "filesRotateByHour": null,
       "hourDelimiter": "-",
@@ -157,7 +150,7 @@
     },
     "view": {
       "root": "D:\\message-board\\app\\public,D:\\message-board\\app\\public\\html,D:\\message-board\\app\\view",
-      "cache": false,
+      "cache": true,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
       "mapping": {}
@@ -167,7 +160,7 @@
       "throwOnUndefined": false,
       "trimBlocks": false,
       "lstripBlocks": false,
-      "cache": false
+      "cache": true
     },
     "mongoose": {
       "url": "",
@@ -185,7 +178,7 @@
         }
       }
     },
-    "env": "local",
+    "env": "unittest",
     "name": "message-board",
     "keys": "<String len: 34>",
     "cookies": {},
@@ -268,19 +261,17 @@
     "logger": {
       "dir": "D:\\message-board\\logs\\message-board",
       "encoding": "utf8",
-      "env": "local",
+      "env": "unittest",
       "level": "INFO",
-      "consoleLevel": "INFO",
+      "consoleLevel": "WARN",
       "disableConsoleAfterReady": false,
       "outputJSON": false,
-      "buffer": true,
+      "buffer": false,
       "appLogName": "message-board-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {
-        "consoleLevel": "WARN"
-      },
+      "coreLogger": {},
       "allowDebugAtProd": false,
       "type": "agent"
     },
@@ -447,21 +438,6 @@
       "path": "D:\\message-board\\node_modules\\egg-multipart",
       "version": "2.10.3"
     },
-    "development": {
-      "enable": true,
-      "package": "egg-development",
-      "name": "development",
-      "dependencies": [
-        "watcher"
-      ],
-      "optionalDependencies": [],
-      "env": [
-        "local"
-      ],
-      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
-      "path": "D:\\message-board\\node_modules\\egg-development",
-      "version": "2.5.0"
-    },
     "logrotator": {
       "enable": true,
       "package": "egg-logrotator",
@@ -521,6 +497,15 @@
       "from": "D:\\message-board\\config\\plugin.js",
       "path": "D:\\message-board\\node_modules\\egg-mongoose",
       "version": "3.2.0"
+    },
+    "egg-mock": {
+      "enable": true,
+      "path": "D:\\message-board\\node_modules\\egg-mock",
+      "name": "egg-mock",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "version": "4.0.0"
     }
   }
 }

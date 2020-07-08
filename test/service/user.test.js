@@ -1,11 +1,14 @@
 'use strict';
-const { app, mock, assert } = require('egg-mock/bootstrap');
+const { app, assert } = require('egg-mock/bootstrap');
 describe('测试/service/user.test.js', () => {
   let that;
   let ctx;
-  before(async function() {
-    that = await require('../testconfig')();
+  beforeEach(async function() {
+    that = await require('../testConfig')();
     ctx = app.mockContext();
+  });
+  afterEach(async () => {
+    await require('../resetConfig')(that);
   });
 
   it('获取用户信息', async () => {
@@ -18,7 +21,6 @@ describe('测试/service/user.test.js', () => {
 
   describe('测试 updateUserInformation 方法', () => {
     it('修改成功', async () => {
-      const ctx = app.mockContext();
       ctx.session.userInfo = {
         _id: that.userId,
       };
@@ -33,7 +35,6 @@ describe('测试/service/user.test.js', () => {
       assert(result.msg = '修改成功');
     });
     it('修改失败', async () => {
-      const ctx = app.mockContext();
       ctx.session.userInfo = {
         _id: that.userId,
       };
@@ -48,7 +49,6 @@ describe('测试/service/user.test.js', () => {
 
   describe('测试 resetPassword 方法', () => {
     it(' 修改失败', async () => {
-      const ctx = app.mockContext();
       let data = {
         username: '不存在的用户',
         email: 'chaoguan@2980.com',
@@ -66,7 +66,6 @@ describe('测试/service/user.test.js', () => {
       assert(result.msg = '输入邮箱不正确');
     });
     it(' 修改成功', async () => {
-      const ctx = app.mockContext();
       const data = {
         username: 'test',
         email: '',
@@ -75,12 +74,5 @@ describe('测试/service/user.test.js', () => {
       const result = await ctx.service.user.resetPassword(data);
       assert(result.msg = '修改密码成功');
     });
-  });
-
-  after(async () => {
-    await ctx.model.User.remove({ _id: that.userId });
-    await ctx.model.Message.remove({ _id: that.messageId });
-    await ctx.model.Message.remove({ _id: that.messageId1 });
-    await ctx.model.User.remove({ _id: that.userId1 });
   });
 });

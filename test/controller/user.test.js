@@ -6,7 +6,7 @@ const fs = require('fs');
 describe('测试/controller/user.test.js', () => {
   let that;
   beforeEach(async () => {
-    that = await require('../testconfig')();
+    that = await require('../testConfig')();
     app.mockCsrf();
     app.mockSession({ userInfo: { _id: that.userId } });
   });
@@ -26,7 +26,7 @@ describe('测试/controller/user.test.js', () => {
 
   describe('put 请求/api/information', () => {
     it('更新用户信息', async () => {
-      const result = await app.httpRequest()
+      let result = await app.httpRequest()
         .put('/api/information')
         .send({
           age: 12,
@@ -34,6 +34,13 @@ describe('测试/controller/user.test.js', () => {
       assert(result.status === 200);
       assert(result.body.status === 0);
       assert(result.body.msg === '修改成功');
+
+      result = await app.httpRequest()
+        .put('/api/information')
+        .send({
+          email: 12,
+        });
+      assert(result.body.msg === '应提供有效的电子邮件！');
     });
   });
   describe('post 请求/api/avatar/upload', () => {

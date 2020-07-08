@@ -1,5 +1,5 @@
 'use strict';
-const { app, mock, assert } = require('egg-mock/bootstrap');
+const { app, assert } = require('egg-mock/bootstrap');
 
 describe('测试/service/auth.test.js', () => {
   it('测试login方法:正常登录', async () => {

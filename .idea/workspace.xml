@@ -21,11 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6e2d9a26-34f0-449f-8039-f84d1ae87995" name="Default Changelist" comment="111111111111">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controller/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/model/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/middleware/responseHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/responseHandler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/html/component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/html/component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/html/manageMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/html/manageMessage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/html/messageBoard.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/html/messageBoard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/message-board/common-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/message-board/common-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/message-board/egg-agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/message-board/egg-agent.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/message-board/egg-schedule.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/message-board/egg-schedule.log" afterDir="false" />
@@ -35,6 +33,14 @@
       <change beforePath="$PROJECT_DIR$/run/agent_config_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/agent_config_meta.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/application_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/application_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/application_config_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/application_config_meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controller/auth.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/controller/auth.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controller/home.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/controller/home.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controller/message.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/controller/message.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controller/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/controller/user.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/service/auth.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/service/auth.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/service/message.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/service/message.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/service/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/service/user.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/testconfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/testConfig.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +213,7 @@
       <workItem from="1593846829236" duration="3129000" />
       <workItem from="1593999761528" duration="26728000" />
       <workItem from="1594085649531" duration="11699000" />
-      <workItem from="1594199290365" duration="4869000" />
+      <workItem from="1594199290365" duration="6643000" />
     </task>
     <task id="LOCAL-00001" summary="实现注册功能">
       <created>1591616212406</created>
@@ -370,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594126249323</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="修复bug">
+      <created>1594207507777</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1594207507777</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +425,8 @@
     <MESSAGE value="完成" />
     <MESSAGE value="修改单元测试，完善其对数据的操作" />
     <MESSAGE value="修复bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复bug" />
+    <MESSAGE value="完善单元测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善单元测试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1591604723393">
@@ -527,10 +541,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="450" y="200" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593843593800" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1594126259297">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1594207514497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594126259297" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594207514497" />
     <state x="827" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1593658940905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

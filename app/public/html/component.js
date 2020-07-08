@@ -555,7 +555,7 @@ const resetPasswordBtn = {
         method: 'put',
         data: {
           username: '$username',
-          password: '$password',
+          password: '$newPassword',
           email: '$email',
         },
         headers: {
@@ -603,7 +603,7 @@ const resetPasswordBtn = {
         },
         {
           type: 'password',
-          name: 'password',
+          name: 'newPassword',
           label: '重置密码',
           required: true,
           placeholder: '请输入一个6到24个字符的密码',

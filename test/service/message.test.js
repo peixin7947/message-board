@@ -1,12 +1,17 @@
 'use strict';
-const { app, mock, assert } = require('egg-mock/bootstrap');
+const { app, assert } = require('egg-mock/bootstrap');
 
 describe('测试/service/message.test.js', () => {
-  let that;
   let ctx;
-  before(async () => {
+  let that;
+  beforeEach(async () => {
     ctx = app.mockContext();
-    that = await require('../testconfig')();
+    that = await require('../testConfig')();
+    app.mockCsrf();
+    app.mockSession({ userInfo: { _id: that.userId } });
+  });
+  afterEach(async () => {
+    await require('../resetConfig')(that);
   });
 
   it('测试 listMessage 方法', async () => {
@@ -171,9 +176,5 @@ describe('测试/service/message.test.js', () => {
       title: '单元测试  测试 createMessage 方法',
       content: '单元测试  测试 createMessage 方法',
     });
-    await ctx.model.User.remove({ _id: that.userId });
-    await ctx.model.Message.remove({ _id: that.messageId });
-    await ctx.model.Message.remove({ _id: that.messageId1 });
-    await ctx.model.User.remove({ _id: that.userId1 });
   });
 });

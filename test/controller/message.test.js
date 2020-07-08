@@ -5,7 +5,7 @@ describe('测试/controller/message.test.js', () => {
   let that;
   let ctx;
   beforeEach(async () => {
-    that = await require('../testconfig')();
+    that = await require('../testConfig')();
     app.mockCsrf();
     app.mockSession({ userInfo: { _id: that.userId } });
     ctx = app.mockContext();

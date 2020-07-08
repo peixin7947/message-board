@@ -1,4 +1,4 @@
-2020-07-07 20:45:45,905 WARN 11880 [-/127.0.0.1/-/2ms POST /register] nodejs.ValidationError: child "username" fails because ["username" length must be at least 3 characters long]
+2020-07-08 21:07:04,186 WARN 15824 [-/127.0.0.1/-/2ms POST /register] nodejs.ValidationError: child "username" fails because ["username" length must be at least 3 characters long]
     at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
     at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
     at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
@@ -17,7 +17,7 @@
     at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
     at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
     at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-    at responseHandler (D:\message-board\app\middleware\responseHandler.js:1:5196)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:1:5014)
     at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
     at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
     at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
@@ -56,209 +56,69 @@ errors: "child \"username\" fails because [\"username\" length must be at least 
 expose: true
 statusCode: 422
 status: 422
-pid: 11880
+pid: 15824
 hostname: ��Ϣƽ̨-������
 
-2020-07-08 17:22:45,737 ERROR 18968 [-/::1/-/4ms GET /api/information] nodejs.TypeError: Cannot read property '_id' of null
-    at UserService.getUserInformation (D:\message-board\app\service\user.js:13:24)
+2020-07-08 21:07:04,615 WARN 15824 [-/127.0.0.1/-/1ms PUT /api/information] nodejs.ValidationError: child "email" fails because ["email" must be a string]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:1:2646)
+    at UserController.updateUserInformation (D:\message-board\app\controller\user.js:5:40)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:2:247)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:1:5014)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at notAllow (D:\message-board\node_modules\egg-security\lib\middlewares\methodnoallow.js:21:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at clusterAppMock (D:\message-board\node_modules\egg-mock\app\middleware\cluster_app_mock.js:9:58)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at session (D:\message-board\node_modules\koa-session\index.js:41:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at overrideMethod (D:\message-board\node_modules\koa-override\index.js:13:70)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:11)
+    at runMicrotasks (<anonymous>)
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at async UserController.getUserInformation (D:\message-board\app\controller\user.js:13:25)
-    at async login (D:\message-board\app\middleware\login.js:7:14)
-    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
-    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
-    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
-    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
-    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
-    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
-    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
-    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
-    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
-    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
-    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
-
-pid: 18968
-hostname: ��Ϣƽ̨-������
-
-2020-07-08 17:22:50,176 ERROR 18968 [-/::1/-/3ms GET /api/information] nodejs.TypeError: Cannot read property '_id' of null
-    at UserService.getUserInformation (D:\message-board\app\service\user.js:13:24)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at async UserController.getUserInformation (D:\message-board\app\controller\user.js:13:25)
-    at async login (D:\message-board\app\middleware\login.js:7:14)
-    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
-    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
-    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
-    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
-    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
-    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
-    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
-    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
-    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
-    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
-    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
-
-pid: 18968
-hostname: ��Ϣƽ̨-������
-
-2020-07-08 17:23:07,430 ERROR 18968 [-/::1/-/4ms POST /register] nodejs.TypeError: this.ctx.model.User.save is not a function
-    at AuthController.register (D:\message-board\app\controller\auth.js:40:31)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
-    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
-    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
-    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
-    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
-    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
-    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
-    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
-    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
-    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
-    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
-
-pid: 18968
-hostname: ��Ϣƽ̨-������
-
-2020-07-08 19:16:09,357 WARN 13112 [-/::1/-/30ms PUT /api/information] nodejs.ValidationError: child "sex" fails because ["sex" must be a number, "sex" must be a number]
-    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
-    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
-    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
-    at Object.validate (D:\message-board\app\extend\context.js:8:34)
-    at UserController.updateUserInformation (D:\message-board\app\controller\user.js:29:22)
-    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
-    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
-    at D:\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
 isJoi: true
 name: "ValidationError"
-details: [{"message":"\"sex\" must be a number","path":["sex"],"type":"number.base","context":{"value":"${sex}","key":"sex","label":"sex"}},{"message":"\"sex\" must be a number","path":"~0~path","type":"number.base","context":{"value":"${sex}","key":"sex","label":"sex"}}]
-_object: {"nickname":"cpx2","avatar":"/static/images/avatar.png","sex":"${sex}","email":"123@duoyi.com","intro":"","age":"12"}
+details: [{"message":"\"email\" must be a string","path":["email"],"type":"string.base","context":{"value":12,"key":"email","label":"email"}}]
+_object: {"email":12}
 annotate: undefined
-errors: "child \"sex\" fails because [\"sex\" must be a number, \"sex\" must be a number]"
+errors: "child \"email\" fails because [\"email\" must be a string]"
 expose: true
 statusCode: 422
 status: 422
-pid: 13112
-hostname: ��Ϣƽ̨-������
-
-2020-07-08 19:16:10,748 WARN 13112 [-/::1/-/3ms PUT /api/information] nodejs.ValidationError: child "sex" fails because ["sex" must be a number, "sex" must be a number]
-    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
-    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
-    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
-    at Object.validate (D:\message-board\app\extend\context.js:8:34)
-    at UserController.updateUserInformation (D:\message-board\app\controller\user.js:29:22)
-    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
-    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
-    at D:\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-isJoi: true
-name: "ValidationError"
-details: [{"message":"\"sex\" must be a number","path":["sex"],"type":"number.base","context":{"value":"${sex}","key":"sex","label":"sex"}},{"message":"\"sex\" must be a number","path":"~0~path","type":"number.base","context":{"value":"${sex}","key":"sex","label":"sex"}}]
-_object: {"nickname":"cpx2","avatar":"/static/images/avatar.png","sex":"${sex}","email":"123@duoyi.com","intro":"","age":"12"}
-annotate: undefined
-errors: "child \"sex\" fails because [\"sex\" must be a number, \"sex\" must be a number]"
-expose: true
-statusCode: 422
-status: 422
-pid: 13112
-hostname: ��Ϣƽ̨-������
-
-2020-07-08 19:16:33,221 WARN 13112 [-/::1/-/6382ms PUT /api/information] nodejs.ValidationError: child "sex" fails because ["sex" must be a number, "sex" must be a number]
-    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
-    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
-    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
-    at Object.validate (D:\message-board\app\extend\context.js:8:34)
-    at UserController.updateUserInformation (D:\message-board\app\controller\user.js:29:22)
-    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
-    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
-    at D:\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-isJoi: true
-name: "ValidationError"
-details: [{"message":"\"sex\" must be a number","path":["sex"],"type":"number.base","context":{"value":"${sex}","key":"sex","label":"sex"}},{"message":"\"sex\" must be a number","path":"~0~path","type":"number.base","context":{"value":"${sex}","key":"sex","label":"sex"}}]
-_object: {"nickname":"cpx2","avatar":"/static/images/avatar.png","sex":"${sex}","email":"123@duoyi.com","intro":"","age":"12"}
-annotate: undefined
-errors: "child \"sex\" fails because [\"sex\" must be a number, \"sex\" must be a number]"
-expose: true
-statusCode: 422
-status: 422
-pid: 13112
-hostname: ��Ϣƽ̨-������
-
-2020-07-08 19:18:05,936 WARN 14048 [-/::1/-/2296ms PUT /api/information] nodejs.ValidationError: child "sex" fails because ["sex" must be a number, "sex" must be a number]
-    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
-    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
-    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
-    at Object.validate (D:\message-board\app\extend\context.js:8:34)
-    at UserController.updateUserInformation (D:\message-board\app\controller\user.js:29:22)
-    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
-    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
-    at D:\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-isJoi: true
-name: "ValidationError"
-details: [{"message":"\"sex\" must be a number","path":["sex"],"type":"number.base","context":{"value":"${sex}","key":"sex","label":"sex"}},{"message":"\"sex\" must be a number","path":"~0~path","type":"number.base","context":{"value":"${sex}","key":"sex","label":"sex"}}]
-_object: {"nickname":"cpx2","avatar":"/static/images/avatar.png","sex":"${sex}","email":"123@duoyi.com","intro":"","age":"12"}
-annotate: undefined
-errors: "child \"sex\" fails because [\"sex\" must be a number, \"sex\" must be a number]"
-expose: true
-statusCode: 422
-status: 422
-pid: 14048
-hostname: ��Ϣƽ̨-������
-
-2020-07-08 19:18:35,237 WARN 14048 [-/::1/-/2512ms PUT /api/information] nodejs.ValidationError: child "email" fails because ["email" is not allowed to be empty]
-    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
-    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
-    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
-    at Object.validate (D:\message-board\app\extend\context.js:8:34)
-    at UserController.updateUserInformation (D:\message-board\app\controller\user.js:29:22)
-    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
-    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
-    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
-    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
-    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
-    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
-    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
-    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
-    at D:\message-board\node_modules\koa-compose\index.js:36:12
-    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
-    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
-isJoi: true
-name: "ValidationError"
-details: [{"message":"\"email\" is not allowed to be empty","path":["email"],"type":"any.empty","context":{"value":"","invalids":[""],"key":"email","label":"email"}}]
-_object: {"nickname":"cpx3","avatar":"/static/images/avatar.png","sex":0,"email":"","age":0,"intro":""}
-annotate: undefined
-errors: "child \"email\" fails because [\"email\" is not allowed to be empty]"
-expose: true
-statusCode: 422
-status: 422
-pid: 14048
+pid: 15824
 hostname: ��Ϣƽ̨-������
 

@@ -4,7 +4,7 @@ const { app, assert } = require('egg-mock/bootstrap');
 describe('测试/controller/home.test.js', () => {
   let that;
   beforeEach(async () => {
-    that = await require('../testconfig')();
+    that = await require('../testConfig')();
     app.mockCsrf();
     app.mockSession({ userInfo: { _id: that.userId } });
   });

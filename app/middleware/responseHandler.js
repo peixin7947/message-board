@@ -34,9 +34,6 @@ module.exports = () => {
           case 'password':
             res.msg = '密码长度应该是6-24！';
             break;
-          case 'rePassword':
-            res.msg = '两次输入的密码应该相同!';
-            break;
           default:
             res.msg = '信息无效!';
         }
