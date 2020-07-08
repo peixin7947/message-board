@@ -11,6 +11,7 @@ module.exports = app => {
     },
     nickname: {
       type: String,
+      default: '',
     },
     createTime: { type: Date, default: Date.now },
     email: {
@@ -19,6 +20,7 @@ module.exports = app => {
     },
     sex: {
       type: Number,
+      default: 0,
     },
     avatar: {
       type: String,
@@ -28,7 +30,7 @@ module.exports = app => {
       type: String,
       default: '',
     },
-    age: { type: Number, min: 0, max: 120 },
+    age: { type: Number, min: 0, max: 120, default: 0 },
   });
   return mongoose.model('User', UserSchema, 'User');
 };

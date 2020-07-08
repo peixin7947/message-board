@@ -33,6 +33,7 @@
     amis.embed('#root', {
       'type': 'page',
       'title': '留言板',
+      "remark": "嘿，点击留言前的箭头可以查看评论",
       'initApi': 'get:/api/information',
       // 工具栏区域， 存放了导航栏按钮
       'toolbar': [
@@ -110,7 +111,7 @@
                       'controls': [
                         {
                           'type': 'textarea',
-                          'label': '<% if(data.toUser) {%>回复 <% }else{ %> 评论留言 <%}%>：',
+                          'label': '<% if(data.toUser) {%>回复 <% }else{ %> 评论留言 <%}%>',
                           'name': 'replyContent',
                           'validations': {
                             'maxLength': 1024,

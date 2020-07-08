@@ -301,6 +301,7 @@ const messageCrudFrom = {
   mode: '',
   title: '',
   className: '',
+  name: 'messageCrudFrom',
   submitText: '',
   controls: [
     {
@@ -400,7 +401,7 @@ const messageCrudFrom = {
               type: 'group',
               title: '',
               direction: 'vertical',
-              className: 'w-auto',
+              className: '',
               controls: [
                 {
                   type: 'static-tpl',
@@ -409,12 +410,14 @@ const messageCrudFrom = {
                   className: 'font-bold',
                   tpl: '${title}',
                 },
+
                 {
                   type: 'static-tpl',
                   // 如果是留言则没有回复
                   visibleOn: 'data.toUser !== undefined',
                   tpl: '<%if(data.toUser) {%>回复：<%= data.toUser.nickname%>&nbsp;&nbsp;&nbsp;&nbsp;<%}%>',
                 },
+
                 {
                   type: 'static-tpl',
                   tpl: '$content',
@@ -422,10 +425,22 @@ const messageCrudFrom = {
                   className: 'word-break',
                 },
                 {
-                  type: 'static-tpl',
-                  className: 'pull-right',
-                  tpl: '<%= formatDate(data.createTime, \'YYYY-MM-DD h:mm:ss a\') %>',
+                  type: 'divider',
                 },
+                {
+                  type: 'static-tpl',
+                  className: 'pull-left',
+                  tpl: '发布于 <%= formatDate(data.createTime, \'YYYY-MM-DD h:mm:ss a\') %>',
+                },
+                {
+                  type: 'hidden',
+                },
+                {
+                  type: 'static-tpl',
+                  className: 'font-bold pull-right w-auto',
+                  tpl: '<%if(data.reply) {%> 有<%= data.reply.length %>条评论 <%}%>',
+                },
+
               ],
             },
           ],
@@ -535,9 +550,6 @@ const resetPasswordBtn = {
     body: {
       type: 'form',
       mode: 'horizontal',
-      horizontal: {
-        leftFixed: 'xs',
-      },
       api: {
         url: '/api/resetPassword',
         method: 'put',
@@ -580,6 +592,7 @@ const resetPasswordBtn = {
           type: 'email',
           label: '邮箱',
           name: 'email',
+          required: true,
           validateOnChange: true,
           validations: {
             isEmail: true,
@@ -628,3 +641,12 @@ const crudFilter = {
   ],
 };
 
+module.exports = {
+  crudFilter,
+  resetPasswordBtn,
+  nav,
+  createMessageBtn,
+  updateInformationBtn,
+  messageCrudFrom,
+  updatePasswordBtn,
+};

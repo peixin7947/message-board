@@ -1,0 +1,75 @@
+2020-07-08 17:22:45,730 ERROR 18968 [-/::1/-/4ms GET /api/information] nodejs.TypeError: Cannot read property '_id' of null
+    at UserService.getUserInformation (D:\message-board\app\service\user.js:13:24)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async UserController.getUserInformation (D:\message-board\app\controller\user.js:13:25)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 18968
+hostname: ��Ϣƽ̨-������
+
+2020-07-08 17:22:50,175 ERROR 18968 [-/::1/-/3ms GET /api/information] nodejs.TypeError: Cannot read property '_id' of null
+    at UserService.getUserInformation (D:\message-board\app\service\user.js:13:24)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async UserController.getUserInformation (D:\message-board\app\controller\user.js:13:25)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 18968
+hostname: ��Ϣƽ̨-������
+
+2020-07-08 17:23:07,429 ERROR 18968 [-/::1/-/4ms POST /register] nodejs.TypeError: this.ctx.model.User.save is not a function
+    at AuthController.register (D:\message-board\app\controller\auth.js:40:31)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 18968
+hostname: ��Ϣƽ̨-������
+
+2020-07-08 19:08:25,096 ERROR 9196 nodejs.ClusterClientNoResponseError: client no response in 2081616ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 9196
+hostname: ��Ϣƽ̨-������
+
+2020-07-08 19:17:39,337 ERROR 9196 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 9196
+hostname: ��Ϣƽ̨-������
+
