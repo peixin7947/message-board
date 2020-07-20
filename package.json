@@ -12,7 +12,7 @@
     "egg-view-nunjucks": "^2.2.0",
     "joi": "^14.3.1",
     "js-md5": "^0.7.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "mongoose": "^5.9.18",
     "nunjucks": "^3.2.1",
     "stream-wormhole": "^1.1.0",
