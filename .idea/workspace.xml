@@ -19,28 +19,59 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e2d9a26-34f0-449f-8039-f84d1ae87995" name="Default Changelist" comment="111111111111">
+    <list default="true" id="6e2d9a26-34f0-449f-8039-f84d1ae87995" name="Default Changelist" comment="修改与前端的交互">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/html/css/chunk-vendors.2ac5db4b.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/html/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/html/fonts/element-icons.535877f5.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/html/fonts/element-icons.732389de.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/uploadAvatar/avatar.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/middleware/responseHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/responseHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/html/component.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/html/component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/html/component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/html/information.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/html/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/html/manageMessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/html/messageBoard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/html/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/amis/sdk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/amis/sdk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/blog-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/blog-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/blog-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/blog-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/bw-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/bw-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/bw-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/bw-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/bw-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/hero1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/logo-big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/logo-bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/signature.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/static/images/testimonial-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.default.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.default.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/message-board/common-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/message-board/common-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/message-board/egg-agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/message-board/egg-agent.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/message-board/egg-schedule.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/message-board/egg-schedule.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/message-board/egg-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/message-board/egg-web.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/message-board/message-board-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/message-board/message-board-web.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/agent_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/agent_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/agent_config_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/agent_config_meta.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/application_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/application_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/application_config_meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/application_config_meta.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controller/auth.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/controller/auth.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controller/home.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/controller/home.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controller/message.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/controller/message.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controller/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/controller/user.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/service/auth.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/service/auth.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/service/message.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/service/message.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/service/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/service/user.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testconfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/testConfig.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +82,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -88,7 +120,8 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/public/uploadAvatar" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -102,12 +135,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\message-board\test\controller" />
-      <recent name="D:\message-board\app\public\html" />
-      <recent name="D:\message-board\app\view\home" />
-      <recent name="D:\message-board\app\view\auth" />
+      <recent name="D:\message-board\app\public\uploadAvatar" />
+      <recent name="D:\message-board\app\public" />
+      <recent name="D:\message-board\app\public\static\fonts" />
+      <recent name="D:\message-board\app\public\static\images" />
+      <recent name="D:\message-board\app\public\static\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\message-board\app\public\html" />
       <recent name="D:\message-board\app\view\auth" />
       <recent name="C:\message-board\app\public\static" />
       <recent name="C:\message-board\app\public" />
@@ -214,6 +249,20 @@
       <workItem from="1593999761528" duration="26728000" />
       <workItem from="1594085649531" duration="11699000" />
       <workItem from="1594199290365" duration="6643000" />
+      <workItem from="1594260486355" duration="1017000" />
+      <workItem from="1594261544340" duration="2521000" />
+      <workItem from="1594374862198" duration="673000" />
+      <workItem from="1594438327163" duration="220000" />
+      <workItem from="1594439032827" duration="892000" />
+      <workItem from="1594626094075" duration="5875000" />
+      <workItem from="1594696447795" duration="890000" />
+      <workItem from="1594709055980" duration="3084000" />
+      <workItem from="1594778468276" duration="4222000" />
+      <workItem from="1594952682256" duration="3606000" />
+      <workItem from="1595041323077" duration="682000" />
+      <workItem from="1595042024505" duration="6304000" />
+      <workItem from="1595225534736" duration="329000" />
+      <workItem from="1595225885718" duration="8728000" />
     </task>
     <task id="LOCAL-00001" summary="实现注册功能">
       <created>1591616212406</created>
@@ -383,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594207507777</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="修改与前端的交互">
+      <created>1595225775215</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1595225775216</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +482,8 @@
     <MESSAGE value="修改单元测试，完善其对数据的操作" />
     <MESSAGE value="修复bug" />
     <MESSAGE value="完善单元测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善单元测试" />
+    <MESSAGE value="修改与前端的交互" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改与前端的交互" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1591604723393">
@@ -449,10 +506,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="299" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1920.1040@0.0.1920.1040" timestamp="1591966893789" />
-    <state width="1435" height="466" key="DebuggerActiveHint" timestamp="1594125618063">
+    <state width="1435" height="466" key="DebuggerActiveHint" timestamp="1595247037935">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1435" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1594125618063" />
+    <state width="1435" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1595247037935" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1591854246507">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -465,70 +522,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040@0.0.1920.1040" timestamp="1592643668598" />
-    <state width="1899" height="321" key="GridCell.Tab.0.bottom" timestamp="1594207447977">
+    <state width="1899" height="220" key="GridCell.Tab.0.bottom" timestamp="1595253461382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447977" />
-    <state width="1899" height="321" key="GridCell.Tab.0.center" timestamp="1594207447977">
+    <state width="1899" height="220" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461382" />
+    <state width="1899" height="220" key="GridCell.Tab.0.center" timestamp="1595253461382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447977" />
-    <state width="1899" height="321" key="GridCell.Tab.0.left" timestamp="1594207447977">
+    <state width="1899" height="220" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461382" />
+    <state width="1899" height="220" key="GridCell.Tab.0.left" timestamp="1595253461382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447977" />
-    <state width="1899" height="321" key="GridCell.Tab.0.right" timestamp="1594207447977">
+    <state width="1899" height="220" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461382" />
+    <state width="1899" height="220" key="GridCell.Tab.0.right" timestamp="1595253461382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447977" />
-    <state width="1899" height="321" key="GridCell.Tab.1.bottom" timestamp="1594207447977">
+    <state width="1899" height="220" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461382" />
+    <state width="1899" height="220" key="GridCell.Tab.1.bottom" timestamp="1595253461282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447977" />
-    <state width="1899" height="321" key="GridCell.Tab.1.center" timestamp="1594207447977">
+    <state width="1899" height="220" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461282" />
+    <state width="1899" height="220" key="GridCell.Tab.1.center" timestamp="1595253461282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447977" />
-    <state width="1899" height="321" key="GridCell.Tab.1.left" timestamp="1594207447977">
+    <state width="1899" height="220" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461282" />
+    <state width="1899" height="220" key="GridCell.Tab.1.left" timestamp="1595253461282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447977" />
-    <state width="1899" height="321" key="GridCell.Tab.1.right" timestamp="1594207447977">
+    <state width="1899" height="220" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461282" />
+    <state width="1899" height="220" key="GridCell.Tab.1.right" timestamp="1595253461282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447977" />
-    <state width="1899" height="321" key="GridCell.Tab.2.bottom" timestamp="1594207447978">
+    <state width="1899" height="220" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461282" />
+    <state width="1899" height="220" key="GridCell.Tab.2.bottom" timestamp="1595253461283">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447978" />
-    <state width="1899" height="321" key="GridCell.Tab.2.center" timestamp="1594207447977">
+    <state width="1899" height="220" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461283" />
+    <state width="1899" height="220" key="GridCell.Tab.2.center" timestamp="1595253461282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447977" />
-    <state width="1899" height="321" key="GridCell.Tab.2.left" timestamp="1594207447977">
+    <state width="1899" height="220" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461282" />
+    <state width="1899" height="220" key="GridCell.Tab.2.left" timestamp="1595253461282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447977" />
-    <state width="1899" height="321" key="GridCell.Tab.2.right" timestamp="1594207447978">
+    <state width="1899" height="220" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461282" />
+    <state width="1899" height="220" key="GridCell.Tab.2.right" timestamp="1595253461282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447978" />
-    <state width="1899" height="321" key="GridCell.Tab.3.bottom" timestamp="1594207447978">
+    <state width="1899" height="220" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461282" />
+    <state width="1899" height="220" key="GridCell.Tab.3.bottom" timestamp="1595253461283">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447978" />
-    <state width="1899" height="321" key="GridCell.Tab.3.center" timestamp="1594207447978">
+    <state width="1899" height="220" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461283" />
+    <state width="1899" height="220" key="GridCell.Tab.3.center" timestamp="1595253461283">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447978" />
-    <state width="1899" height="321" key="GridCell.Tab.3.left" timestamp="1594207447978">
+    <state width="1899" height="220" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461283" />
+    <state width="1899" height="220" key="GridCell.Tab.3.left" timestamp="1595253461283">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447978" />
-    <state width="1899" height="321" key="GridCell.Tab.3.right" timestamp="1594207447978">
+    <state width="1899" height="220" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461283" />
+    <state width="1899" height="220" key="GridCell.Tab.3.right" timestamp="1595253461283">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594207447978" />
+    <state width="1899" height="220" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595253461283" />
     <state x="184" y="86" key="MergeDialog" timestamp="1592794607556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -541,22 +598,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="450" y="200" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593843593800" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1594207514497">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595227777844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594207514497" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595227777844" />
     <state x="827" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1593658940905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="827" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593658940905" />
-    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593523314645">
+    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595225547389">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593523314645" />
-    <state x="662" y="118" width="596" height="804" key="find.popup" timestamp="1594201971574">
+    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595225547389" />
+    <state x="662" y="118" width="596" height="804" key="find.popup" timestamp="1595253437146">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="662" y="118" width="596" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594201971574" />
+    <state x="662" y="118" width="596" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595253437146" />
     <state x="643" y="307" key="git4idea.merge.GitPullDialog" timestamp="1592648167659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

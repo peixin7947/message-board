@@ -9,7 +9,8 @@
     },
     "security": {
       "domainWhiteList": [
-        "127.0.0.1"
+        "http://localhost:8080",
+        "http://10.32.4.166:8080"
       ],
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
@@ -128,6 +129,13 @@
         "cron": "0 30 4 * * *"
       }
     },
+    "development": {
+      "watchDirs": [],
+      "ignoreDirs": [],
+      "fastReady": false,
+      "reloadOnDebug": true,
+      "overrideDefault": false
+    },
     "logrotator": {
       "filesRotateByHour": null,
       "hourDelimiter": "-",
@@ -150,7 +158,7 @@
     },
     "view": {
       "root": "D:\\message-board\\app\\public,D:\\message-board\\app\\public\\html,D:\\message-board\\app\\view",
-      "cache": true,
+      "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
       "mapping": {}
@@ -160,7 +168,7 @@
       "throwOnUndefined": false,
       "trimBlocks": false,
       "lstripBlocks": false,
-      "cache": true
+      "cache": false
     },
     "mongoose": {
       "url": "",
@@ -178,7 +186,11 @@
         }
       }
     },
-    "env": "unittest",
+    "cors": {
+      "credentials": true,
+      "allowMethods": "GET,POST,PUT,DELETE"
+    },
+    "env": "local",
     "name": "message-board",
     "keys": "<String len: 34>",
     "cookies": {},
@@ -197,6 +209,7 @@
         "amis": "^1.0.12",
         "assert-extends": "^1.0.1",
         "egg": "^2.26.1",
+        "egg-cors": "^2.2.3",
         "egg-mongoose": "^3.2.0",
         "egg-view-nunjucks": "^2.2.0",
         "joi": "^14.3.1",
@@ -261,17 +274,19 @@
     "logger": {
       "dir": "D:\\message-board\\logs\\message-board",
       "encoding": "utf8",
-      "env": "unittest",
+      "env": "local",
       "level": "INFO",
-      "consoleLevel": "WARN",
+      "consoleLevel": "INFO",
       "disableConsoleAfterReady": false,
       "outputJSON": false,
-      "buffer": false,
+      "buffer": true,
       "appLogName": "message-board-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {},
+      "coreLogger": {
+        "consoleLevel": "WARN"
+      },
       "allowDebugAtProd": false,
       "type": "agent"
     },
@@ -320,10 +335,6 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
-    "cors": {
-      "origin": "*",
-      "allowMethods": "GET,POST,PUT,DELETE"
-    },
     "middleware": [
       "responseHandler",
       "login"
@@ -331,11 +342,6 @@
     "login": {
       "LOGIN_FIELD": "userInfo",
       "ignore": "<Function ignore>"
-    },
-    "test": {
-      "cookie": [
-        "EGG_SESS=XJpT4RG8dYqJNYFCqMTRsHrudjVxfs1iDJihtPITYTDuXAzuzwKIzQJo09T8XyE7iODfUhRrTDhAbHrMWvG4_-FAullMTh1axHvDldEAtKWECcfqohWSRYzZcUS5jqRZoNz6_fFYuma_NV1hu14HNJX8IUyJ8idmadMYIowntvgppOXh6_rCgY1oqLrRdcez0-dVizgbdc644Y8KmRsZI8x48xWm-RtKVVf4lv3QDQU6UZZ5yUhasJ22DpH2rQ1x99qe84M6TKnij2g64UgXv49zrGfe5JcwbnCUQvUwaHbsfVbCgehNCWHRbtlrGcVmiJYQMjpKaBRToNfYu0SSn29GK_Yl02QMDVacOLGiqYJdSid49vR1kHpW405uhybZRYZqkITb_1sd3dLu2m9HbmNA506pRKrZZHgB4RFdumMN3SgcEcUQWdEvM2duaGrRQ9x_jcjvw-AI8moP-Dty7mjjd8m1MNWPpfck5QZtogyfFN97HGimupIV6219WGp4YdgWuC3g8CYQodgTZIQjWHkVH2vdkt4COo4Drf_qpdbmUAwDs0c3mF675Ag-zvI_MM09aZC2HeG5g3VqC5JBthEAP6Yh6tE9eYmvVIRcLr--e_feDueUcS6QZVPDkpNWNOTxfk-brOSEbMheyRFG-PotA5WuQPwNzU8JPmNeOxE="
-      ]
     },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
@@ -438,6 +444,21 @@
       "path": "D:\\message-board\\node_modules\\egg-multipart",
       "version": "2.10.3"
     },
+    "development": {
+      "enable": true,
+      "package": "egg-development",
+      "name": "development",
+      "dependencies": [
+        "watcher"
+      ],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "D:\\message-board\\node_modules\\egg\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-development",
+      "version": "2.5.0"
+    },
     "logrotator": {
       "enable": true,
       "package": "egg-logrotator",
@@ -498,14 +519,16 @@
       "path": "D:\\message-board\\node_modules\\egg-mongoose",
       "version": "3.2.0"
     },
-    "egg-mock": {
+    "cors": {
       "enable": true,
-      "path": "D:\\message-board\\node_modules\\egg-mock",
-      "name": "egg-mock",
+      "package": "egg-cors",
+      "name": "cors",
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "version": "4.0.0"
+      "from": "D:\\message-board\\config\\plugin.js",
+      "path": "D:\\message-board\\node_modules\\egg-cors",
+      "version": "2.2.3"
     }
   }
 }

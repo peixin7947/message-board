@@ -38,7 +38,6 @@ module.exports = appInfo => {
 
   config.cors = {
     credentials: true,
-    origin: '*',
     allowMethods: 'GET,POST,PUT,DELETE',
   };
 
@@ -47,12 +46,12 @@ module.exports = appInfo => {
   config.security = {
     csrf: {
       enable: false,
-      useSession: true, // 默认为 false，当设置为 true 时，将会把 csrf token 保存到 Session 中
-      sessionName: 'csrfToken', // Session 中的字段名，默认为 csrfToken
+      // useSession: true, // 默认为 false，当设置为 true 时，将会把 csrf token 保存到 Session 中
+      // sessionName: 'csrfToken', // Session 中的字段名，默认为 csrfToken
       headerName: 'x-csrf-token', // 通过 header 传递 CSRF token 的默认字段为 x-csrf-token
       ignore: [ '/api/time' ],
     },
-    domainWhiteList: [ 'http://localhost:8080' ],
+    domainWhiteList: [ 'http://localhost:8080', 'http://10.32.4.166:8080' ],
   };
 
   config.login = {

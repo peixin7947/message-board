@@ -122,3 +122,1539 @@ status: 422
 pid: 15824
 hostname: ��Ϣƽ̨-������
 
+2020-07-13 16:29:03,479 ERROR 6524 [-/::1/-/2ms GET /static/css/tagsinput.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\tagsinput.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:29:03,527 ERROR 6524 [-/::1/-/55ms GET /static/css/owl.carousel.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.carousel.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:29:03,534 ERROR 6524 [-/::1/-/8ms GET /static/css/owl.theme.default.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.theme.default.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:29:03,538 ERROR 6524 [-/::1/-/11ms GET /static/css/style.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\style.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:29:03,548 ERROR 6524 [-/::1/-/3ms GET /static/css/magnific-popup.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\magnific-popup.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:29:03,554 ERROR 6524 [-/::1/-/1ms GET /static/css/animate.min.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\animate.min.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:38:15,720 ERROR 6524 [-/::1/-/1ms GET /static/css/owl.carousel.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.carousel.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:38:15,731 ERROR 6524 [-/::1/-/2ms GET /static/css/animate.min.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\animate.min.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:38:15,736 ERROR 6524 [-/::1/-/7ms GET /static/css/magnific-popup.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\magnific-popup.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:38:15,746 ERROR 6524 [-/::1/-/11ms GET /static/css/owl.theme.default.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.theme.default.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:38:15,760 ERROR 6524 [-/::1/-/2ms GET /static/css/tagsinput.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\tagsinput.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:38:15,767 ERROR 6524 [-/::1/-/1ms GET /static/css/style.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\style.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:38:52,443 ERROR 6524 [-/::1/-/1ms GET /static/css/owl.carousel.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.carousel.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:38:52,452 ERROR 6524 [-/::1/-/2ms GET /static/css/magnific-popup.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\magnific-popup.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:38:52,458 ERROR 6524 [-/::1/-/7ms GET /static/css/animate.min.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\animate.min.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:38:52,466 ERROR 6524 [-/::1/-/2ms GET /static/css/style.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\style.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:38:52,469 ERROR 6524 [-/::1/-/6ms GET /static/css/owl.theme.default.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.theme.default.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:38:52,473 ERROR 6524 [-/::1/-/1ms GET /static/css/tagsinput.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\tagsinput.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:39:05,047 ERROR 6524 [-/::1/-/1ms GET /static/css/owl.carousel.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.carousel.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:39:05,055 ERROR 6524 [-/::1/-/1ms GET /static/css/owl.theme.default.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.theme.default.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:39:05,062 ERROR 6524 [-/::1/-/3ms GET /static/css/style.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\style.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:39:05,065 ERROR 6524 [-/::1/-/5ms GET /static/css/animate.min.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\animate.min.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:39:05,070 ERROR 6524 [-/::1/-/0ms GET /static/css/magnific-popup.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\magnific-popup.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:39:05,077 ERROR 6524 [-/::1/-/1ms GET /static/css/tagsinput.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\tagsinput.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:13,490 ERROR 6524 [-/::1/-/1ms GET /static/css/owl.carousel.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.carousel.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:13,505 ERROR 6524 [-/::1/-/2ms GET /static/css/tagsinput.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\tagsinput.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:13,517 ERROR 6524 [-/::1/-/22ms GET /static/css/style.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\style.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:13,526 ERROR 6524 [-/::1/-/26ms GET /static/css/owl.theme.default.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.theme.default.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:13,531 ERROR 6524 [-/::1/-/1ms GET /static/css/animate.min.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\animate.min.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:13,539 ERROR 6524 [-/::1/-/2ms GET /static/css/magnific-popup.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\magnific-popup.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:38,400 ERROR 6524 [-/::1/-/3ms GET /static/css/animate.min.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\animate.min.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:38,403 ERROR 6524 [-/::1/-/5ms GET /static/css/owl.carousel.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.carousel.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:38,406 ERROR 6524 [-/::1/-/7ms GET /static/css/owl.theme.default.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.theme.default.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:38,412 ERROR 6524 [-/::1/-/1ms GET /static/css/tagsinput.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\tagsinput.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:38,417 ERROR 6524 [-/::1/-/6ms GET /static/css/style.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\style.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:38,421 ERROR 6524 [-/::1/-/9ms GET /static/css/magnific-popup.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\magnific-popup.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:50,936 ERROR 6524 [-/::1/-/1ms GET /static/css/tagsinput.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\tagsinput.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:50,944 ERROR 6524 [-/::1/-/2ms GET /static/css/style.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\style.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:50,948 ERROR 6524 [-/::1/-/7ms GET /static/css/owl.carousel.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.carousel.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:50,950 ERROR 6524 [-/::1/-/9ms GET /static/css/owl.theme.default.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.theme.default.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:50,955 ERROR 6524 [-/::1/-/1ms GET /static/css/animate.min.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\animate.min.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:40:50,960 ERROR 6524 [-/::1/-/0ms GET /static/css/magnific-popup.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\magnific-popup.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:04,846 ERROR 6524 [-/::1/-/1ms GET /static/css/tagsinput.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\tagsinput.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:04,853 ERROR 6524 [-/::1/-/1ms GET /static/css/style.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\style.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:04,856 ERROR 6524 [-/::1/-/5ms GET /static/css/owl.carousel.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.carousel.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:04,863 ERROR 6524 [-/::1/-/0ms GET /static/css/owl.theme.default.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.theme.default.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:04,875 ERROR 6524 [-/::1/-/1ms GET /static/css/animate.min.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\animate.min.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:04,880 ERROR 6524 [-/::1/-/1ms GET /static/css/magnific-popup.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\magnific-popup.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:15,635 ERROR 6524 [-/::1/-/1ms GET /static/css/owl.carousel.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.carousel.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:15,642 ERROR 6524 [-/::1/-/2ms GET /static/css/magnific-popup.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\magnific-popup.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:15,645 ERROR 6524 [-/::1/-/5ms GET /static/css/style.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\style.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:15,650 ERROR 6524 [-/::1/-/10ms GET /static/css/owl.theme.default.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.theme.default.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:15,656 ERROR 6524 [-/::1/-/1ms GET /static/css/animate.min.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\animate.min.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:15,662 ERROR 6524 [-/::1/-/0ms GET /static/css/tagsinput.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\tagsinput.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:42,185 ERROR 6524 [-/::1/-/2ms GET /static/css/owl.carousel.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.carousel.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.carousel.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:42,192 ERROR 6524 [-/::1/-/1ms GET /static/css/magnific-popup.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\magnific-popup.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\magnific-popup.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:42,197 ERROR 6524 [-/::1/-/7ms GET /static/css/owl.theme.default.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\owl.theme.default.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\owl.theme.default.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:42,200 ERROR 6524 [-/::1/-/10ms GET /static/css/tagsinput.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\tagsinput.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\tagsinput.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:42,205 ERROR 6524 [-/::1/-/1ms GET /static/css/animate.min.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\animate.min.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\animate.min.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-13 16:41:42,209 ERROR 6524 [-/::1/-/1ms GET /static/css/style.css] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\css\style.css'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\css\\style.css"
+name: "ENOENTError"
+pid: 6524
+hostname: ��Ϣƽ̨-������
+
+2020-07-14 14:46:56,225 WARN 17612 A client (::ffff:10.32.4.166:53402) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:46:56,227 WARN 17612 A client (::ffff:10.32.4.166:53402) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:46:56,228 WARN 17612 A client (::ffff:10.32.4.166:53403) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:46:56,229 WARN 17612 A client (::ffff:10.32.4.166:53403) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:47:51,071 WARN 17612 A client (::ffff:10.32.4.166:53434) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:47:51,072 WARN 17612 A client (::ffff:10.32.4.166:53434) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:47:51,073 WARN 17612 A client (::ffff:10.32.4.166:53435) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:47:51,073 WARN 17612 A client (::ffff:10.32.4.166:53435) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:47:52,599 WARN 17612 A client (::ffff:10.32.4.166:53437) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:47:52,600 WARN 17612 A client (::ffff:10.32.4.166:53437) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:47:52,601 WARN 17612 A client (::ffff:10.32.4.166:53438) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:47:52,601 WARN 17612 A client (::ffff:10.32.4.166:53438) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:48:02,735 WARN 17612 A client (::ffff:10.32.4.166:53451) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:48:02,736 WARN 17612 A client (::ffff:10.32.4.166:53451) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:48:02,737 WARN 17612 A client (::ffff:10.32.4.166:53452) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:48:02,738 WARN 17612 A client (::ffff:10.32.4.166:53452) error [HPE_INVALID_METHOD] occurred: Parse Error: Invalid method encountered
+2020-07-14 14:48:51,238 WARN 17612 [-/10.32.4.166/-/5ms POST /login] nodejs.ValidationError: child "password" fails because ["password" length must be at least 6 characters long]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"password\" length must be at least 6 characters long","path":["password"],"type":"string.min","context":{"limit":6,"value":"123","key":"password","label":"password"}}]
+_object: {"username":"123","password":"123"}
+annotate: undefined
+errors: "child \"password\" fails because [\"password\" length must be at least 6 characters long]"
+expose: true
+statusCode: 422
+status: 422
+pid: 17612
+hostname: ��Ϣƽ̨-������
+
+2020-07-14 14:53:06,067 WARN 8516 [-/10.32.4.166/-/26ms POST /login] nodejs.ValidationError: child "password" fails because ["password" length must be at least 6 characters long]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"password\" length must be at least 6 characters long","path":["password"],"type":"string.min","context":{"limit":6,"value":"123","key":"password","label":"password"}}]
+_object: {"username":"123","password":"123"}
+annotate: undefined
+errors: "child \"password\" fails because [\"password\" length must be at least 6 characters long]"
+expose: true
+statusCode: 422
+status: 422
+pid: 8516
+hostname: ��Ϣƽ̨-������
+
+2020-07-14 14:54:29,009 WARN 15572 [-/10.32.4.166/-/24ms POST /login] nodejs.ValidationError: child "password" fails because ["password" length must be at least 6 characters long]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"password\" length must be at least 6 characters long","path":["password"],"type":"string.min","context":{"limit":6,"value":"123","key":"password","label":"password"}}]
+_object: {"username":"123","password":"123"}
+annotate: undefined
+errors: "child \"password\" fails because [\"password\" length must be at least 6 characters long]"
+expose: true
+statusCode: 422
+status: 422
+pid: 15572
+hostname: ��Ϣƽ̨-������
+
+2020-07-14 14:54:57,332 WARN 6884 [-/10.32.4.166/-/26ms POST /login] nodejs.ValidationError: child "username" fails because ["username" length must be at least 3 characters long]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"username\" length must be at least 3 characters long","path":["username"],"type":"string.min","context":{"limit":3,"value":"1","key":"username","label":"username"}}]
+_object: {"username":"1","password":"1"}
+annotate: undefined
+errors: "child \"username\" fails because [\"username\" length must be at least 3 characters long]"
+expose: true
+statusCode: 422
+status: 422
+pid: 6884
+hostname: ��Ϣƽ̨-������
+
+2020-07-14 15:00:00,786 WARN 10944 [-/10.32.4.166/-/4ms POST /login] nodejs.ValidationError: child "username" fails because ["username" length must be at least 3 characters long]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"username\" length must be at least 3 characters long","path":["username"],"type":"string.min","context":{"limit":3,"value":"1","key":"username","label":"username"}}]
+_object: {"username":"1","password":"1"}
+annotate: undefined
+errors: "child \"username\" fails because [\"username\" length must be at least 3 characters long]"
+expose: true
+statusCode: 422
+status: 422
+pid: 10944
+hostname: ��Ϣƽ̨-������
+
+2020-07-15 10:48:42,985 WARN 11196 [-/10.32.4.166/-/5ms POST /login] nodejs.ValidationError: child "password" fails because ["password" length must be at least 6 characters long]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"password\" length must be at least 6 characters long","path":["password"],"type":"string.min","context":{"limit":6,"value":"123","key":"password","label":"password"}}]
+_object: {"username":"admin","password":"123"}
+annotate: undefined
+errors: "child \"password\" fails because [\"password\" length must be at least 6 characters long]"
+expose: true
+statusCode: 422
+status: 422
+pid: 11196
+hostname: ��Ϣƽ̨-������
+
+2020-07-15 11:04:22,411 WARN 11196 [-/10.32.4.166/-/3ms POST /login] nodejs.ValidationError: child "username" fails because ["username" is not allowed to be empty]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"username\" is not allowed to be empty","path":["username"],"type":"any.empty","context":{"value":"","invalids":[""],"key":"username","label":"username"}}]
+_object: {"username":"","password":"","pass":"123","checkPass":"123"}
+annotate: undefined
+errors: "child \"username\" fails because [\"username\" is not allowed to be empty]"
+expose: true
+statusCode: 422
+status: 422
+pid: 11196
+hostname: ��Ϣƽ̨-������
+
+2020-07-15 11:04:24,831 WARN 11196 [-/10.32.4.166/-/4ms POST /login] nodejs.ValidationError: child "username" fails because ["username" is not allowed to be empty]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"username\" is not allowed to be empty","path":["username"],"type":"any.empty","context":{"value":"","invalids":[""],"key":"username","label":"username"}}]
+_object: {"username":"","password":"","pass":"123","checkPass":"123","age":123}
+annotate: undefined
+errors: "child \"username\" fails because [\"username\" is not allowed to be empty]"
+expose: true
+statusCode: 422
+status: 422
+pid: 11196
+hostname: ��Ϣƽ̨-������
+
+2020-07-17 10:39:44,763 WARN 15960 [-/10.32.4.166/-/19ms POST /register] nodejs.ValidationError: child "password" fails because ["password" length must be at least 6 characters long]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.register (D:\message-board\app\controller\auth.js:22:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"password\" length must be at least 6 characters long","path":["password"],"type":"string.min","context":{"limit":6,"value":"123","key":"password","label":"password"}}]
+_object: {"username":"123","password":"123","rePassword":"123","email":"123"}
+annotate: undefined
+errors: "child \"password\" fails because [\"password\" length must be at least 6 characters long]"
+expose: true
+statusCode: 422
+status: 422
+pid: 15960
+hostname: ��Ϣƽ̨-������
+
+2020-07-17 11:30:24,061 WARN 15960 [-/10.32.4.166/-/6ms POST /register] nodejs.ValidationError: "email" is not allowed
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.register (D:\message-board\app\controller\auth.js:22:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"email\" is not allowed","path":["email"],"type":"object.allowUnknown","context":{"child":"email","value":"123123@qq.com","key":"email","label":"email"}}]
+_object: {"username":"123123","password":"123123","rePassword":"123123","email":"123123@qq.com"}
+annotate: undefined
+errors: "\"email\" is not allowed"
+expose: true
+statusCode: 422
+status: 422
+pid: 15960
+hostname: ��Ϣƽ̨-������
+
+2020-07-17 11:31:34,453 ERROR 27492 [-/10.32.4.166/-/20ms POST /register] nodejs.TypeError: ctx.Joi.email is not a function
+    at AuthController.register (D:\message-board\app\controller\auth.js:32:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:111:29)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+
+pid: 27492
+hostname: ��Ϣƽ̨-������
+
+2020-07-17 11:59:29,723 WARN 15952 [-/10.32.4.166/-/4ms POST /login] nodejs.ValidationError: child "password" fails because ["password" length must be at least 6 characters long]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"password\" length must be at least 6 characters long","path":["password"],"type":"string.min","context":{"limit":6,"value":"1231","key":"password","label":"password"}}]
+_object: {"username":"123","password":"1231"}
+annotate: undefined
+errors: "child \"password\" fails because [\"password\" length must be at least 6 characters long]"
+expose: true
+statusCode: 422
+status: 422
+pid: 15952
+hostname: ��Ϣƽ̨-������
+
+2020-07-18 15:15:49,573 WARN 15032 [-/::1/-/3ms POST /api/logout] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 15032
+hostname: ��Ϣƽ̨-������
+
+2020-07-18 15:16:04,792 WARN 15032 [-/::1/-/1ms POST /api/logout] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 15032
+hostname: ��Ϣƽ̨-������
+
+2020-07-18 15:55:23,888 WARN 22456 [-/::1/-/2ms POST /api/logout] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 22456
+hostname: ��Ϣƽ̨-������
+
+2020-07-18 16:12:28,806 WARN 22456 [-/::1/-/1ms POST /api/logout] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 22456
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 17:18:18,576 WARN 17652 [-/::1/-/1ms POST /api/logout] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 17652
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 17:59:02,174 ERROR 17652 [-/::1/-/1ms GET /html/messageBoard.html] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\html\messageBoard.html'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\html\messageBoard.html'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\html\\messageBoard.html"
+name: "ENOENTError"
+pid: 17652
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 19:01:25,874 WARN 4400 [-/10.32.4.166/-/2ms GET /login.html] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 4400
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 19:01:35,774 WARN 4400 [-/10.32.4.166/-/1ms GET /login.html] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 4400
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 19:02:41,740 WARN 4400 [-/10.32.4.166/-/1ms GET /login.html] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 4400
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 19:02:52,218 WARN 26912 [-/::1/-/2ms POST /api/logout] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 26912
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 19:47:20,375 WARN 8312 [-/::1/-/3ms POST /api/logout] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 8312
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 19:50:16,391 WARN 8312 [-/::1/-/1ms GET /api/message] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 8312
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 19:50:48,769 WARN 8312 [-/::1/-/1ms GET /api/message] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 8312
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 19:50:55,837 WARN 8312 [-/::1/-/1ms GET /api/message] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 8312
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 19:51:00,310 WARN 8312 [-/::1/-/1ms GET /api/message] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 8312
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 20:00:50,120 WARN 8312 [-/::1/-/1ms GET /api/message] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 8312
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 20:01:36,359 WARN 8312 [-/::1/-/1ms GET /api/message] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 8312
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 20:02:51,114 WARN 8312 [-/::1/-/1ms GET /api/message] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 8312
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 20:30:41,114 WARN 16544 [-/::1/-/2ms GET /api/message] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 16544
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 20:30:47,928 WARN 16544 [-/::1/-/2ms GET /api/message] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 16544
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:42:46,052 ERROR 27452 [-/::1/-/3ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:47:56,813 ERROR 27452 [-/::1/-/0ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:48:20,872 ERROR 27452 [-/::1/-/1ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:49:44,345 ERROR 27452 [-/::1/-/1ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:50:08,135 ERROR 27452 [-/::1/-/17ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:50:16,571 ERROR 27452 [-/::1/-/5ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:50:32,034 ERROR 27452 [-/::1/-/4ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:50:45,011 ERROR 27452 [-/::1/-/4ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:52:17,862 ERROR 27452 [-/::1/-/3ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:52:31,314 ERROR 27452 [-/::1/-/3ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:52:51,080 ERROR 27452 [-/::1/-/3ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:53:03,164 ERROR 27452 [-/::1/-/1ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:53:14,344 ERROR 27452 [-/::1/-/1ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:53:31,575 ERROR 27452 [-/::1/-/1ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:53:58,465 ERROR 27452 [-/::1/-/1ms GET /static/images/avatar.png] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\static\images\avatar.png'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\static\\images\\avatar.png"
+name: "ENOENTError"
+pid: 27452
+hostname: ��Ϣƽ̨-������
+
+2020-07-20 21:58:56,903 WARN 6360 [-/::1/-/2ms GET /api/message] nodejs.BadRequestError: 未登录,请先进行登录
+    at Object.throw (D:\message-board\node_modules\koa\lib\context.js:97:11)
+    at login (D:\message-board\app\middleware\login.js:10:14)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (D:\message-board\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (D:\message-board\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (D:\message-board\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+message: "未登录,请先进行登录"
+pid: 6360
+hostname: ��Ϣƽ̨-������
+

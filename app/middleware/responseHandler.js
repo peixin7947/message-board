@@ -48,7 +48,7 @@ module.exports = () => {
       ctx.response.body = {
         code: ctx.code || 0,
         msg: ctx.response.body.msg || 'success',
-        data: ctx.response.body.data,
+        data: ctx.response.body,
       };
     }
   };
