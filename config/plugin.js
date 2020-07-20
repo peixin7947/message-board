@@ -9,7 +9,7 @@ exports.mongoose = {
   package: 'egg-mongoose',
 };
 
-// exports.joi = {
-//   enable: true,
-//   package: 'egg-joi',
-// };
+exports.cors = {
+  enable: true,
+  package: 'egg-cors',
+};

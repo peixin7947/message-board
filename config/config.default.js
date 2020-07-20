@@ -37,6 +37,7 @@ module.exports = appInfo => {
   };
 
   config.cors = {
+    credentials: true,
     origin: '*',
     allowMethods: 'GET,POST,PUT,DELETE',
   };
@@ -46,12 +47,12 @@ module.exports = appInfo => {
   config.security = {
     csrf: {
       enable: false,
-      // useSession: true, // 默认为 false，当设置为 true 时，将会把 csrf token 保存到 Session 中
+      useSession: true, // 默认为 false，当设置为 true 时，将会把 csrf token 保存到 Session 中
       sessionName: 'csrfToken', // Session 中的字段名，默认为 csrfToken
       headerName: 'x-csrf-token', // 通过 header 传递 CSRF token 的默认字段为 x-csrf-token
       ignore: [ '/api/time' ],
     },
-    domainWhiteList: [ '127.0.0.1' ],
+    domainWhiteList: [ 'http://localhost:8080' ],
   };
 
   config.login = {
@@ -81,9 +82,6 @@ module.exports = appInfo => {
     renew: true,
   };
 
-  config.test = {
-    cookie: [ 'EGG_SESS=XJpT4RG8dYqJNYFCqMTRsHrudjVxfs1iDJihtPITYTDuXAzuzwKIzQJo09T8XyE7iODfUhRrTDhAbHrMWvG4_-FAullMTh1axHvDldEAtKWECcfqohWSRYzZcUS5jqRZoNz6_fFYuma_NV1hu14HNJX8IUyJ8idmadMYIowntvgppOXh6_rCgY1oqLrRdcez0-dVizgbdc644Y8KmRsZI8x48xWm-RtKVVf4lv3QDQU6UZZ5yUhasJ22DpH2rQ1x99qe84M6TKnij2g64UgXv49zrGfe5JcwbnCUQvUwaHbsfVbCgehNCWHRbtlrGcVmiJYQMjpKaBRToNfYu0SSn29GK_Yl02QMDVacOLGiqYJdSid49vR1kHpW405uhybZRYZqkITb_1sd3dLu2m9HbmNA506pRKrZZHgB4RFdumMN3SgcEcUQWdEvM2duaGrRQ9x_jcjvw-AI8moP-Dty7mjjd8m1MNWPpfck5QZtogyfFN97HGimupIV6219WGp4YdgWuC3g8CYQodgTZIQjWHkVH2vdkt4COo4Drf_qpdbmUAwDs0c3mF675Ag-zvI_MM09aZC2HeG5g3VqC5JBthEAP6Yh6tE9eYmvVIRcLr--e_feDueUcS6QZVPDkpNWNOTxfk-brOSEbMheyRFG-PotA5WuQPwNzU8JPmNeOxE=' ],
-  };
   return config;
 
 };

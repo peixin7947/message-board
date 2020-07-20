@@ -22,7 +22,7 @@ class AuthService extends Service {
       ctx.session[this.config.login.LOGIN_FIELD] = user;
       // 调用 rotateCsrfSecret 刷新用户的 CSRF token
       ctx.rotateCsrfSecret();
-      return { msg: '登录成功' };
+      return { data: user, msg: '登录成功' };
     }
     ctx.code = 1;
     return { msg: '输入密码错误' };

@@ -29,6 +29,7 @@ class AuthController extends Controller {
       rePassword: ctx.Joi.string().min(6).max(24)
         .trim()
         .required(),
+      email: ctx.Joi.string().email().required(),
     }, Object.assign({}, ctx.params, ctx.query, ctx.request.body));
 
     const userObj = await ctx.model.User.findOne({ username: data.username });

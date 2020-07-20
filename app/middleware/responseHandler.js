@@ -46,9 +46,9 @@ module.exports = () => {
     if ([ 200, 204 ].includes(ctx.status)) {
       if (ctx.status === 204) ctx.status = 200;
       ctx.response.body = {
-        status: ctx.code || 0,
+        code: ctx.code || 0,
         msg: ctx.response.body.msg || 'success',
-        data: ctx.response.body,
+        data: ctx.response.body.data,
       };
     }
   };
