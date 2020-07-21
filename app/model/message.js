@@ -75,6 +75,11 @@ module.exports = app => {
       ref: 'User',
       index: true,
     },
+    tag: {
+      type: String,
+      enum: [ '分享', '问答' ],
+      default: '',
+    },
     isDel: {
       type: Boolean,
       default: false,

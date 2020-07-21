@@ -18,7 +18,7 @@
         "enable": false,
         "type": "ctoken",
         "ignoreJSON": false,
-        "useSession": false,
+        "useSession": true,
         "cookieName": "csrfToken",
         "sessionName": "csrfToken",
         "headerName": "x-csrf-token",

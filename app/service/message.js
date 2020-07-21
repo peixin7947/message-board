@@ -26,24 +26,46 @@ class MessageService extends Service {
     const items = await ctx.model.Message.find(Object.assign({ isDel: false, doDel: null }, filter))
       .populate([
         { path: 'creator', select: 'nickname avatar' },
-        { path: 'reply.creator', select: 'nickname avatar' },
-        { path: 'reply.toUser', select: 'nickname avatar' },
+        // { path: 'reply.creator', select: 'nickname avatar' },
+        // { path: 'reply.toUser', select: 'nickname avatar' },
       ])
       .sort(sort)
       .skip((pageIndex - 1) * pageSize)
       .limit(pageSize)
       .lean();
-    // 除去已删除的评论
-    items.forEach(item => {
-      // item.content = ctx.helper.escape(item.content);
-      if (item.reply && item.reply.length) {
-        ctx._.remove(item.reply, reply => reply.isDel !== false);
-      }
-      item.children = item.reply;
-    });
+    // // 除去已删除的评论
+    // items.forEach(item => {
+    //   // item.content = ctx.helper.escape(item.content);
+    //   if (item.reply && item.reply.length) {
+    //     ctx._.remove(item.reply, reply => reply.isDel !== false);
+    //   }
+    //   item.children = item.reply;
+    // });
 
     const total = await ctx.model.Message.count({ isDel: false, doDel: null });
     return { items, total };
+  }
+
+  /**
+   * 获取留言详情
+   * @param data
+   * @return {Promise<void>}
+   */
+  async getMessageById(data) {
+    const { ctx } = this;
+    const message = await ctx.model.Message.findOne({ _id: data.id, isDel: false, doDel: null })
+      .populate([
+        { path: 'creator', select: 'nickname avatar' },
+        { path: 'reply.creator', select: 'nickname avatar' },
+        { path: 'reply.toUser', select: 'nickname avatar' },
+      ])
+      .lean();
+    // 除去已删除的评论
+    message.content = ctx.helper.escape(message.content);
+    if (message.reply && message.reply.length) {
+      ctx._.remove(message.reply, reply => reply.isDel !== false);
+    }
+    return message;
   }
 
   /**
@@ -55,9 +77,9 @@ class MessageService extends Service {
    */
   async createMessage(data) {
     const { ctx } = this;
-    const { title, content } = data;
+    const { title, content, tag } = data;
     const userInfo = ctx.session.userInfo;
-    await ctx.model.Message.create({ creator: userInfo._id, content, title });
+    await ctx.model.Message.create({ creator: userInfo._id, content, title, tag });
     return { msg: '发布留言成功' };
   }
 
@@ -160,9 +182,9 @@ class MessageService extends Service {
    */
   async getMessageListByUserId(data) {
     const { ctx, app } = this;
-    let { id, sort, pageSize, pageIndex } = data;
+    let { userId, sort, pageSize, pageIndex } = data;
     sort = JSON.parse(sort);
-    const items = await ctx.model.Message.find({ creator: app.mongoose.Types.ObjectId(id), isDel: false, doDel: null })
+    const items = await ctx.model.Message.find({ creator: app.mongoose.Types.ObjectId(userId), isDel: false, doDel: null })
       .populate([
         { path: 'creator', select: 'nickname avatar' },
         { path: 'reply.creator', select: 'nickname avatar' },
@@ -180,7 +202,7 @@ class MessageService extends Service {
       item.children = item.reply;
     });
 
-    const total = await ctx.model.Message.count({ creator: id, isDel: false, doDel: null });
+    const total = await ctx.model.Message.count({ creator: userId, isDel: false, doDel: null });
     return { items, total };
   }
 

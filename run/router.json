@@ -179,6 +179,30 @@
     ],
     "paramNames": [
       {
+        "name": "userId",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/message/:userId",
+    "regexp": "/^\\/api\\/message\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
         "name": "id",
         "prefix": "/",
         "delimiter": "/",

@@ -40,13 +40,13 @@
   "security": {
     "csrf": {
       "enable": "D:\\message-board\\config\\config.default.js",
+      "useSession": "D:\\message-board\\config\\config.default.js",
+      "sessionName": "D:\\message-board\\config\\config.default.js",
       "headerName": "D:\\message-board\\config\\config.default.js",
       "ignore": "D:\\message-board\\config\\config.default.js",
       "type": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "ignoreJSON": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "useSession": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "cookieName": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
-      "sessionName": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "bodyName": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "queryName": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js",
       "refererWhiteList": "D:\\message-board\\node_modules\\egg-security\\config\\config.default.js"

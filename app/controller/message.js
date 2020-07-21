@@ -19,6 +19,18 @@ class MessageController extends Controller {
   }
 
   /**
+   * 获取留言详情
+   * @return {Promise<void>} 返回留言列表
+   */
+  async getMessageById() {
+    const { ctx } = this;
+    const data = ctx.validate({
+      id: ctx.helper.validateObj('_id').required(),
+    }, Object.assign(ctx.params, ctx.request.body, ctx.query));
+    ctx.body = await ctx.service.message.getMessageById(data);
+  }
+
+  /**
    * 发布留言
    * @return {Promise<void>} 消息
    */
@@ -27,8 +39,9 @@ class MessageController extends Controller {
     const data = ctx.validate({
       content: ctx.Joi.string().max(1024)
         .required(),
-      title: ctx.Joi.string().max(30)
+      title: ctx.Joi.string().min(3).max(30)
         .required(),
+      tag: [ '分享', '问答' ],
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.response.body = await ctx.service.message.createMessage(data);
   }
@@ -79,7 +92,7 @@ class MessageController extends Controller {
   async getMessageListByUserId() {
     const { ctx } = this;
     const data = ctx.validate({
-      id: ctx.helper.validateObj('_id').required(),
+      userId: ctx.helper.validateObj('_id').required(),
       sort: ctx.Joi.string().default('{"createTime":-1}'),
       pageSize: ctx.Joi.number().default(6),
       pageIndex: ctx.Joi.number().default(1),

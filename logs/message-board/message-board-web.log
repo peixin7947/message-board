@@ -1658,3 +1658,684 @@ message: "未登录,请先进行登录"
 pid: 6360
 hostname: ��Ϣƽ̨-������
 
+2020-07-21 16:56:12,326 ERROR 5244 [-/::1/-/11ms GET /api/message/5f05abd4eaf57736e0dd6578] nodejs.TypeError: message.forEach is not a function
+    at MessageService.getMessageById (D:\message-board\app\service\message.js:64:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.getMessageById (D:\message-board\app\controller\message.js:30:16)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+    at async cors (D:\message-board\node_modules\@koa\cors\index.js:98:16)
+
+pid: 5244
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 16:56:22,401 ERROR 5244 [-/::1/-/8ms GET /api/message/5f05abd4eaf57736e0dd6578] nodejs.TypeError: message.forEach is not a function
+    at MessageService.getMessageById (D:\message-board\app\service\message.js:64:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.getMessageById (D:\message-board\app\controller\message.js:30:16)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+    at async cors (D:\message-board\node_modules\@koa\cors\index.js:98:16)
+
+pid: 5244
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 17:44:35,802 WARN 9972 [-/::1/-/3ms POST /login] nodejs.ValidationError: child "username" fails because ["username" is required]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"username\" is required","path":["username"],"type":"any.required","context":{"key":"username","label":"username"}}]
+_object: {}
+annotate: undefined
+errors: "child \"username\" fails because [\"username\" is required]"
+expose: true
+statusCode: 422
+status: 422
+pid: 9972
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 17:45:21,009 WARN 9972 [-/::1/-/2ms POST /login] nodejs.ValidationError: child "username" fails because ["username" is required]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"username\" is required","path":["username"],"type":"any.required","context":{"key":"username","label":"username"}}]
+_object: {}
+annotate: undefined
+errors: "child \"username\" fails because [\"username\" is required]"
+expose: true
+statusCode: 422
+status: 422
+pid: 9972
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 17:45:25,719 WARN 9972 [-/::1/-/1ms POST /login] nodejs.ValidationError: child "username" fails because ["username" is required]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"username\" is required","path":["username"],"type":"any.required","context":{"key":"username","label":"username"}}]
+_object: {}
+annotate: undefined
+errors: "child \"username\" fails because [\"username\" is required]"
+expose: true
+statusCode: 422
+status: 422
+pid: 9972
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 17:45:30,704 WARN 9972 [-/::1/-/1ms POST /login] nodejs.ValidationError: child "username" fails because ["username" is required]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"username\" is required","path":["username"],"type":"any.required","context":{"key":"username","label":"username"}}]
+_object: {}
+annotate: undefined
+errors: "child \"username\" fails because [\"username\" is required]"
+expose: true
+statusCode: 422
+status: 422
+pid: 9972
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 17:46:43,776 WARN 9972 [-/::1/-/1ms POST /login] nodejs.ValidationError: child "username" fails because ["username" is required]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"username\" is required","path":["username"],"type":"any.required","context":{"key":"username","label":"username"}}]
+_object: {}
+annotate: undefined
+errors: "child \"username\" fails because [\"username\" is required]"
+expose: true
+statusCode: 422
+status: 422
+pid: 9972
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 17:51:27,720 WARN 9972 [-/::1/-/1ms POST /login] nodejs.ValidationError: child "username" fails because ["username" is required]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at AuthController.login (D:\message-board\app\controller\auth.js:9:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"username\" is required","path":["username"],"type":"any.required","context":{"key":"username","label":"username"}}]
+_object: {}
+annotate: undefined
+errors: "child \"username\" fails because [\"username\" is required]"
+expose: true
+statusCode: 422
+status: 422
+pid: 9972
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 17:59:25,443 WARN 10532 [-/::1/-/4ms POST /api/message] nodejs.ValidationError: child "content" fails because ["content" is required]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:39:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"content\" is required","path":["content"],"type":"any.required","context":{"key":"content","label":"content"}}]
+_object: {}
+annotate: undefined
+errors: "child \"content\" fails because [\"content\" is required]"
+expose: true
+statusCode: 422
+status: 422
+pid: 10532
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 17:59:56,064 WARN 10532 [-/::1/-/3ms POST /api/message] nodejs.ValidationError: child "content" fails because ["content" is required]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:39:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"content\" is required","path":["content"],"type":"any.required","context":{"key":"content","label":"content"}}]
+_object: {}
+annotate: undefined
+errors: "child \"content\" fails because [\"content\" is required]"
+expose: true
+statusCode: 422
+status: 422
+pid: 10532
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 18:00:14,728 WARN 10532 [-/::1/-/2ms POST /api/message] nodejs.ValidationError: child "content" fails because ["content" is required]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:39:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"content\" is required","path":["content"],"type":"any.required","context":{"key":"content","label":"content"}}]
+_object: {}
+annotate: undefined
+errors: "child \"content\" fails because [\"content\" is required]"
+expose: true
+statusCode: 422
+status: 422
+pid: 10532
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 18:00:57,095 WARN 10532 [-/::1/-/22ms POST /api/message] nodejs.ValidationError: "tag" is not allowed
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:39:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"tag\" is not allowed","path":["tag"],"type":"object.allowUnknown","context":{"child":"tag","value":null,"key":"tag","label":"tag"}}]
+_object: {"title":"111111111","content":"111111111111111","tag":null}
+annotate: undefined
+errors: "\"tag\" is not allowed"
+expose: true
+statusCode: 422
+status: 422
+pid: 10532
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 19:22:30,916 WARN 10532 [-/::1/-/2ms POST /api/message] nodejs.ValidationError: "tag" is not allowed
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:39:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"tag\" is not allowed","path":["tag"],"type":"object.allowUnknown","context":{"child":"tag","value":null,"key":"tag","label":"tag"}}]
+_object: {"title":"111111111","content":"111111111111111","tag":null}
+annotate: undefined
+errors: "\"tag\" is not allowed"
+expose: true
+statusCode: 422
+status: 422
+pid: 10532
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 19:22:39,459 WARN 10532 [-/::1/-/2ms POST /api/message] nodejs.ValidationError: "tag" is not allowed
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:39:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"tag\" is not allowed","path":["tag"],"type":"object.allowUnknown","context":{"child":"tag","value":null,"key":"tag","label":"tag"}}]
+_object: {"title":"111111111","content":"11111111111111","tag":null}
+annotate: undefined
+errors: "\"tag\" is not allowed"
+expose: true
+statusCode: 422
+status: 422
+pid: 10532
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 19:23:05,601 WARN 8616 [-/::1/-/26ms POST /api/message] nodejs.ValidationError: child "tag" fails because ["tag" must be a string]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:39:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"tag\" must be a string","path":["tag"],"type":"string.base","context":{"value":null,"key":"tag","label":"tag"}}]
+_object: {"title":"111111111","content":"11111111111111","tag":null}
+annotate: undefined
+errors: "child \"tag\" fails because [\"tag\" must be a string]"
+expose: true
+statusCode: 422
+status: 422
+pid: 8616
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 19:23:29,147 WARN 2532 [-/::1/-/18ms POST /api/message] nodejs.ValidationError: child "tag" fails because ["tag" must be a string]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:39:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"tag\" must be a string","path":["tag"],"type":"string.base","context":{"value":null,"key":"tag","label":"tag"}}]
+_object: {"title":"11111111","content":"111111111111111","tag":null}
+annotate: undefined
+errors: "child \"tag\" fails because [\"tag\" must be a string]"
+expose: true
+statusCode: 422
+status: 422
+pid: 2532
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 19:23:40,578 WARN 2532 [-/::1/-/1735ms POST /api/message] nodejs.ValidationError: child "tag" fails because ["tag" must be a string]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createMessage (D:\message-board\app\controller\message.js:39:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"tag\" must be a string","path":["tag"],"type":"string.base","context":{"value":null,"key":"tag","label":"tag"}}]
+_object: {"title":"11111111","content":"111111111111111","tag":null}
+annotate: undefined
+errors: "child \"tag\" fails because [\"tag\" must be a string]"
+expose: true
+statusCode: 422
+status: 422
+pid: 2532
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 19:34:19,885 ERROR 7768 [-/::1/-/26ms POST /api/message] nodejs.ValidationError: Message validation failed: tag: `` is not a valid enum value for path `tag`.
+    at model.Document.invalidate (D:\message-board\node_modules\mongoose\lib\document.js:2574:32)
+    at D:\message-board\node_modules\mongoose\lib\document.js:2394:17
+    at D:\message-board\node_modules\mongoose\lib\schematype.js:1181:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+errors: {"tag":{"properties":{"message":"`` is not a valid enum value for path `tag`.","type":"enum","enumValues":["分享","问答"],"path":"tag","value":""},"kind":"enum","path":"tag","value":""}}
+_message: "Message validation failed"
+pid: 7768
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 19:34:27,745 ERROR 7768 [-/::1/-/3ms POST /api/message] nodejs.ValidationError: Message validation failed: tag: `` is not a valid enum value for path `tag`.
+    at model.Document.invalidate (D:\message-board\node_modules\mongoose\lib\document.js:2574:32)
+    at D:\message-board\node_modules\mongoose\lib\document.js:2394:17
+    at D:\message-board\node_modules\mongoose\lib\schematype.js:1181:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+errors: {"tag":{"properties":{"message":"`` is not a valid enum value for path `tag`.","type":"enum","enumValues":["分享","问答"],"path":"tag","value":""},"kind":"enum","path":"tag","value":""}}
+_message: "Message validation failed"
+pid: 7768
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 19:34:58,044 ERROR 7768 [-/::1/-/10095ms POST /api/message] nodejs.ValidationError: Message validation failed: tag: `` is not a valid enum value for path `tag`.
+    at model.Document.invalidate (D:\message-board\node_modules\mongoose\lib\document.js:2574:32)
+    at D:\message-board\node_modules\mongoose\lib\document.js:2394:17
+    at D:\message-board\node_modules\mongoose\lib\schematype.js:1181:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+errors: {"tag":{"properties":{"message":"`` is not a valid enum value for path `tag`.","type":"enum","enumValues":["分享","问答"],"path":"tag","value":""},"kind":"enum","path":"tag","value":""}}
+_message: "Message validation failed"
+pid: 7768
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 21:32:09,514 WARN 10564 [-/::1/-/7ms POST /api/reply] nodejs.ValidationError: child "messageId" fails because ["messageId" must be a string]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createReply (D:\message-board\app\controller\message.js:55:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"messageId\" must be a string","path":["messageId"],"type":"string.base","context":{"value":null,"key":"messageId","label":"messageId"}}]
+_object: {"messageId":null,"content":"12313","toUser":null}
+annotate: undefined
+errors: "child \"messageId\" fails because [\"messageId\" must be a string]"
+expose: true
+statusCode: 422
+status: 422
+pid: 10564
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 21:32:42,745 WARN 10564 [-/::1/-/3ms POST /api/reply] nodejs.ValidationError: child "messageId" fails because ["messageId" must be a string]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createReply (D:\message-board\app\controller\message.js:55:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"messageId\" must be a string","path":["messageId"],"type":"string.base","context":{"value":null,"key":"messageId","label":"messageId"}}]
+_object: {"messageId":null,"content":"123131","toUser":null}
+annotate: undefined
+errors: "child \"messageId\" fails because [\"messageId\" must be a string]"
+expose: true
+statusCode: 422
+status: 422
+pid: 10564
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 21:32:53,881 WARN 10564 [-/::1/-/3ms POST /api/reply] nodejs.ValidationError: child "messageId" fails because ["messageId" must be a string]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createReply (D:\message-board\app\controller\message.js:55:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"messageId\" must be a string","path":["messageId"],"type":"string.base","context":{"value":null,"key":"messageId","label":"messageId"}}]
+_object: {"messageId":null,"content":"123131","toUser":null}
+annotate: undefined
+errors: "child \"messageId\" fails because [\"messageId\" must be a string]"
+expose: true
+statusCode: 422
+status: 422
+pid: 10564
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 21:34:14,099 WARN 10564 [-/::1/-/2ms POST /api/reply] nodejs.ValidationError: child "messageId" fails because ["messageId" must be a string]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createReply (D:\message-board\app\controller\message.js:55:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"messageId\" must be a string","path":["messageId"],"type":"string.base","context":{"value":null,"key":"messageId","label":"messageId"}}]
+_object: {"messageId":null,"content":"123123","toUser":null}
+annotate: undefined
+errors: "child \"messageId\" fails because [\"messageId\" must be a string]"
+expose: true
+statusCode: 422
+status: 422
+pid: 10564
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 21:34:21,905 WARN 10564 [-/::1/-/3ms POST /api/reply] nodejs.ValidationError: child "messageId" fails because ["messageId" must be a string]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createReply (D:\message-board\app\controller\message.js:55:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"messageId\" must be a string","path":["messageId"],"type":"string.base","context":{"value":null,"key":"messageId","label":"messageId"}}]
+_object: {"messageId":null,"content":"123123","toUser":null}
+annotate: undefined
+errors: "child \"messageId\" fails because [\"messageId\" must be a string]"
+expose: true
+statusCode: 422
+status: 422
+pid: 10564
+hostname: ��Ϣƽ̨-������
+
+2020-07-21 21:34:30,186 WARN 10564 [-/::1/-/1ms POST /api/reply] nodejs.ValidationError: child "messageId" fails because ["messageId" must be a string]
+    at Object.exports.process (D:\message-board\node_modules\joi\lib\errors.js:203:19)
+    at internals.Object._validateWithOptions (D:\message-board\node_modules\joi\lib\types\any\index.js:764:31)
+    at module.exports.internals.Any.root.validate (D:\message-board\node_modules\joi\lib\index.js:147:23)
+    at Object.validate (D:\message-board\app\extend\context.js:8:34)
+    at MessageController.createReply (D:\message-board\app\controller\message.js:55:22)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+isJoi: true
+name: "ValidationError"
+details: [{"message":"\"messageId\" must be a string","path":["messageId"],"type":"string.base","context":{"value":null,"key":"messageId","label":"messageId"}}]
+_object: {"messageId":null,"content":"1232131","toUser":null}
+annotate: undefined
+errors: "child \"messageId\" fails because [\"messageId\" must be a string]"
+expose: true
+statusCode: 422
+status: 422
+pid: 10564
+hostname: ��Ϣƽ̨-������
+
