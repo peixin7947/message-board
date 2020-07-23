@@ -21,30 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6e2d9a26-34f0-449f-8039-f84d1ae87995" name="Default Changelist" comment="修改与前端的交互">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controller/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controller/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controller/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/extend/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/extend/context.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/middleware/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/model/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/html/css/chunk-vendors.2ac5db4b.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/html/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/html/fonts/element-icons.535877f5.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/html/fonts/element-icons.732389de.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/uploadAvatar/avatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/uploadAvatar/avatar.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/service/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/service/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.default.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.default.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/message-board/common-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/message-board/common-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/message-board/egg-agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/message-board/egg-agent.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/message-board/egg-schedule.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/message-board/egg-schedule.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/message-board/egg-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/message-board/egg-web.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/message-board/message-board-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/message-board/message-board-web.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/agent_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/agent_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/application_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/application_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/router.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/router.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +219,7 @@
       <workItem from="1595225885718" duration="8803000" />
       <workItem from="1595301971535" duration="8695000" />
       <workItem from="1595397405075" duration="6809000" />
-      <workItem from="1595473615170" duration="10146000" />
+      <workItem from="1595473615170" duration="11400000" />
     </task>
     <task id="LOCAL-00001" summary="实现注册功能">
       <created>1591616212406</created>
@@ -430,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595339807403</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="修改路由">
+      <created>1595513896433</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1595513896433</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +463,8 @@
     <MESSAGE value="修改与前端的交互" />
     <MESSAGE value="提交修改" />
     <MESSAGE value="修改功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改功能" />
+    <MESSAGE value="修改路由" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改路由" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1591604723393">
@@ -591,10 +579,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="450" y="200" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593843593800" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595339815947">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595513899206">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595339815947" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595513899206" />
     <state x="827" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1593658940905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -627,17 +615,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594017203822" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/middleware/responseHandler.js</url>
-          <line>26</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
