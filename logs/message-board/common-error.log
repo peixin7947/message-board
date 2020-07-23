@@ -1238,3 +1238,1117 @@ _message: "Message validation failed"
 pid: 7768
 hostname: ��Ϣƽ̨-������
 
+2020-07-22 17:26:59,824 ERROR 8360 nodejs.ClusterClientNoResponseError: client no response in 2987006ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 8360
+hostname: ��Ϣƽ̨-������
+
+2020-07-22 19:51:07,557 ERROR 8360 nodejs.ClusterClientNoResponseError: client no response in 5867481ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 8360
+hostname: ��Ϣƽ̨-������
+
+2020-07-22 20:28:51,939 ERROR 8360 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 8360
+hostname: ��Ϣƽ̨-������
+
+2020-07-22 21:13:54,408 ERROR 12048 [-/::1/-/21ms PUT /api/information] nodejs.TypeError: Cannot read property 'body' of undefined
+    at UserController.updateUserInformation (D:\message-board\app\controller\user.js:29:44)
+    at Object.callFn (D:\message-board\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (D:\message-board\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (D:\message-board\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (D:\message-board\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at next (D:\message-board\node_modules\koa-compose\index.js:45:18)
+    at D:\message-board\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (D:\message-board\node_modules\koa-compose\index.js:44:32)
+    at D:\message-board\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\message-board\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at login (D:\message-board\app\middleware\login.js:7:20)
+    at fn (D:\message-board\node_modules\egg-core\lib\loader\mixin\middleware.js:112:12)
+    at dispatch (D:\message-board\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:6:13)
+
+pid: 12048
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 12:03:42,049 ERROR 1440 nodejs.ClusterClientNoResponseError: client no response in 81890ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 14:25:37,681 ERROR 1440 nodejs.ClusterClientNoResponseError: client no response in 6695566ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 16:49:51,503 ERROR 1440 nodejs.ClusterClientNoResponseError: client no response in 393593ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 18:22:46,113 ERROR 1440 nodejs.ClusterClientNoResponseError: client no response in 409156ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:12:00,717 ERROR 1440 nodejs.ClusterClientNoResponseError: client no response in 1134559ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\message-board\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:28:25,871 ERROR 1440 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:36:08,834 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html\\fonts"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:36:08,836 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html\\css"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:36:08,837 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html\\js"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:36:08,937 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:45:02,527 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html\\fonts"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:45:02,528 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html\\js"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:45:02,530 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html\\css"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:45:02,628 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:53:13,445 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html\\css"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:53:13,446 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html\\fonts"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:53:13,448 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html\\js"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:53:13,546 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:53:51,004 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html\\css"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:53:51,008 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html\\js"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 19:54:02,260 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:07:05,949 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html\\css"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:07:05,954 ERROR 1440 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html\\js"
+name: "EPERMError"
+pid: 1440
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:15:21,919 ERROR 3948 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 3948
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:15:21,922 ERROR 3948 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\fonts"
+name: "EPERMError"
+pid: 3948
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:15:21,925 ERROR 3948 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\js"
+name: "EPERMError"
+pid: 3948
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:15:22,021 ERROR 3948 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 3948
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:18:31,155 ERROR 7104 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 7104
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:18:31,255 ERROR 7104 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 7104
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:21:05,313 ERROR 7104 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 7104
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:21:05,316 ERROR 7104 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\fonts"
+name: "EPERMError"
+pid: 7104
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:21:05,317 ERROR 7104 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\js"
+name: "EPERMError"
+pid: 7104
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:21:05,413 ERROR 7104 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 7104
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:22:29,810 ERROR 9212 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\fonts"
+name: "EPERMError"
+pid: 9212
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:22:29,814 ERROR 9212 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 9212
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:22:29,910 ERROR 9212 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 9212
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:23:36,120 ERROR 9212 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 9212
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:23:36,122 ERROR 9212 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\js"
+name: "EPERMError"
+pid: 9212
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:23:36,223 ERROR 9212 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 9212
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:24:27,053 ERROR 5760 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 5760
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:24:27,055 ERROR 5760 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\fonts"
+name: "EPERMError"
+pid: 5760
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:24:27,056 ERROR 5760 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\js"
+name: "EPERMError"
+pid: 5760
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:24:27,155 ERROR 5760 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 5760
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:25:49,386 ERROR 7364 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 7364
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:25:49,388 ERROR 7364 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\fonts"
+name: "EPERMError"
+pid: 7364
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:25:49,389 ERROR 7364 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\js"
+name: "EPERMError"
+pid: 7364
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:25:49,486 ERROR 7364 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 7364
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:26:35,188 ERROR 4672 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 4672
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:26:35,190 ERROR 4672 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\fonts"
+name: "EPERMError"
+pid: 4672
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:26:35,192 ERROR 4672 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\js"
+name: "EPERMError"
+pid: 4672
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:26:35,289 ERROR 4672 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 4672
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:27:53,495 ERROR 3964 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 3964
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:27:53,497 ERROR 3964 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\fonts"
+name: "EPERMError"
+pid: 3964
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:27:53,497 ERROR 3964 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\js"
+name: "EPERMError"
+pid: 3964
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:27:53,594 ERROR 3964 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 3964
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:28:21,097 ERROR 3964 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\fonts"
+name: "EPERMError"
+pid: 3964
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:28:21,100 ERROR 3964 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 3964
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:28:21,199 ERROR 3964 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 3964
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:28:53,618 ERROR 3964 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 3964
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:28:53,619 ERROR 3964 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\js"
+name: "EPERMError"
+pid: 3964
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:28:53,621 ERROR 3964 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\fonts"
+name: "EPERMError"
+pid: 3964
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:28:53,722 ERROR 3964 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 3964
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:34:38,055 ERROR 11352 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 11352
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:34:38,057 ERROR 11352 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\fonts"
+name: "EPERMError"
+pid: 11352
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:34:38,058 ERROR 11352 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\js"
+name: "EPERMError"
+pid: 11352
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:34:38,157 ERROR 11352 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 11352
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:42:02,973 ERROR 2104 [-/::1/-/30ms GET /] nodejs.TypeError: Cannot read property 'msg' of undefined
+    at responseHandler (D:\message-board\app\middleware\responseHandler.js:50:32)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:75:31
+    at async D:\message-board\node_modules\koa-static-cache\index.js:75:31
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+    at async cors (D:\message-board\node_modules\@koa\cors\index.js:56:32)
+
+pid: 2104
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:45:01,443 ERROR 11576 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\fonts"
+name: "EPERMError"
+pid: 11576
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:45:01,446 ERROR 11576 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 11576
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:45:01,447 ERROR 11576 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\js"
+name: "EPERMError"
+pid: 11576
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:45:01,546 ERROR 11576 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 11576
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:45:08,039 ERROR 7736 [-/::1/-/2ms GET /index.html] nodejs.ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\index.html'
+ENOENTError: ENOENT: no such file or directory, stat 'D:\message-board\app\public\index.html'
+errno: -4058
+code: "ENOENT"
+syscall: "stat"
+path: "D:\\message-board\\app\\public\\index.html"
+name: "ENOENTError"
+pid: 7736
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:46:32,847 ERROR 6556 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 6556
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:46:32,849 ERROR 6556 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\js"
+name: "EPERMError"
+pid: 6556
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:46:32,851 ERROR 6556 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\fonts"
+name: "EPERMError"
+pid: 6556
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:46:32,949 ERROR 6556 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 6556
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:49:58,595 ERROR 10660 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\html"
+name: "EPERMError"
+pid: 10660
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:49:58,600 ERROR 10660 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\css"
+name: "EPERMError"
+pid: 10660
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:49:58,602 ERROR 10660 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public\\fonts"
+name: "EPERMError"
+pid: 10660
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 20:49:58,702 ERROR 10660 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:127:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "D:\\message-board\\app\\public"
+name: "EPERMError"
+pid: 10660
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 21:11:24,742 ERROR 10524 [-/::1/-/7ms GET /api/message/5f1832222a67811cfc442685] nodejs.TypeError: Cannot read property 'content' of null
+    at MessageService.getMessageById (D:\message-board\app\service\message.js:64:49)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.getMessageById (D:\message-board\app\controller\message.js:30:16)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+
+pid: 10524
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 21:11:25,462 ERROR 10524 [-/::1/-/3ms GET /api/message/5f1832222a67811cfc442685] nodejs.TypeError: Cannot read property 'content' of null
+    at MessageService.getMessageById (D:\message-board\app\service\message.js:64:49)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.getMessageById (D:\message-board\app\controller\message.js:30:16)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+
+pid: 10524
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 21:12:27,558 ERROR 10524 [-/::1/-/5ms GET /api/message/5f1832222a67811cfc442685] nodejs.TypeError: Cannot read property 'content' of null
+    at MessageService.getMessageById (D:\message-board\app\service\message.js:64:49)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.getMessageById (D:\message-board\app\controller\message.js:30:16)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+
+pid: 10524
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 21:12:32,003 ERROR 10524 [-/::1/-/4ms GET /api/message/5f1832222a67811cfc442685] nodejs.TypeError: Cannot read property 'content' of null
+    at MessageService.getMessageById (D:\message-board\app\service\message.js:64:49)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.getMessageById (D:\message-board\app\controller\message.js:30:16)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+
+pid: 10524
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 21:13:04,037 ERROR 10524 [-/::1/-/5ms GET /api/message/5f1832222a67811cfc442685] nodejs.TypeError: Cannot read property 'content' of null
+    at MessageService.getMessageById (D:\message-board\app\service\message.js:64:49)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.getMessageById (D:\message-board\app\controller\message.js:30:16)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 10524
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 21:13:24,530 ERROR 10524 [-/::1/-/4ms GET /api/message/5f1832222a67811cfc442685] nodejs.TypeError: Cannot read property 'content' of null
+    at MessageService.getMessageById (D:\message-board\app\service\message.js:64:49)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.getMessageById (D:\message-board\app\controller\message.js:30:16)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 10524
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 21:13:28,900 ERROR 10524 [-/::1/-/5ms GET /api/message/5f1832222a67811cfc442685] nodejs.TypeError: Cannot read property 'content' of null
+    at MessageService.getMessageById (D:\message-board\app\service\message.js:64:49)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.getMessageById (D:\message-board\app\controller\message.js:30:16)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 10524
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 21:13:50,919 ERROR 10524 [-/::1/-/4ms GET /api/message/5f1832222a67811cfc442685] nodejs.TypeError: Cannot read property 'content' of null
+    at MessageService.getMessageById (D:\message-board\app\service\message.js:64:49)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.getMessageById (D:\message-board\app\controller\message.js:30:16)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 10524
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 21:14:02,710 ERROR 10524 [-/::1/-/4ms GET /api/message/5f1832222a67811cfc442685] nodejs.TypeError: Cannot read property 'content' of null
+    at MessageService.getMessageById (D:\message-board\app\service\message.js:64:49)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async MessageController.getMessageById (D:\message-board\app\controller\message.js:30:16)
+    at async login (D:\message-board\app\middleware\login.js:7:14)
+    at async responseHandler (D:\message-board\app\middleware\responseHandler.js:6:7)
+    at async D:\message-board\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (D:\message-board\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (D:\message-board\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (D:\message-board\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (D:\message-board\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (D:\message-board\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (D:\message-board\node_modules\koa-bodyparser\index.js:95:5)
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async D:\message-board\node_modules\koa-static-cache\index.js:73:16
+    at async notfound (D:\message-board\node_modules\egg\app\middleware\notfound.js:5:5)
+    at async meta (D:\message-board\node_modules\egg\app\middleware\meta.js:12:5)
+
+pid: 10524
+hostname: ��Ϣƽ̨-������
+
+2020-07-23 21:43:01,979 ERROR 10660 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 10660
+hostname: ��Ϣƽ̨-������
+

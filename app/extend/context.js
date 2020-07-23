@@ -4,7 +4,7 @@ const JOI = Symbol('Context#Joi');
 const _ = require('lodash');
 
 module.exports = {
-  validate(schema, valueObj = this.request.body) {
+  validate(schema, valueObj = Object.assign(this.request.body, this.query, this.params)) {
     const { error, value } = Joi.validate(valueObj, schema);
     if (!error) return value;
     error.errors = error.message;

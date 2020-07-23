@@ -179,7 +179,8 @@
     "static": {
       "prefix": "/",
       "dir": [
-        "D:\\message-board\\app\\public"
+        "D:\\message-board\\app\\public",
+        "D:\\message-board\\app\\static"
       ],
       "dynamic": true,
       "preload": false,
@@ -190,7 +191,7 @@
     "view": {
       "root": [
         "D:\\message-board\\app\\public",
-        "D:\\message-board\\app\\public\\html"
+        "D:\\message-board\\app\\static"
       ],
       "cache": false,
       "defaultExtension": ".html",

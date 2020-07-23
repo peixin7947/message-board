@@ -17,7 +17,7 @@ module.exports = app => {
 
   router.get('/api/message', controller.message.listMessage); // 获取留言
   router.get('/api/message/:id', controller.message.getMessageById); // 获取留言
-  router.get('/api/message/:userId', controller.message.getMessageListByUserId); // 获取某个用户的留言
+  router.get('/api/user/message/:userId', controller.message.getMessageListByUserId); // 获取某个用户的留言
   router.get('/api/reply/:id', controller.message.getReplyListByUserId); // 获取某个用户的评论
   router.post('/api/message', controller.message.createMessage); // 创建留言
   router.post('/api/reply', controller.message.createReply); // 创建评论

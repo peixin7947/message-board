@@ -14,7 +14,7 @@ class HomeController extends Controller {
     const userInfo = ctx.session.userInfo;
     // 已经登录
     if (userInfo) {
-      return ctx.redirect('/#/messageBoard.html');
+      return ctx.redirect('/index.html#/messageBoard');
     }
     return ctx.redirect('/index.html');
   }

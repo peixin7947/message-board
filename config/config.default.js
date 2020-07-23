@@ -9,7 +9,7 @@ module.exports = appInfo => {
     defaultViewEngine: 'nunjucks',
     root: [
       path.join(appInfo.baseDir, 'app/public'),
-      path.join(appInfo.baseDir, 'app/public/html'),
+      path.join(appInfo.baseDir, 'app/static'),
       path.join(appInfo.baseDir, 'app/view'),
     ].join(','),
   };
@@ -31,6 +31,7 @@ module.exports = appInfo => {
     // 需要设置静态化的目录
     dir: [
       path.join(appInfo.baseDir, 'app/public'),
+      path.join(appInfo.baseDir, 'app/static'),
     ],
     // 设置缓存时间，开发时设置为0防止不生效
     maxAge: 0,
@@ -57,8 +58,8 @@ module.exports = appInfo => {
   config.login = {
     LOGIN_FIELD: 'userInfo',
     ignore(ctx) {
-      if ([ '/register', '/login' ].includes(ctx.request.path)) return true;
-      if (ctx.request.path.startsWith('/static/')) return true;
+      if ([ '/register', '/index.html' ].includes(ctx.request.path)) return true;
+      // if (ctx.request.path.startsWith('/html/')) return true;
     },
   };
 

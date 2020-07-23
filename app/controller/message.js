@@ -57,7 +57,7 @@ class MessageController extends Controller {
         .required(),
       toUser: ctx.helper.validateObj('_id')
         .required(),
-      content: ctx.Joi.string().trim().max(1024)
+      content: ctx.Joi.string().max(1024)
         .required(),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.response.body = await ctx.service.message.createReply(data);
@@ -67,7 +67,7 @@ class MessageController extends Controller {
   async deleteMessage() {
     const { ctx } = this;
     const data = ctx.validate({
-      id: ctx.helper.validateObj('_id'),
+      id: ctx.helper.validateObj('_id').required(),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.response.body = await ctx.service.message.deleteMessage(data);
   }
@@ -80,6 +80,7 @@ class MessageController extends Controller {
         .required(),
       content: ctx.Joi.string().max(1024)
         .required(),
+      tag: ctx.Joi.string(),
       title: ctx.Joi.string().max(30).allow(''),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.response.body = await ctx.service.message.updateMessage(data);

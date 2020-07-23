@@ -189,8 +189,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/message/:userId",
-    "regexp": "/^\\/api\\/message\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/api/user/message/:userId",
+    "regexp": "/^\\/api\\/user\\/message\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
