@@ -14,14 +14,16 @@ module.exports = app => {
   router.post('/api/logout', controller.auth.logout); // 用户退出登录
   router.get('/api/information/:id', controller.user.getInformationById); // 获取其他用户的信息
 
-
-  router.get('/api/message', controller.message.listMessage); // 获取留言
-  router.get('/api/message/:id', controller.message.getMessageById); // 获取留言
+  router.get('/api/message', controller.message.listMessage); // 获取留言列表
+  router.get('/api/message/:id', controller.message.getMessageById); // 获取留言详情
   router.get('/api/user/message/:userId', controller.message.getMessageListByUserId); // 获取某个用户的留言
-  router.get('/api/reply/:id', controller.message.getReplyListByUserId); // 获取某个用户的评论
   router.post('/api/message', controller.message.createMessage); // 创建留言
-  router.post('/api/reply', controller.message.createReply); // 创建评论
-  router.delete('/api/message', controller.message.deleteMessage); // 删除消息
+  router.delete('/api/message', controller.message.deleteMessage); // 删除留言或评论
   router.put('/api/message', controller.message.updateMessage); // 编辑消息
+
+  router.put('/api/comment', controller.comment.updateComment); // 编辑评论
+  router.post('/api/comment', controller.comment.createComment); // 创建评论
+  // router.get('/api/reply/:id', controller.message.getReplyListByUserId); // 获取某个用户的评论
+
 
 };
