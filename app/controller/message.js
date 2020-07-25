@@ -46,28 +46,11 @@ class MessageController extends Controller {
     ctx.response.body = await ctx.service.message.createMessage(data);
   }
 
-  /**
-   *  增加评论方法
-   * @return {Promise<void>} 消息
-   */
-  async createReply() {
-    const { ctx } = this;
-    const data = ctx.validate({
-      messageId: ctx.helper.validateObj('_id')
-        .required(),
-      toUser: ctx.helper.validateObj('_id')
-        .required(),
-      content: ctx.Joi.string().trim().max(1024)
-        .required(),
-    }, Object.assign(ctx.params, ctx.request.body, ctx.query));
-    ctx.response.body = await ctx.service.message.createReply(data);
-  }
-
   // 删除留言或者评论
   async deleteMessage() {
     const { ctx } = this;
     const data = ctx.validate({
-      id: ctx.helper.validateObj('_id'),
+      id: ctx.helper.validateObj('_id').required(),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.response.body = await ctx.service.message.deleteMessage(data);
   }
@@ -80,6 +63,7 @@ class MessageController extends Controller {
         .required(),
       content: ctx.Joi.string().max(1024)
         .required(),
+      tag: ctx.Joi.string(),
       title: ctx.Joi.string().max(30).allow(''),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.response.body = await ctx.service.message.updateMessage(data);
@@ -99,22 +83,6 @@ class MessageController extends Controller {
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
     ctx.body = await ctx.service.message.getMessageListByUserId(data);
   }
-
-  /**
-   * 获取用户评论列表
-   * @return {Promise<void>}
-   */
-  async getReplyListByUserId() {
-    const { ctx } = this;
-    const data = ctx.validate({
-      id: ctx.helper.validateObj('_id').required(),
-      sort: ctx.Joi.string().default('{"createTime":-1}'),
-      pageSize: ctx.Joi.number().default(10),
-      pageIndex: ctx.Joi.number().default(1),
-    }, Object.assign(ctx.params, ctx.request.body, ctx.query));
-    ctx.body = await ctx.service.message.getReplyListByUserId(data);
-  }
-
 }
 
 module.exports = MessageController;

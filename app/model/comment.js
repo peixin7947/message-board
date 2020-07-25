@@ -48,10 +48,6 @@ module.exports = app => {
     },
     createTime: { type: Date, default: Date.now },
     updateTime: { type: Date, default: null },
-    isDel: {
-      type: Boolean,
-      default: false,
-    },
     doDel: {
       type: delSchema,
       default: null,
@@ -59,7 +55,7 @@ module.exports = app => {
   });
 
   /**
-   * description 留言集合
+   * description 评论
    * @param {ObjectId} creator 发布留言的用户
    * @param {Boolean} idDel 留言是否被删除（逻辑删除）
    * @param {Date} createTime 留言时间
@@ -69,20 +65,16 @@ module.exports = app => {
    * @param {Object} doDel 删除者
    * @type {module:mongoose.Schema<any>}
    */
-  const MessageSchema = new Schema({
+  const CommentSchema = new Schema({
     creator: {
       type: Schema.ObjectId,
       ref: 'User',
       index: true,
     },
-    tag: {
-      type: String,
-      enum: [ '分享', '问答' ],
-      default: '',
-    },
-    isDel: {
-      type: Boolean,
-      default: false,
+    messageId: {
+      type: Schema.ObjectId,
+      ref: 'Message',
+      index: true,
     },
     doDel: {
       type: delSchema,
@@ -94,12 +86,12 @@ module.exports = app => {
       type: String,
       default: '',
     },
-    title: {
-      type: String,
-      default: '',
+    reply: {
+      type: [ replySchema ],
+      default: [],
     },
   }, {
-    collection: 'Message',
+    collection: 'Comment',
   });
-  return mongoose.model('Message', MessageSchema, 'Message');
+  return mongoose.model('Comment', CommentSchema, 'Comment');
 };

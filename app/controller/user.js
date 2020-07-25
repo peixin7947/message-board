@@ -31,11 +31,11 @@ class UserController extends Controller {
       email: ctx.Joi.string().email(),
       avatar: ctx.Joi.string(),
       sex: [ 1, 0 ],
-      intro: ctx.Joi.string().max(256),
+      intro: ctx.Joi.string().max(256).allow(''),
       age: ctx.Joi.number().min(0).max(120),
       password: ctx.Joi.string().min(6).max(24),
       oldPassword: ctx.Joi.string().min(6).max(24),
-    }, Object.assign(ctx.request.body, ctx.query, ctx.params).all);
+    });
     ctx.response.body = await ctx.service.user.updateUserInformation(data);
   }
 

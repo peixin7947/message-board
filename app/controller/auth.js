@@ -34,11 +34,12 @@ class AuthController extends Controller {
 
     const userObj = await ctx.model.User.findOne({ username: data.username });
     if (userObj) {
-      ctx.code = 1;
       ctx.body = { msg: '用户名已存在' };
       return;
     }
-    await this.ctx.model.User.create({ username: data.username, nickname: data.username, password: md5(data.password) });
+    data.nickname = data.username;
+    data.password = md5(data.password);
+    await this.ctx.model.User.create(data);
     ctx.response.body = { msg: '注册成功' };
   }
 
