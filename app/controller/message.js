@@ -78,10 +78,15 @@ class MessageController extends Controller {
     const data = ctx.validate({
       userId: ctx.helper.validateObj('_id').required(),
       sort: ctx.Joi.string().default('{"createTime":-1}'),
-      pageSize: ctx.Joi.number().default(6),
+      pageSize: ctx.Joi.number().default(10),
       pageIndex: ctx.Joi.number().default(1),
-    }, Object.assign(ctx.params, ctx.request.body, ctx.query));
+    });
     ctx.body = await ctx.service.message.getMessageListByUserId(data);
+  }
+
+  async getNotCommentMessage() {
+    const { ctx } = this;
+    ctx.body = await ctx.service.message.getNotCommentMessage();
   }
 }
 

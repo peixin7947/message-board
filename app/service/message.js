@@ -55,7 +55,9 @@ class MessageService extends Service {
       .populate([
         { path: 'creator', select: 'nickname avatar' },
         { path: 'toUser', select: 'nickname avatar' },
-      ]);
+        { path: 'reply.creator', select: 'nickname avatar' },
+        { path: 'reply.toUser', select: 'nickname avatar' },
+      ]).lean();
     message.comments = comments;
     return message;
   }
@@ -155,6 +157,36 @@ class MessageService extends Service {
 
     const total = await ctx.model.Message.count({ creator: userId, isDel: false, doDel: null });
     return { items, total };
+  }
+
+  /**
+   * 获取5条没有评论的留言
+   * @return {Promise<void>} 5条没有评论的留言
+   */
+  async getNotCommentMessage() {
+    const { ctx } = this;
+    const message = await ctx.model.Message.aggregate([
+      {
+        $match: {
+          doDel: null,
+        },
+      },
+      {
+        $lookup: {
+          from: 'Comment',
+          localField: '_id',
+          foreignField: 'messageId',
+          as: 'comments',
+        },
+      },
+      {
+        $match: { comments: [] },
+      },
+      {
+        $limit: 5,
+      },
+    ]);
+    return message;
   }
 
 }

@@ -5,7 +5,7 @@ const Service = require('egg').Service;
 class CommentService extends Service {
 
   /**
-   *  增加评论
+   *  留言增加评论
    * @param {Object} data 参数体
    * @return {Promise<{msg: string}>} 返回消息
    */
