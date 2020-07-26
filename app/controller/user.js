@@ -62,10 +62,9 @@ class UserController extends Controller {
     } catch (e) {
       // 必须将上传的文件流消费掉，要不然浏览器响应会卡死
       await sendToWormhole(stream);
-      ctx.code = 1;
       ctx.body = { msg: '上传头像失败' };
     }
-    ctx.body = { url: filename };
+    ctx.body = { url: filename, msg: '上传成功' };
   }
 }
 
