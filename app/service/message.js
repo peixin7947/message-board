@@ -91,7 +91,6 @@ class MessageService extends Service {
       model = await ctx.model.Comment.findOne({ _id: id, doDel: null });
       if (!model) return { msg: '删除失败，已被删除或不存在' };
     }
-    // 如果是留言
     if (String(model.creator) !== String(userInfo._id)) {
       return { msg: '无权删除' };
     }

@@ -63,6 +63,9 @@ class AuthController extends Controller {
       password: ctx.Joi.string().min(6).max(24)
         .trim()
         .required(),
+      rePassword: ctx.Joi.string().min(6).max(24)
+        .trim()
+        .required(),
     }, Object.assign({}, ctx.params, ctx.query, ctx.request.body));
     ctx.body = await ctx.service.user.resetPassword(data);
   }

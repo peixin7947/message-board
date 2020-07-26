@@ -30,6 +30,10 @@ module.exports = app => {
       type: String,
       default: '',
     },
+    isAdmin: {
+      type: Boolean,
+      default: false,
+    },
     age: { type: Number, min: 0, max: 120, default: 0 },
   });
   return mongoose.model('User', UserSchema, 'User');

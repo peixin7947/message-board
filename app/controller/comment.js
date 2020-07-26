@@ -54,7 +54,7 @@ class CommentController extends Controller {
       pageSize: ctx.Joi.number().default(10),
       pageIndex: ctx.Joi.number().default(1),
     }, Object.assign(ctx.params, ctx.request.body, ctx.query));
-    ctx.body = await ctx.service.message.getReplyListByUserId(data);
+    ctx.body = await ctx.service.comment.getCommentListByUserId(data);
   }
 
 }

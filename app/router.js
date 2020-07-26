@@ -24,7 +24,6 @@ module.exports = app => {
 
   router.put('/api/comment', controller.comment.updateComment); // 编辑评论
   router.post('/api/comment', controller.comment.createComment); // 创建评论
-  // router.get('/api/reply/:id', controller.message.getReplyListByUserId); // 获取某个用户的评论
-
+  router.get('/api/comment/:id', controller.comment.getReplyListByUserId); // 获取某个用户的评论
 
 };

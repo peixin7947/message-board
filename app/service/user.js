@@ -58,14 +58,15 @@ class UserService extends Service {
    */
   async resetPassword(data) {
     const { ctx } = this;
-    const { username, password, email } = data;
+    const { username, password, email, rePassword } = data;
+    if (password !== rePassword) {
+      return { msg: '两次输入的密码不一致' };
+    }
     const user = await ctx.model.User.findOne({ username });
     if (!user) {
-      ctx.code = 1;
       return { msg: '用户不存在' };
     }
     if (user.email !== email) {
-      ctx.code = 1;
       return { msg: '输入邮箱不正确' };
     }
     user.password = md5(password);
