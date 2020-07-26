@@ -70,7 +70,8 @@ class CommentService extends Service {
       .skip((pageIndex - 1) * pageSize)
       .limit(pageSize)
       .lean();
-    return { items: comment, total: comment.length };
+    const total = await ctx.model.Comment.count({ creator: app.mongoose.Types.ObjectId(id), doDel: null });
+    return { items: comment, total };
   }
 }
 

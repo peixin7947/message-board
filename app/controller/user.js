@@ -32,9 +32,11 @@ class UserController extends Controller {
       avatar: ctx.Joi.string(),
       sex: [ 1, 0 ],
       intro: ctx.Joi.string().max(256).allow(''),
-      age: ctx.Joi.number().min(0).max(120),
+      age: ctx.Joi.number().integer().min(0)
+        .max(120),
       password: ctx.Joi.string().min(6).max(24),
       oldPassword: ctx.Joi.string().min(6).max(24),
+      rePassword: ctx.Joi.string().min(6).max(24),
     });
     ctx.response.body = await ctx.service.user.updateUserInformation(data);
   }

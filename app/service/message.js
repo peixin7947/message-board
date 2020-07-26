@@ -14,7 +14,7 @@ class MessageService extends Service {
     let { sort, pageSize, pageIndex, keyword } = data;
     sort = JSON.parse(sort);
     let filter;
-    if (keyword) {
+    if (String(keyword) !== '') {
       const regex = new RegExp(this.ctx._.escapeRegExp(keyword), 'i');
       filter = {
         $or: [
@@ -31,7 +31,7 @@ class MessageService extends Service {
       .skip((pageIndex - 1) * pageSize)
       .limit(pageSize)
       .lean();
-    const total = await ctx.model.Message.count({ isDel: false, doDel: null });
+    const total = await ctx.model.Message.count(Object.assign({ doDel: null }, filter));
     return { items, total };
   }
 
@@ -42,7 +42,7 @@ class MessageService extends Service {
    */
   async getMessageById(data) {
     const { ctx } = this;
-    const message = await ctx.model.Message.findOne({ _id: data.id, isDel: false, doDel: null })
+    const message = await ctx.model.Message.findOne({ _id: data.id, doDel: null })
       .populate([
         { path: 'creator', select: 'nickname avatar' },
         // { path: 'reply.creator', select: 'nickname avatar' },
@@ -139,22 +139,13 @@ class MessageService extends Service {
     const items = await ctx.model.Message.find({ creator: app.mongoose.Types.ObjectId(userId), doDel: null })
       .populate([
         { path: 'creator', select: 'nickname avatar' },
-        // { path: 'reply.creator', select: 'nickname avatar' },
-        // { path: 'reply.toUser', select: 'nickname avatar' },
       ])
       .sort(sort)
       .skip((pageIndex - 1) * pageSize)
       .limit(pageSize)
       .lean();
-    // 除去已删除的评论
-    items.forEach(item => {
-      if (item.reply && item.reply.length) {
-        ctx._.remove(item.reply, reply => reply.isDel !== false);
-      }
-      item.children = item.reply;
-    });
 
-    const total = await ctx.model.Message.count({ creator: userId, isDel: false, doDel: null });
+    const total = await ctx.model.Message.count({ creator: userId, doDel: null });
     return { items, total };
   }
 

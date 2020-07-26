@@ -35,11 +35,13 @@ class UserService extends Service {
     const { ctx } = this;
     const userInfo = ctx.session.userInfo;
     // 如果是修改密码
-    const { oldPassword, password } = data;
+    const { oldPassword, password, rePassword } = data;
     if (password) {
+      if (String(rePassword) !== String(password)) {
+        return { msg: '两次输入的密码不一致' };
+      }
       const user = await ctx.model.User.findOne({ _id: userInfo._id, password: md5(oldPassword) }).lean();
       if (!user) {
-        ctx.code = 2;
         return { msg: '原密码输入错误' };
       }
       data.password = md5(password);
