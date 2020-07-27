@@ -24,7 +24,7 @@ module.exports = app => {
     },
     avatar: {
       type: String,
-      default: '/uploadAvatar/avatar.jpg',
+      default: '/static/uploadAvatar/avatar.jpg',
     },
     intro: {
       type: String,

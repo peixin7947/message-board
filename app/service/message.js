@@ -37,18 +37,17 @@ class MessageService extends Service {
 
   /**
    * 获取留言详情
-   * @param data
-   * @return {Promise<void>}
+   * @param {Object} data 参数体
+   * @return {Promise<{msg: string}>} 响应消息
    */
   async getMessageById(data) {
     const { ctx } = this;
     const message = await ctx.model.Message.findOne({ _id: data.id, doDel: null })
       .populate([
         { path: 'creator', select: 'nickname avatar' },
-        // { path: 'reply.creator', select: 'nickname avatar' },
-        // { path: 'reply.toUser', select: 'nickname avatar' },
       ])
       .lean();
+    if (!message) ctx.throw(400, '留言不存在或已被删除');
     message.content = ctx.helper.escape(message.content);
     // 除去已删除的评论
     const comments = await ctx.model.Comment.find({ messageId: data.id, doDel: null })
@@ -57,7 +56,8 @@ class MessageService extends Service {
         { path: 'toUser', select: 'nickname avatar' },
         { path: 'reply.creator', select: 'nickname avatar' },
         { path: 'reply.toUser', select: 'nickname avatar' },
-      ]).lean();
+      ])
+      .lean();
     message.comments = comments;
     return message;
   }
@@ -164,8 +164,19 @@ class MessageService extends Service {
       {
         $lookup: {
           from: 'Comment',
-          localField: '_id',
-          foreignField: 'messageId',
+          let: { messageId: '$_id' },
+          pipeline: [
+            {
+              $match: {
+                $expr: {
+                  $and: [
+                    { $eq: [ '$_id', '$$messageId' ] },
+                    { $eq: [ '$doDel', null ] },
+                  ],
+                },
+              },
+            },
+          ],
           as: 'comments',
         },
       },
