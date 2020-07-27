@@ -46,6 +46,8 @@ class UserService extends Service {
       }
       data.password = md5(password);
       ctx.session.userInfo = null;
+      await ctx.model.User.updateOne({ _id: userInfo._id }, data);
+      return { msg: '修改密码成功，请重新登录' };
     }
     await ctx.model.User.updateOne({ _id: userInfo._id }, data);
     return { msg: '修改成功' };

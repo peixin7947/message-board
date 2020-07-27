@@ -170,7 +170,7 @@ class MessageService extends Service {
               $match: {
                 $expr: {
                   $and: [
-                    { $eq: [ '$_id', '$$messageId' ] },
+                    { $eq: [ '$messageId', '$$messageId' ] },
                     { $eq: [ '$doDel', null ] },
                   ],
                 },
